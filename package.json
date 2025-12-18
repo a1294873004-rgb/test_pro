@@ -10,22 +10,28 @@
     "build:online": "webpack build -c ./webpack.config.js --mode production --env online",
     "i18n:extract": "lingui extract",
     "i18n:extract_clean": "lingui extract --clean",
-    "i18n:compile": "lingui compile"
+    "i18n:compile": "lingui compile",
+    "rxjs": "ts-node-dev --respawn --transpile-only src/rxjs-test/index.ts"
   },
   "dependencies": {
     "@lingui/core": "^5.5.0",
     "@lingui/macro": "^5.5.0",
     "@lingui/react": "^5.5.0",
+    "animejs": "^4.2.2",
+    "antd": "^6.1.0",
     "classnames": "^2.5.1",
     "infinite-scroll": "^5.0.0",
     "jotai": "^2.15.1",
     "lodash": "^4.17.4",
+    "lodash-es": "^4.17.21",
     "masonry-layout": "^4.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-infinite-scroll-component": "^6.1.0",
     "react-masonry-component": "^6.3.0",
-    "rxjs": "^7.8.2"
+    "react-window": "^2.2.3",
+    "rxjs": "^7.8.2",
+    "ts-node-dev": "^2.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.28.3",
@@ -43,6 +49,7 @@
     "@svgr/webpack": "^8.1.0",
     "@types/ali-oss": "^6.16.11",
     "@types/lodash": "^4.17.20",
+    "@types/lodash-es": "^4",
     "@types/masonry-layout": "^4",
     "@types/node": "^22.15.23",
     "@types/react": "^18.2.0",

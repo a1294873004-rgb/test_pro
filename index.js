@@ -1,3 +1,20 @@
-{
-  __webpack_require__.r(__webpack_exports__);
-}
+{code: 0, msg: "success", data: {,…}}
+code
+: 
+0
+data
+: 
+{,…}
+state
+: 
+1
+token
+: 
+"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XCJhY2NvdW50XCI6XCJsMzU4ODAzODNAZ21haWwuY29tXCIsXCJ1c2VySWRcIjpcIjdkMTM5NjViLTQyMDUtNDg2MC1iNGM3LTE0MjMwODZmNWU0M1wifSIsImlhdCI6MTc2NTM3MzMzMCwiZXhwIjoxNzY1NjMyNTMwfQ.UZHl8Dl4KR_svFH3OuAHRYMAmnb5dMklfWmA3t2tIYHHSavLO55Xcg_xxG7xvOetJREeCnCAxn3PGNN9cqMUoQ"
+msg
+: 
+"success"
+
+
+Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ7XCJhY2NvdW50XCI6XCJsMzU4ODAzODNAZ21haWwuY29tXCIsXCJ1c2VySWRcIjpcIjdkMTM5NjViLTQyMDUtNDg2MC1iNGM3LTE0MjMwODZmNWU0M1wifSIsImlhdCI6MTc2NTM3MzMzMCwiZXhwIjoxNzY1NjMyNTMwfQ.UZHl8Dl4KR_svFH3OuAHRYMAmnb5dMklfWmA3t2tIYHHSavLO55Xcg_xxG7xvOetJREeCnCAxn3PGNN9cqMUoQ
+
