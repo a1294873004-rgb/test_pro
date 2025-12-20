@@ -14,8 +14,8 @@ import { ClickableBanner } from "src/ClickableBanner";
 // createRoot(document.getElementById("root")!).render(<MasonryGrid />);
 createRoot(document.getElementById("root")!).render(
   <div>
-    {/* <MySelect />
-    <RxJsDemo /> */}
+    <MySelect />
+    <RxJsDemo />
     <ClickableBanner />
   </div>
 );

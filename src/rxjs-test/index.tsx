@@ -19,7 +19,8 @@ import {
   mergeMap,
   take,
   catchError,
-} from "rxjs";
+  // } from "rxjs";
+} from "./libs/rxjs/src"; // 本地调试rxjs源码用
 
 function test() {
   console.log("fuck test rxjs");
