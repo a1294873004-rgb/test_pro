@@ -8,15 +8,17 @@ import { createRoot } from "react-dom/client";
 import { RxJsDemo } from "src/rxjs-test";
 import { MySelect } from "src/antd-test";
 import { ClickableBanner } from "src/ClickableBanner";
-
+import { MemoryViewApp } from "src/memory-router";
+import "./src/lit-test";
 // createRoot(document.getElementById("root")!).render(<App />);
 // createRoot(document.getElementById("root")!).render(<MarqueeTags />);
 // createRoot(document.getElementById("root")!).render(<MasonryGrid />);
-createRoot(document.getElementById("root")!).render(
-  <div>
-    <MySelect />
-    <RxJsDemo />
-    <ClickableBanner />
-  </div>
-);
+// createRoot(document.getElementById("root")!).render(
+//   <div>
+//     {/* <MySelect /> */}
+//     <RxJsDemo />
+//     <MemoryViewApp />
+//     {/* <ClickableBanner /> */}
+//   </div>
+// );
 // createRoot(document.getElementById("root")!).render(<InfiniteVirtualList />);

@@ -1,0 +1,215 @@
+{
+  "type": "page",
+  "meta": {
+    "id": "kV_wO0ALWs",
+    "title": "How to use folder and Tags",
+    "createDate": 1744684776321,
+    "tags": []
+  },
+  "blocks": {
+    "type": "block",
+    "id": "jqn96VpvnZ",
+    "flavour": "affine:page",
+    "version": 2,
+    "props": {
+      "title": {
+        "$blocksuite:internal:text$": true,
+        "delta": [
+          {
+            "insert": "How to use folder and Tags"
+          }
+        ]
+      }
+    },
+    "children": [
+      {
+        "type": "block",
+        "id": "RVoyW1s92u",
+        "flavour": "affine:surface",
+        "version": 5,
+        "props": {
+          "elements": {}
+        },
+        "children": []
+      },
+      {
+        "type": "block",
+        "id": "DWNetshAxf",
+        "flavour": "affine:note",
+        "version": 1,
+        "props": {
+          "xywh": "[0,0,800,1016.85]",
+          "background": {
+            "dark": "#000000",
+            "light": "#ffffff"
+          },
+          "index": "a0",
+          "lockedBySelf": false,
+          "hidden": false,
+          "displayMode": "both",
+          "edgeless": {
+            "style": {
+              "borderRadius": 8,
+              "borderSize": 4,
+              "borderStyle": "none",
+              "shadowType": "--affine-note-shadow-box"
+            }
+          }
+        },
+        "children": [
+          {
+            "type": "block",
+            "id": "ZlwIuPPzBb",
+            "flavour": "affine:paragraph",
+            "version": 1,
+            "props": {
+              "type": "text",
+              "text": {
+                "$blocksuite:internal:text$": true,
+                "delta": [
+                  {
+                    "insert": "Create folder, and move docs into folders (dragging works as well)"
+                  }
+                ]
+              },
+              "collapsed": false,
+              "meta:updatedAt": 1744855626417,
+              "meta:updatedBy": "0c2d85d3-d5a3-49f4-a974-b4b03bd3598c",
+              "meta:createdAt": 1744684803481,
+              "meta:createdBy": "0c2d85d3-d5a3-49f4-a974-b4b03bd3598c"
+            },
+            "children": []
+          },
+          {
+            "type": "block",
+            "id": "7rjNBxL2x-",
+            "flavour": "affine:paragraph",
+            "version": 1,
+            "props": {
+              "type": "text",
+              "text": {
+                "$blocksuite:internal:text$": true,
+                "delta": [
+                  {
+                    "insert": "Docs can belong to multiple folders"
+                  }
+                ]
+              },
+              "collapsed": false,
+              "meta:createdAt": 1744684812568,
+              "meta:createdBy": "0c2d85d3-d5a3-49f4-a974-b4b03bd3598c",
+              "meta:updatedAt": 1744855651436,
+              "meta:updatedBy": "0c2d85d3-d5a3-49f4-a974-b4b03bd3598c"
+            },
+            "children": []
+          },
+          {
+            "type": "block",
+            "id": "8lD6zaEGyW",
+            "flavour": "affine:image",
+            "version": 1,
+            "props": {
+              "caption": "",
+              "sourceId": "hC5Z-gYeVnIOEvaGieVzneKIBUfJs2PRxBxLmR6tYf8=",
+              "width": 0,
+              "height": 0,
+              "index": "a0",
+              "xywh": "[0,0,0,0]",
+              "lockedBySelf": false,
+              "rotate": 0,
+              "size": -1,
+              "meta:createdAt": 1744703241646,
+              "meta:createdBy": "0c2d85d3-d5a3-49f4-a974-b4b03bd3598c",
+              "meta:updatedAt": 1744703241646,
+              "meta:updatedBy": "0c2d85d3-d5a3-49f4-a974-b4b03bd3598c"
+            },
+            "children": []
+          },
+          {
+            "type": "block",
+            "id": "x2fUKv7a20",
+            "flavour": "affine:paragraph",
+            "version": 1,
+            "props": {
+              "type": "text",
+              "text": {
+                "$blocksuite:internal:text$": true,
+                "delta": []
+              },
+              "collapsed": false,
+              "meta:createdAt": 1744698117120,
+              "meta:createdBy": "0c2d85d3-d5a3-49f4-a974-b4b03bd3598c",
+              "meta:updatedAt": 1744698117124,
+              "meta:updatedBy": "0c2d85d3-d5a3-49f4-a974-b4b03bd3598c"
+            },
+            "children": []
+          },
+          {
+            "type": "block",
+            "id": "xGhWeDjysL",
+            "flavour": "affine:paragraph",
+            "version": 1,
+            "props": {
+              "type": "text",
+              "text": {
+                "$blocksuite:internal:text$": true,
+                "delta": [
+                  {
+                    "insert": "Expand info to view and manage tags"
+                  }
+                ]
+              },
+              "collapsed": false,
+              "meta:createdAt": 1744698117975,
+              "meta:createdBy": "0c2d85d3-d5a3-49f4-a974-b4b03bd3598c",
+              "meta:updatedAt": 1744698117975,
+              "meta:updatedBy": "0c2d85d3-d5a3-49f4-a974-b4b03bd3598c"
+            },
+            "children": []
+          },
+          {
+            "type": "block",
+            "id": "RoSdBHL5TK",
+            "flavour": "affine:image",
+            "version": 1,
+            "props": {
+              "caption": "",
+              "sourceId": "DZCQ5HoYfKNMdXmV-InmqflwfVWzJ0Eol4ayoEGz0cA=",
+              "width": 0,
+              "height": 0,
+              "index": "a0",
+              "xywh": "[0,0,0,0]",
+              "lockedBySelf": false,
+              "rotate": 0,
+              "size": -1,
+              "meta:createdAt": 1744703252203,
+              "meta:createdBy": "0c2d85d3-d5a3-49f4-a974-b4b03bd3598c",
+              "meta:updatedAt": 1744703252203,
+              "meta:updatedBy": "0c2d85d3-d5a3-49f4-a974-b4b03bd3598c"
+            },
+            "children": []
+          },
+          {
+            "type": "block",
+            "id": "h1zoWcA7en",
+            "flavour": "affine:paragraph",
+            "version": 1,
+            "props": {
+              "type": "text",
+              "text": {
+                "$blocksuite:internal:text$": true,
+                "delta": []
+              },
+              "collapsed": false,
+              "meta:createdAt": 1744855658610,
+              "meta:createdBy": "0c2d85d3-d5a3-49f4-a974-b4b03bd3598c",
+              "meta:updatedAt": 1744855658611,
+              "meta:updatedBy": "0c2d85d3-d5a3-49f4-a974-b4b03bd3598c"
+            },
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -16,6 +16,15 @@
         "${workspaceFolder}/**/*.js"
       ],
       "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "b.js",
+      "program": "${workspaceFolder}/src/json/b.js",
+      "request": "launch",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "node"
     }
   ]
 }

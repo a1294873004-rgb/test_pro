@@ -1,0 +1,2204 @@
+# : src/pages/CreativeBoard/LeftSideBar/components/ImageUploadItem/index.tsx:223
+# : src/pages/CreativeBoard/LeftSideBar/components/ImageUploadItem/index.tsx:336
+# : src/pages/CreativeBoard/LeftSideBar/components/ImageUploadItem/index.tsx:396
+msgid ""
+msgstr ""
+"支持JPG / PNG格式，图片: \n"
+"大小不超过 10MBsgstr "Supports JPG / PNG formats. Image size should not exceed 10 MB."Supports JPG / PNG formats. Image size should not exceed 10 MB.": \n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language: \n"
+"Language-Team: \n"
+"Content-Type: \n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. js-lingui-explicit-id
+#: src/pages/Blog/components/MessageBoard/index.tsx:198
+msgid "Write your message"
+msgstr "Write your message"
+
+#: src/pages/PreloadingHomePage/index.tsx:63
+msgid ""
+"  yidooo 是一个面向年轻创作者的 AI 短剧与动画创作平台，让用户能够从灵感出发，\n"
+"在同一个工作室里完成剧本生成、分镜设计、角色塑造、动作驱动与视频输出，真正做到“让每一个灵感都实现”。"
+msgstr ""
+"  YidooO is an AI-powered short drama and animation creation platform for young creators, enabling users to start from inspiration,\n"
+"complete scriptwriting, storyboarding, character design, motion-driven animation, and video output all in one studio—truly making every idea a reality."
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VideoGeneration/index.tsx:164
+msgid "（文生视频、图生视频、首尾帧）"
+msgstr "(T2V, I2V, Keyframes)"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/Publish/index.tsx:176
+msgid "（选填）"
+msgstr "(Optional)"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCPose/index.tsx:81
+msgid "[ 姿势 ] 参考图片上传"
+msgstr "[ Pose ] Reference image upload"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VideoEffects/index.tsx:158
+msgid "[ 特效 ] 参考图片上传"
+msgstr "[ Effects ] Reference image upload"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VideoEffects/index.tsx:159
+msgid "[ 特效 ] 模板选择"
+msgstr "[ Effects ] Template selection"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCExpression/index.tsx:78
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCExpression/index.tsx:79
+msgid "[ 表情 ] 参考图片上传"
+msgstr "[ Expression ] Reference image upload"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/ImageUploadItem/index.tsx:348
+#: src/pages/CreativeBoard/features/LeftSideBar/features/StyleTransfer/index.tsx:80
+msgid "[ 风格 ] 参考图片上传"
+msgstr "[ Style ] Reference Image Upload"
+
+#. placeholder {0}: userData?.vipState ? `有效期至${userData?.vipEndTime}` : '享专属会员权益'
+#: src/components/common/PersonalToolbar/index.tsx:64
+msgid "{0}"
+msgstr "{0}"
+
+#: src/utils/hooks.ts:235
+msgid "{days} 天前"
+msgstr "{days} ago"
+
+#: src/utils/hooks.ts:230
+msgid "{hours} 小时前"
+msgstr "{hours} ago"
+
+#: src/utils/hooks.ts:225
+msgid "{minutes} 分钟前"
+msgstr "{minutes} ago"
+
+#: src/pages/Layout/components/Notification/index.tsx:75
+msgid "{NotificationIcon}<0>了您的作品</0>"
+msgstr "{NotificationIcon}<0>your working</0>"
+
+#: src/components/common/Settings/components/BasicInfo/index.tsx:339
+msgid "《YidooO社区准则》"
+msgstr "YidooO Community Guidelines"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/MessageList/index.tsx:220
+msgid "@ 我"
+msgstr "@ Me"
+
+#: src/pages/CreativeBoard/features/Agent/MessageList/AgentMessage.tsx:80
+msgid "* AI输出可能具有误导或错误"
+msgstr "* AI output may be misleading or erroneous"
+
+#: src/pages/Blog/components/BloggerInfo/index.tsx:59
+msgid "+关注"
+msgstr "+Follow"
+
+#: src/pages/CoApplyPage/AutoRedirect/index.tsx:35
+msgid "<0>{count}</0> 秒后自动跳转"
+msgstr "<0>{count}</0> seconds until automatic redirect"
+
+#: src/components/common/AuthModal/index.tsx:38
+msgid "<0>YidooO</0><1>让创作更自由</1>"
+msgstr "<0>YidooO</0><1>Make creation freer</1>"
+
+#: src/components/common/Settings/components/BasicInfo/index.tsx:359
+msgid "<0>个人主页的唯一标识（<1>字母/数字/符号</1>组成），可修改一次。</0><2>修改后旧网址失效，原用户将被引导至新页面。个性化网址包含标识名、自定义地址等类型，更</2><3>改时需谨慎操作以确保访问连续性。</3>"
+msgstr "<0>Unique identifier for your personal homepage (composed of <1>letters/numbers/symbols</1>), can be modified once.</0><2>After modification, the old URL will become invalid and users will be redirected to the new page. Custom URLs include identifier names, custom addresses, and other types. When making</2><3>changes, please operate carefully to ensure access continuity.</3>"
+
+#: src/pages/CreativeBoard/components/TrendingKeywords/index.tsx:68
+msgid "CP 互动"
+msgstr ""
+
+#: src/pages/CreativeBoard/features/Agent/MessageList/MessageEmpty.tsx:13
+msgid "CP 互动设计"
+msgstr ""
+
+#: src/pages/CreativeBoard/components/DialogueModeSelect/index.tsx:27
+msgid "CP 设计"
+msgstr ""
+
+#: src/components/GoogleLogin/index.tsx:54
+msgid "Google 登录失败"
+msgstr "Google login failed"
+
+#: src/pages/CreativeBoard/features/Agent/MessageList/MessageEmpty.tsx:21
+msgid "Hi {nickName}"
+msgstr "Hi {nickName}"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/InviteUser/index.tsx:114
+msgid "HI，我正在使用YidooO进行创作，快来加入平台和我一起创作吧！"
+msgstr "Hi, I'm creating with YidooO. Come join the platform and create with me!"
+
+#: src/components/common/Settings/components/ContactInfo/index.tsx:258
+msgid "Instagram"
+msgstr "Instagram"
+
+#: src/pages/CreativeBoard/components/DialogueModeSelect/index.tsx:31
+#: src/pages/CreativeBoard/components/TrendingKeywords/index.tsx:55
+msgid "OC 创作"
+msgstr ""
+
+#: src/pages/CreativeBoard/features/Agent/MessageList/MessageEmpty.tsx:12
+msgid "OC 卡片创作"
+msgstr ""
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/LeftSideBarComponents/index.tsx:99
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCPeripheral/index.tsx:41
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCPeripheral/index.tsx:68
+msgid "OC 周边"
+msgstr "Character Merchandise"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCStyle/index.tsx:148
+msgid "OC 热门造型"
+msgstr "Popular Character Styles"
+
+#: src/pages/CreativeBoard/components/CreationInitModal/index.tsx:29
+#: src/pages/CreativeBoard/features/LeftSideBar/components/LeftSideBarComponents/index.tsx:96
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCDesign/index.tsx:99
+msgid "OC 立绘"
+msgstr "Character Illustration"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/LeftSideBarComponents/index.tsx:100
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCStyle/index.tsx:80
+msgid "OC 造型"
+msgstr "Character styling"
+
+#: src/pages/Home/components/CreateNewCreativeBoard/index.tsx:45
+#: src/pages/Home/components/CreateNewCreativeBoard/index.tsx:52
+msgid "OC创作"
+msgstr "Character"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/LeftSideBarComponents/index.tsx:219
+msgid "OC角色"
+msgstr "Character"
+
+#: src/components/common/AuthModal/index.tsx:47
+msgid "OR"
+msgstr "OR"
+
+#: src/components/common/Settings/components/ContactInfo/index.tsx:274
+msgid "Personal"
+msgstr "Personal"
+
+#: src/pages/Home/components/HomeSearch/index.tsx:26
+msgid "TODO"
+msgstr ""
+
+#: src/components/common/Settings/components/ContactInfo/index.tsx:242
+msgid "Twitter"
+msgstr "Twitter"
+
+#: src/components/common/AuthModal/components/AccountLogin/index.tsx:141
+msgid "yidooO AI功能使用须知"
+msgstr "YidooO AI Feature Usage Guidelines"
+
+#: src/pages/PreloadingHomePage/index.tsx:60
+msgid "YidooO?"
+msgstr "YidooO?"
+
+#: src/pages/PreloadingHomePage/index.tsx:129
+msgid ""
+"YidooO是一款AI驱动的原创角色生成器和短视频创作平台，\n"
+"通过AI技术帮助创作者快速完成角色塑造和图生视频，\n"
+"打造多样化的创意内容。"
+msgstr ""
+"YidooO is an AI-powered original character generator and short video creation platform,\n"
+"helping creators quickly complete character design and image-to-video generation through AI technology,\n"
+"to create diverse creative content."
+
+#: src/components/common/AuthModal/components/AccountLogin/index.tsx:128
+msgid "yidooO用户协议"
+msgstr "YidooO User Agreement"
+
+#: src/components/common/AuthModal/components/AccountLogin/index.tsx:137
+msgid "yidooO社区自律公约"
+msgstr "YidooO Community Self-Regulation Agreement"
+
+#: src/components/common/AuthModal/components/AccountLogin/index.tsx:132
+msgid "yidooO隐私政策"
+msgstr "YidooO Privacy Policy"
+
+#: src/components/common/AuthModal/components/ForgotPassword/index.tsx:275
+msgid "上一步"
+msgstr "Previous step"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCPose/index.tsx:82
+msgid ""
+"上传\n"
+"[ 姿势 ]参考图片"
+msgstr ""
+"Upload\n"
+"[ Pose ] Reference image"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/StyleTransfer/index.tsx:81
+msgid ""
+"上传\n"
+"[ 风格 ]参考图片"
+msgstr "Upload\\n[ Style ] Reference Image Upload"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/components/LocalUploadCard/index.tsx:30
+#: src/pages/CreativeBoard/features/LeftSideBar/components/ImageUploadItem/index.tsx:43
+#: src/pages/CreativeBoard/features/LeftSideBar/components/ImageUploadItem/index.tsx:126
+#: src/pages/CreativeBoard/features/LeftSideBar/components/ImageUploadItem/index.tsx:217
+#: src/pages/CreativeBoard/features/LeftSideBar/components/ImageUploadItem/index.tsx:295
+#: src/pages/CreativeBoard/features/LeftSideBar/components/UploadImageFromAssertLib/index.tsx:256
+#: src/pages/CreativeBoard/features/LeftSideBar/features/SingleImageGeneration/index.tsx:85
+msgid "上传图片"
+msgstr "Upload image"
+
+#: src/components/Upload/index.tsx:210
+msgid "上传失败："
+msgstr "Upload Failed:"
+
+#: src/components/common/Settings/components/BasicInfo/index.tsx:350
+msgid "上传头像"
+msgstr "Upload profile picture"
+
+#: src/editor/index.ts:308
+msgid "上传成功"
+msgstr "Upload Successed"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/components/LocalUploadCard/index.tsx:30
+#: src/pages/CreativeBoard/features/LeftSideBar/components/ImageUploadItem/index.tsx:217
+#: src/pages/CreativeBoard/features/LeftSideBar/components/VideoUpload/index.tsx:121
+msgid "上传视频"
+msgstr "Upload video"
+
+#: src/pages/CreativeBoard/features/Agent/MessageList/AgentMessage.tsx:74
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/components/CreativeBoardHeaderDownload/index.tsx:189
+msgid "下载"
+msgstr "Download"
+
+#: src/components/common/Settings/components/BasicInfo/index.tsx:133
+msgid "不能为空，且仅支持数字、英文、下划线, 至多30个字符"
+msgstr "Cannot be empty, and only supports numbers, English letters, and underscores, maximum 30 characters"
+
+#: src/components/common/MembershipPayment/components/MembershipSubscription/index.tsx:71
+msgid "专属算力池&模型定制服务"
+msgstr "Exclusive computing power pool & model customization service"
+
+#: src/pages/CreativeBoard/components/TrendingKeywords/index.tsx:30
+msgid "世界观"
+msgstr "World setting"
+
+#: src/pages/CreativeBoard/features/Agent/MessageList/MessageEmpty.tsx:11
+msgid "世界观创作"
+msgstr ""
+
+#: src/pages/CreativeBoard/components/DialogueModeSelect/index.tsx:43
+msgid "世界观设计"
+msgstr ""
+
+#: src/components/common/AuthModal/components/ForgotPassword/index.tsx:290
+msgid "两次输入的密码不一致"
+msgstr "Passwords do not match"
+
+#: src/pages/Workspace/components/WorkspaceBoardsWaterfall/index.tsx:73
+msgid "个人项目"
+msgstr "Personal Projects"
+
+#: src/components/common/Settings/components/BasicInfo/index.tsx:409
+msgid "个性签名"
+msgstr "Bio"
+
+#: src/components/common/Settings/components/BasicInfo/index.tsx:278
+#: src/components/common/Settings/components/BasicInfo/index.tsx:304
+#: src/components/common/Settings/components/BasicInfo/index.tsx:433
+msgid "中华人民共和国"
+msgstr "People's Republic of China"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VoiceSynthesis/index.tsx:182
+msgid "中性"
+msgstr "Neutral"
+
+#: src/components/common/AuthModal/components/ForgotPassword/index.tsx:183
+msgid "为验证您账号的真实性，我们将核实您的用户账户已验证的手机号码"
+msgstr "To verify the authenticity of your account, we will confirm that your user account has a verified mobile phone number."
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/OCImageUploadGroup/index.tsx:14
+msgid "主体 {index}"
+msgstr "Subject {index}"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VoiceSynthesis/index.tsx:304
+msgid "主体声音配置"
+msgstr "Character Audio Configuration"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/ReferenceToImage/index.tsx:89
+msgid "主体玩法："
+msgstr "Subject Reference Mode"
+
+#: src/components/common/Settings/components/BasicInfo/index.tsx:357
+msgid "主页网址链接后缀"
+msgstr "Homepage URL suffix"
+
+#: src/pages/CreativeBoard/components/CreationInitModal/index.tsx:74
+msgid "也可以点击下方的左侧功能栏功能进行操作："
+msgstr ""
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/MessageList/index.tsx:47
+msgid "了你"
+msgstr "you"
+
+#: src/components/common/NotificationPopup/index.tsx:38
+#: src/pages/Layout/components/Notification/index.tsx:179
+msgid "互动"
+msgstr "Interaction"
+
+#: src/pages/PreloadingLayout/conponents/PreloadingFooter/index.tsx:33
+msgid "产品"
+msgstr ""
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/UserInfo/index.tsx:42
+msgid "享专属会员权益"
+msgstr "Enjoy exclusive member benefits"
+
+#: src/pages/PreloadingHomePage/index.tsx:59
+msgid "什么是"
+msgstr "What is"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/OCModal/index.tsx:100
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCPose/index.tsx:151
+msgid "仅可选择一种姿势"
+msgstr "Only one pose can be selected."
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCExpression/index.tsx:134
+msgid "仅可选择一种表情"
+msgstr "Only one expression can be selected"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCStyle/index.tsx:149
+msgid "仅可选择一种造型"
+msgstr "Only one style can be selected"
+
+#. placeholder {0}: _allowTypes.join(' , ')
+#: src/components/Upload/index.tsx:169
+msgid "仅支持上传 {0} 格式"
+msgstr "Only {0} format is supported for upload"
+
+#: src/pages/CreativeBoard/features/Agent/MessageBox/index.tsx:197
+msgid "今天有什么灵感？"
+msgstr "Ready to bring your ideas to life?"
+
+#: src/pages/PreloadingHomePage/index.tsx:68
+msgid "从创意模板库到爆款模因,让你的作品自带流量体质"
+msgstr "From creative templates to viral memes—give your works the power to trend"
+
+#: src/pages/PreloadingHomePage/index.tsx:92
+msgid "从草图到灵魂,让每个角色都活起来"
+msgstr "From sketch to soul—bring every character to life"
+
+#: src/pages/PreloadingLayout/conponents/PreloadingFooter/index.tsx:36
+msgid "价格"
+msgstr ""
+
+#: src/components/common/MembershipPayment/components/MembershipSubscription/index.tsx:64
+msgid "企业/机构客户、大型创作团队"
+msgstr "Corporate/Institutional Clients、Large Creative Teams"
+
+#: src/components/common/MembershipPayment/components/MembershipSubscription/index.tsx:79
+msgid "企业级AI咨询服务,助力品牌与创作落地"
+msgstr "Enterprise-level AI consulting services, empowering brands and creative execution"
+
+#: src/components/common/PersonalToolbar/index.tsx:61
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/UserInfo/index.tsx:40
+msgid "会员升级"
+msgstr "Membership Upgrade"
+
+#: src/components/common/MembershipPayment/components/MembershipSubscription/index.tsx:26
+msgid "会员订阅"
+msgstr "Membership Subscription"
+
+#: src/pages/CoApplyPage/utils.ts:41
+msgid "作品不存在"
+msgstr "Work does not exist"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/Publish/index.tsx:400
+msgid "作品介绍"
+msgstr "Work Introduction"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/Publish/index.tsx:404
+msgid "作品介绍："
+msgstr "Work Introduction:"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/components/PublishCoverPosterAndVideoContentSelectModal/index.tsx:132
+msgid "作品发布"
+msgstr "Work Publish"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/Publish/index.tsx:379
+msgid "作品名："
+msgstr "Title:"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/Publish/index.tsx:438
+msgid "作品标签"
+msgstr "Work Tags"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/SameStyleInfo/index.tsx:87
+msgid "作品详情"
+msgstr "Work Details"
+
+#: src/pages/PreloadingHomePage/index.tsx:93
+msgid ""
+"你的OC值得拥有独一无二的生命力! \n"
+"整合面部表情、姿势、发型、服饰， 从性格设定\n"
+"、穿搭到动态，高自由度设计让你掌控每个细节。\n"
+"不只是画出一个角色，更是创造一个有温度的灵魂。\n"
+"准备好迎接你的\"本命角色\"了吗?"
+msgstr ""
+"Your OC deserves a unique life! \n"
+"Integrate facial expressions, poses, hairstyles, and outfits, from personality settings\n"
+", outfits to movements—high-freedom design lets you control every detail.\n"
+"It's not just about drawing a character, but creating a soul with warmth.\n"
+"Are you ready to meet your \"ultimate character\"?"
+
+#: src/components/GoogleLogin/custom-google-login.tsx:52
+#: src/components/GoogleLogin/login_one_tap.tsx:120
+msgid "使用Google登录"
+msgstr "Sign in with Google"
+
+#: src/components/common/AuthModal/index.tsx:79
+msgid "使用邮箱继续"
+msgstr "Continue with email"
+
+#: src/components/common/Settings/components/ContactInfo/index.tsx:293
+#: src/components/common/Settings/index.tsx:88
+#: src/components/common/Settings/index.tsx:175
+msgid "保存"
+msgstr "Save"
+
+#: src/components/common/Settings/components/ContactInfo/index.tsx:81
+msgid "保存失败:"
+msgstr "Failed to save:"
+
+#: src/components/common/Settings/components/ContactInfo/index.tsx:76
+msgid "保存失败: "
+msgstr "Failed to save: "
+
+#: src/components/common/Settings/components/BasicInfo/index.tsx:172
+msgid "保存成功"
+msgstr "Saved successfully"
+
+#: src/components/common/Settings/components/ContactInfo/index.tsx:71
+msgid "保存成功:"
+msgstr "Saved successfully:"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/index.tsx:206
+msgid "修改作品名称失败"
+msgstr "Failed to modify the work title"
+
+#: src/components/common/VideoModal/index.tsx:282
+msgid "做同款"
+msgstr "Start with the same style"
+
+#: src/components/common/PersonalToolbar/index.tsx:78
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/UserInfo/index.tsx:53
+msgid "储存空间："
+msgstr "Storage space:"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/components/CreativeBoardHeaderDownload/index.tsx:190
+msgid "全局下载"
+msgstr "Global Download"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/MessageList/index.tsx:146
+#: src/pages/CreativeBoard/features/LeftSideBar/components/OCModal/index.tsx:55
+#: src/pages/CreativeBoard/features/LeftSideBar/components/UploadImageFromAssertLib/index.tsx:37
+#: src/pages/InspirationCollection/components/WorksList/index.tsx:42
+msgid "全部"
+msgstr "All"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/MessageList/index.tsx:206
+msgid "全部消息"
+msgstr "All Messages"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/InviteUser/index.tsx:141
+msgid "共创者"
+msgstr "Co-creator"
+
+#: src/pages/PreloadingLayout/conponents/PreloadingFooter/index.tsx:47
+msgid "关于"
+msgstr "About "
+
+#: src/pages/Author/components/CreatorWorks.tsx:103
+#: src/pages/Blog/components/BloggerInfo/index.tsx:78
+#: src/pages/Blog/components/FanList/index.tsx:82
+msgid "关注"
+msgstr "Follow"
+
+#: src/pages/Blog/components/FollowList/index.tsx:58
+msgid "关注列表"
+msgstr "Follow List"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCDesign/index.tsx:142
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCExpression/index.tsx:137
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCPose/index.tsx:155
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCStyle/index.tsx:152
+#: src/pages/CreativeBoard/features/LeftSideBar/features/ReferenceToImage/index.tsx:139
+#: src/pages/CreativeBoard/features/LeftSideBar/features/SingleImageGeneration/index.tsx:149
+#: src/pages/CreativeBoard/features/LeftSideBar/features/StyleTransfer/index.tsx:121
+#: src/pages/CreativeBoard/features/LeftSideBar/features/TextToImage/index.tsx:86
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VideoEffects/index.tsx:243
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VideoForReference/index.tsx:146
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VideoGeneration/index.tsx:274
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VoiceSynthesis/index.tsx:326
+msgid "内容由AI生成，与平台立场无关，禁止利用功能从事违法活动"
+msgstr "Content generated by AI does not reflect the platform's stance. Prohibited from using this feature for illegal activities."
+
+#: src/components/common/InternalTestCode/index.tsx:64
+msgid "内测码填写"
+msgstr "Fill in Beta Code"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCStyle/index.tsx:45
+msgid "最多上传3个参考造型"
+msgstr "Upload up to 3 reference styles"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/StoryboardDecomposition/index.tsx:21
+msgid "分镜图片"
+msgstr "Storyboard Images"
+
+#: src/pages/CreativeBoard/components/CreationInitModal/index.tsx:44
+#: src/pages/CreativeBoard/features/LeftSideBar/components/LeftSideBarComponents/index.tsx:106
+#: src/pages/CreativeBoard/features/LeftSideBar/features/StoryboardDecomposition/index.tsx:37
+#: src/pages/Home/components/CreateNewCreativeBoard/index.tsx:73
+msgid "分镜拆解"
+msgstr "Storyboard Breakdown"
+
+#: src/pages/CreativeBoard/components/DialogueModeSelect/index.tsx:35
+#: src/pages/CreativeBoard/features/Agent/MessageList/MessageEmpty.tsx:15
+msgid "分镜策划"
+msgstr ""
+
+#: src/utils/hooks.ts:221
+msgid "刚刚"
+msgstr "Just Now"
+
+#: src/pages/InspirationCollection/components/WorksListCard/index.tsx:76
+msgid "创作同款"
+msgstr "Start with the same"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/Publish/index.tsx:426
+msgid "创作板类型"
+msgstr "Creative board type"
+
+#: src/pages/CreativeBoard/components/DialogueModeSelect/index.tsx:47
+#: src/pages/CreativeBoard/features/Agent/MessageList/MessageEmpty.tsx:10
+msgid "创作灵感"
+msgstr ""
+
+#: src/pages/PreloadingLayout/conponents/PreloadingFooter/index.tsx:37
+msgid "创作者"
+msgstr ""
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/Publish/index.tsx:444
+#: src/pages/InspirationCollection/components/WorksListCard/index.tsx:132
+msgid "创作者："
+msgstr "Creator: "
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/InviteUser/index.tsx:195
+msgid "创作者列表"
+msgstr "Creator List"
+
+#: src/components/common/CreateModal/index.tsx:30
+msgid "创作项目"
+msgstr "Creative Project"
+
+#: src/editor/index.ts:1977
+msgid "创建 block 失败，请重试"
+msgstr "Failed to create block. Please try again."
+
+#: src/components/common/CreateModal/index.tsx:25
+msgid "创建作品"
+msgstr "Create a work"
+
+#: src/editor/index.ts:608
+#: src/editor/index.ts:706
+msgid "创建图片块失败"
+msgstr "Failed to create image block. Please try again."
+
+#: src/components/common/Settings/index.tsx:114
+msgid "创建时间"
+msgstr "Creation Date"
+
+#: src/editor/index.ts:647
+msgid "创建视频块失败"
+msgstr "Failed to create video block. Please try again."
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/LeftSideQuillEditor/index.tsx:55
+#: src/pages/CreativeBoard/features/LeftSideBar/features/SingleImageGeneration/index.tsx:103
+msgid "创意描述"
+msgstr "Creative Description"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/SingleImageGeneration/index.tsx:114
+msgid "创意描述 "
+msgstr "Creative Description"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/ReferenceToImage/index.tsx:121
+msgid "创意玩法："
+msgstr "Creative Mode: "
+
+#: src/pages/PreloadingHomePage/index.tsx:67
+msgid "创意视频加速器"
+msgstr "Short Video Booster"
+
+#: src/pages/Blog/index.tsx:239
+msgid "创链"
+msgstr "Creation Chain"
+
+#: src/pages/CreativeBoard/features/Agent/MessageHeader/MessageHistory/index.tsx:182
+msgid "删除后，该对话将不可恢复。确认删除吗？"
+msgstr "This conversation will be permanently deleted. Continue?"
+
+#: src/pages/CreativeBoard/features/Agent/utils.ts:777
+msgid "删除失败"
+msgstr ""
+
+#: src/pages/Workspace/content.tsx:50
+msgid "删除失败，请稍后重试"
+msgstr "Deletion failed. Please try again later."
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/TrialSample/index.tsx:213
+msgid "刷新"
+msgstr "Refresh"
+
+#: src/pages/CreativeBoard/features/Agent/MessageList/MessageEmpty.tsx:14
+msgid "剧本创作"
+msgstr ""
+
+#: src/pages/CreativeBoard/components/DialogueModeSelect/index.tsx:39
+msgid "剧本大师"
+msgstr ""
+
+#: src/pages/PreloadingLayout/conponents/PreloadingFooter/index.tsx:41
+msgid "功能特性"
+msgstr ""
+
+#: src/components/common/InternalTestCode/index.tsx:114
+msgid "加入等待名单"
+msgstr "Join the waitlist"
+
+#: src/components/common/NotificationPopup/components/CoCreateInvite/index.tsx:91
+#: src/components/common/NotificationPopup/components/CreativeBoard/index.tsx:43
+#: src/components/common/NotificationPopup/components/MessageBoard/index.tsx:45
+#: src/components/common/NotificationPopup/components/OfficialNotice/index.tsx:125
+#: src/components/common/NotificationPopup/components/OfficialNotice/index.tsx:145
+#: src/components/common/NotificationPopup/components/WorkNotification/index.tsx:44
+#: src/components/common/VideoModal/index.tsx:173
+#: src/components/HorizontalScroll/index.tsx:107
+#: src/pages/Author/components/ActivityList.tsx:43
+#: src/pages/Author/components/CreatorWorks.tsx:73
+#: src/pages/Blog/components/BloggerInfo/index.tsx:31
+#: src/pages/Blog/components/BloggerMoment/index.tsx:33
+#: src/pages/Blog/components/FanList/index.tsx:60
+#: src/pages/Blog/components/FollowList/index.tsx:63
+#: src/pages/Blog/components/MessageBoard/index.tsx:122
+#: src/pages/Blog/components/WorksList/index.tsx:136
+#: src/pages/Blog/index.tsx:170
+#: src/pages/Blog/index.tsx:208
+msgid "加载中..."
+msgstr "Loading..."
+
+#: src/components/common/VideoModal/index.tsx:175
+#: src/pages/Blog/index.tsx:172
+msgid "加载失败"
+msgstr "Loading failed"
+
+#: src/pages/Blog/components/WorksList/index.tsx:138
+msgid "加载失败:"
+msgstr "Failed to load: "
+
+#. placeholder {0}: error.message
+#. placeholder {0}: error?.message
+#. placeholder {0}: error?.message || '未知错误'
+#: src/components/common/NotificationPopup/components/CoCreateInvite/index.tsx:93
+#: src/components/common/NotificationPopup/components/CreativeBoard/index.tsx:45
+#: src/components/common/NotificationPopup/components/MessageBoard/index.tsx:47
+#: src/components/common/NotificationPopup/components/OfficialNotice/index.tsx:127
+#: src/components/common/NotificationPopup/components/WorkNotification/index.tsx:46
+#: src/pages/Author/components/ActivityList.tsx:45
+#: src/pages/Author/components/CreatorWorks.tsx:75
+#: src/pages/Blog/components/BloggerInfo/index.tsx:33
+#: src/pages/Blog/components/BloggerMoment/index.tsx:35
+#: src/pages/Blog/components/FanList/index.tsx:64
+#: src/pages/Blog/components/FollowList/index.tsx:65
+#: src/pages/Blog/components/MessageBoard/index.tsx:124
+msgid "加载失败: {0}"
+msgstr "Failed to load: {0}"
+
+#: src/pages/Blog/components/FanList/index.tsx:138
+#: src/pages/Blog/components/FollowList/index.tsx:144
+msgid "加载更多"
+msgstr "Load More"
+
+#: src/pages/InspirationCollection/components/WorksListCard/index.tsx:133
+msgid "匿名用户"
+msgstr "Anonymous"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/LeftSideBarComponents/index.tsx:108
+#: src/pages/CreativeBoard/features/LeftSideBar/features/SingleImageGeneration/index.tsx:83
+msgid "单图成片"
+msgstr "Story from Single Image"
+
+#: src/pages/CreativeBoard/features/Agent/MessageHeader/MessageHistory/index.tsx:147
+msgid "历史记录"
+msgstr "History Log"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VoiceSynthesis/index.tsx:180
+msgid "厌恶"
+msgstr "Disgust"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCExpression/index.tsx:67
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCStyle/index.tsx:82
+msgid "参考主体上传"
+msgstr "Upload the reference subject"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VideoForReference/index.tsx:124
+msgid "参考图片上传"
+msgstr "Reference Image Upload"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCPose/index.tsx:78
+msgid "参考姿势上传"
+msgstr "Upload the reference pose"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/LeftSideBarComponents/index.tsx:102
+#: src/pages/CreativeBoard/features/LeftSideBar/features/ReferenceToImage/index.tsx:61
+#: src/pages/CreativeBoard/features/LeftSideBar/features/ReferenceToImage/index.tsx:63
+#: src/pages/Home/components/CreateNewCreativeBoard/index.tsx:66
+msgid "参考生图"
+msgstr "AI-Generated Image Reference"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/LeftSideBarComponents/index.tsx:109
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VideoForReference/index.tsx:122
+msgid "参考生视频"
+msgstr "Reference-based Video Generation"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCExpression/index.tsx:75
+msgid "参考表情上传"
+msgstr "Reference Expression Upload"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/ImageUploadItem/index.tsx:487
+#: src/pages/CreativeBoard/features/LeftSideBar/components/ImageUploadItem/index.tsx:488
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCStyle/index.tsx:95
+msgid "参考造型上传"
+msgstr "Reference Style Upload"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/InviteUser/index.tsx:58
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/Publish/index.tsx:340
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/Publish/index.tsx:486
+msgid "发布"
+msgstr "Publish"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/Publish/index.tsx:371
+msgid "发布成功"
+msgstr "Published successfully"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/SameStyleInfo/index.tsx:95
+msgid "发布时间"
+msgstr "Publish Date"
+
+#: src/components/common/VideoModal/index.tsx:241
+msgid "发布时间："
+msgstr "Publish Date："
+
+#: src/components/QuillEditor/index.tsx:434
+msgid "发送"
+msgstr "Send"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/InviteUser/index.tsx:101
+msgid "发送邀请"
+msgstr "Send an invitation"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/InviteUser/index.tsx:93
+msgid "发送邀请成功"
+msgstr "Invitation sent successfully"
+
+#: src/components/common/Settings/components/ContactInfo/index.tsx:290
+#: src/components/common/Settings/index.tsx:166
+#: src/components/Modal/index.tsx:108
+#: src/pages/CreativeBoard/features/Agent/MessageHeader/MessageHistory/index.tsx:180
+msgid "取消"
+msgstr "Cancel"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/VoiceSynthesisModal/index.tsx:145
+msgid "口音"
+msgstr "accent"
+
+#: src/pages/CreativeBoard/components/CreationInitModal/index.tsx:63
+msgid "可以先点击右下角Agent进行自由创作"
+msgstr ""
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VoiceSynthesis/index.tsx:301
+msgid "台词输入"
+msgstr "Dialogue Input"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VoiceSynthesis/index.tsx:232
+msgid "合成音频的语调，其中 0 为原音色"
+msgstr "Pitch of the synthesized audio, where 0 is the original tone."
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VoiceSynthesis/index.tsx:209
+msgid "合成音频的语速，取值越大，语速越快"
+msgstr "Speech rate of the synthesized audio. The larger the value, the faster the speech rate."
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VoiceSynthesis/index.tsx:220
+msgid "合成音频的音量，取值越大，音量越高"
+msgstr "Volume of the synthesized audio. The larger the value, the higher the volume."
+
+#: src/components/common/MembershipPayment/components/MembershipSubscription/index.tsx:75
+msgid "商业版权授权&IP定制合作"
+msgstr "Commercial Copyright Licensing & IP Customization Partnerships"
+
+#: src/pages/Workspace/components/WorkspaceBoardsWaterfall/index.tsx:73
+msgid "团队项目"
+msgstr "Team Project"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/components/CreativeBoardHeaderDownload/index.tsx:105
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/components/PublishCoverPosterAndVideoContentSelectModal/index.tsx:86
+msgid "图片"
+msgstr "Image"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCPeripheral/index.tsx:43
+#: src/pages/CreativeBoard/features/LeftSideBar/features/StyleTransfer/index.tsx:69
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VideoEffects/index.tsx:169
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VideoGeneration/index.tsx:169
+msgid "图片上传"
+msgstr "Image Upload"
+
+#. placeholder {0}: checkConfig.minSide
+#: src/components/Upload/index.tsx:110
+msgid "图片宽高必须大于 {0}px"
+msgstr ""
+
+#: src/components/Upload/index.tsx:129
+msgid "图片宽高比例超出范围 ({min} ~ {max})"
+msgstr ""
+
+#. placeholder {0}: checkConfig.maxPixel
+#. placeholder {1}: checkConfig.maxPixel
+#: src/components/Upload/index.tsx:121
+msgid "图片总像素不能超过 {0}x{1} px"
+msgstr ""
+
+#: src/pages/CreativeBoard/components/DialogueModeSelect/index.tsx:23
+#: src/pages/CreativeBoard/features/Agent/MessageList/MessageEmpty.tsx:16
+#: src/pages/CreativeBoard/features/LeftSideBar/components/LeftSideBarComponents/index.tsx:230
+msgid "图片生成"
+msgstr "Image Generation"
+
+#: src/components/Upload/index.tsx:134
+msgid "图片解析失败"
+msgstr ""
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/UploadImageFromAssertLib/index.tsx:187
+msgid "图片选择"
+msgstr "Image Selection"
+
+#: src/pages/PreloadingHomePage/index.tsx:81
+msgid ""
+"在无限画布上,灵感不再受限于格式框架——\n"
+"想到哪画到哪，思绪自由流淌。\n"
+"风格、光影、构图随心调配，灵感瞬间视觉化。\n"
+"你的画布, 你的宇宙。"
+msgstr ""
+"On an infinite creative board, inspiration is no longer confined by formats\n"
+"Draw wherever your mind takes you, let your thoughts flow freely.\n"
+"Style, lighting, and composition at your fingertips—visualize your ideas instantly.\n"
+"Your creative board, your universe."
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/StoryboardDecomposition/index.tsx:22
+msgid "场景描述"
+msgstr "Scene Description"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/ReferenceToImage/index.tsx:105
+msgid "场景玩法："
+msgstr "Scene Mode:"
+
+#: src/components/common/Settings/components/BasicInfo/index.tsx:449
+msgid "城市"
+msgstr "City"
+
+#: src/components/common/Settings/index.tsx:37
+msgid "基础信息"
+msgstr "Basic Information"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/StoryboardDecomposition/index.tsx:24
+msgid "声音主体"
+msgstr "Sound Body"
+
+#: src/pages/Home/components/CreateNewCreativeBoard/index.tsx:59
+msgid "声音合成"
+msgstr "Voice Generation"
+
+#: src/pages/CreativeBoard/components/CreationInitModal/index.tsx:49
+#: src/pages/CreativeBoard/features/LeftSideBar/components/LeftSideBarComponents/index.tsx:107
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VoiceSynthesis/index.tsx:290
+msgid "声音生成"
+msgstr "Voice Generation"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/StoryboardDecomposition/index.tsx:29
+msgid "备注"
+msgstr "Note"
+
+#: src/pages/CreativeBoard/features/Agent/MessageList/AgentMessage.tsx:63
+#: src/pages/CreativeBoard/features/Agent/MessageList/UserMessage.tsx:51
+msgid "复制"
+msgstr "Copy"
+
+#: src/pages/CreativeBoard/features/Agent/MessageList/AgentMessage.tsx:59
+#: src/pages/CreativeBoard/features/Agent/MessageList/UserMessage.tsx:47
+msgid "复制成功"
+msgstr "Copied successfully"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/ShareButtonLink/index.tsx:44
+msgid "复制成功，快去分享给你的好友吧"
+msgstr "Copied successfully! Share it with your friends now!"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/InviteUser/index.tsx:123
+msgid "复制链接"
+msgstr "Copy Link"
+
+#: src/components/common/PersonalToolbar/index.tsx:43
+#: src/components/common/Settings/components/BasicInfo/index.tsx:328
+msgid "头像"
+msgstr "Avatar"
+
+#: src/components/common/InternalTestCode/index.tsx:89
+msgid "如有内测码，请在下方输入"
+msgstr "Have a beta code? Enter it below"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/LeftSideBarComponents/index.tsx:97
+#: src/pages/CreativeBoard/features/LeftSideBar/components/OCModal/index.tsx:99
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCPose/index.tsx:66
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCPose/index.tsx:150
+msgid "姿势参考"
+msgstr "Pose Reference"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCPose/index.tsx:119
+msgid "姿势参考:"
+msgstr "Pose Reference:"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/UploadImageFromAssertLib/index.tsx:168
+msgid "官方资源库"
+msgstr "Official Library"
+
+#: src/components/common/NotificationPopup/index.tsx:44
+#: src/pages/Layout/components/Notification/index.tsx:188
+msgid "官方通知"
+msgstr "Official Notice"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VoiceSynthesis/index.tsx:179
+msgid "害怕"
+msgstr "Fear"
+
+#: src/components/common/AuthModal/components/AccountLogin/index.tsx:100
+msgid "密码"
+msgstr "Password"
+
+#: src/components/common/AuthModal/components/ForgotPassword/index.tsx:294
+msgid "密码不能全是数字或全是字母"
+msgstr "Passwords cannot consist entirely of numbers or letters"
+
+#: src/components/common/AuthModal/components/ForgotPassword/index.tsx:286
+msgid "密码长度不能少于8个字符"
+msgstr "Password length must be at least 8 characters"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/StoryboardDecomposition/index.tsx:25
+msgid "对白 or 独白 or 旁白"
+msgstr "Dialogue or Monologue or Narration"
+
+#: src/pages/CreativeBoard/components/DialogueModeSelect/index.tsx:51
+msgid "对话模式"
+msgstr ""
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/Publish/index.tsx:155
+msgid "封面海报"
+msgstr "Cover Poster"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/Publish/index.tsx:374
+msgid "将作品发布到灵感集，让更多人看到吧！"
+msgstr "Share your work in the Inspiration Collection so more people can see it!"
+
+#: src/pages/Home/components/CreateNewCreativeBoard/index.tsx:67
+msgid "将灵感转化为现实"
+msgstr "Turn inspiration into reality"
+
+#: src/components/common/Settings/components/ContactInfo/index.tsx:210
+msgid "小红书"
+msgstr "Red Note"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VideoGeneration/index.tsx:215
+msgid "尾帧<0>（可选）</0>"
+msgstr "End Frame<0>(Optional)</0>"
+
+#. placeholder {0}: item.replyCount
+#: src/pages/Blog/components/MessageBoard/index.tsx:152
+msgid "展开{0}条回复"
+msgstr "Expand {0} replies"
+
+#: src/pages/Layout/components/LayoutHeader/index.tsx:26
+msgid "工作台"
+msgstr "Workspace"
+
+#: src/pages/PreloadingLayout/conponents/PreloadingFooter/index.tsx:42
+msgid "工具集成"
+msgstr ""
+
+#: src/pages/Blog/components/FollowList/index.tsx:84
+msgid "已关注"
+msgstr "Followed"
+
+#: src/pages/Workspace/components/MyBoards/index.tsx:24
+msgid "已发布"
+msgstr "Published"
+
+#: src/components/common/AuthModal/components/Verification/index.tsx:32
+#: src/components/common/AuthModal/index.tsx:68
+msgid "已发送"
+msgstr "Sent"
+
+#: src/components/common/AuthModal/components/Verification/index.tsx:68
+msgid "已发送验证码，请查看您的收件箱："
+msgstr "Verification code sent. Please check your inbox:"
+
+#. placeholder {0}: value.length
+#: src/components/VideoImageScrollList/index.tsx:123
+msgid "已选中 {0} 个项目"
+msgstr "{0} items selected"
+
+#: src/pages/PreloadingHomePage/index.tsx:126
+msgid "带你的创意登上舞台"
+msgstr "Bring your creativity to the stage"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/VoiceSynthesisModal/index.tsx:169
+msgid "年龄"
+msgstr "Age"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/SingleImageGeneration/index.tsx:87
+msgid "建议使用【1:1，3:4，4:3，16:9，9:16，21:9】 比例的图片作为参考帧，如若不是这些比例的话，自动匹配会通过裁切来适配最接近的比例。）"
+msgstr "For best results, use images with aspect ratios of [1:1, 3:4, 4:3, 16:9, 9:16, 21:9] as reference frames. Images with other ratios will be automatically cropped to fit the nearest supported ratio."
+
+#: src/components/common/Settings/components/ContactInfo/index.tsx:148
+#: src/components/common/Settings/components/ContactInfo/index.tsx:178
+msgid "建议使用一张不低于98 x 98像素而且大小不超过10MB的图片。"
+msgstr "It is recommended to use an image no smaller than 98 x 98 pixels and no larger than 10MB."
+
+#: src/components/common/Settings/components/BasicInfo/index.tsx:334
+msgid "建议使用一张不低于98X98像素而且大小不超过10MB的图片。文件格式为png或者GIF(不带动画)。请确保你的照片符合"
+msgstr "It is recommended to use an image no smaller than 98 x 98 pixels and no larger than 10MB. File format should be PNG or GIF (non-animated). Please ensure your photo complies with"
+
+#: src/components/common/CreateModal/index.tsx:26
+msgid "开启你的电影创作之旅"
+msgstr "Embark on your filmmaking journey"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/index.tsx:127
+msgid "开始创作"
+msgstr "Begin creating"
+
+#: src/components/common/PersonalToolbar/index.tsx:61
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/UserInfo/index.tsx:40
+msgid "开通会员"
+msgstr "Sign up for membership"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/UploadImageFromAssertLib/index.tsx:123
+msgid "当前创作板"
+msgstr "Current Creative Board"
+
+#: src/editor/index.ts:791
+msgid "当前图片没有 prompt"
+msgstr "This image is missing a prompt"
+
+#: src/components/common/Settings/components/ContactInfo/index.tsx:144
+msgid "微信"
+msgstr "WeChat"
+
+#: src/components/common/Settings/components/ContactInfo/index.tsx:174
+msgid "微信视频号"
+msgstr "WeChat Video Channel"
+
+#: src/components/common/AuthModal/components/AccountLogin/index.tsx:147
+msgid "忘记密码?"
+msgstr "Forgot your password?"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/VoiceSynthesisModal/index.tsx:157
+msgid "性别"
+msgstr "Gender"
+
+#: src/components/common/PersonalToolbar/index.tsx:86
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/UserInfo/index.tsx:59
+msgid "总容量："
+msgstr "Total capacity:"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/InviteUser/index.tsx:144
+msgid "总导演"
+msgstr "Executive Director"
+
+#: src/pages/CoApplyPage/NoCreationBoardAuth/index.tsx:43
+msgid "您已经登录，账号为"
+msgstr "You are logged in as"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VoiceSynthesis/index.tsx:177
+msgid "悲伤"
+msgstr "Sadness"
+
+#: src/pages/PreloadingHomePage/index.tsx:79
+msgid "情绪板创作"
+msgstr "Mood Board Creator"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VoiceSynthesis/index.tsx:189
+msgid "情绪选择"
+msgstr "Mood Selection"
+
+#: src/pages/PreloadingHomePage/index.tsx:102
+msgid "情节生成器"
+msgstr "Plot Generator"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VoiceSynthesis/index.tsx:181
+msgid "惊讶"
+msgstr "Surprised"
+
+#: src/pages/PreloadingHomePage/index.tsx:69
+msgid ""
+"想做出让人眼前一亮的短视频? \n"
+"这里集结了全网最热的创意模板库，让当下最火的梗\n"
+"文化，成为你的爆款加速器。\n"
+"不管是投稿还是冲热门,这就是你的流量密码。"
+msgstr "Want to create eye-catching short videos? nHere we've gathered the hottest creative template library from across the web, turning the most viral memenculture into your viral content accelerator.nWhether you're submitting content or chasing trends, this is your traffic code."
+
+#: src/pages/PreloadingHomePage/index.tsx:104
+msgid ""
+"想写ABO设定却不知道怎么编? \n"
+"想写克苏鲁设定但总差点火候? \n"
+"AI剧本生成器+对白生成器双剑合璧,从西部世界、犯\n"
+"罪心理到重生——\n"
+"所有你爱的题材，一键生成完整故事线!脑洞有多大,\n"
+"剧本就有多野!"
+msgstr "Want to write Lovecraftian settings but always missing that spark? nAI Script Generator + Dialogue Generator work hand in hand, from Westworld, criminalnpsychology to rebirth—nAll the genres you love, generate complete storylines with one click! Your imagination knows no bounds,nyour scripts know no limits!"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VoiceSynthesis/index.tsx:178
+msgid "愤怒"
+msgstr "Anger"
+
+#: src/pages/CreativeBoard/features/Agent/MessageList/MessageEmpty.tsx:23
+msgid "我可以和你一起创作"
+msgstr ""
+
+#: src/components/common/AuthModal/components/AccountLogin/index.tsx:126
+msgid "我已阅读并同意"
+msgstr "I have read and agree"
+
+#: src/components/common/AuthModal/index.tsx:88
+msgid "我已阅读并同意 <0>YidooO用户协议</0>、 <1>YidooO隐私政策</1>、 <2>YidooO社区自律公约</2>、 <3>YidooO AI功能使用须知</3>"
+msgstr "I have read and agree to the <0>YidooO User Agreement</0>, <1>YidooO Privacy Policy</1>, <2>YidooO Community Self-Regulation Agreement</2>, and <3>YidooO AI Feature Usage Guidelines</3>"
+
+#: src/pages/Workspace/content.tsx:71
+msgid "我的创作板"
+msgstr "My Creative Board"
+
+#: src/components/common/Settings/components/BasicInfo/index.tsx:425
+msgid "所在地区"
+msgstr "Region"
+
+#: src/components/common/Settings/components/ContactInfo/index.tsx:226
+msgid "抖音"
+msgstr "TikTok"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/StoryboardDecomposition/index.tsx:54
+msgid "拆解维度"
+msgstr "Decomposition Dimensions"
+
+#: src/components/common/MembershipPayment/components/MembershipSubscription/index.tsx:42
+#: src/pages/PreloadingHomePage/components/SubscriptionAndPricing/index.tsx:49
+msgid "按年"
+msgstr "annually"
+
+#: src/pages/PreloadingHomePage/components/SubscriptionAndPricing/index.tsx:69
+msgid "按年计费"
+msgstr "Annual Payment"
+
+#: src/components/common/MembershipPayment/components/MembershipSubscription/index.tsx:35
+#: src/pages/PreloadingHomePage/components/SubscriptionAndPricing/index.tsx:38
+msgid "按月"
+msgstr "monthly"
+
+#: src/pages/PreloadingHomePage/components/SubscriptionAndPricing/index.tsx:69
+msgid "按月计费"
+msgstr "Monthly Payment"
+
+#: src/components/common/MembershipPayment/components/MembershipSubscription/index.tsx:55
+msgid "按需报价"
+msgstr "Custom pricing"
+
+#: src/components/common/InternalTestCode/index.tsx:117
+msgid "排队中"
+msgstr "Queued"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VoiceSynthesis/index.tsx:191
+msgid "控制合成语音的情绪"
+msgstr "Control the emotion of the synthesized voice"
+
+#: src/components/common/Settings/index.tsx:68
+msgid "提交失败"
+msgstr "Submission error"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/SearchNode/index.tsx:64
+msgid "搜索你想在作品中找的东西..."
+msgstr "Search for what you want to find..."
+
+#: src/pages/CreativeBoard/features/Agent/MessageHeader/MessageHistory/index.tsx:119
+msgid "搜索历史记录"
+msgstr "Search History"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/VideoEffectsTrialSampleModal/index.tsx:99
+msgid "搜索模板，例如：游乐园"
+msgstr "Search templates, e.g., amusement park"
+
+#: src/components/common/InternalTestCode/index.tsx:46
+#: src/pages/Layout/components/Notification/index.tsx:170
+msgid "操作失败，请稍后重试"
+msgstr "Operation failed. Please try again later."
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/ImageUploadItem/index.tsx:296
+msgid ""
+"支持JPG / PNG格式\n"
+"图片大小不超过 10MB"
+msgstr "Supports JPG / PNG formats. Image size should not exceed 10 MB."
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/components/LocalUploadCard/index.tsx:34
+msgid "支持JPG / PNG格式 图片大小不超过 10MB"
+msgstr "Supports JPG / PNG formats. Image size should not exceed 10 MB."
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/ImageUploadItem/index.tsx:349
+#: src/pages/CreativeBoard/features/LeftSideBar/components/ImageUploadItem/index.tsx:595
+#: src/pages/CreativeBoard/features/LeftSideBar/components/ImageUploadItem/index.tsx:677
+msgid ""
+"支持JPG / PNG格式，图片\n"
+"大小不超过 10MB"
+msgstr "Supports JPG / PNG formats, imagensize should not exceed 10 MB"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/ImageUploadItem/index.tsx:128
+#: src/pages/CreativeBoard/features/LeftSideBar/components/ImageUploadItem/index.tsx:220
+#: src/pages/CreativeBoard/features/LeftSideBar/components/UploadImageFromAssertLib/index.tsx:257
+msgid "支持JPG / PNG格式，图片大小不超过 10MB"
+msgstr "Supports JPG / PNG formats. Image size should not exceed 10 MB."
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/components/LocalUploadCard/index.tsx:33
+#: src/pages/CreativeBoard/features/LeftSideBar/components/ImageUploadItem/index.tsx:221
+msgid "支持MP4格式，视频大小不超过 200 MB"
+msgstr "Supports MP4 format. Video size must not exceed 200 MB"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VideoEffects/index.tsx:134
+msgid "支持两张图"
+msgstr "Supports two images"
+
+#: src/pages/Workspace/content.tsx:76
+msgid "收藏创作板"
+msgstr "Add to Favorites"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/VoiceSynthesisModal/index.tsx:301
+msgid "收藏音色"
+msgstr "Save voice"
+
+#: src/pages/CreativeBoard/features/Agent/MessageHeader/index.tsx:156
+msgid "收起"
+msgstr "Collapse"
+
+#: src/pages/Blog/components/MessageBoard/index.tsx:183
+msgid "收起回复"
+msgstr "Collapse reply"
+
+#: src/pages/PreloadingHomePage/index.tsx:103
+msgid "故事卡壳？让AI当你的脑洞搭档"
+msgstr "Story stuck? Let AI be your creative partner"
+
+#: src/pages/PreloadingLayout/conponents/PreloadingFooter/index.tsx:35
+msgid "教程"
+msgstr ""
+
+#: src/components/common/CreateModal/index.tsx:31
+msgid "整理你的素材与灵感"
+msgstr "Organize your materials and inspiration"
+
+#: src/editor/index.ts:312
+msgid "文件上传失败"
+msgstr "File upload failed. Please try again."
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/Publish/index.tsx:460
+msgid "文件大小："
+msgstr "File size:"
+
+#: src/components/Upload/index.tsx:164
+msgid "文件大小不能超过 {currentMaxSize}MB"
+msgstr ""
+
+#: src/components/common/PersonalToolbar/index.tsx:86
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/UserInfo/index.tsx:59
+msgid "文件数："
+msgstr "Number of files:"
+
+#: src/pages/CreativeBoard/components/CreationInitModal/index.tsx:34
+#: src/pages/CreativeBoard/features/LeftSideBar/components/LeftSideBarComponents/index.tsx:101
+#: src/pages/CreativeBoard/features/LeftSideBar/features/TextToImage/index.tsx:60
+msgid "文生图"
+msgstr "T2I generation"
+
+#: src/components/common/AuthModal/components/ForgotPassword/index.tsx:234
+msgid "新密码至少8个字符，不能全是字母或数字"
+msgstr "The new password must be at least 8 characters long and cannot consist solely of letters or numbers"
+
+#: src/components/common/CreateModal/index.tsx:21
+msgid "新建"
+msgstr "Create New"
+
+#: src/pages/Workspace/components/WorkspaceBoardsWaterfall/index.tsx:26
+msgid "新建创作板"
+msgstr "Create New Creative Board"
+
+#: src/pages/CreativeBoard/features/Agent/MessageHeader/index.tsx:33
+msgid "新建对话"
+msgstr "New Conversation"
+
+#: src/components/common/AuthModal/components/ForgotPassword/index.tsx:238
+msgid "新的登录密码"
+msgstr "New login password"
+
+#: src/pages/CoApplyPage/NoCreationBoardAuth/index.tsx:40
+msgid "无权限访问该创作板，即将跳转网站首页"
+msgstr "You don't have permission to access this creative board. Redirecting to the homepage."
+
+#: src/pages/Blog/components/BloggerMoment/index.tsx:29
+msgid "时刻"
+msgstr "Moment"
+
+#: src/components/common/Settings/index.tsx:39
+msgid "时刻编辑"
+msgstr "Edit Moments"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/SingleImageGeneration/index.tsx:171
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VideoEffects/index.tsx:266
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VideoForReference/index.tsx:181
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VideoGeneration/index.tsx:298
+msgid "时长"
+msgstr "Duration"
+
+#: src/components/common/Settings/components/BasicInfo/index.tsx:385
+msgid "昵称"
+msgstr "Nickname"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/StoryboardDecomposition/index.tsx:26
+msgid "景别＋视图＋角度"
+msgstr "Shot Composition + View + Angle"
+
+#: src/pages/Blog/components/PersonalWorks/index.tsx:74
+msgid "暂无作品"
+msgstr "No works available"
+
+#: src/pages/Blog/components/WorksList/index.tsx:201
+msgid "暂无作品数据"
+msgstr "No work data available"
+
+#: src/components/common/NotificationPopup/components/WorkNotification/index.tsx:75
+msgid "暂无作品通知"
+msgstr "No work notification available"
+
+#: src/components/common/NotificationPopup/components/CoCreateInvite/index.tsx:152
+msgid "暂无共创邀请"
+msgstr "No co-creation invitations available"
+
+#: src/pages/Blog/components/FollowList/index.tsx:149
+msgid "暂无关注"
+msgstr "No followers available"
+
+#: src/components/common/VideoModal/index.tsx:213
+msgid "暂无创作伙伴"
+msgstr "No co-creators available"
+
+#: src/components/common/NotificationPopup/components/CreativeBoard/index.tsx:72
+msgid "暂无创作板通知"
+msgstr "No notifications on the creative board available"
+
+#: src/pages/Blog/components/BloggerInfo/index.tsx:147
+msgid "暂无博主信息"
+msgstr "No blogger information available"
+
+#: src/components/common/NotificationPopup/components/OfficialNotice/index.tsx:143
+msgid "暂无官方通知"
+msgstr "No official announcement has been made available"
+
+#: src/pages/Author/components/CreatorWorks.tsx:77
+msgid "暂无数据"
+msgstr "No data available"
+
+#: src/components/EmptyPlaceholder/index.tsx:37
+msgid "暂无数据 QAQ"
+msgstr "No data available"
+
+#: src/pages/Blog/components/BloggerMoment/index.tsx:58
+msgid "暂无时刻"
+msgstr "No moment available"
+
+#: src/pages/CoApplyPage/NoCreationBoardAuth/index.tsx:39
+msgid "暂无权限访问"
+msgstr "No access permission"
+
+#: src/pages/Author/components/ActivityList.tsx:68
+msgid "暂无活动数据"
+msgstr "No activity data available"
+
+#: src/pages/Blog/components/MessageBoard/index.tsx:116
+msgid "暂无留言"
+msgstr "No comments available"
+
+#: src/pages/Blog/components/MessageBoard/index.tsx:191
+msgid "暂无留言，快来留下第一条吧！"
+msgstr "No comments yet—be the first to leave one!"
+
+#: src/components/common/NotificationPopup/components/MessageBoard/index.tsx:74
+msgid "暂无留言通知"
+msgstr "No notifications available"
+
+#: src/components/common/VideoModal/index.tsx:167
+msgid "暂无视频"
+msgstr "No video available"
+
+#: src/pages/Blog/components/FanList/index.tsx:144
+msgid "暂无粉丝"
+msgstr "No followers available"
+
+#: src/pages/Blog/index.tsx:195
+msgid "暂无置顶创意"
+msgstr "No pinned ideas available"
+
+#: src/pages/Layout/components/Notification/index.tsx:209
+msgid "暂无通知"
+msgstr "No notifications"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/TrialSample/index.tsx:225
+msgid "更多"
+msgstr "More"
+
+#: src/pages/PreloadingHomePage/components/SubscriptionAndPricing/index.tsx:65
+msgid "月"
+msgstr "Month"
+
+#. placeholder {0}: userInfo?.vipEndTime
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/UserInfo/index.tsx:42
+msgid "有效期至{0}"
+msgstr "Valid until {0}"
+
+#: src/pages/PreloadingLayout/conponents/PreloadingFooter/index.tsx:23
+msgid "服务条款"
+msgstr "Term of Service"
+
+#: src/pages/Workspace/components/MyBoards/index.tsx:44
+msgid "未发布"
+msgstr "Unpublished"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/index.tsx:163
+msgid "未命名作品"
+msgstr "Untitled Work"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/MessageList/index.tsx:163
+msgid "未读"
+msgstr "Unread"
+
+#: src/pages/CreativeBoard/features/Agent/MessageBox/index.tsx:86
+msgid "本地图片上传，建议不超过10M"
+msgstr "Uploading local image is recommended to be no larger than 10MB"
+
+#: src/pages/CreativeBoard/features/Agent/MessageBox/index.tsx:116
+msgid "本地图片上传，建议不超过5M"
+msgstr ""
+
+#: src/pages/CreativeBoard/features/Agent/MessageBox/index.tsx:100
+msgid "本地图片上传，建议不超过5M,本地视频上传，建议不超过200M"
+msgstr ""
+
+#: src/pages/Blog/components/MessageBoard/index.tsx:115
+msgid "条留言"
+msgstr "Comment"
+
+#: src/components/common/AuthModal/components/Verification/index.tsx:66
+msgid "查看您的邮箱以继续"
+msgstr "Check your email to continue"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/Publish/index.tsx:424
+msgid "标签一选择"
+msgstr "Label 1 Selection"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/Publish/index.tsx:436
+msgid "标签二选择"
+msgstr "Label 2 Selection"
+
+#: src/pages/CreativeBoard/components/TrendingKeywords/index.tsx:42
+msgid "核心梗"
+msgstr "Plot"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VideoEffects/index.tsx:216
+msgid ""
+"根据所选模板决定\n"
+"是否需要上传第二张图片"
+msgstr ""
+"Whether a second image is required\n"
+"Depends on the selected template"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VideoEffects/index.tsx:144
+msgid "模板选择"
+msgstr "Template Selection"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/SearchNode/index.tsx:79
+msgid "此页面无结果... ..."
+msgstr "No results found... ..."
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/RatioSelect/index.tsx:183
+#: src/pages/CreativeBoard/features/LeftSideBar/features/TextToImage/index.tsx:115
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VideoForReference/index.tsx:168
+msgid "比例"
+msgstr "Ratio"
+
+#: src/pages/CreativeBoard/features/Agent/MessageHeader/MessageHistory/index.tsx:163
+msgid "永久删除对话"
+msgstr "Permanently delete the conversation"
+
+#: src/components/common/InternalTestCode/index.tsx:105
+msgid "没有内测码？"
+msgstr "Don't have a beta code?"
+
+#: src/components/common/NotificationPopup/components/OfficialNotice/index.tsx:152
+msgid "没有更多数据了"
+msgstr "No more data available"
+
+#: src/components/common/AuthModal/components/AccountLogin/index.tsx:167
+msgid "注册账号"
+msgstr "Register an account"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/MessageList/index.tsx:238
+msgid "消息列表"
+msgstr "Message List"
+
+#: src/components/QuillEditor/index.tsx:414
+msgid "润色"
+msgstr "Polish"
+
+#: src/pages/Home/components/CreateNewCreativeBoard/index.tsx:74
+msgid "清晰去规划每一个场景"
+msgstr "Plan every scene with clarity"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/RatioSelect/index.tsx:214
+#: src/pages/CreativeBoard/features/LeftSideBar/features/SingleImageGeneration/index.tsx:158
+#: src/pages/CreativeBoard/features/LeftSideBar/features/TextToImage/index.tsx:95
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VideoEffects/index.tsx:252
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VideoForReference/index.tsx:155
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VideoGeneration/index.tsx:283
+msgid "清晰度"
+msgstr "Clarity"
+
+#: src/pages/Blog/index.tsx:230
+#: src/pages/PreloadingLayout/conponents/PreloadingFooter/index.tsx:34
+msgid "灵感"
+msgstr "Inspiration"
+
+#: src/pages/Layout/components/LayoutHeader/index.tsx:22
+msgid "灵感集"
+msgstr "Gallery"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/ShareButtonLink/index.tsx:62
+msgid "点击分享"
+msgstr "Click to share"
+
+#: src/components/common/NotificationPopup/components/OfficialNotice/index.tsx:148
+msgid "点击加载更多"
+msgstr "Click to load more"
+
+#: src/pages/CreativeBoard/components/TrendingKeywords/index.tsx:130
+msgid "热点关键词"
+msgstr ""
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VideoEffects/index.tsx:94
+msgid "热门推荐："
+msgstr "Popular Picks:"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCExpression/index.tsx:102
+msgid "热门表情:"
+msgstr "Popular Expressions:"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCStyle/index.tsx:119
+msgid "热门造型"
+msgstr "Popular Styles"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/VideoEffectsTrialSampleModal/index.tsx:95
+msgid "特效模板"
+msgstr "Effect Templates"
+
+#: src/components/common/MembershipPayment/components/MembershipSubscription/index.tsx:67
+msgid "特色权益："
+msgstr "Special Benefits:"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VoiceSynthesis/index.tsx:183
+msgid "生动"
+msgstr "Vivid"
+
+#: src/pages/CreativeBoard/features/Agent/utils.ts:742
+#: src/store/agentStore.ts:206
+msgid "生成失败"
+msgstr "Generation failed"
+
+#: src/editor/index.ts:425
+#: src/pages/CreativeBoard/features/Agent/utils.ts:590
+#: src/pages/CreativeBoard/features/Agent/utils.ts:726
+#: src/store/agentStore.ts:296
+msgid "生成遇到了一点小问题，请点击重新生成"
+msgstr "Oops! Something went wrong. Please try again."
+
+#: src/utils/query.ts:136
+msgid "用户登录过期"
+msgstr "User session expired"
+
+#: src/pages/PreloadingHomePage/components/UserVoiceComponent/index.tsx:151
+msgid "用户的声音"
+msgstr "User's Voice"
+
+#: src/components/common/Settings/components/ContactInfo/index.tsx:112
+msgid "电话"
+msgstr "Phone Number"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/StoryboardDecomposition/index.tsx:23
+msgid "画面主体"
+msgstr "Main subject of the image"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/StoryboardDecomposition/index.tsx:27
+msgid "画面描述"
+msgstr "Visual Description"
+
+#: src/pages/Blog/components/MessageBoard/index.tsx:112
+msgid "留言板"
+msgstr "Message Board"
+
+#: src/components/common/AuthModal/components/AccountLogin/index.tsx:162
+#: src/pages/PreloadingLayout/conponents/PreloadingHeader/index.tsx:25
+msgid "登录"
+msgstr "Log In"
+
+#: src/components/common/AuthModal/components/AccountLogin/index.tsx:160
+msgid "登录中..."
+msgstr "Logging in..."
+
+#: src/components/common/InternalTestCode/index.tsx:90
+msgid "登录即可获得1000积分"
+msgstr "Log in to receive 1,000 points"
+
+#: src/components/common/AuthModal/index.tsx:125
+msgid "登录成功"
+msgstr "Login successful"
+
+#: src/components/common/AuthModal/components/Verification/index.tsx:67
+#: src/components/common/AuthModal/index.tsx:43
+msgid "登录或注册以继续"
+msgstr "Sign in or sign up to continue"
+
+#: src/components/common/Settings/components/BasicInfo/index.tsx:441
+msgid "省份"
+msgstr "Province"
+
+#: src/components/common/AuthModal/components/ForgotPassword/index.tsx:195
+#: src/components/common/AuthModal/components/ForgotPassword/index.tsx:226
+#: src/components/Modal/index.tsx:116
+msgid "确定"
+msgstr "Confirm"
+
+#: src/components/common/AuthModal/components/ForgotPassword/index.tsx:301
+msgid "确认"
+msgstr "Confirm"
+
+#: src/pages/CreativeBoard/features/Agent/MessageHeader/MessageHistory/index.tsx:179
+msgid "确认删除"
+msgstr "Confirm deletion"
+
+#: src/components/common/AuthModal/components/ForgotPassword/index.tsx:260
+msgid "确认您的新密码"
+msgstr "Confirm your new password"
+
+#: src/components/common/AuthModal/components/ForgotPassword/index.tsx:256
+msgid "确认新的登录密码："
+msgstr "Confirm new login password:"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/components/CreativeBoardHeaderDownload/index.tsx:69
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/components/PublishCoverPosterAndVideoContentSelectModal/index.tsx:47
+msgid "视频"
+msgstr "Video"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/StoryboardDecomposition/index.tsx:39
+msgid "视频上传"
+msgstr "Video Upload"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/Publish/index.tsx:175
+msgid "视频内容"
+msgstr "Video Content"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/StoryboardDecomposition/index.tsx:28
+msgid "视频描述"
+msgstr "Video Description"
+
+#. placeholder {0}: data.videoRatio
+#. placeholder {1}: data.imageRatio
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/Publish/index.tsx:133
+msgid "视频比例和图片比例不一致: 视频比例 {0} , 图片比例 {1}"
+msgstr "Video aspect ratio and image aspect ratio do not match: Video aspect ratio {0}, Image aspect ratio {1}"
+
+#: src/pages/CreativeBoard/components/CreationInitModal/index.tsx:24
+#: src/pages/CreativeBoard/features/LeftSideBar/components/LeftSideBarComponents/index.tsx:103
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VideoEffects/index.tsx:91
+msgid "视频特效"
+msgstr "Video Effects"
+
+#: src/pages/CreativeBoard/components/CreationInitModal/index.tsx:39
+#: src/pages/CreativeBoard/features/LeftSideBar/components/LeftSideBarComponents/index.tsx:104
+#: src/pages/CreativeBoard/features/LeftSideBar/components/LeftSideBarComponents/index.tsx:255
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VideoGeneration/index.tsx:163
+#: src/pages/Home/components/CreateNewCreativeBoard/index.tsx:53
+msgid "视频生成"
+msgstr "Video Generation"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/UploadImageFromAssertLib/index.tsx:187
+msgid "视频选择"
+msgstr "Video Selection"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/Publish/index.tsx:375
+msgid "禁止发布任何违规的 AI 生成内容，请遵守YidooO平台协议。"
+msgstr "Do not publish any AI-generated content that violates regulations. Please comply with the YidooO Platform Agreement."
+
+#: src/components/common/MembershipPayment/components/MembershipSubscription/index.tsx:27
+msgid "积分详情"
+msgstr "Points Details"
+
+#: src/components/common/InternalTestCode/index.tsx:102
+msgid "立即激活"
+msgstr "Activate Immediately"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/GenerateButton/index.tsx:86
+msgid "立即生成"
+msgstr "Generate now"
+
+#: src/pages/CoApplyPage/NoCreationBoardAuth/index.tsx:57
+msgid "立即跳转"
+msgstr "Redirect now"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VideoEffects/index.tsx:191
+msgid "第一张图片"
+msgstr "The first image"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VideoEffects/index.tsx:213
+msgid "第二张图片"
+msgstr "The second image"
+
+#: src/components/common/InternalTestCode/index.tsx:68
+msgid "算力"
+msgstr "Point"
+
+#: src/components/common/PersonalToolbar/index.tsx:71
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/UserInfo/index.tsx:47
+msgid "算力值"
+msgstr "Points"
+
+#: src/pages/Author/components/CreatorWorks.tsx:97
+#: src/pages/Blog/components/BloggerInfo/index.tsx:85
+#: src/pages/Blog/components/FanList/index.tsx:78
+#: src/pages/Blog/components/FollowList/index.tsx:80
+msgid "粉丝"
+msgstr "Fans"
+
+#: src/pages/Blog/components/FanList/index.tsx:53
+msgid "粉丝列表"
+msgstr "Fan List"
+
+#: src/pages/PreloadingHomePage/components/SelectedWorks/index.tsx:12
+msgid "精选作品"
+msgstr "Featured Works"
+
+#: src/components/common/PersonalToolbar/index.tsx:36
+#: src/pages/CoApplyPage/utils.ts:45
+#: src/utils/query.ts:349
+msgid "系统发生异常，请稍后重试。"
+msgstr "A system error occurred. Please try again later."
+
+#: src/editor/index.ts:1586
+#: src/editor/index.ts:1905
+msgid "系统异常"
+msgstr "System Error"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/StoryboardDecomposition/index.tsx:20
+msgid "编号"
+msgstr "Number"
+
+#: src/pages/CreativeBoard/components/AddToCreationButton/index.tsx:18
+msgid "编辑到创作板"
+msgstr ""
+
+#: src/components/QuillEditor/index.tsx:424
+msgid "翻译"
+msgstr "Translate"
+
+#: src/pages/PreloadingLayout/conponents/PreloadingFooter/index.tsx:49
+msgid "联系我们"
+msgstr "Contact Us"
+
+#: src/components/common/Settings/index.tsx:38
+msgid "联系方式"
+msgstr "Contact Information"
+
+#: src/components/common/MembershipPayment/components/MembershipSubscription/index.tsx:57
+msgid "联系邮箱："
+msgstr "Contact Email:"
+
+#: src/pages/PreloadingHomePage/index.tsx:80
+msgid "脑内氛围具象化服务——比你想象的还懂你"
+msgstr "Mental Atmosphere Visualization Service—Understands you better than you imagine"
+
+#: src/components/common/MembershipPayment/components/MembershipSubscription/index.tsx:52
+msgid "至尊定制版"
+msgstr "Ultimate"
+
+#: src/editor/index.ts:1573
+msgid "节点创建成功！AI正在施展魔法中，等待几分钟就能看到结果"
+msgstr "Node created! AI is working its magic—sit tight, your results will be ready in just a few minutes!"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/ShareButtonLink/index.tsx:47
+msgid "获取创作板分享链接"
+msgstr "Get Creative Board Share Link"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/LeftSideBarComponents/index.tsx:98
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCExpression/index.tsx:65
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCExpression/index.tsx:133
+msgid "表情参考"
+msgstr "Expression Reference"
+
+#: src/utils/query.ts:136
+#: src/utils/query.ts:313
+msgid "被踢出"
+msgstr "You have been removed"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VoiceSynthesis/index.tsx:30
+msgid "角色名称："
+msgstr "Character Name:"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCPose/index.tsx:107
+msgid "角色设定："
+msgstr "Character Design:"
+
+#: src/pages/PreloadingHomePage/index.tsx:91
+msgid "角色设计器"
+msgstr "Anime Character Creator"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/VoiceSynthesisModal/index.tsx:312
+msgid "角色音色选择"
+msgstr "Character Voice Selection"
+
+#: src/pages/PreloadingHomePage/components/SubscriptionAndPricing/index.tsx:84
+msgid "订阅"
+msgstr "Subscribe"
+
+#: src/pages/PreloadingHomePage/components/SubscriptionAndPricing/index.tsx:27
+msgid "订阅与价格"
+msgstr "Subscription and Price"
+
+#: src/pages/Home/components/CreateNewCreativeBoard/index.tsx:46
+msgid "让你的角色活过来"
+msgstr "Bring your characters to life"
+
+#: src/components/common/Settings/index.tsx:85
+msgid "设置"
+msgstr "Settings"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCDesign/index.tsx:128
+#: src/pages/CreativeBoard/features/LeftSideBar/features/SingleImageGeneration/index.tsx:123
+#: src/pages/CreativeBoard/features/LeftSideBar/features/TextToImage/index.tsx:72
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VideoGeneration/index.tsx:238
+msgid "试用样例："
+msgstr "Sample Usage:"
+
+#: src/components/common/NotificationPopup/components/CreativeBoard/index.tsx:66
+msgid "该作品有互动，请点击查看"
+msgstr "This work features interactive elements. Click to view."
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VoiceSynthesis/index.tsx:230
+msgid "语调"
+msgstr "Pitch"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VoiceSynthesis/index.tsx:207
+msgid "语速"
+msgstr "Speech Rate"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/StoryboardDecomposition/index.tsx:41
+msgid "请先上传视频，再选择你想拆解的表格维度"
+msgstr "Please upload your video first, then select the table dimension you wish to break down"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCExpression/index.tsx:70
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCPeripheral/index.tsx:46
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCPose/index.tsx:71
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCStyle/index.tsx:85
+#: src/pages/CreativeBoard/features/LeftSideBar/features/ReferenceToImage/index.tsx:66
+msgid "请先上传被参考的图片再描述你想生成的图片片效果，图片支持 JPG / PNG 格式，大小不超过10MB"
+msgstr "Please upload the reference image first, then describe the image effect you want to generate. Supports JPG / PNG formats, size should not exceed 10MB"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VideoForReference/index.tsx:127
+msgid "请先上传被参考的图片再描述你想让图片在视频中的效果，图片支持 JPG / PNG 格式，大小不超过10MB"
+msgstr "Please upload the reference image first, then describe the desired effect for the image in the video. Supports JPG / PNG formats. Image size should not exceed 10MB."
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VideoEffects/index.tsx:170
+msgid "请先选想生成的视频效果，再根据特效上传图片"
+msgstr "Please select the video effect you want to generate first, then upload images according to the effect"
+
+#: src/components/common/AuthModal/index.tsx:63
+#: src/components/GoogleLogin/custom-google-login.tsx:47
+msgid "请勾选用户协议"
+msgstr "Please accept the user agreement"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/SingleImageGeneration/index.tsx:115
+msgid "请在镜头切换时输入“镜头切换”"
+msgstr "Enter \"Shot Change\" to mark scene transitions"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/Publish/index.tsx:352
+msgid "请填写必须内容"
+msgstr "Please fill in the required information"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/SingleImageGeneration/index.tsx:104
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VideoGeneration/index.tsx:228
+msgid "请描述你想生成的视频效果，如：..."
+msgstr "Please describe the video effect you want to generate, e.g., ..."
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/Publish/index.tsx:417
+msgid "请输入作品介绍，200字以内"
+msgstr "Enter work description (max 200 characters)"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/Publish/index.tsx:387
+msgid "请输入作品名"
+msgstr "Please enter work title"
+
+#: src/components/common/AuthModal/components/ForgotPassword/index.tsx:202
+msgid "请输入发送到您手机的6位验证码"
+msgstr "Please enter the 6-digit verification code sent to your phone"
+
+#: src/components/common/Settings/components/ContactInfo/index.tsx:266
+msgid "请输入您的Instagram个人主页网址"
+msgstr "Please enter your Instagram profile URL"
+
+#: src/components/common/Settings/components/ContactInfo/index.tsx:250
+msgid "请输入您的Twitter个人主页网址"
+msgstr "Please enter your Twitter profile URL"
+
+#: src/components/common/Settings/components/ContactInfo/index.tsx:282
+msgid "请输入您的个人网站网址"
+msgstr "Please enter your personal website URL"
+
+#: src/components/common/Settings/components/BasicInfo/index.tsx:413
+msgid "请输入您的个性签名... ..."
+msgstr "Please enter your bio..."
+
+#: src/components/common/Settings/components/ContactInfo/index.tsx:218
+msgid "请输入您的小红书个人主页网址"
+msgstr "Please enter your Xiaohongshu personal homepage URL"
+
+#: src/components/common/AuthModal/components/ForgotPassword/index.tsx:188
+msgid "请输入您的手机号码"
+msgstr "Please enter your mobile phone number"
+
+#: src/components/common/AuthModal/components/ForgotPassword/index.tsx:242
+msgid "请输入您的新密码"
+msgstr "Please enter your new password"
+
+#: src/components/common/Settings/components/BasicInfo/index.tsx:395
+msgid "请输入您的昵称..."
+msgstr "Please enter your nickname..."
+
+#: src/components/common/AuthModal/index.tsx:55
+#: src/components/common/Settings/components/ContactInfo/index.tsx:136
+msgid "请输入您的电子邮箱"
+msgstr "Please enter your email address"
+
+#: src/components/common/Settings/components/ContactInfo/index.tsx:120
+msgid "请输入您的联系电话"
+msgstr "Please enter your contact phone number"
+
+#: src/editor/index.ts:814
+msgid "请输入提示"
+msgstr "Enter a prompt"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/OCDesign/index.tsx:102
+#: src/pages/CreativeBoard/features/LeftSideBar/features/StyleTransfer/index.tsx:95
+msgid "请输入文字，描述你想创作的画面内容、运动方式等。例如:一个平面插画风格的小狗，正在沙滩上奔跑。"
+msgstr "Please enter text describing the scene you wish to create, including movement and other details. For example: A flat-illustration-style puppy running on the beach"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/LeftSideQuillEditor/index.tsx:51
+msgid "请输入文字，描述你想创作的画面内容、运动方式等。例如：一个平面插画风格的小狗，正在沙滩上奔跑。"
+msgstr "Please enter text describing the scene you wish to create, including movement and other details. For example: A flat-style illustration of a puppy running on the beach"
+
+#: src/components/common/AuthModal/components/ForgotPassword/index.tsx:282
+msgid "请输入新密码"
+msgstr "Please enter a new password"
+
+#: src/components/common/Settings/components/BasicInfo/index.tsx:388
+msgid ""
+"请选择一个能够让用户了解你和你创作的内容的频道名称。你对名称所做的更改仅会呈现在\n"
+"                YidooO 上。每月可以更改标识名一次。"
+msgstr "Please choose a channel name that allows users to understand you and your content. Any changes you make to the name will only be displayed onn                YidooO. You may change your channel name once per month."
+
+#: src/editor/index.ts:693
+msgid "请选择提示"
+msgstr "Please select a prompt"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/Publish/index.tsx:425
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/Publish/index.tsx:437
+msgid "请选择符合您作品的标签"
+msgstr "Please select tags that match your work"
+
+#: src/components/common/AuthModal/components/AccountLogin/index.tsx:87
+msgid "账号"
+msgstr "Account"
+
+#: src/components/common/Settings/index.tsx:80
+msgid "账号设置"
+msgstr "Account Settings"
+
+#: src/pages/PreloadingLayout/conponents/PreloadingFooter/index.tsx:40
+msgid "资源"
+msgstr ""
+
+#: src/pages/Home/components/CreateNewCreativeBoard/index.tsx:60
+msgid "赋予文字生命的声音"
+msgstr "Bring your words to life with voice"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/InviteUser/index.tsx:72
+msgid "输入站内互关用户昵称邀请共创"
+msgstr "Enter the nickname of a mutual follower to invite them to co-create"
+
+#: src/components/common/PersonalToolbar/index.tsx:32
+msgid "退出成功"
+msgstr "Logged out successfully"
+
+#: src/components/common/PersonalToolbar/index.tsx:101
+msgid "退出登录"
+msgstr "Log Out"
+
+#: src/pages/PreloadingLayout/conponents/PreloadingFooter/index.tsx:27
+msgid "退款/退货政策"
+msgstr "Refund Policy"
+
+#: src/components/common/MembershipPayment/components/MembershipSubscription/index.tsx:63
+msgid "适用人群："
+msgstr "Suitable for:"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/VoiceSynthesisModal/index.tsx:70
+msgid "选中音色"
+msgstr "Select Tone"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/VoiceSynthesisModal/index.tsx:74
+msgid "选择"
+msgstr "Select"
+
+#. placeholder {0}: ctx.data.length ?? 0
+#. placeholder {0}: data?.length ?? 0
+#: src/components/VideoImageScrollList/index.tsx:124
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/components/ImageAndVideoContent/index.tsx:133
+msgid "选择 {0} 个项目"
+msgstr "Select {0} items"
+
+#: src/pages/Layout/components/Notification/index.tsx:277
+msgid "通知"
+msgstr "Notifications"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/InviteUser/index.tsx:201
+msgid "邀请"
+msgstr "Invitation"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/InviteUser/index.tsx:55
+msgid "邀请人员"
+msgstr "Invited Personnel"
+
+#: src/components/common/Settings/components/ContactInfo/index.tsx:128
+msgid "邮箱"
+msgstr "Email"
+
+#: src/components/common/AuthModal/components/Verification/index.tsx:88
+msgid "重新发送"
+msgstr "Resend"
+
+#: src/components/common/AuthModal/components/ForgotPassword/index.tsx:218
+msgid "重新发送验证码"
+msgstr "Resend verification code"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VideoGeneration/index.tsx:313
+msgid "镜头运动"
+msgstr "Camera movement"
+
+#: src/pages/PreloadingLayout/conponents/PreloadingFooter/index.tsx:19
+msgid "隐私政策"
+msgstr "Privacy Policy"
+
+#: src/components/common/PersonalToolbar/index.tsx:49
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/UserInfo/index.tsx:31
+msgid "非会员"
+msgstr "Non-member"
+
+#: src/api/node.ts:95
+msgid "非会员只能创建5个创作版"
+msgstr "Non-members can only create 5 creative boards"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/features/InviteUser/index.tsx:107
+msgid "非站内用户？点击下面<0>邀请</0> ta注册账号"
+msgstr "Not a platform user? Click <0>Invite</0> below to register an account"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/VoiceSynthesisModal/index.tsx:289
+msgid "音色库"
+msgstr "Voice Library"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VoiceSynthesis/index.tsx:218
+msgid "音量"
+msgstr "Volume"
+
+#: src/pages/CreativeBoard/features/CreativeBoardHeader/components/CreativeBoardHeaderDownload/index.tsx:141
+msgid "音频"
+msgstr "Audio"
+
+#: src/components/OSSImage/index.tsx:100
+msgid "预览"
+msgstr ""
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/RatioSelect/index.tsx:262
+msgid "风格"
+msgstr "Style"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/StyleTransfer/index.tsx:77
+msgid "风格参考上传"
+msgstr "Style Reference Upload"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/StyleTransfer/index.tsx:94
+msgid "风格描述"
+msgstr "Style Description"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/StyleTransfer/index.tsx:108
+msgid "风格样例："
+msgstr "Style Examples:"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/components/LeftSideBarComponents/index.tsx:105
+#: src/pages/CreativeBoard/features/LeftSideBar/features/StyleTransfer/index.tsx:67
+msgid "风格迁移"
+msgstr "Style Transfer"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VideoGeneration/index.tsx:190
+msgid "首帧<0>（可选）</0>"
+msgstr "First Frame<0>(Optional)</0>"
+
+#: src/pages/Layout/components/LayoutHeader/index.tsx:18
+msgid "首页"
+msgstr "Home"
+
+#: src/components/common/AuthModal/components/Verification/index.tsx:83
+msgid ""
+"验证码可能被误判为垃圾邮件，请先检查您的垃圾箱。\n"
+"若仍未收到，请点击"
+msgstr "The verification code may have been mistakenly marked as spam. Please check your spam folder first. If you still haven't received it, please click"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VoiceSynthesis/index.tsx:176
+msgid "高兴"
+msgstr "Happiness"
+
+#: src/pages/CreativeBoard/features/LeftSideBar/features/VoiceSynthesis/index.tsx:201
+msgid "默认"
+msgstr "Default"
