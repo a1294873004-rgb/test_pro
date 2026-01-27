@@ -1,0 +1,159 @@
+{
+  "type": "page",
+  "meta": {
+    "id": "1rKV6vAmchZwbiPE88FiF",
+    "title": "12",
+    "createDate": 1768722936556,
+    "tags": []
+  },
+  "blocks": {
+    "type": "block",
+    "id": "hIgg-TLqQg",
+    "flavour": "affine:page",
+    "version": 2,
+    "props": {
+      "title": {
+        "$blocksuite:internal:text$": true,
+        "delta": [
+          {
+            "insert": "12"
+          }
+        ]
+      }
+    },
+    "children": [
+      {
+        "type": "block",
+        "id": "3Nv_4RJuN2",
+        "flavour": "affine:surface",
+        "version": 5,
+        "props": {
+          "elements": {
+            "8J0J2wzz1e": {
+              "index": "a2",
+              "seed": 2122780505,
+              "color": "#000000",
+              "fillColor": "#fcd34d",
+              "filled": true,
+              "fontFamily": "blocksuite:surface:Inter",
+              "fontSize": 20,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "maxWidth": false,
+              "padding": [
+                10,
+                20
+              ],
+              "radius": 0,
+              "rotate": 0,
+              "roughness": 1.4,
+              "shadow": null,
+              "shapeStyle": "General",
+              "shapeType": "ellipse",
+              "strokeColor": "#fcd34d",
+              "strokeStyle": "solid",
+              "strokeWidth": 2,
+              "textAlign": "center",
+              "textResizing": 1,
+              "xywh": "[603.9630596454313,252.3063777043261,99.69228891225961,99.69228891225961]",
+              "type": "shape",
+              "id": "8J0J2wzz1e"
+            },
+            "dY0gragWwJ": {
+              "index": "a3",
+              "seed": 831192384,
+              "color": "#000000",
+              "fillColor": "#fcd34d",
+              "filled": true,
+              "fontFamily": "blocksuite:surface:Inter",
+              "fontSize": 20,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "maxWidth": false,
+              "padding": [
+                10,
+                20
+              ],
+              "radius": 0.1,
+              "rotate": 0,
+              "roughness": 1.4,
+              "shadow": null,
+              "shapeStyle": "General",
+              "shapeType": "rect",
+              "strokeColor": "#fcd34d",
+              "strokeStyle": "solid",
+              "strokeWidth": 2,
+              "textAlign": "center",
+              "textResizing": 1,
+              "xywh": "[873.390737680287,233.8015512319704,99.6923828125,99.69228891225961]",
+              "type": "shape",
+              "id": "dY0gragWwJ"
+            }
+          }
+        },
+        "children": [
+          {
+            "type": "block",
+            "id": "AsZPg_Mnht",
+            "flavour": "affine:image",
+            "version": 1,
+            "props": {
+              "caption": "",
+              "sourceId": "VK41LyCveA8tusxBfZB9rtrmbR2YGEJXwUYqAOwdc5I=",
+              "width": 179,
+              "height": 168,
+              "index": "a1",
+              "xywh": "[-283.3461538461535,264.076923076923,179,168]",
+              "lockedBySelf": false,
+              "rotate": 0,
+              "size": 8659
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "type": "block",
+        "id": "TnwhSQdtOG",
+        "flavour": "affine:note",
+        "version": 1,
+        "props": {
+          "xywh": "[0,0,498,193]",
+          "background": {
+            "dark": "#252525",
+            "light": "#ffffff"
+          },
+          "index": "a0",
+          "lockedBySelf": false,
+          "hidden": false,
+          "displayMode": "both",
+          "edgeless": {
+            "style": {
+              "borderRadius": 8,
+              "borderSize": 4,
+              "borderStyle": "none",
+              "shadowType": "--affine-note-shadow-box"
+            }
+          }
+        },
+        "children": [
+          {
+            "type": "block",
+            "id": "UGXbIIh8as",
+            "flavour": "affine:paragraph",
+            "version": 1,
+            "props": {
+              "type": "text",
+              "text": {
+                "$blocksuite:internal:text$": true,
+                "delta": []
+              },
+              "collapsed": false
+            },
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+}

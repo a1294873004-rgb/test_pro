@@ -1,0 +1,459 @@
+{
+    "id": "U0pcD62aHi",
+    "type": "block",
+    "flavour": "affine:note",
+    "props": {
+        "xywh": "[7296.457422595988,-13220.785260890854,498,594]",
+        "index": "a0",
+        "title": {
+            "delta": [
+                {
+                    "insert": "故事大纲"
+                }
+            ],
+            "$blocksuite:internal:text$": true
+        },
+        "hidden": false,
+        "edgeless": {
+            "style": {
+                "borderSize": 4,
+                "shadowType": "--affine-note-shadow-box",
+                "borderStyle": "none",
+                "borderRadius": 8
+            }
+        },
+        "markdown": "好的，我明白了。您输入了“水电费水电费”。\n\n这看起来像是一个重复的、可能包含拼写错误的短语，核心内容是“**水电费**”。\n\n如果您是想询问关于水电费的问题，我可以为您提供以下帮助：\n\n1. **如何缴纳水电费？**\n   &#x20;   \\*   线上缴费：通过手机银行、支付宝、微信、网上银行等。\n   &#x20;   \\*   线下缴费：到银行柜台、自助缴费机、营业厅等。\n2. **如何查询水电费账单？**\n   &#x20;   \\*   查看手机短信通知。\n   &#x20;   \\*   登录供水/供电公司的官方网站或APP。\n   &#x20;   \\*   使用支付宝/微信的生活缴费功能查询。\n3. **水电费标准是多少？**\n   &#x20;   \\*   这取决于您所在的城市和具体小区，不同地区、不同阶梯的收费标准都不同。您可以查询当地供水和供电公司的官网或拨打客服电话咨询。\n4. **如何办理水/电的过户、开户或报修？**\n   &#x20;   \\*   通常需要联系当地的供水公司或供电公司，准备相关材料办理。\n\n**请问您具体想了解哪方面的问题呢？**",
+        "background": {
+            "dark": "#252525",
+            "light": "#ffffff"
+        },
+        "displayMode": "both",
+        "lockedBySelf": false
+    },
+    "children": [
+        {
+            "type": "block",
+            "id": "JBD3n88BWi",
+            "flavour": "affine:paragraph",
+            "props": {
+                "type": "text",
+                "text": {
+                    "$blocksuite:internal:text$": true,
+                    "delta": [
+                        {
+                            "insert": "好的，我明白了。您输入了“水电费水电费”。"
+                        }
+                    ]
+                }
+            },
+            "children": []
+        },
+        {
+            "type": "block",
+            "id": "-TAkuz7fYY",
+            "flavour": "affine:paragraph",
+            "props": {
+                "type": "text",
+                "text": {
+                    "$blocksuite:internal:text$": true,
+                    "delta": [
+                        {
+                            "insert": "这看起来像是一个重复的、可能包含拼写错误的短语，核心内容是“"
+                        },
+                        {
+                            "insert": "水电费",
+                            "attributes": {
+                                "bold": true
+                            }
+                        },
+                        {
+                            "insert": "”。"
+                        }
+                    ]
+                }
+            },
+            "children": []
+        },
+        {
+            "type": "block",
+            "id": "E95guDjTmG",
+            "flavour": "affine:paragraph",
+            "props": {
+                "type": "text",
+                "text": {
+                    "$blocksuite:internal:text$": true,
+                    "delta": [
+                        {
+                            "insert": "如果您是想询问关于水电费的问题，我可以为您提供以下帮助："
+                        }
+                    ]
+                }
+            },
+            "children": []
+        },
+        {
+            "type": "block",
+            "id": "IEg8z1_7ne",
+            "flavour": "affine:list",
+            "props": {
+                "type": "numbered",
+                "text": {
+                    "$blocksuite:internal:text$": true,
+                    "delta": [
+                        {
+                            "insert": "如何缴纳水电费？",
+                            "attributes": {
+                                "bold": true
+                            }
+                        },
+                        {
+                            "insert": "\n    *   线上缴费：通过手机银行、支付宝、微信、网上银行等。\n    *   线下缴费：到银行柜台、自助缴费机、营业厅等。"
+                        }
+                    ]
+                },
+                "checked": false,
+                "collapsed": false,
+                "order": 1
+            },
+            "children": []
+        },
+        {
+            "type": "block",
+            "id": "mK5Izhru5F",
+            "flavour": "affine:list",
+            "props": {
+                "type": "numbered",
+                "text": {
+                    "$blocksuite:internal:text$": true,
+                    "delta": [
+                        {
+                            "insert": "如何查询水电费账单？",
+                            "attributes": {
+                                "bold": true
+                            }
+                        },
+                        {
+                            "insert": "\n    *   查看手机短信通知。\n    *   登录供水/供电公司的官方网站或APP。\n    *   使用支付宝/微信的生活缴费功能查询。"
+                        }
+                    ]
+                },
+                "checked": false,
+                "collapsed": false,
+                "order": 2
+            },
+            "children": []
+        },
+        {
+            "type": "block",
+            "id": "CpzecaG5AH",
+            "flavour": "affine:list",
+            "props": {
+                "type": "numbered",
+                "text": {
+                    "$blocksuite:internal:text$": true,
+                    "delta": [
+                        {
+                            "insert": "水电费标准是多少？",
+                            "attributes": {
+                                "bold": true
+                            }
+                        },
+                        {
+                            "insert": "\n    *   这取决于您所在的城市和具体小区，不同地区、不同阶梯的收费标准都不同。您可以查询当地供水和供电公司的官网或拨打客服电话咨询。"
+                        }
+                    ]
+                },
+                "checked": false,
+                "collapsed": false,
+                "order": 3
+            },
+            "children": []
+        },
+        {
+            "type": "block",
+            "id": "JWMZCc85-P",
+            "flavour": "affine:list",
+            "props": {
+                "type": "numbered",
+                "text": {
+                    "$blocksuite:internal:text$": true,
+                    "delta": [
+                        {
+                            "insert": "如何办理水/电的过户、开户或报修？",
+                            "attributes": {
+                                "bold": true
+                            }
+                        },
+                        {
+                            "insert": "\n    *   通常需要联系当地的供水公司或供电公司，准备相关材料办理。"
+                        }
+                    ]
+                },
+                "checked": false,
+                "collapsed": false,
+                "order": 4
+            },
+            "children": []
+        },
+        {
+            "type": "block",
+            "id": "2bukfiNfw1",
+            "flavour": "affine:paragraph",
+            "props": {
+                "type": "text",
+                "text": {
+                    "$blocksuite:internal:text$": true,
+                    "delta": [
+                        {
+                            "insert": "请问您具体想了解哪方面的问题呢？",
+                            "attributes": {
+                                "bold": true
+                            }
+                        }
+                    ]
+                }
+            },
+            "children": []
+        }
+    ],
+    "parentId": "nMPLEHlTqs",
+    "meta": {
+        "id": "U0pcD62aHi",
+        "parentId": "nMPLEHlTqs",
+        "creationId": "245f07e5-c48f-47be-8b26-1237c4b11784",
+        "nodeId": "2590f893-0f8e-4ddb-9c12-62d6fa9e6a77",
+        "source": "item"
+    },
+    "info": {
+        "id": "U0pcD62aHi",
+        "type": "block",
+        "props": {
+            "xywh": "[7296.457422595988,-13220.785260890854,498,594]",
+            "index": "a0",
+            "title": {
+                "delta": [
+                    {
+                        "insert": "故事大纲"
+                    }
+                ],
+                "$blocksuite:internal:text$": true
+            },
+            "hidden": false,
+            "edgeless": {
+                "style": {
+                    "borderSize": 4,
+                    "shadowType": "--affine-note-shadow-box",
+                    "borderStyle": "none",
+                    "borderRadius": 8
+                }
+            },
+            "markdown": "好的，我明白了。您输入了“水电费水电费”。\n\n这看起来像是一个重复的、可能包含拼写错误的短语，核心内容是“**水电费**”。\n\n如果您是想询问关于水电费的问题，我可以为您提供以下帮助：\n\n1. **如何缴纳水电费？**\n   &#x20;   \\*   线上缴费：通过手机银行、支付宝、微信、网上银行等。\n   &#x20;   \\*   线下缴费：到银行柜台、自助缴费机、营业厅等。\n2. **如何查询水电费账单？**\n   &#x20;   \\*   查看手机短信通知。\n   &#x20;   \\*   登录供水/供电公司的官方网站或APP。\n   &#x20;   \\*   使用支付宝/微信的生活缴费功能查询。\n3. **水电费标准是多少？**\n   &#x20;   \\*   这取决于您所在的城市和具体小区，不同地区、不同阶梯的收费标准都不同。您可以查询当地供水和供电公司的官网或拨打客服电话咨询。\n4. **如何办理水/电的过户、开户或报修？**\n   &#x20;   \\*   通常需要联系当地的供水公司或供电公司，准备相关材料办理。\n\n**请问您具体想了解哪方面的问题呢？**",
+            "background": {
+                "dark": "#252525",
+                "light": "#ffffff"
+            },
+            "displayMode": "both",
+            "lockedBySelf": false
+        },
+        "flavour": "affine:note",
+        "version": 1,
+        "children": [
+            {
+                "id": "dldPd3_8Cu",
+                "type": "block",
+                "props": {
+                    "text": {
+                        "delta": [
+                            {
+                                "insert": "好的，我明白了。您输入了“水电费水电费”。"
+                            }
+                        ],
+                        "$blocksuite:internal:text$": true
+                    },
+                    "type": "text",
+                    "collapsed": false
+                },
+                "flavour": "affine:paragraph",
+                "version": 1,
+                "children": []
+            },
+            {
+                "id": "M16jTKE7pE",
+                "type": "block",
+                "props": {
+                    "text": {
+                        "delta": [
+                            {
+                                "insert": "这看起来像是一个重复的、可能包含拼写错误的短语，核心内容是“"
+                            },
+                            {
+                                "insert": "水电费",
+                                "attributes": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "insert": "”。"
+                            }
+                        ],
+                        "$blocksuite:internal:text$": true
+                    },
+                    "type": "text",
+                    "collapsed": false
+                },
+                "flavour": "affine:paragraph",
+                "version": 1,
+                "children": []
+            },
+            {
+                "id": "-XlRPr2Wd5",
+                "type": "block",
+                "props": {
+                    "text": {
+                        "delta": [
+                            {
+                                "insert": "如果您是想询问关于水电费的问题，我可以为您提供以下帮助："
+                            }
+                        ],
+                        "$blocksuite:internal:text$": true
+                    },
+                    "type": "text",
+                    "collapsed": false
+                },
+                "flavour": "affine:paragraph",
+                "version": 1,
+                "children": []
+            },
+            {
+                "id": "7FaYsgem3E",
+                "type": "block",
+                "props": {
+                    "text": {
+                        "delta": [
+                            {
+                                "insert": "如何缴纳水电费？",
+                                "attributes": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "insert": "\n    *   线上缴费：通过手机银行、支付宝、微信、网上银行等。\n    *   线下缴费：到银行柜台、自助缴费机、营业厅等。"
+                            }
+                        ],
+                        "$blocksuite:internal:text$": true
+                    },
+                    "type": "numbered",
+                    "order": 1,
+                    "checked": false,
+                    "collapsed": false
+                },
+                "flavour": "affine:list",
+                "version": 1,
+                "children": []
+            },
+            {
+                "id": "Bava2QfytB",
+                "type": "block",
+                "props": {
+                    "text": {
+                        "delta": [
+                            {
+                                "insert": "如何查询水电费账单？",
+                                "attributes": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "insert": "\n    *   查看手机短信通知。\n    *   登录供水/供电公司的官方网站或APP。\n    *   使用支付宝/微信的生活缴费功能查询。"
+                            }
+                        ],
+                        "$blocksuite:internal:text$": true
+                    },
+                    "type": "numbered",
+                    "order": 2,
+                    "checked": false,
+                    "collapsed": false
+                },
+                "flavour": "affine:list",
+                "version": 1,
+                "children": []
+            },
+            {
+                "id": "0-gNxJKbFS",
+                "type": "block",
+                "props": {
+                    "text": {
+                        "delta": [
+                            {
+                                "insert": "水电费标准是多少？",
+                                "attributes": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "insert": "\n    *   这取决于您所在的城市和具体小区，不同地区、不同阶梯的收费标准都不同。您可以查询当地供水和供电公司的官网或拨打客服电话咨询。"
+                            }
+                        ],
+                        "$blocksuite:internal:text$": true
+                    },
+                    "type": "numbered",
+                    "order": 3,
+                    "checked": false,
+                    "collapsed": false
+                },
+                "flavour": "affine:list",
+                "version": 1,
+                "children": []
+            },
+            {
+                "id": "hTuQv5JVou",
+                "type": "block",
+                "props": {
+                    "text": {
+                        "delta": [
+                            {
+                                "insert": "如何办理水/电的过户、开户或报修？",
+                                "attributes": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "insert": "\n    *   通常需要联系当地的供水公司或供电公司，准备相关材料办理。"
+                            }
+                        ],
+                        "$blocksuite:internal:text$": true
+                    },
+                    "type": "numbered",
+                    "order": 4,
+                    "checked": false,
+                    "collapsed": false
+                },
+                "flavour": "affine:list",
+                "version": 1,
+                "children": []
+            },
+            {
+                "id": "q3Y5qipAlh",
+                "type": "block",
+                "props": {
+                    "text": {
+                        "delta": [
+                            {
+                                "insert": "请问您具体想了解哪方面的问题呢？",
+                                "attributes": {
+                                    "bold": true
+                                }
+                            }
+                        ],
+                        "$blocksuite:internal:text$": true
+                    },
+                    "type": "text",
+                    "collapsed": false
+                },
+                "flavour": "affine:paragraph",
+                "version": 1,
+                "children": []
+            }
+        ]
+    }
+}

@@ -1,125 +1,317 @@
-{
-    "type": "block",
-    "id": "tT1OOw3jOC",
-    "flavour": "affine:page",
-    "version": 2,
-    "props": {
-        "title": {
-            "$blocksuite:internal:text$": true,
-            "delta": [
-                {
-                    "insert": "test212122222222"
-                }
-            ]
-        }
+[
+    {
+        "id": "-OadxTR0iN",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"-OadxTR0iN\", \"type\": \"block\", \"props\": {\"xywh\": \"[10673.950539569954,9178.180647209654,1268.541292894657,151.99996866711922]\", \"color\": {\"dark\": \"#ffffff\", \"light\": \"#000000\"}, \"index\": \"a8\", \"scale\": 1, \"rotate\": 0, \"markdown\": \"### 5. Precise Resonance within Subculture Communities\\n\\n* Anime & Xianxia Fusion: This style sits at the intersection of high-end anime PVs and \\\"Xianxia\\\" (Chinese immortal fantasy) culture. It satisfies the modern youth's fantasy of \\\"Divinized Anime Characters.\\\"\\n* Visual \\\"Fast Food\\\" for the Short-Video Era: It provides an intense burst of visual pleasure in just a few seconds. It doesn't require complex plot understanding; viewers can simply immerse themselves in the atmosphere, making it perfect for rapid viral spreading on social media.\", \"fontStyle\": \"normal\", \"textAlign\": \"left\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\", \"hasMaxWidth\": true, \"lockedBySelf\": false}, \"flavour\": \"affine:edgeless-text\", \"version\": 1, \"children\": [{\"id\": \"iLxElVObPu\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"5. Precise Resonance within Subculture Communities\", \"attributes\": {\"color\": \"var(--affine-text-highlight-foreground-blue)\"}}], \"$blocksuite:internal:text$\": true}, \"type\": \"h3\", \"collapsed\": false}, \"flavour\": \"affine:paragraph\", \"version\": 1, \"children\": []}, {\"id\": \"sHaEkbUf0o\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Anime & Xianxia Fusion: This style sits at the intersection of high-end anime PVs and \\\"Xianxia\\\" (Chinese immortal fantasy) culture. It satisfies the modern youth's fantasy of \\\"Divinized Anime Characters.\\\"\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"bulleted\", \"order\": null, \"checked\": false, \"collapsed\": false}, \"flavour\": \"affine:list\", \"version\": 1, \"children\": []}, {\"id\": \"UZKGwJWox5\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Visual \\\"Fast Food\\\" for the Short-Video Era: It provides an intense burst of visual pleasure in just a few seconds. It doesn't require complex plot understanding; viewers can simply immerse themselves in the atmosphere, making it perfect for rapid viral spreading on social media.\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"bulleted\", \"order\": null, \"checked\": false, \"collapsed\": false}, \"flavour\": \"affine:list\", \"version\": 1, \"children\": []}]}",
+        "nodeId": null
     },
-    "children": [
-        {
-            "type": "block",
-            "id": "VuOhUKuifE",
-            "flavour": "affine:surface",
-            "version": 5,
-            "props": {
-                "elements": {
-                    "6PBO3hyq36": {
-                        "index": "a3",
-                        "seed": 709848786,
-                        "color": "#000000",
-                        "fillColor": "#fcd34d",
-                        "filled": true,
-                        "fontFamily": "blocksuite:surface:Inter",
-                        "fontSize": 20,
-                        "fontStyle": "normal",
-                        "fontWeight": "400",
-                        "maxWidth": false,
-                        "padding": [
-                            10,
-                            20
-                        ],
-                        "radius": 0,
-                        "rotate": 0,
-                        "roughness": 1.4,
-                        "shadow": null,
-                        "shapeStyle": "General",
-                        "shapeType": "diamond",
-                        "strokeColor": "#fcd34d",
-                        "strokeStyle": "solid",
-                        "strokeWidth": 2,
-                        "textAlign": "center",
-                        "textResizing": 1,
-                        "xywh": "[259.423076923077,400.07692307692315,140,100]",
-                        "type": "shape",
-                        "id": "6PBO3hyq36"
-                    }
-                }
-            },
-            "children": [
-                {
-                    "type": "block",
-                    "id": "9FD4Lh4dWY",
-                    "flavour": "affine:image",
-                    "version": 1,
-                    "props": {
-                        "caption": "",
-                        "sourceId": "VK41LyCveA8tusxBfZB9rtrmbR2YGEJXwUYqAOwdc5I=",
-                        "width": 179,
-                        "height": 168,
-                        "index": "a4",
-                        "xywh": "[370.5000000000001,133.30769230769232,179,168]",
-                        "lockedBySelf": false,
-                        "rotate": 0,
-                        "size": 8659
-                    },
-                    "children": []
-                }
-            ]
-        },
-        {
-            "type": "block",
-            "id": "UfHMIBQQL8",
-            "flavour": "affine:note",
-            "version": 1,
-            "props": {
-                "xywh": "[-184.61538461538464,-72.30769230769226,498,193]",
-                "background": {
-                    "dark": "#252525",
-                    "light": "#ffffff"
-                },
-                "index": "a0",
-                "lockedBySelf": false,
-                "hidden": false,
-                "displayMode": "both",
-                "edgeless": {
-                    "style": {
-                        "borderRadius": 8,
-                        "borderSize": 4,
-                        "borderStyle": "none",
-                        "shadowType": "--affine-note-shadow-box"
-                    },
-                    "collapse": false
-                }
-            },
-            "children": [
-                {
-                    "type": "block",
-                    "id": "dRdThtvHF4",
-                    "flavour": "affine:paragraph",
-                    "version": 1,
-                    "props": {
-                        "type": "text",
-                        "text": {
-                            "$blocksuite:internal:text$": true,
-                            "delta": [
-                                {
-                                    "insert": "111"
-                                }
-                            ]
-                        },
-                        "collapsed": false
-                    },
-                    "children": []
-                }
-            ]
-        }
-    ]
-}
+    {
+        "id": "00PSULUdTf",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"00PSULUdTf\", \"type\": \"block\", \"props\": {\"alt\": \"\", \"fit\": \"contain\", \"url\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768461215548_截屏2026-01-15 11.39.17.png\", \"xywh\": \"[11542.491611129575,7843.153367311253,400,744.7450980392157]\", \"align\": \"center\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [{\"insert\": \"\"}], \"$blocksuite:internal:text$\": true}, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768461215548_截屏2026-01-15 11.39.17.png\", \"prompt\": \"\", \"rotate\": 0, \"slotId\": \"image-jz6dydmd\", \"caption\": {\"delta\": [{\"insert\": \"\"}], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"upload\", \"minWidth\": 400, \"minHeight\": 232, \"lockedBySelf\": false, \"meta:bizNodeId\": \"\", \"keepAspectRatio\": true}, \"flavour\": \"yidooo:image\", \"version\": 1}",
+        "nodeId": "8c75e94e-9d40-472c-abe0-a3c5c41946bc"
+    },
+    {
+        "id": "0csyB2kjGT",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"0csyB2kjGT\", \"type\": \"block\", \"props\": {\"xywh\": \"[10671.37885608754,8836.897172819974,1271.1126964471205,135.70470441330872]\", \"color\": {\"dark\": \"#ffffff\", \"light\": \"#000000\"}, \"index\": \"a6\", \"scale\": 1.0601929459021633, \"rotate\": 0, \"markdown\": \"### 3. Dynamic Details and \\\"High Production Value\\\"\\n\\n* Fluid Motion: The movement of the long hair and flowing robes is incredibly smooth, possessing a liquid-like texture. This level of dynamic detail (even if AI-generated) gives the video a \\\"high-budget\\\" feel, rivaling the promotional videos (PVs) of top-tier games like Genshin Impact or Honkai: Star Rail.\\n* Particle Effects: Shimmering gold dust, floating embers, and rainbow lens flares add layers of depth, making the entire space feel \\\"expensive\\\" and \\\"ethereal.\\\"\", \"fontStyle\": \"normal\", \"textAlign\": \"left\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\", \"hasMaxWidth\": true, \"lockedBySelf\": false}, \"flavour\": \"affine:edgeless-text\", \"version\": 1, \"children\": [{\"id\": \"HhNP3dGos0\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"3. Dynamic Details and \\\"High Production Value\\\"\", \"attributes\": {\"color\": \"var(--affine-text-highlight-foreground-yellow)\"}}], \"$blocksuite:internal:text$\": true}, \"type\": \"h3\", \"collapsed\": false}, \"flavour\": \"affine:paragraph\", \"version\": 1, \"children\": []}, {\"id\": \"_Pq3g2JAO6\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Fluid Motion: The movement of the long hair and flowing robes is incredibly smooth, possessing a liquid-like texture. This level of dynamic detail (even if AI-generated) gives the video a \\\"high-budget\\\" feel, rivaling the promotional videos (PVs) of top-tier games like Genshin Impact or Honkai: Star Rail.\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"bulleted\", \"order\": null, \"checked\": false, \"collapsed\": false}, \"flavour\": \"affine:list\", \"version\": 1, \"children\": []}, {\"id\": \"bGo1QeoG7K\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Particle Effects: Shimmering gold dust, floating embers, and rainbow lens flares add layers of depth, making the entire space feel \\\"expensive\\\" and \\\"ethereal.\\\"\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"bulleted\", \"order\": null, \"checked\": false, \"collapsed\": false}, \"flavour\": \"affine:list\", \"version\": 1, \"children\": []}]}",
+        "nodeId": null
+    },
+    {
+        "id": "299ycxwpAW",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"299ycxwpAW\", \"type\": \"block\", \"props\": {\"alt\": \"\", \"fit\": \"contain\", \"url\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768443546997_flowlamboh0928_Anime_style_watercolor_painting_glass-like_textu_da3b6572-1457-43ff-83ec-c11f1e83f27f.png\", \"xywh\": \"[16979.159722987337,10332.432925665033,400,266.1758241758242]\", \"align\": \"center\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768443546997_flowlamboh0928_Anime_style_watercolor_painting_glass-like_textu_da3b6572-1457-43ff-83ec-c11f1e83f27f.png\", \"prompt\": \"\", \"rotate\": 0, \"slotId\": \"image-uvvszgfm\", \"caption\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"upload\", \"minWidth\": 400, \"minHeight\": 232, \"lockedBySelf\": false, \"meta:bizNodeId\": \"\", \"keepAspectRatio\": true}, \"flavour\": \"yidooo:image\", \"version\": 1}",
+        "nodeId": "648d020c-08a8-40d6-96f6-533d1b2a2ba5"
+    },
+    {
+        "id": "3sOZPJoCCr",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"3sOZPJoCCr\", \"type\": \"block\", \"props\": {\"xywh\": \"[16864.631398111178,7430.88088581165,220.0000471644081,25.999976799026555]\", \"color\": \"#ff8c38\", \"index\": \"aB\", \"scale\": 1, \"rotate\": 0, \"fontStyle\": \"normal\", \"textAlign\": \"left\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\", \"hasMaxWidth\": true, \"lockedBySelf\": false}, \"flavour\": \"affine:edgeless-text\", \"version\": 1, \"children\": [{\"id\": \"_JXrZxmUwF\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"type\": \"text\", \"collapsed\": false}, \"flavour\": \"affine:paragraph\", \"version\": 1, \"children\": []}]}",
+        "nodeId": null
+    },
+    {
+        "id": "4Ks6RR3Qgt",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"4Ks6RR3Qgt\", \"type\": \"block\", \"props\": {\"xywh\": \"[16556.342517893583,8066.646737445581,220.00001800290516,26.000007496244393]\", \"color\": {\"dark\": \"#ffffff\", \"light\": \"#000000\"}, \"index\": \"a6\", \"scale\": 1, \"rotate\": 0, \"fontStyle\": \"normal\", \"textAlign\": \"left\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\", \"hasMaxWidth\": true, \"lockedBySelf\": false}, \"flavour\": \"affine:edgeless-text\", \"version\": 1, \"children\": [{\"id\": \"Id2AxRELkV\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"type\": \"text\", \"collapsed\": false}, \"flavour\": \"affine:paragraph\", \"version\": 1, \"children\": []}]}",
+        "nodeId": null
+    },
+    {
+        "id": "5dG1XtCoJG",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"5dG1XtCoJG\", \"type\": \"block\", \"props\": {\"alt\": \"\", \"fit\": \"contain\", \"url\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768443544787_flowlamboh0928_Anime_style_watercolor_painting_glass-like_textu_bccc8a84-7312-4312-b2a9-194d5f7295e6.png\", \"xywh\": \"[17900.578701894323,10332.490678131544,400,266.1758241758242]\", \"align\": \"center\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768443544787_flowlamboh0928_Anime_style_watercolor_painting_glass-like_textu_bccc8a84-7312-4312-b2a9-194d5f7295e6.png\", \"prompt\": \"\", \"rotate\": 0, \"slotId\": \"image-hbmtj83k\", \"caption\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"upload\", \"minWidth\": 400, \"minHeight\": 232, \"lockedBySelf\": false, \"meta:bizNodeId\": \"\", \"keepAspectRatio\": true}, \"flavour\": \"yidooo:image\", \"version\": 1}",
+        "nodeId": "238ebf4a-09ad-47aa-8d7a-396e9487fb59"
+    },
+    {
+        "id": "5wQlyREZhT",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"5wQlyREZhT\", \"type\": \"block\", \"props\": {\"size\": 0, \"xywh\": \"[19348.56331188306,10537.04590915249,400,266.2335766423357]\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"width\": 400, \"height\": 232, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/videos/generation/1768443889121_4dbb4c3e.mp4\", \"poster\": \"\", \"prompt\": \"白发角色在金色光效与几何图案环绕中呈现动态姿态，镜头以特写视角捕捉其侧脸与飘逸发丝，伴随柔和光影流动，营造出神秘而华丽的氛围，仿佛角色正释放魔法力量，画面充满幻想感与视觉冲击力，适合展现奇幻场景的张力。\", \"rotate\": 0, \"slotId\": \"video-kgkqrq5ux\", \"caption\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"minWidth\": 320, \"sourceId\": \"\", \"videoUrl\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/videos/generation/1768443889121_4dbb4c3e.mp4\", \"minHeight\": 240, \"lockedBySelf\": false, \"keepAspectRatio\": true}, \"flavour\": \"yidooo:video\", \"version\": 1}",
+        "nodeId": "821b19a8-39bc-4541-b3b6-3e9f5c4e788c"
+    },
+    {
+        "id": "7lXZ9hupp2",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"7lXZ9hupp2\", \"type\": \"block\", \"props\": {\"rows\": [{\"id\": \"ac7d9201-1ba3-4834-b9c5-8f688c0a06e4\", \"cells\": {\"ssca\": \"Close-up + Dynamic composition + Side-level view\", \"image\": \"//r.yidooo.com/keyframes/2baccbc3-6bad-464c-a430-d10b1790e443/frame_1_d9f98961.jpg\", \"shotNo\": \"1\", \"duration\": \"3Second\", \"videoDesc\": \"The white-haired character presents a dynamic pose amidst golden light effects and geometric patterns. The camera captures the character's profile and flowing hair from a close-up perspective. Accompanied by the flow of soft light and shadow, a mysterious and gorgeous atmosphere is created, as if the character is releasing magical power. The picture is full of fantasy and visual impact, suitable for showcasing the tension of a fantasy scene.\", \"visualDesc\": \"The main subject of the image is a character with white hair, facing the camera with a side profile. The hair is flowing and ethereal, surrounded by golden geometric patterns and dazzling light effects. The background is a dark base dotted with star-like points, creating an overall atmosphere of grandeur and mystery. The character's clothing is decorated with golden patterns, and the interplay of light and shadow gives a dreamlike quality, as if one is in a magical space.。\"}}, {\"id\": \"55ee8876-2cba-4257-ac27-7ba7bd6e34bd\", \"cells\": {\"ssca\": \"Medium close-up + Central symmetric composition + High-angle shot\", \"image\": \"//r.yidooo.com/keyframes/2baccbc3-6bad-464c-a430-d10b1790e443/frame_2_3a5a64dc.jpg\", \"shotNo\": \"2\", \"duration\": \"2Second\", \"videoDesc\": \"An anime character dressed in gorgeous gold attire stands before a complex golden magic circle, which emits a soft glow. The background is adorned with starry skies, and the character's posture is solemn. The camera uses a low-angle shot to present a centrally symmetrical composition, creating a mysterious and sacred atmosphere, as if a magical ritual is being performed. The subtitle \\\"Let's move towards the principle of the circle\\\" is displayed simultaneously with the Italian subtitle.\", \"visualDesc\": \"At the center of the image is an anime character dressed in elaborate golden decorated clothing, with long black hair cascading down. Their face is partially obscured by shadows and hair strands. The background features a complex and intricate golden magic circle, adorned with starlight and geometric patterns, all enveloped in a soft golden glow, creating a sacred and mysterious atmosphere, with bilingual Chinese-English subtitles below.\"}}, {\"id\": \"013707b2-5b8d-456b-b1fb-1c08c7b8c418\", \"cells\": {\"ssca\": \"Medium shot, front view, eye-level\", \"image\": \"//r.yidooo.com/keyframes/2baccbc3-6bad-464c-a430-d10b1790e443/frame_3_cf269e04.jpg\", \"shotNo\": \"3\", \"duration\": \"3Second\", \"videoDesc\": \"A figure dressed in magnificent attire, adorned with gold, stretches out his arms, surrounded by golden light and intricate light and shadow patterns. The background features geometric patterns interwoven with white and gold, creating an overall atmosphere of sacred solemnity. The camera presents the figure from a level angle, showcasing his mysterious and powerful posture, making it suitable for generating video scenes with an epic and sacred feel.\", \"visualDesc\": \"The main subject of the image is a person dressed in magnificent attire adorned with gold decorations. Their posture is relaxed, one arm raised high, surrounded by golden light and intricate patterns of light and shadow. The background is composed of geometric patterns interwoven with white and gold. The overall atmosphere is sacred and solemn, with the figure's outline appearing mysterious and powerful in the light and shadow, accompanied by the text 'The judgment of fate is beyond anyone's challenge.'\"}}, {\"id\": \"3ec1da8b-eb2c-4bf8-9b8f-8981e675dba8\", \"cells\": {\"ssca\": \"Medium shot + Full composition + Low angle view\", \"image\": \"//r.yidooo.com/keyframes/2baccbc3-6bad-464c-a430-d10b1790e443/frame_4_59ddd001.jpg\", \"shotNo\": \"4\", \"duration\": \"3Second\", \"videoDesc\": \"The black-haired figure, dressed in magnificent gold-embroidered clothing, stretches out his arm to the side, surrounded by shimmering golden star-shaped magic circles and white light wing structures. The deep, dark background accentuates the sacred atmosphere. The camera slowly zooms in, showcasing the figure's majestic posture as he casts a spell. The overall atmosphere is mysterious and full of power, making it suitable for depicting the highlight moments in a fantasy scene.\", \"visualDesc\": \"The main subject of the image is a person with black hair, dressed in elaborate golden-decorated attire, extending their arms sideways. Around them are intricate and exquisite golden star-shaped magic circles and white light wing-like structures. The background is a deep black, with golden and white lights intertwining, creating a sacred and mysterious atmosphere. The figure's posture is full of power, as if performing a powerful magic.\"}}, {\"id\": \"af6cf843-6685-45b8-bcb5-a28682d37d8e\", \"cells\": {\"ssca\": \"Medium shot + front view + eye-level\", \"image\": \"//r.yidooo.com/keyframes/2baccbc3-6bad-464c-a430-d10b1790e443/frame_5_efa23a3b.jpg\", \"shotNo\": \"5\", \"duration\": \"3Second\", \"videoDesc\": \"The white-haired character, dressed in a golden robe, gently touches his forehead with his right hand, displaying a sacred posture amidst the starry sky and golden light effects. The camera maintains a level, frontal perspective, slowly zooming in, with the interplay of light and shadow enhancing the mysterious atmosphere, making it suitable for generating animated scenes with a sacred feel and a starry background.。\", \"visualDesc\": \"The main subject of the image is a white-haired character dressed in elaborate golden-decorated attire, with intricate gold jewelry on the neck and shoulders. The right hand is raised lightly touching the forehead, and the face is shrouded in shadows. The background is a deep starry sky, dotted with twinkling stars, surrounded by golden light effects and geometric patterns. The overall contrast of light and shadow is strong, with golden light intertwining with the black background, creating a mysterious and sacred atmosphere.\"}}, {\"id\": \"ace5daf7-64d1-4475-a55f-cf7cc620f89b\", \"cells\": {\"ssca\": \"Medium shot + side composition + eye-level view\", \"image\": \"//r.yidooo.com/keyframes/2baccbc3-6bad-464c-a430-d10b1790e443/frame_6_21ec789e.jpg\", \"shotNo\": \"6\", \"duration\": \"2Second\", \"videoDesc\": \"A long-haired figure is presented in profile, dressed in clothing with gold patterns. The background is a magnificent scene with flowing gold light effects and intricate patterns. The camera slowly pans, and the gold light intertwines with white elements, creating a sacred and mysterious atmosphere. The figure's posture is agile, and the background light and shadow are dynamic. The overall picture is full of dreamlike and solemnity.\", \"visualDesc\": \"The main subject of the image is the silhouette of a long-haired figure, who is wearing exquisite golden accessories. The long hair flows like wind. The background is a magnificent scene woven with intricate golden patterns and light effects. The golden light and white elements reflect each other, creating an overall atmosphere full of sacred and mysterious qualities. The side posture of the figure shows a sense of dynamism, and the rich details of light and shadow in the background create a dreamlike visual effect.\"}}, {\"id\": \"22035e51-61fa-4771-b2bf-9f7eec06287f\", \"cells\": {\"ssca\": \"Medium shot + front view + eye-level\", \"image\": \"//r.yidooo.com/keyframes/2baccbc3-6bad-464c-a430-d10b1790e443/frame_7_73ec7ef9.jpg\", \"shotNo\": \"7\", \"duration\": \"3Second\", \"videoDesc\": \"The white-haired character is dressed in gorgeous attire, surrounded by golden light effects. The camera slowly zooms in, showcasing the character's sacred posture. The black background highlights the golden light, creating a solemn and mysterious atmosphere, suitable for scenes where the character unleashes powerful energy or divine skills.\", \"visualDesc\": \"The main subject of the image is a white-haired character, dressed in elaborate and intricate clothing, surrounded by golden light and complex decorations. The background is a deep black, with golden light effects flickering around, creating a sacred and mysterious atmosphere. The character's white hair contrasts sharply with the golden decorations, resulting in a strong visual impact.\"}}, {\"id\": \"ab777acb-0991-4ed1-bc48-320d0fb99462\", \"cells\": {\"ssca\": \"Close-up + Dynamic composition + Side-level view\", \"image\": \"//r.yidooo.com/keyframes/2baccbc3-6bad-464c-a430-d10b1790e443/frame_8_76872662.jpg\", \"shotNo\": \"8\", \"duration\": \"3Second\", \"videoDesc\": \"In a sacred and solemn atmosphere, a mysterious figure with long white hair wearing a golden crown appears as a black silhouette, surrounded by dazzling golden patterns and starlight. Rainbow light effects flow on the right, and subtitles slowly emerge. The camera slowly zooms in from a low angle, the golden elements intertwining with the black background, conveying a majestic and mysterious sense of ritual, as if announcing some kind of sacred bestowal.\", \"visualDesc\": \"At the center of the image is a mysterious figure with long white hair wearing a magnificent golden crown. His face is shown in black silhouette, surrounded by dazzling golden patterns and starlight. Rainbow-colored light effects flow on the right side, and the subtitles below read \\\"To be bestowed upon a faithful disciple\\\" along with foreign language text. The overall atmosphere is sacred and solemn, with the golden elements contrasting sharply with the black background, highlighting the character's majesty and mystery.\"}}, {\"id\": \"4f1b4a8a-9220-42cd-b0a6-b0307611d7ff\", \"cells\": {\"ssca\": \"\", \"image\": \"\", \"shotNo\": \"\", \"duration\": \"\", \"videoDesc\": \"\", \"visualDesc\": \"\"}}], \"xywh\": \"[13455.619178077897,7093.344637235346,1577.2113201618195,1133.741372346879]\", \"index\": \"a1\", \"scale\": 1, \"title\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"rotate\": 0, \"slotId\": \"shot-table-j5e7rgaf\", \"columns\": [{\"key\": \"shotNo\", \"name\": \"镜头编号\", \"sort\": 1, \"width\": 120, \"visible\": true, \"editable\": false}, {\"key\": \"image\", \"name\": \"分镜图片\", \"sort\": 2, \"width\": 200, \"visible\": true, \"editable\": false}, {\"key\": \"duration\", \"name\": \"时长\", \"sort\": 2, \"width\": 120, \"visible\": true, \"editable\": false}, {\"key\": \"ssca\", \"name\": \"景别 + 构图 + 角度\", \"sort\": 7, \"width\": 200, \"visible\": true, \"editable\": false}, {\"key\": \"visualDesc\", \"name\": \"画面描述\", \"sort\": 8, \"width\": 360, \"visible\": true, \"editable\": false}, {\"key\": \"videoDesc\", \"name\": \"视频描述\", \"sort\": 9, \"width\": 360, \"visible\": true, \"editable\": false}], \"autoSize\": false, \"funcType\": \"storyboard_breakdown\", \"minWidth\": 540, \"minHeight\": 320, \"tableTitle\": \"分镜生成\", \"lockedBySelf\": false, \"actionsEnabled\": true, \"headerEditable\": true, \"meta:bizNodeId\": \"\", \"toolbarEnabled\": true, \"meta:frameStyleId\": \"\", \"meta:frameAspectRatio\": \"\"}, \"flavour\": \"yidooo:shot-table\", \"version\": 1}",
+        "nodeId": "80865bcd-8bd1-4ef3-831f-7fa4601449d5"
+    },
+    {
+        "id": "8m6va1aTR3",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"8m6va1aTR3\", \"type\": \"block\", \"props\": {\"size\": 0, \"xywh\": \"[20234.503326417613,10564.894204114917,400,266.2335766423357]\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"width\": 400, \"height\": 232, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/videos/generation/1768449818185_44061574.mp4\", \"poster\": \"\", \"prompt\": \"与图片完美契合的动态效果\", \"rotate\": 0, \"slotId\": \"video-pa04ibi0p\", \"caption\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"minWidth\": 320, \"sourceId\": \"\", \"videoUrl\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/videos/generation/1768449818185_44061574.mp4\", \"minHeight\": 240, \"lockedBySelf\": false, \"keepAspectRatio\": true}, \"flavour\": \"yidooo:video\", \"version\": 1}",
+        "nodeId": "da4ecbd7-6a60-420f-bd94-1a18de400380"
+    },
+    {
+        "id": "8rG-muIw1f",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"8rG-muIw1f\", \"type\": \"block\", \"props\": {\"xywh\": \"[10666.650625973965,8397.1853485953,831.6825555375726,266.5370632014856]\", \"color\": {\"dark\": \"#ffffff\", \"light\": \"#000000\"}, \"index\": \"a4\", \"scale\": 1.1898975456988536, \"rotate\": 0, \"markdown\": \"### 1. Extreme Visual Contrast: The \\\"Premium\\\" Feel of Black & Gold\\n\\n* Color Psychology: The video utilizes an extreme Black & Gold color palette. Black represents mystery, depth, and the unknown, while gold symbolizes divinity, brilliance, and power. This combination is a universal shorthand for \\\"luxury\\\" and \\\"high-end\\\" art.\\n* High Contrast: The human eye is naturally drawn to high-contrast imagery. The pitch-black silhouettes against ultra-bright golden outlines create a powerful visual hook, making the video look like a moving piece of \\\"liquid gold\\\" or \\\"lacquerware art.\\\"\", \"fontStyle\": \"normal\", \"textAlign\": \"left\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\", \"hasMaxWidth\": true, \"lockedBySelf\": false}, \"flavour\": \"affine:edgeless-text\", \"version\": 1, \"children\": [{\"id\": \"gK3ATgV8nH\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"1. Extreme Visual Contrast: The \\\"Premium\\\" Feel of Black & Gold\", \"attributes\": {\"color\": \"var(--affine-text-highlight-foreground-red)\"}}], \"$blocksuite:internal:text$\": true}, \"type\": \"h3\", \"collapsed\": false}, \"flavour\": \"affine:paragraph\", \"version\": 1, \"children\": []}, {\"id\": \"MzCmkqu80t\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Color Psychology: The video utilizes an extreme Black & Gold color palette. Black represents mystery, depth, and the unknown, while gold symbolizes divinity, brilliance, and power. This combination is a universal shorthand for \\\"luxury\\\" and \\\"high-end\\\" art.\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"bulleted\", \"order\": null, \"checked\": false, \"collapsed\": false}, \"flavour\": \"affine:list\", \"version\": 1, \"children\": []}, {\"id\": \"N-WO-GeVyp\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"High Contrast: The human eye is naturally drawn to high-contrast imagery. The pitch-black silhouettes against ultra-bright golden outlines create a powerful visual hook, making the video look like a moving piece of \\\"liquid gold\\\" or \\\"lacquerware art.\\\"\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"bulleted\", \"order\": null, \"checked\": false, \"collapsed\": false}, \"flavour\": \"affine:list\", \"version\": 1, \"children\": []}, {\"id\": \"8fJ20Aq_bd\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"type\": \"text\", \"collapsed\": false}, \"flavour\": \"affine:paragraph\", \"version\": 1, \"children\": []}]}",
+        "nodeId": null
+    },
+    {
+        "id": "8xSYTCcL3U",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"8xSYTCcL3U\", \"type\": \"block\", \"props\": {\"xywh\": \"[16294.349088884319,7584.749905359962,219.9999824169713,26.00000675641719]\", \"color\": {\"dark\": \"#ffffff\", \"light\": \"#000000\"}, \"index\": \"a8\", \"scale\": 1, \"rotate\": 0, \"fontStyle\": \"normal\", \"textAlign\": \"left\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\", \"hasMaxWidth\": true, \"lockedBySelf\": false}, \"flavour\": \"affine:edgeless-text\", \"version\": 1, \"children\": [{\"id\": \"f7-OkNz0u3\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"type\": \"text\", \"collapsed\": false}, \"flavour\": \"affine:paragraph\", \"version\": 1, \"children\": []}]}",
+        "nodeId": null
+    },
+    {
+        "id": "AsdqFtOFV9",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"AsdqFtOFV9\", \"type\": \"block\", \"props\": {\"alt\": \"\", \"fit\": \"contain\", \"url\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768474861550_flowlamboh0928_Anime_style_watercolor_painting_glass-like_textu_da3b6572-1457-43ff-83ec-c11f1e83f27f.png\", \"xywh\": \"[17154.988748284974,7255.142288149941,680.145835876463,423.1806332934023]\", \"align\": \"center\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"nodeId\": \"6695f119-d31a-4f8f-ae61-a84710ab4661\", \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768474861550_flowlamboh0928_Anime_style_watercolor_painting_glass-like_textu_da3b6572-1457-43ff-83ec-c11f1e83f27f.png\", \"prompt\": \"\", \"rotate\": 0, \"slotId\": \"image-bipwhqex\", \"caption\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"upload\", \"minWidth\": 400, \"minHeight\": 232, \"lockedBySelf\": false, \"meta:bizNodeId\": \"\", \"keepAspectRatio\": true}, \"flavour\": \"yidooo:image\", \"version\": 1, \"children\": []}",
+        "nodeId": "6695f119-d31a-4f8f-ae61-a84710ab4661"
+    },
+    {
+        "id": "C97-Pj4WDr",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"C97-Pj4WDr\", \"type\": \"block\", \"props\": {\"alt\": \"\", \"fit\": \"contain\", \"url\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768443533838_flowlamboh0928_Anime_style_watercolor_painting_exquisite_detail_f7f5b874-948a-45e9-a5b5-8136bc2cd450.png\", \"xywh\": \"[16945.32682786164,10699.53939213439,400,266.1758241758242]\", \"align\": \"center\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768443533838_flowlamboh0928_Anime_style_watercolor_painting_exquisite_detail_f7f5b874-948a-45e9-a5b5-8136bc2cd450.png\", \"prompt\": \"\", \"rotate\": 0, \"slotId\": \"image-4a0ywcy7\", \"caption\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"upload\", \"minWidth\": 400, \"minHeight\": 232, \"lockedBySelf\": false, \"meta:bizNodeId\": \"\", \"keepAspectRatio\": true}, \"flavour\": \"yidooo:image\", \"version\": 1}",
+        "nodeId": "381f5060-3220-4d45-a7fe-8c437f461ddc"
+    },
+    {
+        "id": "DGOf5YEqin",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"DGOf5YEqin\", \"type\": \"block\", \"props\": {\"xywh\": \"[16058.025027475605,7920.306678110242,1808.6942946006784,1068.6310540518318]\", \"color\": {\"dark\": \"#ffffff\", \"light\": \"#000000\"}, \"index\": \"a7\", \"scale\": 1.4800984568123654, \"rotate\": 0, \"markdown\": \"1. From \\\"Absolute Silhouette\\\" to \\\"Exquisite Anime Character Design\\\"\\n   Original Video: Characters are presented as pure black silhouettes, entirely devoid of facial features, defined only by glowing outlines. This approach emphasizes \\\"divinity\\\" and \\\"mystery.\\\"\\n   Your Recreation: You replaced the solid black shapes by restoring intricate facial details. We can clearly see the character's eyes, the bridge of the nose, skin tones, and the structural shadows of the face.\\n   Visual Effect: The imagery transitions from a \\\"symbolic piece of art\\\" into a \\\"soulful anime character close-up,\\\" offering much stronger emotional expression and a sense of narrative.\\n2. From \\\"Liquid Light\\\" to \\\"Extreme Impasto & Heavy Color Texture\\\"\\n   Original Video: The hair and decorations possess a smoothness similar to liquid metal or glowing silk. The lighting and shadows are exceptionally clean and minimalist.\\n   Your Recreation: You introduced distinct brushstroke textures and extreme impasto (thick paint) effects. The hair is no longer a singular glowing mass but features layers of interwoven lines. The clothing and background patterns exhibit a heavy, stacked texture reminiscent of \\\"Iwa-enogu\\\" (mineral pigment painting) or \\\"heavy gold-leaf\\\" styles.\\n   Visual Effect: The visuals appear more dense and luxurious, conveying a handcrafted artistic quality rather than a purely digital, motion-graphics feel.\\n3. Concretization and Narrativity of Background Elements\\n   Original Video: The background consists primarily of pure mathematical geometric circles (Mandalas), using rotation to create a sense of space.\\n   Your Recreation: You replaced the simple circles with more complex elements such as \\\"clockwork gears,\\\" \\\"star tracks,\\\" and \\\"shattered crystals.\\\" Some shots even incorporate structures like \\\"angel wings.\\\"\\n   Visual Effect: The dimension of the scene is expanded. The background is no longer just decorative but suggests narrative themes such as \\\"Time,\\\" \\\"Fate,\\\" or a \\\"Divine Outburst.\\\"\\n4. Expansion of Color Dimensions (From Bicolor to Multi-tonal Gradients)\\n   Original Video: Limited to extreme blacks and ultra-bright golds/whites.\\n   Your Recreation: You added neutral tones and environmental colors (such as dark browns, beiges, and even cool-toned shadows) to the black-and-gold base. Light refraction on the hair and skin creates more layered and sophisticated transitions.\\n   Visual Effect: The image becomes softer and more voluminous, reducing the \\\"harsh\\\" impact of the original in exchange for a more durable and captivating \\\"atmospheric beauty.\\\"\\n5. Texture Substitution: Introducing \\\"Glazed Glass\\\" and \\\"Heavy Metalwork\\\"\\n   Original Video: Leans toward the expression of \\\"light beams\\\" and \\\"energy bodies.\\\"\\n   Your Recreation: The scenes feature textures resembling glazed glass refraction and intricate metal filigree (hollowed carving).\\n   Visual Effect: This creates a \\\"Heavy Industrial Anime\\\" luxury, very similar to the high-end character trailers (PVs) seen in top-tier games like Genshin Impact or Honkai: Star Rail.\", \"fontStyle\": \"normal\", \"textAlign\": \"left\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\", \"hasMaxWidth\": true, \"lockedBySelf\": false}, \"flavour\": \"affine:edgeless-text\", \"version\": 1, \"children\": [{\"id\": \"u5mDLeQZAU\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"From \\\"Absolute Silhouette\\\" to \\\"Exquisite Anime Character Design\\\"\\nOriginal Video: Characters are presented as pure black silhouettes, entirely devoid of facial features, defined only by glowing outlines. This approach emphasizes \\\"divinity\\\" and \\\"mystery.\\\"\\nYour Recreation: You replaced the solid black shapes by restoring intricate facial details. We can clearly see the character's eyes, the bridge of the nose, skin tones, and the structural shadows of the face.\\nVisual Effect: The imagery transitions from a \\\"symbolic piece of art\\\" into a \\\"soulful anime character close-up,\\\" offering much stronger emotional expression and a sense of narrative.\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"numbered\", \"order\": 1, \"checked\": false, \"collapsed\": false}, \"flavour\": \"affine:list\", \"version\": 1, \"children\": []}, {\"id\": \"652934wIVb\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"From \\\"Liquid Light\\\" to \\\"Extreme Impasto & Heavy Color Texture\\\"\\nOriginal Video: The hair and decorations possess a smoothness similar to liquid metal or glowing silk. The lighting and shadows are exceptionally clean and minimalist.\\nYour Recreation: You introduced distinct brushstroke textures and extreme impasto (thick paint) effects. The hair is no longer a singular glowing mass but features layers of interwoven lines. The clothing and background patterns exhibit a heavy, stacked texture reminiscent of \\\"Iwa-enogu\\\" (mineral pigment painting) or \\\"heavy gold-leaf\\\" styles.\\nVisual Effect: The visuals appear more dense and luxurious, conveying a handcrafted artistic quality rather than a purely digital, motion-graphics feel.\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"numbered\", \"order\": 2, \"checked\": false, \"collapsed\": false}, \"flavour\": \"affine:list\", \"version\": 1, \"children\": []}, {\"id\": \"S48erPRmOF\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Concretization and Narrativity of Background Elements\\nOriginal Video: The background consists primarily of pure mathematical geometric circles (Mandalas), using rotation to create a sense of space.\\nYour Recreation: You replaced the simple circles with more complex elements such as \\\"clockwork gears,\\\" \\\"star tracks,\\\" and \\\"shattered crystals.\\\" Some shots even incorporate structures like \\\"angel wings.\\\"\\nVisual Effect: The dimension of the scene is expanded. The background is no longer just decorative but suggests narrative themes such as \\\"Time,\\\" \\\"Fate,\\\" or a \\\"Divine Outburst.\\\"\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"numbered\", \"order\": 3, \"checked\": false, \"collapsed\": false}, \"flavour\": \"affine:list\", \"version\": 1, \"children\": []}, {\"id\": \"rJjyIPoVEE\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Expansion of Color Dimensions (From Bicolor to Multi-tonal Gradients)\\nOriginal Video: Limited to extreme blacks and ultra-bright golds/whites.\\nYour Recreation: You added neutral tones and environmental colors (such as dark browns, beiges, and even cool-toned shadows) to the black-and-gold base. Light refraction on the hair and skin creates more layered and sophisticated transitions.\\nVisual Effect: The image becomes softer and more voluminous, reducing the \\\"harsh\\\" impact of the original in exchange for a more durable and captivating \\\"atmospheric beauty.\\\"\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"numbered\", \"order\": 4, \"checked\": false, \"collapsed\": false}, \"flavour\": \"affine:list\", \"version\": 1, \"children\": []}, {\"id\": \"KsTbOHdnES\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Texture Substitution: Introducing \\\"Glazed Glass\\\" and \\\"Heavy Metalwork\\\"\\nOriginal Video: Leans toward the expression of \\\"light beams\\\" and \\\"energy bodies.\\\"\\nYour Recreation: The scenes feature textures resembling glazed glass refraction and intricate metal filigree (hollowed carving).\\nVisual Effect: This creates a \\\"Heavy Industrial Anime\\\" luxury, very similar to the high-end character trailers (PVs) seen in top-tier games like Genshin Impact or Honkai: Star Rail.\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"numbered\", \"order\": 5, \"checked\": false, \"collapsed\": false}, \"flavour\": \"affine:list\", \"version\": 1, \"children\": []}]}",
+        "nodeId": null
+    },
+    {
+        "id": "H7tWeGIylJ",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"H7tWeGIylJ\", \"type\": \"block\", \"props\": {\"xywh\": \"[10666.650625973965,8654.843610525217,2038.5657322483785,159.44659117863853]\", \"color\": {\"dark\": \"#ffffff\", \"light\": \"#000000\"}, \"index\": \"a5\", \"scale\": 1.0489906303404954, \"rotate\": 0, \"markdown\": \"### 2. The Artistic Charm of \\\"Divinity\\\" and \\\"Negative Space\\\"\\n\\n* The Power of Silhouettes: By keeping the characters in silhouette without facial features, the video utilizes \\\"Negative Space.\\\" This leaves infinite room for the audience's \\n  imagination—every viewer can project their own version of a perfect, divine being onto the character.\\n* Sacred Geometry: The frequent use of rotating mandalas, circular halos, and star charts taps into \\\"Sacred Geometry.\\\" these shapes provide a sense of divine order and \\n  epic scale, creating a mythological atmosphere that feels both ancient and futuristic.\", \"fontStyle\": \"normal\", \"textAlign\": \"left\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\", \"hasMaxWidth\": true, \"lockedBySelf\": false}, \"flavour\": \"affine:edgeless-text\", \"version\": 1, \"children\": [{\"id\": \"XjRsEvPYIR\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"2. The Artistic Charm of \\\"Divinity\\\" and \\\"Negative Space\\\"\", \"attributes\": {\"color\": \"var(--affine-text-highlight-foreground-orange)\"}}], \"$blocksuite:internal:text$\": true}, \"type\": \"h3\", \"collapsed\": false}, \"flavour\": \"affine:paragraph\", \"version\": 1, \"children\": []}, {\"id\": \"LchGYNk7Vx\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"The Power of Silhouettes: By keeping the characters in silhouette without facial features, the video utilizes \\\"Negative Space.\\\" This leaves infinite room for the audience's \\nimagination—every viewer can project their own version of a perfect, divine being onto the character.\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"bulleted\", \"order\": null, \"checked\": false, \"collapsed\": false}, \"flavour\": \"affine:list\", \"version\": 1, \"children\": []}, {\"id\": \"jcwAu31as8\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Sacred Geometry: The frequent use of rotating mandalas, circular halos, and star charts taps into \\\"Sacred Geometry.\\\" these shapes provide a sense of divine order and \\nepic scale, creating a mythological atmosphere that feels both ancient and futuristic.\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"bulleted\", \"order\": null, \"checked\": false, \"collapsed\": false}, \"flavour\": \"affine:list\", \"version\": 1, \"children\": []}]}",
+        "nodeId": null
+    },
+    {
+        "id": "HCrrCQmpeH",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"HCrrCQmpeH\", \"type\": \"block\", \"props\": {\"xywh\": \"[10673.950357377558,9009.463962058955,1304.7816699134728,132.5825113051023]\", \"color\": {\"dark\": \"#ffffff\", \"light\": \"#000000\"}, \"index\": \"a7\", \"scale\": 1.0358007429355476, \"rotate\": 0, \"markdown\": \"### 4. Audio-Visual Synergy: Epic Atmosphere\\n\\n* Resonant Soundtrack: The choice of music—often featuring ethereal chants, epic choirs, or grand orchestral pieces—perfectly matches the grand narrative of the visuals.\\n* Beat-Matching: The cuts and transitions are often synchronized with the rhythm or heavy beats of the music. This \\\"rhythmic satisfaction\\\" creates a dopamine hit for the viewer, encouraging them to watch and share the video repeatedly.\", \"fontStyle\": \"normal\", \"textAlign\": \"left\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\", \"hasMaxWidth\": true, \"lockedBySelf\": false}, \"flavour\": \"affine:edgeless-text\", \"version\": 1, \"children\": [{\"id\": \"R0iMH5DGOu\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"4. Audio-Visual Synergy: Epic Atmosphere\", \"attributes\": {\"color\": \"var(--affine-text-highlight-foreground-green)\"}}], \"$blocksuite:internal:text$\": true}, \"type\": \"h3\", \"collapsed\": false}, \"flavour\": \"affine:paragraph\", \"version\": 1, \"children\": []}, {\"id\": \"Jt3b52C3ZD\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Resonant Soundtrack: The choice of music—often featuring ethereal chants, epic choirs, or grand orchestral pieces—perfectly matches the grand narrative of the visuals.\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"bulleted\", \"order\": null, \"checked\": false, \"collapsed\": false}, \"flavour\": \"affine:list\", \"version\": 1, \"children\": []}, {\"id\": \"JyyA_3vWMB\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Beat-Matching: The cuts and transitions are often synchronized with the rhythm or heavy beats of the music. This \\\"rhythmic satisfaction\\\" creates a dopamine hit for the viewer, encouraging them to watch and share the video repeatedly.\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"bulleted\", \"order\": null, \"checked\": false, \"collapsed\": false}, \"flavour\": \"affine:list\", \"version\": 1, \"children\": []}]}",
+        "nodeId": null
+    },
+    {
+        "id": "L2lz3RP4_6",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"L2lz3RP4_6\", \"type\": \"block\", \"props\": {\"alt\": \"\", \"fit\": \"contain\", \"url\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768443546073_flowlamboh0928_Anime_style_watercolor_painting_glass-like_textu_ca48e131-e6dd-4b07-84d8-d06a6a59ad18.webp\", \"xywh\": \"[17449.312653285324,10332.490678131544,400,266.1758241758242]\", \"align\": \"center\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768443546073_flowlamboh0928_Anime_style_watercolor_painting_glass-like_textu_ca48e131-e6dd-4b07-84d8-d06a6a59ad18.webp\", \"prompt\": \"\", \"rotate\": 0, \"slotId\": \"image-6teghcg1\", \"caption\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"upload\", \"minWidth\": 400, \"minHeight\": 232, \"lockedBySelf\": false, \"meta:bizNodeId\": \"\", \"keepAspectRatio\": true}, \"flavour\": \"yidooo:image\", \"version\": 1}",
+        "nodeId": "7e24345e-8fcd-46ea-86ee-0114a73ad312"
+    },
+    {
+        "id": "MVW_YUpK8z",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"MVW_YUpK8z\", \"type\": \"block\", \"props\": {\"alt\": \"\", \"fit\": \"contain\", \"url\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768474806745_frame_1_d9f98961.jpg\", \"xywh\": \"[16058.025027475605,7254.441487922351,680.1461933308092,424.58223374858017]\", \"align\": \"center\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"nodeId\": \"db895e60-a11d-49da-804f-f3e75b7189db\", \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768474806745_frame_1_d9f98961.jpg\", \"prompt\": \"\", \"rotate\": 0, \"slotId\": \"image-4mwz3zul\", \"caption\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"upload\", \"minWidth\": 400, \"minHeight\": 232, \"lockedBySelf\": false, \"meta:bizNodeId\": \"\", \"keepAspectRatio\": true}, \"flavour\": \"yidooo:image\", \"version\": 1, \"children\": []}",
+        "nodeId": "db895e60-a11d-49da-804f-f3e75b7189db"
+    },
+    {
+        "id": "NmFnU_3s70",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"NmFnU_3s70\", \"type\": \"block\", \"props\": {\"size\": 0, \"xywh\": \"[19781.81096144502,10564.894204114917,400,264.22222222222223]\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"width\": 400, \"height\": 232, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/videos/image_reel/1768446779859_2a167c91.mp4\", \"poster\": \"\", \"prompt\": \"The golden runes expand and contract rhythmically, crown jewels flicker with light, gold dust falling like snow, hair moving subtly.\", \"rotate\": 0, \"slotId\": \"video-4txekz5ip\", \"caption\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"minWidth\": 320, \"sourceId\": \"\", \"videoUrl\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/videos/image_reel/1768446779859_2a167c91.mp4\", \"minHeight\": 240, \"lockedBySelf\": false, \"keepAspectRatio\": true}, \"flavour\": \"yidooo:video\", \"version\": 1}",
+        "nodeId": "b7a18fcb-c1d8-444d-a56e-5b9ce75f34a2"
+    },
+    {
+        "id": "RnIU1AWcya",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"RnIU1AWcya\", \"type\": \"block\", \"props\": {\"size\": 0, \"xywh\": \"[21451.01211146935,10195.83413569196,1859.9983215332031,1075.3324008517795]\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"width\": 400, \"height\": 232, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768461860036_1月15日 (1)(3).mp4\", \"poster\": \"\", \"prompt\": \"\", \"rotate\": 0, \"slotId\": \"video-5805n1yj6\", \"caption\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"upload\", \"minWidth\": 320, \"sourceId\": \"\", \"videoUrl\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768461860036_1月15日 (1)(3).mp4\", \"minHeight\": 240, \"lockedBySelf\": false, \"keepAspectRatio\": true}, \"flavour\": \"yidooo:video\", \"version\": 1}",
+        "nodeId": "fdebd474-b9fd-4f55-9f54-94eeaec26df7"
+    },
+    {
+        "id": "WjOw_04ns9",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"WjOw_04ns9\", \"type\": \"block\", \"props\": {\"size\": 0, \"xywh\": \"[20234.503326417613,10239.42580136125,400,266.2335766423357]\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"width\": 400, \"height\": 232, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/videos/generation/1768447179908_ce4d8a9c.mp4\", \"poster\": \"\", \"prompt\": \"The character reaches towards the screen, golden wings glow intensely, geometric rings spin rapidly, intense particle effect.\", \"rotate\": 0, \"slotId\": \"video-3h19yzdf1\", \"caption\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"minWidth\": 320, \"sourceId\": \"\", \"videoUrl\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/videos/generation/1768447179908_ce4d8a9c.mp4\", \"minHeight\": 240, \"lockedBySelf\": false, \"keepAspectRatio\": true}, \"flavour\": \"yidooo:video\", \"version\": 1}",
+        "nodeId": "d0785bba-e4c3-4307-bbaa-e4bcf615c3e7"
+    },
+    {
+        "id": "X4FcUv99EW",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"X4FcUv99EW\", \"type\": \"block\", \"props\": {\"alt\": \"\", \"fit\": \"contain\", \"url\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768443543341_flowlamboh0928_Anime_style_watercolor_painting_glass-like_textu_55447457-577e-4549-b935-cc04db4c0fd7.png\", \"xywh\": \"[17849.312653285324,10703.448278657597,400,266.1758241758242]\", \"align\": \"center\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768443543341_flowlamboh0928_Anime_style_watercolor_painting_glass-like_textu_55447457-577e-4549-b935-cc04db4c0fd7.png\", \"prompt\": \"\", \"rotate\": 0, \"slotId\": \"image-k9jv8y05\", \"caption\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"upload\", \"minWidth\": 400, \"minHeight\": 232, \"lockedBySelf\": false, \"meta:bizNodeId\": \"\", \"keepAspectRatio\": true}, \"flavour\": \"yidooo:image\", \"version\": 1}",
+        "nodeId": "df60a6e4-1e2d-4e2f-a34d-3421fbaf8b69"
+    },
+    {
+        "id": "aqfIN7t3qU",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"aqfIN7t3qU\", \"type\": \"block\", \"props\": {\"xywh\": \"[10562.402446224518,7018.979820814759,1499.3569360029978,2456.8774640971606]\", \"index\": \"Zx\", \"title\": {\"delta\": [{\"insert\": \"Hot video\"}], \"$blocksuite:internal:text$\": true}, \"background\": \"transparent\", \"lockedBySelf\": false, \"childElementIds\": {\"-OadxTR0iN\": true, \"00PSULUdTf\": true, \"0csyB2kjGT\": true, \"8rG-muIw1f\": true, \"HCrrCQmpeH\": true, \"cF3rZL6D3H\": true, \"fHRDFlNUsw\": true, \"pDaF7LG4v0\": true, \"pOxAewF6xf\": true, \"vgdwl5sGIV\": true, \"ytSj1DPJIf\": true}, \"presentationIndex\": \"a20WYy4STYTtJnxzXqZitA5862lsg2A5bxP\"}, \"flavour\": \"affine:frame\", \"version\": 1}",
+        "nodeId": null
+    },
+    {
+        "id": "ay-OumRU0-",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"ay-OumRU0-\", \"type\": \"block\", \"props\": {\"xywh\": \"[15377.532574128407,7431.475441441143,220.00003486183428,25.999982887071045]\", \"color\": {\"dark\": \"#ffffff\", \"light\": \"#000000\"}, \"index\": \"aG\", \"scale\": 1, \"rotate\": 0, \"fontStyle\": \"normal\", \"textAlign\": \"left\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\", \"hasMaxWidth\": true, \"lockedBySelf\": false}, \"flavour\": \"affine:edgeless-text\", \"version\": 1, \"children\": [{\"id\": \"bEkMLr8cop\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"type\": \"text\", \"collapsed\": false}, \"flavour\": \"affine:paragraph\", \"version\": 1, \"children\": []}]}",
+        "nodeId": null
+    },
+    {
+        "id": "cF3rZL6D3H",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"cF3rZL6D3H\", \"type\": \"block\", \"props\": {\"xywh\": \"[10663.863531511586,8371.185351141145,219.99994232613818,26.000001527263]\", \"color\": {\"dark\": \"#ffffff\", \"light\": \"#000000\"}, \"index\": \"a3\", \"scale\": 1, \"rotate\": 0, \"fontStyle\": \"normal\", \"textAlign\": \"left\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\", \"hasMaxWidth\": true, \"lockedBySelf\": false}, \"flavour\": \"affine:edgeless-text\", \"version\": 1, \"children\": [{\"id\": \"WlhFIygsJT\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"type\": \"text\", \"collapsed\": false}, \"flavour\": \"affine:paragraph\", \"version\": 1, \"children\": []}]}",
+        "nodeId": null
+    },
+    {
+        "id": "dSNSPgX4pQ",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"dSNSPgX4pQ\", \"type\": \"block\", \"props\": {\"xywh\": \"[12857.929396889323,7007.036480852111,2400.4412340600156,2437.352593985278]\", \"index\": \"Zw\", \"title\": {\"delta\": [{\"insert\": \"Storyboarding Breakdown\"}], \"$blocksuite:internal:text$\": true}, \"background\": \"transparent\", \"lockedBySelf\": false, \"childElementIds\": {\"7lXZ9hupp2\": true, \"r9_zCYdLjr\": true}, \"presentationIndex\": \"a30FsmlBBl335mwXxLuyU497xVhbJB5V8vR\"}, \"flavour\": \"affine:frame\", \"version\": 1}",
+        "nodeId": null
+    },
+    {
+        "id": "doc:home",
+        "parentId": null,
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"meta\": {\"id\": \"doc:home\", \"tags\": [], \"title\": \"\", \"createDate\": 1768376865404}, \"type\": \"doc\"}",
+        "nodeId": null
+    },
+    {
+        "id": "fHRDFlNUsw",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"fHRDFlNUsw\", \"type\": \"block\", \"props\": {\"xywh\": \"[10673.949643167132,8334.38712883479,732.998277614839,52.966353709227405]\", \"color\": {\"dark\": \"#ffffff\", \"light\": \"#000000\"}, \"index\": \"a2\", \"scale\": 2.0371673148513003, \"rotate\": 0, \"markdown\": \"Here is a professional analysis of why it went viral:\", \"fontStyle\": \"normal\", \"textAlign\": \"left\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\", \"hasMaxWidth\": true, \"lockedBySelf\": false}, \"flavour\": \"affine:edgeless-text\", \"version\": 1, \"children\": [{\"id\": \"znXJQREifi\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Here is a professional analysis of why it went viral:\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"text\", \"collapsed\": false}, \"flavour\": \"affine:paragraph\", \"version\": 1, \"children\": []}]}",
+        "nodeId": null
+    },
+    {
+        "id": "gxvGOCchNM",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"gxvGOCchNM\", \"type\": \"block\", \"props\": {\"size\": 0, \"xywh\": \"[19348.56331188306,10195.834135691957,400,266.2335766423357]\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"width\": 400, \"height\": 232, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/videos/generation/1768446567050_0ad16091.mp4\", \"poster\": \"\", \"prompt\": \"一位身着华丽金饰服饰的动漫角色站立于复杂金色魔法阵前，魔法阵散发着柔和光芒，背景星空点缀，角色姿态庄严，镜头以仰视角度呈现中心对称构图，氛围神秘神圣，仿佛在施展魔法仪式\", \"rotate\": 0, \"slotId\": \"video-hberh8wvp\", \"caption\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"minWidth\": 320, \"sourceId\": \"\", \"videoUrl\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/videos/generation/1768446567050_0ad16091.mp4\", \"minHeight\": 240, \"lockedBySelf\": false, \"keepAspectRatio\": true}, \"flavour\": \"yidooo:video\", \"version\": 1}",
+        "nodeId": "ba5f4515-d94f-4718-9cb7-305fbcae2bd9"
+    },
+    {
+        "id": "hkf9Jd5HA4",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"hkf9Jd5HA4\", \"type\": \"block\", \"props\": {\"xywh\": \"[19246.03121466506,10105.983409707918,1532.1973578698453,1453.9683013718322]\", \"index\": \"Zy\", \"title\": {\"delta\": [{\"insert\": \"video generation\"}], \"$blocksuite:internal:text$\": true}, \"background\": \"transparent\", \"lockedBySelf\": false, \"childElementIds\": {\"5wQlyREZhT\": true, \"8m6va1aTR3\": true, \"NmFnU_3s70\": true, \"WjOw_04ns9\": true, \"gxvGOCchNM\": true, \"oUM9J3ldrG\": true, \"qGcXRaJH3z\": true}, \"presentationIndex\": \"a10jA73MjoIx1wXcE7xqcM2J3Rw7gduC831\"}, \"flavour\": \"affine:frame\", \"version\": 1}",
+        "nodeId": null
+    },
+    {
+        "id": "iSAt1C1nOJ",
+        "parentId": "uYJ61TZvt4",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"iSAt1C1nOJ\", \"type\": \"block\", \"props\": {\"elements\": {\"type\": \"$blocksuite:internal:native$\", \"value\": {\"BD4SlLnH0g\": {\"id\": \"BD4SlLnH0g\", \"mode\": 2, \"seed\": 4436027, \"type\": \"connector\", \"index\": \"aA\", \"rough\": false, \"source\": {\"position\": [16769.81517657025, 7510.777713635567]}, \"stroke\": \"#ff8c38\", \"target\": {\"position\": [17118.903649232278, 7512.651538311107]}, \"roughness\": 1.4, \"labelStyle\": {\"color\": {\"dark\": \"#ffffff\", \"light\": \"#000000\"}, \"fontSize\": 16, \"fontStyle\": \"normal\", \"textAlign\": \"center\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\"}, \"strokeStyle\": \"solid\", \"strokeWidth\": 6, \"rearEndpointStyle\": \"Arrow\", \"frontEndpointStyle\": \"None\"}, \"H3JBWxFi6o\": {\"id\": \"H3JBWxFi6o\", \"mode\": 2, \"seed\": 156347082, \"type\": \"connector\", \"index\": \"aE\", \"rough\": false, \"source\": {\"id\": \"jeEpBG5SuO\", \"position\": [1, 0.43918497396414713]}, \"stroke\": \"#ff8c38\", \"target\": {\"id\": \"w1xiLcFyac\", \"position\": [0.4999999999999988, 0]}, \"roughness\": 1.4, \"labelStyle\": {\"color\": {\"dark\": \"#ffffff\", \"light\": \"#000000\"}, \"fontSize\": 16, \"fontStyle\": \"normal\", \"textAlign\": \"center\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\"}, \"strokeStyle\": \"solid\", \"strokeWidth\": 6, \"rearEndpointStyle\": \"Arrow\", \"frontEndpointStyle\": \"None\"}, \"Jc_Ak_MVKX\": {\"id\": \"Jc_Ak_MVKX\", \"seed\": 1002537245, \"text\": \"clip\", \"type\": \"shape\", \"xywh\": \"[21009.48858504614,10685.910555140523,222.74879414722818,93]\", \"color\": \"#e6e6e6\", \"index\": \"aD\", \"filled\": true, \"radius\": 0.1, \"rotate\": 0, \"shadow\": null, \"padding\": [10, 20], \"fontSize\": 40, \"maxWidth\": false, \"fillColor\": \"transparent\", \"fontStyle\": \"normal\", \"roughness\": 1.4, \"shapeType\": \"rect\", \"textAlign\": \"center\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\", \"shapeStyle\": \"General\", \"strokeColor\": \"#ff8c38\", \"strokeStyle\": \"solid\", \"strokeWidth\": 2, \"lockedBySelf\": false, \"textResizing\": 1}, \"KEasvIoLRo\": {\"id\": \"KEasvIoLRo\", \"mode\": 2, \"seed\": 1634148103, \"type\": \"connector\", \"index\": \"a8\", \"rough\": false, \"source\": {\"position\": [20850.88914703973, 10847.744805584363]}, \"stroke\": \"#ff8c38\", \"target\": {\"position\": [21404.56725806795, 10853.131751123361]}, \"roughness\": 1.4, \"labelStyle\": {\"color\": {\"dark\": \"#ffffff\", \"light\": \"#000000\"}, \"fontSize\": 16, \"fontStyle\": \"normal\", \"textAlign\": \"center\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\"}, \"strokeStyle\": \"solid\", \"strokeWidth\": 6, \"rearEndpointStyle\": \"Arrow\", \"frontEndpointStyle\": \"None\"}, \"Ms9xVSraZp\": {\"id\": \"Ms9xVSraZp\", \"seed\": 1002537245, \"text\": \"replace\", \"type\": \"shape\", \"xywh\": \"[16838.859773647542,7390.177667859544,222.74879414722818,93.18160116672516]\", \"color\": \"#e6e6e6\", \"index\": \"aC\", \"filled\": true, \"radius\": 0.1, \"rotate\": 0, \"shadow\": null, \"padding\": [10, 20], \"fontSize\": 40, \"maxWidth\": false, \"fillColor\": \"transparent\", \"fontStyle\": \"normal\", \"roughness\": 1.4, \"shapeType\": \"rect\", \"textAlign\": \"center\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\", \"shapeStyle\": \"General\", \"strokeColor\": \"#ff8c38\", \"strokeStyle\": \"solid\", \"strokeWidth\": 2, \"textResizing\": 1}, \"yNDUeAvSOK\": {\"id\": \"yNDUeAvSOK\", \"mode\": 2, \"seed\": 345263393, \"type\": \"connector\", \"index\": \"aF\", \"rough\": false, \"source\": {\"position\": [18373.005700570233, 10857.972876712442]}, \"stroke\": \"#ff8c38\", \"target\": {\"position\": [19213.483693145903, 10862.577687057663]}, \"roughness\": 1.4, \"labelStyle\": {\"color\": {\"dark\": \"#ffffff\", \"light\": \"#000000\"}, \"fontSize\": 16, \"fontStyle\": \"normal\", \"textAlign\": \"center\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\"}, \"strokeStyle\": \"solid\", \"strokeWidth\": 6, \"rearEndpointStyle\": \"Arrow\", \"frontEndpointStyle\": \"None\"}}}}, \"flavour\": \"affine:surface\", \"version\": 5}",
+        "nodeId": null
+    },
+    {
+        "id": "jeEpBG5SuO",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"jeEpBG5SuO\", \"type\": \"block\", \"props\": {\"xywh\": \"[15902.113071434953,7048.571177955977,2162.1913600355692,2378.7553565067174]\", \"index\": \"Zv\", \"title\": {\"delta\": [{\"insert\": \"Video replication plan\"}], \"$blocksuite:internal:text$\": true}, \"background\": \"transparent\", \"lockedBySelf\": false, \"childElementIds\": {\"3sOZPJoCCr\": true, \"4Ks6RR3Qgt\": true, \"8xSYTCcL3U\": true, \"AsdqFtOFV9\": true, \"BD4SlLnH0g\": true, \"DGOf5YEqin\": true, \"MVW_YUpK8z\": true, \"Ms9xVSraZp\": true, \"wZup0yMOfd\": true}, \"presentationIndex\": \"a40NsaRbhnxQSrbCxZNyN6i6kBdi82jLv91\"}, \"flavour\": \"affine:frame\", \"version\": 1}",
+        "nodeId": null
+    },
+    {
+        "id": "oUM9J3ldrG",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"oUM9J3ldrG\", \"type\": \"block\", \"props\": {\"size\": 0, \"xywh\": \"[19348.56331188306,10901.81946276008,400,266.2335766423357]\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"width\": 400, \"height\": 232, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/videos/generation/1768447223802_7018f372.mp4\", \"poster\": \"\", \"prompt\": \"Extreme white and gold bloom effect, halos zoom out quickly, hair flows out in a wide arc, screen filled with shimmering sparkles.\", \"rotate\": 0, \"slotId\": \"video-6eruteyfv\", \"caption\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"minWidth\": 320, \"sourceId\": \"\", \"videoUrl\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/videos/generation/1768447223802_7018f372.mp4\", \"minHeight\": 240, \"lockedBySelf\": false, \"keepAspectRatio\": true}, \"flavour\": \"yidooo:video\", \"version\": 1}",
+        "nodeId": "237468a1-56ab-474f-aea3-c3ac2d36a8fb"
+    },
+    {
+        "id": "pDaF7LG4v0",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"pDaF7LG4v0\", \"type\": \"block\", \"props\": {\"alt\": \"\", \"fit\": \"contain\", \"url\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768461225314_截屏2026-01-15 11.40.24.png\", \"xywh\": \"[11542.491611129575,7042.329469824054,400,787.4545454545454]\", \"align\": \"center\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [{\"insert\": \"\"}], \"$blocksuite:internal:text$\": true}, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768461225314_截屏2026-01-15 11.40.24.png\", \"prompt\": \"\", \"rotate\": 0, \"slotId\": \"image-4j1rqxor\", \"caption\": {\"delta\": [{\"insert\": \"\"}], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"upload\", \"minWidth\": 400, \"minHeight\": 232, \"lockedBySelf\": false, \"meta:bizNodeId\": \"\", \"keepAspectRatio\": true}, \"flavour\": \"yidooo:image\", \"version\": 1}",
+        "nodeId": "a1b133c9-0e81-480a-ac66-66586597abb6"
+    },
+    {
+        "id": "pOxAewF6xf",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"pOxAewF6xf\", \"type\": \"block\", \"props\": {\"alt\": \"\", \"fit\": \"contain\", \"url\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768461222733_截屏2026-01-15 11.39.41.png\", \"xywh\": \"[10673.949588600579,7563.506953137379,400,730.8888888888888]\", \"align\": \"center\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [{\"insert\": \"\"}], \"$blocksuite:internal:text$\": true}, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768461222733_截屏2026-01-15 11.39.41.png\", \"prompt\": \"\", \"rotate\": 0, \"slotId\": \"image-dxvhjv37\", \"caption\": {\"delta\": [{\"insert\": \"\"}], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"upload\", \"minWidth\": 400, \"minHeight\": 232, \"lockedBySelf\": false, \"meta:bizNodeId\": \"\", \"keepAspectRatio\": true}, \"flavour\": \"yidooo:image\", \"version\": 1}",
+        "nodeId": "6b13c4c7-6a95-4679-a45b-f511e24e24e1"
+    },
+    {
+        "id": "qGcXRaJH3z",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"qGcXRaJH3z\", \"type\": \"block\", \"props\": {\"size\": 0, \"xywh\": \"[19781.81096144502,10210.615906108529,400,264.22222222222223]\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"width\": 400, \"height\": 232, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/videos/image_reel/1768446709363_0584d513.mp4\", \"poster\": \"\", \"prompt\": \"Slow camera zoom-in, multiple layers of golden halos rotate in opposite directions, shimmering light streaks and prism flares dancing across the screen.\", \"rotate\": 0, \"slotId\": \"video-c0yo4m27o\", \"caption\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"minWidth\": 320, \"sourceId\": \"\", \"videoUrl\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/videos/image_reel/1768446709363_0584d513.mp4\", \"minHeight\": 240, \"lockedBySelf\": false, \"keepAspectRatio\": true}, \"flavour\": \"yidooo:video\", \"version\": 1}",
+        "nodeId": "f1fe2654-c35c-4601-958a-a5f0d90c5d87"
+    },
+    {
+        "id": "r9_zCYdLjr",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"r9_zCYdLjr\", \"type\": \"block\", \"props\": {\"alt\": \"\", \"fit\": \"contain\", \"url\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768462024571_1766849150724_1765540270293_Screenshot 2025-12-12 at 19.48.07.png\", \"xywh\": \"[13055.619178077897,8042.807031590914,400,758.0714285714287]\", \"align\": \"center\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"nodeId\": \"aa4aeb50-9f21-4006-8efc-b7782d0fa98a\", \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768462024571_1766849150724_1765540270293_Screenshot 2025-12-12 at 19.48.07.png\", \"prompt\": \"\", \"rotate\": 0, \"slotId\": \"image-m7m8fhu4\", \"caption\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"upload\", \"minWidth\": 400, \"minHeight\": 232, \"lockedBySelf\": false, \"meta:bizNodeId\": \"\", \"keepAspectRatio\": true}, \"flavour\": \"yidooo:image\", \"version\": 1, \"children\": []}",
+        "nodeId": "aa4aeb50-9f21-4006-8efc-b7782d0fa98a"
+    },
+    {
+        "id": "rHX4a0o6OJ",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"rHX4a0o6OJ\", \"type\": \"block\", \"props\": {\"alt\": \"\", \"fit\": \"contain\", \"url\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768443542092_flowlamboh0928_Anime_style_watercolor_painting_glass-like_textu_965c253f-566e-4320-9d46-492a16d1492f.png\", \"xywh\": \"[16979.159722987337,11059.62410283342,400,266.1758241758242]\", \"align\": \"center\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768443542092_flowlamboh0928_Anime_style_watercolor_painting_glass-like_textu_965c253f-566e-4320-9d46-492a16d1492f.png\", \"prompt\": \"\", \"rotate\": 0, \"slotId\": \"image-664effey\", \"caption\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"upload\", \"minWidth\": 400, \"minHeight\": 232, \"lockedBySelf\": false, \"meta:bizNodeId\": \"\", \"keepAspectRatio\": true}, \"flavour\": \"yidooo:image\", \"version\": 1}",
+        "nodeId": "1ce23609-a107-4fc2-9690-e2b112b58db3"
+    },
+    {
+        "id": "uYJ61TZvt4",
+        "parentId": "doc:home",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"uYJ61TZvt4\", \"type\": \"block\", \"props\": {\"title\": {\"delta\": [], \"$blocksuite:internal:text$\": true}}, \"flavour\": \"affine:page\", \"version\": 2}",
+        "nodeId": null
+    },
+    {
+        "id": "vgdwl5sGIV",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"vgdwl5sGIV\", \"type\": \"block\", \"props\": {\"size\": 0, \"xywh\": \"[10673.949588600579,7042.329469824054,838.8576507568359,513.8574285507202]\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"width\": 400, \"height\": 232, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768443369035_1月15日.mp4\", \"poster\": \"\", \"prompt\": \"\", \"rotate\": 0, \"slotId\": \"video-9jlq8yvyc\", \"caption\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"upload\", \"minWidth\": 320, \"sourceId\": \"\", \"videoUrl\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768443369035_1月15日.mp4\", \"minHeight\": 240, \"lockedBySelf\": false, \"keepAspectRatio\": true}, \"flavour\": \"yidooo:video\", \"version\": 1}",
+        "nodeId": "cb9b08a5-edd4-4ad1-8dc4-3aca72368ac8"
+    },
+    {
+        "id": "w1xiLcFyac",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"w1xiLcFyac\", \"type\": \"block\", \"props\": {\"xywh\": \"[16864.631398111178,10090.171786631192,1497.7814054287992,1477.8892794118947]\", \"index\": \"Zz\", \"title\": {\"delta\": [{\"insert\": \"Image generation\"}], \"$blocksuite:internal:text$\": true}, \"background\": \"transparent\", \"lockedBySelf\": false, \"childElementIds\": {\"299ycxwpAW\": true, \"5dG1XtCoJG\": true, \"C97-Pj4WDr\": true, \"L2lz3RP4_6\": true, \"X4FcUv99EW\": true, \"rHX4a0o6OJ\": true, \"y_Mmsf-Iby\": true}, \"presentationIndex\": \"a00eRzo4FPMaWveaHiwe4mqlyr6eyoyPieE\"}, \"flavour\": \"affine:frame\", \"version\": 1}",
+        "nodeId": null
+    },
+    {
+        "id": "wZup0yMOfd",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"wZup0yMOfd\", \"type\": \"block\", \"props\": {\"xywh\": \"[16058.025027475605,7821.599497304204,844.901297451941,69.97043729936831]\", \"color\": \"#ff8c38\", \"index\": \"a9\", \"scale\": 2.691169966027007, \"rotate\": 0, \"markdown\": \"The following are the replacement elements\", \"fontStyle\": \"normal\", \"textAlign\": \"left\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\", \"hasMaxWidth\": true, \"lockedBySelf\": false}, \"flavour\": \"affine:edgeless-text\", \"version\": 1, \"children\": [{\"id\": \"PV9BRRP9rn\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"The following are the replacement elements\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"text\", \"collapsed\": false}, \"flavour\": \"affine:paragraph\", \"version\": 1, \"children\": []}]}",
+        "nodeId": null
+    },
+    {
+        "id": "y_Mmsf-Iby",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"y_Mmsf-Iby\", \"type\": \"block\", \"props\": {\"alt\": \"\", \"fit\": \"contain\", \"url\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768443538527_flowlamboh0928_Anime_style_watercolor_painting_glass-like_textu_91a2174a-3603-4255-974a-15ced71a942d.png\", \"xywh\": \"[17412.407372549296,10703.448278657597,400,266.1758241758242]\", \"align\": \"center\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768443538527_flowlamboh0928_Anime_style_watercolor_painting_glass-like_textu_91a2174a-3603-4255-974a-15ced71a942d.png\", \"prompt\": \"\", \"rotate\": 0, \"slotId\": \"image-k1svfys1\", \"caption\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"upload\", \"minWidth\": 400, \"minHeight\": 232, \"lockedBySelf\": false, \"meta:bizNodeId\": \"\", \"keepAspectRatio\": true}, \"flavour\": \"yidooo:image\", \"version\": 1}",
+        "nodeId": "6d74f853-b121-4921-a741-9406fbc2922a"
+    },
+    {
+        "id": "ytSj1DPJIf",
+        "parentId": "iSAt1C1nOJ",
+        "creationId": "c8af044b-b642-4435-a21e-0b2d14674de5",
+        "info": "{\"id\": \"ytSj1DPJIf\", \"type\": \"block\", \"props\": {\"alt\": \"\", \"fit\": \"contain\", \"url\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768461220272_截屏2026-01-15 11.39.30.png\", \"xywh\": \"[11100.861936412748,7532.077116926666,400,762.3187250996016]\", \"align\": \"center\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [{\"insert\": \"\"}], \"$blocksuite:internal:text$\": true}, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768461220272_截屏2026-01-15 11.39.30.png\", \"prompt\": \"\", \"rotate\": 0, \"slotId\": \"image-bhrubtga\", \"caption\": {\"delta\": [{\"insert\": \"\"}], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"upload\", \"minWidth\": 400, \"minHeight\": 232, \"lockedBySelf\": false, \"meta:bizNodeId\": \"\", \"keepAspectRatio\": true}, \"flavour\": \"yidooo:image\", \"version\": 1}",
+        "nodeId": "df60633d-3ef0-4154-a3d0-cdb145e8edfd"
+    }
+]

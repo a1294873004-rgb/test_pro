@@ -1,0 +1,629 @@
+{
+    "id": "D0yzdEEfpK",
+    "type": "block",
+    "flavour": "affine:note",
+    "props": {
+        "xywh": "[8399.595020329434,-13865.785260890854,498,1622]",
+        "index": "a0",
+        "title": {
+            "delta": [
+                {
+                    "insert": "故事大纲"
+                }
+            ],
+            "$blocksuite:internal:text$": true
+        },
+        "hidden": false,
+        "edgeless": {
+            "style": {
+                "borderSize": 4,
+                "shadowType": "--affine-note-shadow-box",
+                "borderStyle": "none",
+                "borderRadius": 8
+            }
+        },
+        "markdown": "好的，关于“水电费”，这是一个非常常见的生活开销。我来为您详细解释一下。\n\n“水电费”是“水费”和“电费”的合称，是您使用自来水、电力等公共资源所需要支付的费用。\n\n### 1. 水费\n\n* **定义**：指使用自来水需要支付的费用。\n* **计算方式**：通常是按 **“吨”** 或 **“立方米 (m³)”** 来计算。\n* **影响因素**：\n  &#x20;   \\*   **用水量**：这是最主要的影响因素，用得越多，水费越高。\n  &#x20;   \\*   **水价**：不同城市、不同地区的自来水价格可能不同。有些城市还会根据用水量实行阶梯水价，即用水量越多，单价越高。\n  &#x20;   \\*   **水费附加费**：可能包括污水处理费、水资源费等。\n\n### 2. 电费\n\n* **定义**：指使用电力需要支付的费用。\n* **计算方式**：通常是按 **“度”** 或 **“千瓦时 (kWh)”** 来计算。\n* **影响因素**：\n  &#x20;   \\*   **用电量**：这是最主要的影响因素，用得越多，电费越高。\n  &#x20;   \\*   **电价**：不同地区、不同用电类型（如居民用电、商业用电）的电价不同。\n  &#x20;   \\*   **阶梯电价**：为了鼓励节约用电，很多地方对居民用电实行阶梯电价。即把用户的用电量分为若干档位，每个档位对应不同的电价。用电量越多，单价越高。例如：\n  &#x20;       \\*   **第一档**：每月用电量在0-200度，电价较低。\n  &#x20;       \\*   **第二档**：每月用电量在201-400度，电价较高。\n  &#x20;       \\*   **第三档**：每月用电量超过400度，电价最高。\n\n### 3. 如何缴纳水电费？\n\n现在缴纳水电费非常方便，主要有以下几种方式：\n\n1. **线上缴费（最推荐）**：\n   &#x20;   \\*   **手机APP**：下载您所在城市的水、电公司官方APP（如“网上国网”、“南方电网”、“当地水务集团APP”等），绑定账户后即可在线缴费。\n   &#x20;   \\*   **微信/支付宝**：在微信或支付宝的“生活缴费”功能中，输入您的户号即可缴费。\n   &#x20;   \\*   **网上银行**：登录您的银行APP，找到“生活缴费”或“水电煤缴费”功能。\n2. **线下缴费**：\n   &#x20;   \\*   **银行网点**：可以到银行柜台或自助服务终端缴纳。\n   &#x20;   \\*   **社区/物业**：很多小区的物业中心或指定的便利店、超市也提供代收水电费服务。\n   &#x20;   \\*   **营业厅**：直接到当地的水、电公司营业厅窗口缴费。\n\n### 4. 如何节省水电费？\n\n* **省水**：\n  &#x20;   \\*   随手关水龙头，避免长流水。\n  &#x20;   \\*   洗澡时减少淋浴时间，或使用节水型花洒。\n  &#x20;   \\*   洗菜、洗衣的水可以用来冲厕所或浇花。\n  &#x20;   \\*   及时修理漏水的水龙头和马桶。\n* **省电**：\n  &#x20;   \\*   随手关灯，拔掉不用的电器插头（待机状态也会耗电）。\n  &#x20;   \\*   使用节能灯泡（LED灯）。\n  &#x20;   \\*   空调温度设置合理（夏季26-28℃，冬季18-20℃），并定期清洗滤网。\n  &#x20;   \\*   使用电器时，尽量集中使用，避免同时开启多个大功率电器。\n  &#x20;   \\*   冰箱不要塞得太满，并定期除霜。\n\n总而言之，水电费是每个家庭都必须支付的生活成本。了解如何计算和缴纳，并养成节约用水用电",
+        "background": {
+            "dark": "#252525",
+            "light": "#ffffff"
+        },
+        "displayMode": "both",
+        "lockedBySelf": false
+    },
+    "version": 1,
+    "children": [
+        {
+            "id": "BsENrV3BIg",
+            "type": "block",
+            "flavour": "affine:paragraph",
+            "props": {
+                "text": {
+                    "$blocksuite:internal:text$": true,
+                    "delta": [
+                        {
+                            "insert": "好的，关于“水电费”，这是一个非常常见的生活开销。我来为您详细解释一下。"
+                        }
+                    ]
+                },
+                "type": "text",
+                "collapsed": false
+            },
+            "version": 1,
+            "children": []
+        },
+        {
+            "id": "PlEXH4zjhH",
+            "type": "block",
+            "props": {
+                "text": {
+                    "$blocksuite:internal:text$": true,
+                    "delta": [
+                        {
+                            "insert": "“水电费”是“水费”和“电费”的合称，是您使用自来水、电力等公共资源所需要支付的费用。"
+                        }
+                    ]
+                },
+                "type": "text",
+                "collapsed": false
+            },
+            "flavour": "affine:paragraph",
+            "version": 1,
+            "children": []
+        },
+        {
+            "id": "AYmnJS-ze0",
+            "type": "block",
+            "props": {
+                "text": {
+                    "$blocksuite:internal:text$": true,
+                    "delta": [
+                        {
+                            "insert": "1. 水费"
+                        }
+                    ]
+                },
+                "type": "h3",
+                "collapsed": false
+            },
+            "flavour": "affine:paragraph",
+            "version": 1,
+            "children": []
+        },
+        {
+            "id": "acQvsg2n0n",
+            "type": "block",
+            "props": {
+                "text": {
+                    "$blocksuite:internal:text$": true,
+                    "delta": [
+                        {
+                            "insert": "定义",
+                            "attributes": {
+                                "bold": true
+                            }
+                        },
+                        {
+                            "insert": "：指使用自来水需要支付的费用。"
+                        }
+                    ]
+                },
+                "type": "bulleted",
+                "order": null,
+                "checked": false,
+                "collapsed": false
+            },
+            "flavour": "affine:list",
+            "version": 1,
+            "children": []
+        },
+        {
+            "id": "mRVYk8xE4B",
+            "type": "block",
+            "props": {
+                "text": {
+                    "$blocksuite:internal:text$": true,
+                    "delta": [
+                        {
+                            "insert": "计算方式",
+                            "attributes": {
+                                "bold": true
+                            }
+                        },
+                        {
+                            "insert": "：通常是按 "
+                        },
+                        {
+                            "insert": "“吨”",
+                            "attributes": {
+                                "bold": true
+                            }
+                        },
+                        {
+                            "insert": " 或 "
+                        },
+                        {
+                            "insert": "“立方米 (m³)”",
+                            "attributes": {
+                                "bold": true
+                            }
+                        },
+                        {
+                            "insert": " 来计算。"
+                        }
+                    ]
+                },
+                "type": "bulleted",
+                "order": null,
+                "checked": false,
+                "collapsed": false
+            },
+            "flavour": "affine:list",
+            "version": 1,
+            "children": []
+        },
+        {
+            "id": "eyrTTzyItP",
+            "type": "block",
+            "props": {
+                "text": {
+                    "$blocksuite:internal:text$": true,
+                    "delta": [
+                        {
+                            "insert": "影响因素",
+                            "attributes": {
+                                "bold": true
+                            }
+                        },
+                        {
+                            "insert": "：\n    *   "
+                        },
+                        {
+                            "insert": "用水量",
+                            "attributes": {
+                                "bold": true
+                            }
+                        },
+                        {
+                            "insert": "：这是最主要的影响因素，用得越多，水费越高。\n    *   "
+                        },
+                        {
+                            "insert": "水价",
+                            "attributes": {
+                                "bold": true
+                            }
+                        },
+                        {
+                            "insert": "：不同城市、不同地区的自来水价格可能不同。有些城市还会根据用水量实行阶梯水价，即用水量越多，单价越高。\n    *   "
+                        },
+                        {
+                            "insert": "水费附加费",
+                            "attributes": {
+                                "bold": true
+                            }
+                        },
+                        {
+                            "insert": "：可能包括污水处理费、水资源费等。"
+                        }
+                    ]
+                },
+                "type": "bulleted",
+                "order": null,
+                "checked": false,
+                "collapsed": false
+            },
+            "flavour": "affine:list",
+            "version": 1,
+            "children": []
+        },
+        {
+            "id": "lkbFz5gcMw",
+            "type": "block",
+            "props": {
+                "text": {
+                    "$blocksuite:internal:text$": true,
+                    "delta": [
+                        {
+                            "insert": "2. 电费"
+                        }
+                    ]
+                },
+                "type": "h3",
+                "collapsed": false
+            },
+            "flavour": "affine:paragraph",
+            "version": 1,
+            "children": []
+        },
+        {
+            "id": "UZr_Zi9ltQ",
+            "type": "block",
+            "props": {
+                "text": {
+                    "$blocksuite:internal:text$": true,
+                    "delta": [
+                        {
+                            "insert": "定义",
+                            "attributes": {
+                                "bold": true
+                            }
+                        },
+                        {
+                            "insert": "：指使用电力需要支付的费用。"
+                        }
+                    ]
+                },
+                "type": "bulleted",
+                "order": null,
+                "checked": false,
+                "collapsed": false
+            },
+            "flavour": "affine:list",
+            "version": 1,
+            "children": []
+        },
+        {
+            "id": "vekAHdK0aZ",
+            "type": "block",
+            "props": {
+                "text": {
+                    "$blocksuite:internal:text$": true,
+                    "delta": [
+                        {
+                            "insert": "计算方式",
+                            "attributes": {
+                                "bold": true
+                            }
+                        },
+                        {
+                            "insert": "：通常是按 "
+                        },
+                        {
+                            "insert": "“度”",
+                            "attributes": {
+                                "bold": true
+                            }
+                        },
+                        {
+                            "insert": " 或 "
+                        },
+                        {
+                            "insert": "“千瓦时 (kWh)”",
+                            "attributes": {
+                                "bold": true
+                            }
+                        },
+                        {
+                            "insert": " 来计算。"
+                        }
+                    ]
+                },
+                "type": "bulleted",
+                "order": null,
+                "checked": false,
+                "collapsed": false
+            },
+            "flavour": "affine:list",
+            "version": 1,
+            "children": []
+        },
+        {
+            "id": "oziAup7p6n",
+            "type": "block",
+            "props": {
+                "text": {
+                    "$blocksuite:internal:text$": true,
+                    "delta": [
+                        {
+                            "insert": "影响因素",
+                            "attributes": {
+                                "bold": true
+                            }
+                        },
+                        {
+                            "insert": "：\n    *   "
+                        },
+                        {
+                            "insert": "用电量",
+                            "attributes": {
+                                "bold": true
+                            }
+                        },
+                        {
+                            "insert": "：这是最主要的影响因素，用得越多，电费越高。\n    *   "
+                        },
+                        {
+                            "insert": "电价",
+                            "attributes": {
+                                "bold": true
+                            }
+                        },
+                        {
+                            "insert": "：不同地区、不同用电类型（如居民用电、商业用电）的电价不同。\n    *   "
+                        },
+                        {
+                            "insert": "阶梯电价",
+                            "attributes": {
+                                "bold": true
+                            }
+                        },
+                        {
+                            "insert": "：为了鼓励节约用电，很多地方对居民用电实行阶梯电价。即把用户的用电量分为若干档位，每个档位对应不同的电价。用电量越多，单价越高。例如：\n        *   "
+                        },
+                        {
+                            "insert": "第一档",
+                            "attributes": {
+                                "bold": true
+                            }
+                        },
+                        {
+                            "insert": "：每月用电量在0-200度，电价较低。\n        *   "
+                        },
+                        {
+                            "insert": "第二档",
+                            "attributes": {
+                                "bold": true
+                            }
+                        },
+                        {
+                            "insert": "：每月用电量在201-400度，电价较高。\n        *   "
+                        },
+                        {
+                            "insert": "第三档",
+                            "attributes": {
+                                "bold": true
+                            }
+                        },
+                        {
+                            "insert": "：每月用电量超过400度，电价最高。"
+                        }
+                    ]
+                },
+                "type": "bulleted",
+                "order": null,
+                "checked": false,
+                "collapsed": false
+            },
+            "flavour": "affine:list",
+            "version": 1,
+            "children": []
+        },
+        {
+            "id": "mi-9wyJbgf",
+            "type": "block",
+            "props": {
+                "text": {
+                    "$blocksuite:internal:text$": true,
+                    "delta": [
+                        {
+                            "insert": "3. 如何缴纳水电费？"
+                        }
+                    ]
+                },
+                "type": "h3",
+                "collapsed": false
+            },
+            "flavour": "affine:paragraph",
+            "version": 1,
+            "children": []
+        },
+        {
+            "id": "i7VciaZfnO",
+            "type": "block",
+            "props": {
+                "text": {
+                    "$blocksuite:internal:text$": true,
+                    "delta": [
+                        {
+                            "insert": "现在缴纳水电费非常方便，主要有以下几种方式："
+                        }
+                    ]
+                },
+                "type": "text",
+                "collapsed": false
+            },
+            "flavour": "affine:paragraph",
+            "version": 1,
+            "children": []
+        },
+        {
+            "id": "xauO423hex",
+            "type": "block",
+            "props": {
+                "text": {
+                    "$blocksuite:internal:text$": true,
+                    "delta": [
+                        {
+                            "insert": "线上缴费（最推荐）",
+                            "attributes": {
+                                "bold": true
+                            }
+                        },
+                        {
+                            "insert": "：\n    *   "
+                        },
+                        {
+                            "insert": "手机APP",
+                            "attributes": {
+                                "bold": true
+                            }
+                        },
+                        {
+                            "insert": "：下载您所在城市的水、电公司官方APP（如“网上国网”、“南方电网”、“当地水务集团APP”等），绑定账户后即可在线缴费。\n    *   "
+                        },
+                        {
+                            "insert": "微信/支付宝",
+                            "attributes": {
+                                "bold": true
+                            }
+                        },
+                        {
+                            "insert": "：在微信或支付宝的“生活缴费”功能中，输入您的户号即可缴费。\n    *   "
+                        },
+                        {
+                            "insert": "网上银行",
+                            "attributes": {
+                                "bold": true
+                            }
+                        },
+                        {
+                            "insert": "：登录您的银行APP，找到“生活缴费”或“水电煤缴费”功能。"
+                        }
+                    ]
+                },
+                "type": "numbered",
+                "order": 1,
+                "checked": false,
+                "collapsed": false
+            },
+            "flavour": "affine:list",
+            "version": 1,
+            "children": []
+        },
+        {
+            "id": "X0D5aSrXA5",
+            "type": "block",
+            "props": {
+                "text": {
+                    "$blocksuite:internal:text$": true,
+                    "delta": [
+                        {
+                            "insert": "线下缴费",
+                            "attributes": {
+                                "bold": true
+                            }
+                        },
+                        {
+                            "insert": "：\n    *   "
+                        },
+                        {
+                            "insert": "银行网点",
+                            "attributes": {
+                                "bold": true
+                            }
+                        },
+                        {
+                            "insert": "：可以到银行柜台或自助服务终端缴纳。\n    *   "
+                        },
+                        {
+                            "insert": "社区/物业",
+                            "attributes": {
+                                "bold": true
+                            }
+                        },
+                        {
+                            "insert": "：很多小区的物业中心或指定的便利店、超市也提供代收水电费服务。\n    *   "
+                        },
+                        {
+                            "insert": "营业厅",
+                            "attributes": {
+                                "bold": true
+                            }
+                        },
+                        {
+                            "insert": "：直接到当地的水、电公司营业厅窗口缴费。"
+                        }
+                    ]
+                },
+                "type": "numbered",
+                "order": 2,
+                "checked": false,
+                "collapsed": false
+            },
+            "flavour": "affine:list",
+            "version": 1,
+            "children": []
+        },
+        {
+            "id": "eI9Rl883-z",
+            "type": "block",
+            "props": {
+                "text": {
+                    "$blocksuite:internal:text$": true,
+                    "delta": [
+                        {
+                            "insert": "4. 如何节省水电费？"
+                        }
+                    ]
+                },
+                "type": "h3",
+                "collapsed": false
+            },
+            "flavour": "affine:paragraph",
+            "version": 1,
+            "children": []
+        },
+        {
+            "id": "CjYDEcaVb7",
+            "type": "block",
+            "props": {
+                "text": {
+                    "$blocksuite:internal:text$": true,
+                    "delta": [
+                        {
+                            "insert": "省水",
+                            "attributes": {
+                                "bold": true
+                            }
+                        },
+                        {
+                            "insert": "：\n    *   随手关水龙头，避免长流水。\n    *   洗澡时减少淋浴时间，或使用节水型花洒。\n    *   洗菜、洗衣的水可以用来冲厕所或浇花。\n    *   及时修理漏水的水龙头和马桶。"
+                        }
+                    ]
+                },
+                "type": "bulleted",
+                "order": null,
+                "checked": false,
+                "collapsed": false
+            },
+            "flavour": "affine:list",
+            "version": 1,
+            "children": []
+        },
+        {
+            "id": "rvF8-0_-ck",
+            "type": "block",
+            "props": {
+                "text": {
+                    "$blocksuite:internal:text$": true,
+                    "delta": [
+                        {
+                            "insert": "省电",
+                            "attributes": {
+                                "bold": true
+                            }
+                        },
+                        {
+                            "insert": "：\n    *   随手关灯，拔掉不用的电器插头（待机状态也会耗电）。\n    *   使用节能灯泡（LED灯）。\n    *   空调温度设置合理（夏季26-28℃，冬季18-20℃），并定期清洗滤网。\n    *   使用电器时，尽量集中使用，避免同时开启多个大功率电器。\n    *   冰箱不要塞得太满，并定期除霜。"
+                        }
+                    ]
+                },
+                "type": "bulleted",
+                "order": null,
+                "checked": false,
+                "collapsed": false
+            },
+            "flavour": "affine:list",
+            "version": 1,
+            "children": []
+        },
+        {
+            "id": "av9t5bPOYu",
+            "type": "block",
+            "props": {
+                "text": {
+                    "$blocksuite:internal:text$": true,
+                    "delta": [
+                        {
+                            "insert": "总而言之，水电费是每个家庭都必须支付的生活成本。了解如何计算和缴纳，并养成节约用水用电"
+                        }
+                    ]
+                },
+                "type": "text",
+                "collapsed": false
+            },
+            "flavour": "affine:paragraph",
+            "version": 1,
+            "children": []
+        }
+    ]
+}

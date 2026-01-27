@@ -1,0 +1,2089 @@
+{
+    "id": "nL9QaZp6WF",
+    "type": "block",
+    "flavour": "affine:page",
+    "props": {
+        "title": {
+            "delta": [],
+            "$blocksuite:internal:text$": true
+        },
+        "nodeId": null
+    },
+    "children": [
+        {
+            "id": "2sHBBtnfdT",
+            "type": "block",
+            "flavour": "affine:note",
+            "props": {
+                "xywh": "[-2010.152743062079,-1984.6541004327494,1000.8901870397782,284.6346478374119]",
+                "index": "ai",
+                "title": "Heading 1",
+                "hidden": false,
+                "edgeless": {
+                    "style": {
+                        "borderSize": 4,
+                        "shadowType": "--affine-note-shadow-box",
+                        "borderStyle": "none",
+                        "borderRadius": 8
+                    },
+                    "collapse": true,
+                    "collapsedHeight": 284.6346478374119
+                },
+                "markdown": "# 作为一个从小抱着游戏机、守着电视机长大的老粉，我心里总有一个会趴在小智肩头撒娇、脸颊软乎乎、让人想把全世界最好吃的树果都给它的皮卡丘。\n\n# 我总在想，为什么周边不能把这两个样子的它都完美地呈现出来呢？\n\n# 于是，就有了这个皮卡丘周边系列。这是我作为一个粉丝，做给自己，也做给所有和我一样热爱着皮卡丘的你们的礼物。",
+                "background": {
+                    "dark": "#252525",
+                    "light": "#ffffff"
+                },
+                "displayMode": "edgeless",
+                "lockedBySelf": false,
+                "nodeId": null
+            },
+            "children": [
+                {
+                    "id": "cE0DHR8VtO",
+                    "type": "block",
+                    "props": {
+                        "text": {
+                            "delta": [
+                                {
+                                    "insert": "作为一个从小抱着游戏机、守着电视机长大的老粉，我心里总有一个会趴在小智肩头撒娇、脸颊软乎乎、让人想把全世界最好吃的树果都给它的皮卡丘。"
+                                }
+                            ],
+                            "$blocksuite:internal:text$": true
+                        },
+                        "type": "h1",
+                        "collapsed": false
+                    },
+                    "flavour": "affine:paragraph",
+                    "version": 1,
+                    "children": []
+                },
+                {
+                    "id": "rHpCvTAXTc",
+                    "type": "block",
+                    "props": {
+                        "text": {
+                            "delta": [
+                                {
+                                    "insert": "我总在想，为什么周边不能把这两个样子的它都完美地呈现出来呢？"
+                                }
+                            ],
+                            "$blocksuite:internal:text$": true
+                        },
+                        "type": "h1",
+                        "collapsed": false
+                    },
+                    "flavour": "affine:paragraph",
+                    "version": 1,
+                    "children": []
+                },
+                {
+                    "id": "_A_t5gFwt-",
+                    "type": "block",
+                    "props": {
+                        "text": {
+                            "delta": [
+                                {
+                                    "insert": "于是，就有了这个皮卡丘周边系列。这是我作为一个粉丝，做给自己，也做给所有和我一样热爱着皮卡丘的你们的礼物。"
+                                }
+                            ],
+                            "$blocksuite:internal:text$": true
+                        },
+                        "type": "h1",
+                        "collapsed": false
+                    },
+                    "flavour": "affine:paragraph",
+                    "version": 1,
+                    "children": []
+                }
+            ],
+            "parentId": "nL9QaZp6WF"
+        },
+        {
+            "id": "63LPhU0Vj4",
+            "type": "block",
+            "flavour": "affine:surface",
+            "props": {
+                "elements": {
+                    "-jrPxDfQMq": {
+                        "id": "-jrPxDfQMq",
+                        "seed": 1945295048,
+                        "text": {
+                            "affine:surface:text": true,
+                            "delta": [
+                                {
+                                    "insert": "oc周边"
+                                }
+                            ]
+                        },
+                        "type": "shape",
+                        "xywh": "[1081.8558994191062,-818.9353791858283,160.1474329026555,59]",
+                        "color": "#000000",
+                        "index": "b06",
+                        "filled": true,
+                        "radius": 0.1,
+                        "rotate": 0,
+                        "shadow": null,
+                        "padding": [
+                            10,
+                            20
+                        ],
+                        "fontSize": 24,
+                        "maxWidth": false,
+                        "fillColor": "#ff8c38",
+                        "fontStyle": "normal",
+                        "roughness": 1.4,
+                        "shapeType": "rect",
+                        "textAlign": "center",
+                        "fontFamily": "blocksuite:surface:Inter",
+                        "fontWeight": "400",
+                        "shapeStyle": "General",
+                        "strokeColor": "#ff8c38",
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "lockedBySelf": false,
+                        "textResizing": 1
+                    },
+                    "2iTbpggI6S": {
+                        "id": "2iTbpggI6S",
+                        "mode": 0,
+                        "seed": 289874605,
+                        "type": "connector",
+                        "index": "b0G",
+                        "rough": false,
+                        "source": {
+                            "id": "4nKHe2UaDf",
+                            "position": [
+                                1,
+                                0.5
+                            ]
+                        },
+                        "stroke": "#fcd34d",
+                        "target": {
+                            "id": "eZOOAMlCno",
+                            "position": [
+                                0,
+                                0.5
+                            ]
+                        },
+                        "roughness": 1.4,
+                        "labelStyle": {
+                            "color": {
+                                "dark": "#ffffff",
+                                "light": "#000000"
+                            },
+                            "fontSize": 16,
+                            "fontStyle": "normal",
+                            "textAlign": "center",
+                            "fontFamily": "blocksuite:surface:Inter",
+                            "fontWeight": "400"
+                        },
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "lockedBySelf": false,
+                        "rearEndpointStyle": "Arrow",
+                        "frontEndpointStyle": "None"
+                    },
+                    "2q2VKpuTcp": {
+                        "id": "2q2VKpuTcp",
+                        "seed": 1996800943,
+                        "text": {
+                            "affine:surface:text": true,
+                            "delta": [
+                                {
+                                    "insert": "正比手办"
+                                }
+                            ]
+                        },
+                        "type": "shape",
+                        "xywh": "[98.36634742913088,553.1513208091156,181.16801417797615,71]",
+                        "color": "#000000",
+                        "index": "an",
+                        "filled": true,
+                        "radius": 0.1,
+                        "rotate": 0,
+                        "shadow": null,
+                        "padding": [
+                            10,
+                            20
+                        ],
+                        "fontSize": 32,
+                        "maxWidth": false,
+                        "fillColor": "#fcd34d",
+                        "fontStyle": "normal",
+                        "roughness": 1.4,
+                        "shapeType": "rect",
+                        "textAlign": "center",
+                        "fontFamily": "blocksuite:surface:Inter",
+                        "fontWeight": "400",
+                        "shapeStyle": "General",
+                        "strokeColor": "#fcd34d",
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "lockedBySelf": false,
+                        "textResizing": 1
+                    },
+                    "3aCUZSYD1M": {
+                        "id": "3aCUZSYD1M",
+                        "seed": 1996800943,
+                        "text": {
+                            "affine:surface:text": true,
+                            "delta": [
+                                {
+                                    "insert": "集合周边概念图"
+                                }
+                            ]
+                        },
+                        "type": "shape",
+                        "xywh": "[620.4184664506797,-652.6266292657793,292.0089161761796,73.9890775680542]",
+                        "color": "#000000",
+                        "index": "ak",
+                        "filled": true,
+                        "radius": 0.1,
+                        "rotate": 0,
+                        "shadow": null,
+                        "padding": [
+                            10,
+                            20
+                        ],
+                        "fontSize": 32,
+                        "maxWidth": false,
+                        "fillColor": "#fcd34d",
+                        "fontStyle": "normal",
+                        "roughness": 1.4,
+                        "shapeType": "rect",
+                        "textAlign": "center",
+                        "fontFamily": "blocksuite:surface:Inter",
+                        "fontWeight": "400",
+                        "shapeStyle": "General",
+                        "strokeColor": "#fcd34d",
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "lockedBySelf": false,
+                        "textResizing": 1
+                    },
+                    "48LDviHqcB": {
+                        "id": "48LDviHqcB",
+                        "seed": 1945295048,
+                        "text": {
+                            "affine:surface:text": true,
+                            "delta": [
+                                {
+                                    "insert": "oc周边"
+                                }
+                            ]
+                        },
+                        "type": "shape",
+                        "xywh": "[1547.6899859048774,77.69060132543007,160.1474329026555,59]",
+                        "color": "#000000",
+                        "index": "b09",
+                        "filled": true,
+                        "radius": 0.1,
+                        "rotate": 0,
+                        "shadow": null,
+                        "padding": [
+                            10,
+                            20
+                        ],
+                        "fontSize": 24,
+                        "maxWidth": false,
+                        "fillColor": "#ff8c38",
+                        "fontStyle": "normal",
+                        "roughness": 1.4,
+                        "shapeType": "rect",
+                        "textAlign": "center",
+                        "fontFamily": "blocksuite:surface:Inter",
+                        "fontWeight": "400",
+                        "shapeStyle": "General",
+                        "strokeColor": "#ff8c38",
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "lockedBySelf": false,
+                        "textResizing": 1
+                    },
+                    "4nKHe2UaDf": {
+                        "id": "4nKHe2UaDf",
+                        "seed": 1945295048,
+                        "text": {
+                            "affine:surface:text": true,
+                            "delta": [
+                                {
+                                    "insert": "角色设计"
+                                }
+                            ]
+                        },
+                        "type": "shape",
+                        "xywh": "[-942.8816204931345,969.2060391127486,160.1474329026555,59]",
+                        "color": "#000000",
+                        "index": "b0E",
+                        "filled": true,
+                        "radius": 0.1,
+                        "rotate": 0,
+                        "shadow": null,
+                        "padding": [
+                            10,
+                            20
+                        ],
+                        "fontSize": 24,
+                        "maxWidth": false,
+                        "fillColor": "#ff8c38",
+                        "fontStyle": "normal",
+                        "roughness": 1.4,
+                        "shapeType": "rect",
+                        "textAlign": "center",
+                        "fontFamily": "blocksuite:surface:Inter",
+                        "fontWeight": "400",
+                        "shapeStyle": "General",
+                        "strokeColor": "#ff8c38",
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "lockedBySelf": false,
+                        "textResizing": 1
+                    },
+                    "6InX626KrZ": {
+                        "id": "6InX626KrZ",
+                        "seed": 1945295048,
+                        "text": {
+                            "affine:surface:text": true,
+                            "delta": [
+                                {
+                                    "insert": "oc周边"
+                                }
+                            ]
+                        },
+                        "type": "shape",
+                        "xywh": "[206.90416658521542,-1043.7003920193984,160.1474329026555,59]",
+                        "color": "#000000",
+                        "index": "b03",
+                        "filled": true,
+                        "radius": 0.1,
+                        "rotate": 0,
+                        "shadow": null,
+                        "padding": [
+                            10,
+                            20
+                        ],
+                        "fontSize": 24,
+                        "maxWidth": false,
+                        "fillColor": "#ff8c38",
+                        "fontStyle": "normal",
+                        "roughness": 1.4,
+                        "shapeType": "rect",
+                        "textAlign": "center",
+                        "fontFamily": "blocksuite:surface:Inter",
+                        "fontWeight": "400",
+                        "shapeStyle": "General",
+                        "strokeColor": "#ff8c38",
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "lockedBySelf": false,
+                        "textResizing": 1
+                    },
+                    "9J2hGMJNfH": {
+                        "id": "9J2hGMJNfH",
+                        "seed": 1996800943,
+                        "text": {
+                            "affine:surface:text": true,
+                            "delta": [
+                                {
+                                    "insert": "正比贴纸"
+                                }
+                            ]
+                        },
+                        "type": "shape",
+                        "xywh": "[1435.561047738994,-560.7301160140546,181.16801417797615,71]",
+                        "color": "#000000",
+                        "index": "al",
+                        "filled": true,
+                        "radius": 0.1,
+                        "rotate": 0,
+                        "shadow": null,
+                        "padding": [
+                            10,
+                            20
+                        ],
+                        "fontSize": 32,
+                        "maxWidth": false,
+                        "fillColor": "#fcd34d",
+                        "fontStyle": "normal",
+                        "roughness": 1.4,
+                        "shapeType": "rect",
+                        "textAlign": "center",
+                        "fontFamily": "blocksuite:surface:Inter",
+                        "fontWeight": "400",
+                        "shapeStyle": "General",
+                        "strokeColor": "#fcd34d",
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "lockedBySelf": false,
+                        "textResizing": 1
+                    },
+                    "9amlC73VKn": {
+                        "id": "9amlC73VKn",
+                        "seed": 1945295048,
+                        "text": {
+                            "affine:surface:text": true,
+                            "delta": [
+                                {
+                                    "insert": "角色设计"
+                                }
+                            ]
+                        },
+                        "type": "shape",
+                        "xywh": "[-1311.398197310682,108.91799138042484,160.1474329026555,59]",
+                        "color": "#000000",
+                        "index": "aw",
+                        "filled": true,
+                        "radius": 0.1,
+                        "rotate": 0,
+                        "shadow": null,
+                        "padding": [
+                            10,
+                            20
+                        ],
+                        "fontSize": 24,
+                        "maxWidth": false,
+                        "fillColor": "#ff8c38",
+                        "fontStyle": "normal",
+                        "roughness": 1.4,
+                        "shapeType": "rect",
+                        "textAlign": "center",
+                        "fontFamily": "blocksuite:surface:Inter",
+                        "fontWeight": "400",
+                        "shapeStyle": "General",
+                        "strokeColor": "#ff8c38",
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "textResizing": 1
+                    },
+                    "BTE77I4IHv": {
+                        "id": "BTE77I4IHv",
+                        "seed": 1945295048,
+                        "text": {
+                            "affine:surface:text": true,
+                            "delta": [
+                                {
+                                    "insert": "角色设计"
+                                }
+                            ]
+                        },
+                        "type": "shape",
+                        "xywh": "[-1.4649773296765716,-1043.7003920193984,160.1474329026555,59]",
+                        "color": "#000000",
+                        "index": "b02",
+                        "filled": true,
+                        "radius": 0.1,
+                        "rotate": 0,
+                        "shadow": null,
+                        "padding": [
+                            10,
+                            20
+                        ],
+                        "fontSize": 24,
+                        "maxWidth": false,
+                        "fillColor": "#ff8c38",
+                        "fontStyle": "normal",
+                        "roughness": 1.4,
+                        "shapeType": "rect",
+                        "textAlign": "center",
+                        "fontFamily": "blocksuite:surface:Inter",
+                        "fontWeight": "400",
+                        "shapeStyle": "General",
+                        "strokeColor": "#ff8c38",
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "lockedBySelf": false,
+                        "textResizing": 1
+                    },
+                    "Chup9TxDLI": {
+                        "id": "Chup9TxDLI",
+                        "mode": 0,
+                        "seed": 289874605,
+                        "type": "connector",
+                        "index": "b0D",
+                        "rough": false,
+                        "source": {
+                            "id": "ddlNwhPgPx",
+                            "position": [
+                                1,
+                                0.5
+                            ]
+                        },
+                        "stroke": "#fcd34d",
+                        "target": {
+                            "id": "j7rddiJeLA",
+                            "position": [
+                                0,
+                                0.5
+                            ]
+                        },
+                        "roughness": 1.4,
+                        "labelStyle": {
+                            "color": {
+                                "dark": "#ffffff",
+                                "light": "#000000"
+                            },
+                            "fontSize": 16,
+                            "fontStyle": "normal",
+                            "textAlign": "center",
+                            "fontFamily": "blocksuite:surface:Inter",
+                            "fontWeight": "400"
+                        },
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "lockedBySelf": false,
+                        "rearEndpointStyle": "Arrow",
+                        "frontEndpointStyle": "None"
+                    },
+                    "LN8Br7PdEX": {
+                        "id": "LN8Br7PdEX",
+                        "mode": 0,
+                        "seed": 289874605,
+                        "type": "connector",
+                        "index": "b07",
+                        "rough": false,
+                        "source": {
+                            "id": "kElCZr0-Tx",
+                            "position": [
+                                1,
+                                0.5
+                            ]
+                        },
+                        "stroke": "#fcd34d",
+                        "target": {
+                            "id": "-jrPxDfQMq",
+                            "position": [
+                                0,
+                                0.5
+                            ]
+                        },
+                        "roughness": 1.4,
+                        "labelStyle": {
+                            "color": {
+                                "dark": "#ffffff",
+                                "light": "#000000"
+                            },
+                            "fontSize": 16,
+                            "fontStyle": "normal",
+                            "textAlign": "center",
+                            "fontFamily": "blocksuite:surface:Inter",
+                            "fontWeight": "400"
+                        },
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "lockedBySelf": false,
+                        "rearEndpointStyle": "Arrow",
+                        "frontEndpointStyle": "None"
+                    },
+                    "Nsavw5W94u": {
+                        "id": "Nsavw5W94u",
+                        "seed": 1945295048,
+                        "text": {
+                            "affine:surface:text": true,
+                            "delta": [
+                                {
+                                    "insert": "oc周边"
+                                }
+                            ]
+                        },
+                        "type": "shape",
+                        "xywh": "[213.0612100242372,1167.3462155599136,160.1474329026555,59]",
+                        "color": "#000000",
+                        "index": "b0I",
+                        "filled": true,
+                        "radius": 0.1,
+                        "rotate": 0,
+                        "shadow": null,
+                        "padding": [
+                            10,
+                            20
+                        ],
+                        "fontSize": 24,
+                        "maxWidth": false,
+                        "fillColor": "#ff8c38",
+                        "fontStyle": "normal",
+                        "roughness": 1.4,
+                        "shapeType": "rect",
+                        "textAlign": "center",
+                        "fontFamily": "blocksuite:surface:Inter",
+                        "fontWeight": "400",
+                        "shapeStyle": "General",
+                        "strokeColor": "#ff8c38",
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "lockedBySelf": false,
+                        "textResizing": 1
+                    },
+                    "P1yWGh7MnF": {
+                        "id": "P1yWGh7MnF",
+                        "seed": 1996800943,
+                        "text": {
+                            "affine:surface:text": true,
+                            "delta": [
+                                {
+                                    "insert": "Q版娃娃"
+                                }
+                            ]
+                        },
+                        "type": "shape",
+                        "xywh": "[-1221.245723385639,-513.6988108018872,181.16801417797615,71]",
+                        "color": "#000000",
+                        "index": "ap",
+                        "filled": true,
+                        "radius": 0.1,
+                        "rotate": 0,
+                        "shadow": null,
+                        "padding": [
+                            10,
+                            20
+                        ],
+                        "fontSize": 32,
+                        "maxWidth": false,
+                        "fillColor": "#fcd34d",
+                        "fontStyle": "normal",
+                        "roughness": 1.4,
+                        "shapeType": "rect",
+                        "textAlign": "center",
+                        "fontFamily": "blocksuite:surface:Inter",
+                        "fontWeight": "400",
+                        "shapeStyle": "General",
+                        "strokeColor": "#fcd34d",
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "lockedBySelf": false,
+                        "textResizing": 1
+                    },
+                    "RjRDNdduIv": {
+                        "id": "RjRDNdduIv",
+                        "mode": 0,
+                        "seed": 1254019608,
+                        "type": "connector",
+                        "index": "av",
+                        "rough": false,
+                        "source": {
+                            "id": "NYmx37ky8B",
+                            "position": [
+                                1,
+                                0.5648647628429555
+                            ]
+                        },
+                        "stroke": "#fcd34d",
+                        "target": {
+                            "id": "Sd0OVLqu3J",
+                            "position": [
+                                0,
+                                0.6052922754670891
+                            ]
+                        },
+                        "roughness": 1.4,
+                        "labelStyle": {
+                            "color": {
+                                "dark": "#ffffff",
+                                "light": "#000000"
+                            },
+                            "fontSize": 16,
+                            "fontStyle": "normal",
+                            "textAlign": "center",
+                            "fontFamily": "blocksuite:surface:Inter",
+                            "fontWeight": "400"
+                        },
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "rearEndpointStyle": "Arrow",
+                        "frontEndpointStyle": "None"
+                    },
+                    "Td6TWac0Vu": {
+                        "id": "Td6TWac0Vu",
+                        "seed": 1996800943,
+                        "text": {
+                            "affine:surface:text": true,
+                            "delta": [
+                                {
+                                    "insert": "正比立牌"
+                                }
+                            ]
+                        },
+                        "type": "shape",
+                        "xywh": "[-847.5972933066748,349.81266634487565,181.16801417797615,71]",
+                        "color": "#000000",
+                        "index": "ao",
+                        "filled": true,
+                        "radius": 0.1,
+                        "rotate": 0,
+                        "shadow": null,
+                        "padding": [
+                            10,
+                            20
+                        ],
+                        "fontSize": 32,
+                        "maxWidth": false,
+                        "fillColor": "#fcd34d",
+                        "fontStyle": "normal",
+                        "roughness": 1.4,
+                        "shapeType": "rect",
+                        "textAlign": "center",
+                        "fontFamily": "blocksuite:surface:Inter",
+                        "fontWeight": "400",
+                        "shapeStyle": "General",
+                        "strokeColor": "#fcd34d",
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "lockedBySelf": false,
+                        "textResizing": 1
+                    },
+                    "UOe3eklcuH": {
+                        "id": "UOe3eklcuH",
+                        "seed": 1945295048,
+                        "text": {
+                            "affine:surface:text": true,
+                            "delta": [
+                                {
+                                    "insert": "角色设计"
+                                }
+                            ]
+                        },
+                        "type": "shape",
+                        "xywh": "[-941.2715746264607,-818.9353791858283,160.1474329026555,59]",
+                        "color": "#000000",
+                        "index": "az",
+                        "filled": true,
+                        "radius": 0.1,
+                        "rotate": 0,
+                        "shadow": null,
+                        "padding": [
+                            10,
+                            20
+                        ],
+                        "fontSize": 24,
+                        "maxWidth": false,
+                        "fillColor": "#ff8c38",
+                        "fontStyle": "normal",
+                        "roughness": 1.4,
+                        "shapeType": "rect",
+                        "textAlign": "center",
+                        "fontFamily": "blocksuite:surface:Inter",
+                        "fontWeight": "400",
+                        "shapeStyle": "General",
+                        "strokeColor": "#ff8c38",
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "lockedBySelf": false,
+                        "textResizing": 1
+                    },
+                    "VJr-sDRhct": {
+                        "id": "VJr-sDRhct",
+                        "seed": 1996800943,
+                        "text": {
+                            "affine:surface:text": true,
+                            "delta": [
+                                {
+                                    "insert": "辐射吧唧"
+                                }
+                            ]
+                        },
+                        "type": "shape",
+                        "xywh": "[89.88865105366801,-1658.8705273038381,181.16801417797615,71]",
+                        "color": "#000000",
+                        "index": "ar",
+                        "filled": true,
+                        "radius": 0.1,
+                        "rotate": 0,
+                        "shadow": null,
+                        "padding": [
+                            10,
+                            20
+                        ],
+                        "fontSize": 32,
+                        "maxWidth": false,
+                        "fillColor": "#fcd34d",
+                        "fontStyle": "normal",
+                        "roughness": 1.4,
+                        "shapeType": "rect",
+                        "textAlign": "center",
+                        "fontFamily": "blocksuite:surface:Inter",
+                        "fontWeight": "400",
+                        "shapeStyle": "General",
+                        "strokeColor": "#fcd34d",
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "lockedBySelf": false,
+                        "textResizing": 1
+                    },
+                    "VbRelF59q-": {
+                        "id": "VbRelF59q-",
+                        "seed": 1996800943,
+                        "text": {
+                            "affine:surface:text": true,
+                            "delta": [
+                                {
+                                    "insert": "参考图"
+                                }
+                            ]
+                        },
+                        "type": "shape",
+                        "xywh": "[-488.854348222981,-664.626633050764,181.16801417797615,71]",
+                        "color": "#000000",
+                        "index": "aj",
+                        "filled": true,
+                        "radius": 0.1,
+                        "rotate": 0,
+                        "shadow": null,
+                        "padding": [
+                            10,
+                            20
+                        ],
+                        "fontSize": 32,
+                        "maxWidth": false,
+                        "fillColor": "#fcd34d",
+                        "fontStyle": "normal",
+                        "roughness": 1.4,
+                        "shapeType": "rect",
+                        "textAlign": "center",
+                        "fontFamily": "blocksuite:surface:Inter",
+                        "fontWeight": "400",
+                        "shapeStyle": "General",
+                        "strokeColor": "#fcd34d",
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "textResizing": 1
+                    },
+                    "WAsaCvd8Z_": {
+                        "id": "WAsaCvd8Z_",
+                        "seed": 1996800943,
+                        "text": {
+                            "affine:surface:text": true,
+                            "delta": [
+                                {
+                                    "insert": "Q版手办"
+                                }
+                            ]
+                        },
+                        "type": "shape",
+                        "xywh": "[964.5951041537405,-1430.9560523198468,181.16801417797615,71]",
+                        "color": "#000000",
+                        "index": "as",
+                        "filled": true,
+                        "radius": 0.1,
+                        "rotate": 0,
+                        "shadow": null,
+                        "padding": [
+                            10,
+                            20
+                        ],
+                        "fontSize": 32,
+                        "maxWidth": false,
+                        "fillColor": "#fcd34d",
+                        "fontStyle": "normal",
+                        "roughness": 1.4,
+                        "shapeType": "rect",
+                        "textAlign": "center",
+                        "fontFamily": "blocksuite:surface:Inter",
+                        "fontWeight": "400",
+                        "shapeStyle": "General",
+                        "strokeColor": "#fcd34d",
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "lockedBySelf": false,
+                        "textResizing": 1
+                    },
+                    "YJiSqIMgs3": {
+                        "id": "YJiSqIMgs3",
+                        "mode": 0,
+                        "seed": 289874605,
+                        "type": "connector",
+                        "index": "b01",
+                        "rough": false,
+                        "source": {
+                            "id": "UOe3eklcuH",
+                            "position": [
+                                1,
+                                0.5
+                            ]
+                        },
+                        "stroke": "#fcd34d",
+                        "target": {
+                            "id": "i93b7LMrhh",
+                            "position": [
+                                0,
+                                0.5
+                            ]
+                        },
+                        "roughness": 1.4,
+                        "labelStyle": {
+                            "color": {
+                                "dark": "#ffffff",
+                                "light": "#000000"
+                            },
+                            "fontSize": 16,
+                            "fontStyle": "normal",
+                            "textAlign": "center",
+                            "fontFamily": "blocksuite:surface:Inter",
+                            "fontWeight": "400"
+                        },
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "lockedBySelf": false,
+                        "rearEndpointStyle": "Arrow",
+                        "frontEndpointStyle": "None"
+                    },
+                    "_MoxmvPtql": {
+                        "id": "_MoxmvPtql",
+                        "seed": 1945295048,
+                        "text": {
+                            "affine:surface:text": true,
+                            "delta": [
+                                {
+                                    "insert": "oc周边"
+                                }
+                            ]
+                        },
+                        "type": "shape",
+                        "xywh": "[-1103.02905339579,108.91799138042484,160.1474329026555,59]",
+                        "color": "#000000",
+                        "index": "ax",
+                        "filled": true,
+                        "radius": 0.1,
+                        "rotate": 0,
+                        "shadow": null,
+                        "padding": [
+                            10,
+                            20
+                        ],
+                        "fontSize": 24,
+                        "maxWidth": false,
+                        "fillColor": "#ff8c38",
+                        "fontStyle": "normal",
+                        "roughness": 1.4,
+                        "shapeType": "rect",
+                        "textAlign": "center",
+                        "fontFamily": "blocksuite:surface:Inter",
+                        "fontWeight": "400",
+                        "shapeStyle": "General",
+                        "strokeColor": "#ff8c38",
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "lockedBySelf": false,
+                        "textResizing": 1
+                    },
+                    "cmyF-zS4fE": {
+                        "id": "cmyF-zS4fE",
+                        "mode": 0,
+                        "seed": 289874605,
+                        "type": "connector",
+                        "index": "b0J",
+                        "rough": false,
+                        "source": {
+                            "id": "h-0vGCipkt",
+                            "position": [
+                                1,
+                                0.5
+                            ]
+                        },
+                        "stroke": "#fcd34d",
+                        "target": {
+                            "id": "Nsavw5W94u",
+                            "position": [
+                                0,
+                                0.5
+                            ]
+                        },
+                        "roughness": 1.4,
+                        "labelStyle": {
+                            "color": {
+                                "dark": "#ffffff",
+                                "light": "#000000"
+                            },
+                            "fontSize": 16,
+                            "fontStyle": "normal",
+                            "textAlign": "center",
+                            "fontFamily": "blocksuite:surface:Inter",
+                            "fontWeight": "400"
+                        },
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "lockedBySelf": false,
+                        "rearEndpointStyle": "Arrow",
+                        "frontEndpointStyle": "None"
+                    },
+                    "ddlNwhPgPx": {
+                        "id": "ddlNwhPgPx",
+                        "seed": 1945295048,
+                        "text": {
+                            "affine:surface:text": true,
+                            "delta": [
+                                {
+                                    "insert": "角色设计"
+                                }
+                            ]
+                        },
+                        "type": "shape",
+                        "xywh": "[880.6976647179154,969.2060391127486,160.1474329026555,59]",
+                        "color": "#000000",
+                        "index": "b0B",
+                        "filled": true,
+                        "radius": 0.1,
+                        "rotate": 0,
+                        "shadow": null,
+                        "padding": [
+                            10,
+                            20
+                        ],
+                        "fontSize": 24,
+                        "maxWidth": false,
+                        "fillColor": "#ff8c38",
+                        "fontStyle": "normal",
+                        "roughness": 1.4,
+                        "shapeType": "rect",
+                        "textAlign": "center",
+                        "fontFamily": "blocksuite:surface:Inter",
+                        "fontWeight": "400",
+                        "shapeStyle": "General",
+                        "strokeColor": "#ff8c38",
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "lockedBySelf": false,
+                        "textResizing": 1
+                    },
+                    "e4vQCiZruT": {
+                        "id": "e4vQCiZruT",
+                        "mode": 0,
+                        "seed": 209760247,
+                        "type": "connector",
+                        "index": "b0K",
+                        "rough": false,
+                        "source": {
+                            "id": "cr-FwvHNBG",
+                            "position": [
+                                1,
+                                0.8408708594733042
+                            ]
+                        },
+                        "stroke": "#ff8c38",
+                        "target": {
+                            "id": "9amlC73VKn",
+                            "position": [
+                                0,
+                                0.5
+                            ]
+                        },
+                        "roughness": 1.4,
+                        "labelStyle": {
+                            "color": {
+                                "dark": "#ffffff",
+                                "light": "#000000"
+                            },
+                            "fontSize": 16,
+                            "fontStyle": "normal",
+                            "textAlign": "center",
+                            "fontFamily": "blocksuite:surface:Inter",
+                            "fontWeight": "400"
+                        },
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "rearEndpointStyle": "Arrow",
+                        "frontEndpointStyle": "None"
+                    },
+                    "eZOOAMlCno": {
+                        "id": "eZOOAMlCno",
+                        "seed": 1945295048,
+                        "text": {
+                            "affine:surface:text": true,
+                            "delta": [
+                                {
+                                    "insert": "oc周边"
+                                }
+                            ]
+                        },
+                        "type": "shape",
+                        "xywh": "[-734.5124765782425,969.2060391127486,160.1474329026555,59]",
+                        "color": "#000000",
+                        "index": "b0F",
+                        "filled": true,
+                        "radius": 0.1,
+                        "rotate": 0,
+                        "shadow": null,
+                        "padding": [
+                            10,
+                            20
+                        ],
+                        "fontSize": 24,
+                        "maxWidth": false,
+                        "fillColor": "#ff8c38",
+                        "fontStyle": "normal",
+                        "roughness": 1.4,
+                        "shapeType": "rect",
+                        "textAlign": "center",
+                        "fontFamily": "blocksuite:surface:Inter",
+                        "fontWeight": "400",
+                        "shapeStyle": "General",
+                        "strokeColor": "#ff8c38",
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "lockedBySelf": false,
+                        "textResizing": 1
+                    },
+                    "h-0vGCipkt": {
+                        "id": "h-0vGCipkt",
+                        "seed": 1945295048,
+                        "text": {
+                            "affine:surface:text": true,
+                            "delta": [
+                                {
+                                    "insert": "角色设计"
+                                }
+                            ]
+                        },
+                        "type": "shape",
+                        "xywh": "[4.692066109345205,1167.3462155599136,160.1474329026555,59]",
+                        "color": "#000000",
+                        "index": "b0H",
+                        "filled": true,
+                        "radius": 0.1,
+                        "rotate": 0,
+                        "shadow": null,
+                        "padding": [
+                            10,
+                            20
+                        ],
+                        "fontSize": 24,
+                        "maxWidth": false,
+                        "fillColor": "#ff8c38",
+                        "fontStyle": "normal",
+                        "roughness": 1.4,
+                        "shapeType": "rect",
+                        "textAlign": "center",
+                        "fontFamily": "blocksuite:surface:Inter",
+                        "fontWeight": "400",
+                        "shapeStyle": "General",
+                        "strokeColor": "#ff8c38",
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "lockedBySelf": false,
+                        "textResizing": 1
+                    },
+                    "i93b7LMrhh": {
+                        "id": "i93b7LMrhh",
+                        "seed": 1945295048,
+                        "text": {
+                            "affine:surface:text": true,
+                            "delta": [
+                                {
+                                    "insert": "oc周边"
+                                }
+                            ]
+                        },
+                        "type": "shape",
+                        "xywh": "[-732.9024307115683,-818.9353791858283,160.1474329026555,59]",
+                        "color": "#000000",
+                        "index": "b00",
+                        "filled": true,
+                        "radius": 0.1,
+                        "rotate": 0,
+                        "shadow": null,
+                        "padding": [
+                            10,
+                            20
+                        ],
+                        "fontSize": 24,
+                        "maxWidth": false,
+                        "fillColor": "#ff8c38",
+                        "fontStyle": "normal",
+                        "roughness": 1.4,
+                        "shapeType": "rect",
+                        "textAlign": "center",
+                        "fontFamily": "blocksuite:surface:Inter",
+                        "fontWeight": "400",
+                        "shapeStyle": "General",
+                        "strokeColor": "#ff8c38",
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "lockedBySelf": false,
+                        "textResizing": 1
+                    },
+                    "iXPOy6ci-m": {
+                        "id": "iXPOy6ci-m",
+                        "seed": 1996800943,
+                        "text": {
+                            "affine:surface:text": true,
+                            "delta": [
+                                {
+                                    "insert": "表情包"
+                                }
+                            ]
+                        },
+                        "type": "shape",
+                        "xywh": "[-847.5972933066748,-1434.8410315425606,181.16801417797615,71]",
+                        "color": "#000000",
+                        "index": "aq",
+                        "filled": true,
+                        "radius": 0.1,
+                        "rotate": 0,
+                        "shadow": null,
+                        "padding": [
+                            10,
+                            20
+                        ],
+                        "fontSize": 32,
+                        "maxWidth": false,
+                        "fillColor": "#fcd34d",
+                        "fontStyle": "normal",
+                        "roughness": 1.4,
+                        "shapeType": "rect",
+                        "textAlign": "center",
+                        "fontFamily": "blocksuite:surface:Inter",
+                        "fontWeight": "400",
+                        "shapeStyle": "General",
+                        "strokeColor": "#fcd34d",
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "lockedBySelf": false,
+                        "textResizing": 1
+                    },
+                    "ibu2D52Djt": {
+                        "id": "ibu2D52Djt",
+                        "mode": 0,
+                        "seed": 1567184877,
+                        "type": "connector",
+                        "index": "au",
+                        "rough": false,
+                        "source": {
+                            "id": "Sd0OVLqu3J",
+                            "position": [
+                                1,
+                                0.6194121543138145
+                            ]
+                        },
+                        "stroke": "#fcd34d",
+                        "target": {
+                            "id": "03Q8dWRC35",
+                            "position": [
+                                0,
+                                0.5804283812850771
+                            ]
+                        },
+                        "roughness": 1.4,
+                        "labelStyle": {
+                            "color": {
+                                "dark": "#ffffff",
+                                "light": "#000000"
+                            },
+                            "fontSize": 16,
+                            "fontStyle": "normal",
+                            "textAlign": "center",
+                            "fontFamily": "blocksuite:surface:Inter",
+                            "fontWeight": "400"
+                        },
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "rearEndpointStyle": "Arrow",
+                        "frontEndpointStyle": "None"
+                    },
+                    "j7rddiJeLA": {
+                        "id": "j7rddiJeLA",
+                        "seed": 1945295048,
+                        "text": {
+                            "affine:surface:text": true,
+                            "delta": [
+                                {
+                                    "insert": "oc周边"
+                                }
+                            ]
+                        },
+                        "type": "shape",
+                        "xywh": "[1089.0668086328074,969.2060391127486,160.1474329026555,59]",
+                        "color": "#000000",
+                        "index": "b0C",
+                        "filled": true,
+                        "radius": 0.1,
+                        "rotate": 0,
+                        "shadow": null,
+                        "padding": [
+                            10,
+                            20
+                        ],
+                        "fontSize": 24,
+                        "maxWidth": false,
+                        "fillColor": "#ff8c38",
+                        "fontStyle": "normal",
+                        "roughness": 1.4,
+                        "shapeType": "rect",
+                        "textAlign": "center",
+                        "fontFamily": "blocksuite:surface:Inter",
+                        "fontWeight": "400",
+                        "shapeStyle": "General",
+                        "strokeColor": "#ff8c38",
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "lockedBySelf": false,
+                        "textResizing": 1
+                    },
+                    "jers1Bu99_": {
+                        "id": "jers1Bu99_",
+                        "mode": 0,
+                        "seed": 289874605,
+                        "type": "connector",
+                        "index": "ay",
+                        "rough": false,
+                        "source": {
+                            "id": "9amlC73VKn",
+                            "position": [
+                                1,
+                                0.5
+                            ]
+                        },
+                        "stroke": "#fcd34d",
+                        "target": {
+                            "id": "_MoxmvPtql",
+                            "position": [
+                                0,
+                                0.5
+                            ]
+                        },
+                        "roughness": 1.4,
+                        "labelStyle": {
+                            "color": {
+                                "dark": "#ffffff",
+                                "light": "#000000"
+                            },
+                            "fontSize": 16,
+                            "fontStyle": "normal",
+                            "textAlign": "center",
+                            "fontFamily": "blocksuite:surface:Inter",
+                            "fontWeight": "400"
+                        },
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "rearEndpointStyle": "Arrow",
+                        "frontEndpointStyle": "None"
+                    },
+                    "kElCZr0-Tx": {
+                        "id": "kElCZr0-Tx",
+                        "seed": 1945295048,
+                        "text": {
+                            "affine:surface:text": true,
+                            "delta": [
+                                {
+                                    "insert": "角色设计"
+                                }
+                            ]
+                        },
+                        "type": "shape",
+                        "xywh": "[873.4867555042142,-818.9353791858283,160.1474329026555,59]",
+                        "color": "#000000",
+                        "index": "b05",
+                        "filled": true,
+                        "radius": 0.1,
+                        "rotate": 0,
+                        "shadow": null,
+                        "padding": [
+                            10,
+                            20
+                        ],
+                        "fontSize": 24,
+                        "maxWidth": false,
+                        "fillColor": "#ff8c38",
+                        "fontStyle": "normal",
+                        "roughness": 1.4,
+                        "shapeType": "rect",
+                        "textAlign": "center",
+                        "fontFamily": "blocksuite:surface:Inter",
+                        "fontWeight": "400",
+                        "shapeStyle": "General",
+                        "strokeColor": "#ff8c38",
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "lockedBySelf": false,
+                        "textResizing": 1
+                    },
+                    "kG9xOzBUV5": {
+                        "id": "kG9xOzBUV5",
+                        "seed": 1945295048,
+                        "text": {
+                            "affine:surface:text": true,
+                            "delta": [
+                                {
+                                    "insert": "角色设计"
+                                }
+                            ]
+                        },
+                        "type": "shape",
+                        "xywh": "[1339.3208419899854,77.69060132543007,160.1474329026555,59]",
+                        "color": "#000000",
+                        "index": "b08",
+                        "filled": true,
+                        "radius": 0.1,
+                        "rotate": 0,
+                        "shadow": null,
+                        "padding": [
+                            10,
+                            20
+                        ],
+                        "fontSize": 24,
+                        "maxWidth": false,
+                        "fillColor": "#ff8c38",
+                        "fontStyle": "normal",
+                        "roughness": 1.4,
+                        "shapeType": "rect",
+                        "textAlign": "center",
+                        "fontFamily": "blocksuite:surface:Inter",
+                        "fontWeight": "400",
+                        "shapeStyle": "General",
+                        "strokeColor": "#ff8c38",
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "lockedBySelf": false,
+                        "textResizing": 1
+                    },
+                    "m7he4ouqUV": {
+                        "id": "m7he4ouqUV",
+                        "mode": 0,
+                        "seed": 289874605,
+                        "type": "connector",
+                        "index": "b04",
+                        "rough": false,
+                        "source": {
+                            "id": "BTE77I4IHv",
+                            "position": [
+                                1,
+                                0.5
+                            ]
+                        },
+                        "stroke": "#fcd34d",
+                        "target": {
+                            "id": "6InX626KrZ",
+                            "position": [
+                                0,
+                                0.5
+                            ]
+                        },
+                        "roughness": 1.4,
+                        "labelStyle": {
+                            "color": {
+                                "dark": "#ffffff",
+                                "light": "#000000"
+                            },
+                            "fontSize": 16,
+                            "fontStyle": "normal",
+                            "textAlign": "center",
+                            "fontFamily": "blocksuite:surface:Inter",
+                            "fontWeight": "400"
+                        },
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "lockedBySelf": false,
+                        "rearEndpointStyle": "Arrow",
+                        "frontEndpointStyle": "None"
+                    },
+                    "mdrCjEvtuv": {
+                        "id": "mdrCjEvtuv",
+                        "mode": 0,
+                        "seed": 289874605,
+                        "type": "connector",
+                        "index": "b0A",
+                        "rough": false,
+                        "source": {
+                            "id": "kG9xOzBUV5",
+                            "position": [
+                                1,
+                                0.5
+                            ]
+                        },
+                        "stroke": "#fcd34d",
+                        "target": {
+                            "id": "48LDviHqcB",
+                            "position": [
+                                0,
+                                0.5
+                            ]
+                        },
+                        "roughness": 1.4,
+                        "labelStyle": {
+                            "color": {
+                                "dark": "#ffffff",
+                                "light": "#000000"
+                            },
+                            "fontSize": 16,
+                            "fontStyle": "normal",
+                            "textAlign": "center",
+                            "fontFamily": "blocksuite:surface:Inter",
+                            "fontWeight": "400"
+                        },
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "lockedBySelf": false,
+                        "rearEndpointStyle": "Arrow",
+                        "frontEndpointStyle": "None"
+                    },
+                    "ooW_7yxbgu": {
+                        "id": "ooW_7yxbgu",
+                        "seed": 1996800943,
+                        "text": {
+                            "affine:surface:text": true,
+                            "delta": [
+                                {
+                                    "insert": "Q版贴纸"
+                                }
+                            ]
+                        },
+                        "type": "shape",
+                        "xywh": "[971.8060271405666,349.81268818447506,181.16801417797615,71]",
+                        "color": "#000000",
+                        "index": "am",
+                        "filled": true,
+                        "radius": 0.1,
+                        "rotate": 0,
+                        "shadow": null,
+                        "padding": [
+                            10,
+                            20
+                        ],
+                        "fontSize": 32,
+                        "maxWidth": false,
+                        "fillColor": "#fcd34d",
+                        "fontStyle": "normal",
+                        "roughness": 1.4,
+                        "shapeType": "rect",
+                        "textAlign": "center",
+                        "fontFamily": "blocksuite:surface:Inter",
+                        "fontWeight": "400",
+                        "shapeStyle": "General",
+                        "strokeColor": "#fcd34d",
+                        "strokeStyle": "solid",
+                        "strokeWidth": 2,
+                        "lockedBySelf": false,
+                        "textResizing": 1
+                    }
+                },
+                "nodeId": null
+            },
+            "children": [
+                {
+                    "id": "03Q8dWRC35",
+                    "type": "block",
+                    "flavour": "yidooo:image",
+                    "props": {
+                        "alt": "",
+                        "fit": "contain",
+                        "url": "//r.yidooo.com/images/reference/1761891786057_c2cbcf78.jpg",
+                        "xywh": "[535.245045675339,-560.7301160140546,462,639]",
+                        "align": "center",
+                        "index": "a0",
+                        "scale": 1,
+                        "title": "图片节点",
+                        "ossKey": "images/reference/1761891786057_c2cbcf78.jpg",
+                        "prompt": "一幅专业的产品摄影图，展示了一系列以【皮卡丘】为主题的周边产品。所有物品都以平铺俯瞰（Flat Lay）的方式，在纯净的浅灰色背景上整齐排列。光线明亮、均匀且柔和，每个物品下方都有淡淡的影子，质感十足。画面中包含：主题滑板、毛绒玩具、马克杯、手机壳、圆形珐琅徽章、铅笔、钥匙扣、束口袋、Q版手办、立牌、辐射吧唧\n",
+                        "rotate": 0,
+                        "slotId": "image-x91p691u",
+                        "caption": "",
+                        "autoSize": true,
+                        "minWidth": 320,
+                        "minHeight": 240,
+                        "lockedBySelf": false,
+                        "keepAspectRatio": true,
+                        "nodeId": "350eea75-5c1e-4f79-a838-0c58b15f8571"
+                    },
+                    "children": [],
+                    "parentId": "63LPhU0Vj4"
+                },
+                {
+                    "id": "35Feua_0PT",
+                    "type": "block",
+                    "flavour": "yidooo:image",
+                    "props": {
+                        "alt": "",
+                        "fit": "contain",
+                        "url": "//r.yidooo.com/images/oc_reference/1761880858177_6247fe57.jpg",
+                        "xywh": "[-1317.4859228555156,-444.7145012545079,373.64841311772955,522.405102579938]",
+                        "align": "center",
+                        "index": "a0",
+                        "scale": 1,
+                        "title": "图片节点",
+                        "ossKey": "images/oc_reference/1761880858177_6247fe57.jpg",
+                        "prompt": "请你参考图中的人物形象，为我生成一个Q版人物形象的玩偶，玩偶具有真实的布料质感，玩偶保持坐姿\n",
+                        "rotate": 0,
+                        "slotId": "image-mmh8jlqn",
+                        "caption": "",
+                        "autoSize": false,
+                        "minWidth": 320,
+                        "minHeight": 240,
+                        "lockedBySelf": false,
+                        "keepAspectRatio": true,
+                        "nodeId": "38005d27-b37d-42ea-ad3a-6fe78645aaed"
+                    },
+                    "children": [],
+                    "parentId": "63LPhU0Vj4"
+                },
+                {
+                    "id": "FgBDh4u-oj",
+                    "type": "block",
+                    "flavour": "yidooo:image",
+                    "props": {
+                        "alt": "",
+                        "fit": "contain",
+                        "url": "//r.yidooo.com/images/oc_reference/1761881315501_7133cbe7.jpg",
+                        "xywh": "[-942.8816204931344,420.81266634487565,373.6484161561445,522.4051064864715]",
+                        "align": "center",
+                        "index": "a0",
+                        "scale": 1,
+                        "title": "图片节点",
+                        "ossKey": "images/oc_reference/1761881315501_7133cbe7.jpg",
+                        "prompt": "请你根据图中的角色生成一个亚克力立牌\n",
+                        "rotate": 0,
+                        "slotId": "image-0oye5tnx",
+                        "caption": "",
+                        "autoSize": false,
+                        "minWidth": 320,
+                        "minHeight": 240,
+                        "lockedBySelf": false,
+                        "keepAspectRatio": true,
+                        "nodeId": "7f83584f-dcce-4c90-b927-8d28e74ab51e"
+                    },
+                    "children": [],
+                    "parentId": "63LPhU0Vj4"
+                },
+                {
+                    "id": "KTuNxAdEVj",
+                    "type": "block",
+                    "flavour": "yidooo:image",
+                    "props": {
+                        "alt": "",
+                        "fit": "contain",
+                        "url": "//r.yidooo.com/images/oc_reference/1761880935033_0e750f1c.jpg",
+                        "xywh": "[1339.3208419899854,-478.1988108018872,373.648425675993,522.4051258190286]",
+                        "align": "center",
+                        "index": "a0",
+                        "scale": 1,
+                        "title": "图片节点",
+                        "ossKey": "images/oc_reference/1761880935033_0e750f1c.jpg",
+                        "prompt": "请你参考图中的人物，为我生成一张贴纸\n",
+                        "rotate": 0,
+                        "slotId": "image-fhut02cz",
+                        "caption": "",
+                        "autoSize": false,
+                        "minWidth": 320,
+                        "minHeight": 240,
+                        "lockedBySelf": false,
+                        "keepAspectRatio": true,
+                        "nodeId": "67d06998-3f42-4d4f-807e-c50956a0884d"
+                    },
+                    "children": [],
+                    "parentId": "63LPhU0Vj4"
+                },
+                {
+                    "id": "NYmx37ky8B",
+                    "type": "block",
+                    "flavour": "yidooo:image",
+                    "props": {
+                        "url": "//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2025-11-13/img/1763033060310.png",
+                        "size": 350990,
+                        "xywh": "[-623.572321577849,-558.6884493473879,450.60396088771216,636.9583333333333]",
+                        "index": "a0",
+                        "title": "截屏2025-10-31 11.17.39.png",
+                        "width": 460,
+                        "height": 598.9583333333333,
+                        "ossKey": "user/2baccbc3-6bad-464c-a430-d10b1790e443/2025-11-13/img/1763033060310.png",
+                        "rotate": 0,
+                        "caption": "",
+                        "sourceId": "X7MJEuo9uea1F0KgV5va1Wju2Qx6CeemdC40iaXy-tU=",
+                        "lockedBySelf": false,
+                        "slotId": "image-NYmx37ky8B",
+                        "nodeId": null
+                    },
+                    "children": [],
+                    "parentId": "63LPhU0Vj4"
+                },
+                {
+                    "id": "SjtBU-GSpk",
+                    "type": "block",
+                    "flavour": "affine:edgeless-text",
+                    "props": {
+                        "xywh": "[-1847.4380532503055,-13.212344104145128,220.00001515357246,25.999983538346537]",
+                        "color": {
+                            "dark": "#ffffff",
+                            "light": "#000000"
+                        },
+                        "index": "aj",
+                        "scale": 1,
+                        "rotate": 0,
+                        "fontStyle": "normal",
+                        "textAlign": "left",
+                        "fontFamily": "blocksuite:surface:Inter",
+                        "fontWeight": "400",
+                        "hasMaxWidth": true,
+                        "lockedBySelf": false,
+                        "nodeId": null
+                    },
+                    "children": [
+                        {
+                            "id": "3OkOAb7Hkw",
+                            "type": "block",
+                            "props": {
+                                "text": {
+                                    "delta": [
+                                        {
+                                            "insert": ""
+                                        }
+                                    ],
+                                    "$blocksuite:internal:text$": true
+                                },
+                                "type": "text",
+                                "collapsed": false
+                            },
+                            "flavour": "affine:paragraph",
+                            "version": 1,
+                            "children": []
+                        },
+                        {
+                            "id": "3OkOAb7Hkw",
+                            "type": "block",
+                            "flavour": "affine:paragraph",
+                            "props": {
+                                "text": {
+                                    "delta": [
+                                        {
+                                            "insert": ""
+                                        }
+                                    ],
+                                    "$blocksuite:internal:text$": true
+                                },
+                                "type": "text",
+                                "collapsed": false,
+                                "nodeId": null
+                            },
+                            "children": [],
+                            "parentId": "SjtBU-GSpk"
+                        }
+                    ],
+                    "parentId": "63LPhU0Vj4"
+                },
+                {
+                    "id": "Y3zf6id2ns",
+                    "type": "block",
+                    "flavour": "yidooo:image",
+                    "props": {
+                        "alt": "",
+                        "fit": "contain",
+                        "url": "//r.yidooo.com/images/oc_reference/1761880730656_d5e72dd7.jpg",
+                        "xywh": "[2.3713940994177847,624.1513208091156,373.15792083740234,522.405146194541]",
+                        "align": "center",
+                        "index": "a0",
+                        "scale": 1,
+                        "title": "图片节点",
+                        "ossKey": "images/oc_reference/1761880730656_d5e72dd7.jpg",
+                        "prompt": "为我生成一个图中角色的手办，手办放在一个桌面上，具有真实的消光塑料质感，手办一侧是手办的包装盒，图片右侧是一台电脑，屏幕上是手办的3D模型图，加一个底座\n",
+                        "rotate": 0,
+                        "slotId": "image-53lbi4id",
+                        "caption": "",
+                        "autoSize": false,
+                        "minWidth": 320,
+                        "minHeight": 240,
+                        "lockedBySelf": false,
+                        "keepAspectRatio": true,
+                        "nodeId": "23caac28-5f41-42f0-a3a0-840805659c61"
+                    },
+                    "children": [],
+                    "parentId": "63LPhU0Vj4"
+                },
+                {
+                    "id": "d97U6_BOob",
+                    "type": "block",
+                    "flavour": "yidooo:image",
+                    "props": {
+                        "alt": "",
+                        "fit": "contain",
+                        "url": "//r.yidooo.com/images/oc_reference/1761880960654_d94ab27e.jpg",
+                        "xywh": "[868.3548901636955,-1359.9560523198468,373.6484421580662,522.4051399175137]",
+                        "align": "center",
+                        "index": "a0",
+                        "scale": 1,
+                        "title": "图片节点",
+                        "ossKey": "images/oc_reference/1761880960654_d94ab27e.jpg",
+                        "prompt": "请你参考图中的人物形象，为我生成一个Q版人物形象的手办，1头身，手办放在一个桌面上，具有真实的消光塑料质感，手办一侧是手办的包装盒，盒子上是Q版图，图片右侧是一台电脑，屏幕上是手办的3D模型图，加一个底座\n",
+                        "rotate": 0,
+                        "slotId": "image-43vmg8ot",
+                        "caption": "",
+                        "autoSize": false,
+                        "minWidth": 320,
+                        "minHeight": 240,
+                        "lockedBySelf": false,
+                        "keepAspectRatio": true,
+                        "nodeId": "9d1d918e-f156-45f8-a79d-9b6fd40828ef"
+                    },
+                    "children": [],
+                    "parentId": "63LPhU0Vj4"
+                },
+                {
+                    "id": "efNZATYZn0",
+                    "type": "block",
+                    "flavour": "yidooo:image",
+                    "props": {
+                        "alt": "",
+                        "fit": "contain",
+                        "url": "//r.yidooo.com/images/oc_reference/1761881277675_9f325bf8.jpg",
+                        "xywh": "[-6.106283202558757,-1587.8705273038381,373.1578826904297,522.4052007094674]",
+                        "align": "center",
+                        "index": "a0",
+                        "scale": 1,
+                        "title": "图片节点",
+                        "ossKey": "images/oc_reference/1761881277675_9f325bf8.jpg",
+                        "prompt": "请你根据这张图片为我生成图中角色的吧唧，并添加镭射工艺效，背景白色\n",
+                        "rotate": 0,
+                        "slotId": "image-9w63fe3i",
+                        "caption": "",
+                        "autoSize": false,
+                        "minWidth": 320,
+                        "minHeight": 240,
+                        "lockedBySelf": false,
+                        "keepAspectRatio": true,
+                        "nodeId": "aef28262-c4df-4cc1-b8af-428afa12c013"
+                    },
+                    "children": [],
+                    "parentId": "63LPhU0Vj4"
+                },
+                {
+                    "id": "gXXK8xTktn",
+                    "type": "block",
+                    "flavour": "affine:edgeless-text",
+                    "props": {
+                        "xywh": "[87.70014837874623,-87.78414928225482,220.00006152274753,26.000037190026433]",
+                        "color": {
+                            "dark": "#ffffff",
+                            "light": "#000000"
+                        },
+                        "index": "a5",
+                        "scale": 1,
+                        "rotate": 0,
+                        "fontStyle": "normal",
+                        "textAlign": "left",
+                        "fontFamily": "blocksuite:surface:Inter",
+                        "fontWeight": "400",
+                        "hasMaxWidth": true,
+                        "lockedBySelf": false,
+                        "nodeId": null
+                    },
+                    "children": [
+                        {
+                            "id": "SXCyKLpUKr",
+                            "type": "block",
+                            "props": {
+                                "text": {
+                                    "delta": [
+                                        {
+                                            "insert": ""
+                                        }
+                                    ],
+                                    "$blocksuite:internal:text$": true
+                                },
+                                "type": "text",
+                                "collapsed": false
+                            },
+                            "flavour": "affine:paragraph",
+                            "version": 1,
+                            "children": []
+                        },
+                        {
+                            "id": "SXCyKLpUKr",
+                            "type": "block",
+                            "flavour": "affine:paragraph",
+                            "props": {
+                                "text": {
+                                    "delta": [
+                                        {
+                                            "insert": ""
+                                        }
+                                    ],
+                                    "$blocksuite:internal:text$": true
+                                },
+                                "type": "text",
+                                "collapsed": false,
+                                "nodeId": null
+                            },
+                            "children": [],
+                            "parentId": "gXXK8xTktn"
+                        }
+                    ],
+                    "parentId": "63LPhU0Vj4"
+                },
+                {
+                    "id": "kBdVRfR4Dy",
+                    "type": "block",
+                    "flavour": "yidooo:image",
+                    "props": {
+                        "alt": "",
+                        "fit": "contain",
+                        "url": "//r.yidooo.com/images/oc_reference/1761881580411_fd33b65c.jpg",
+                        "xywh": "[875.5658269236465,420.81268818447506,373.6484146118164,522.4051045009069]",
+                        "align": "center",
+                        "index": "a0",
+                        "scale": 1,
+                        "title": "图片节点",
+                        "ossKey": "images/oc_reference/1761881580411_fd33b65c.jpg",
+                        "prompt": "请你根据图中的角色生成一个该角色的Q版亚克力钥匙扣\n",
+                        "rotate": 0,
+                        "slotId": "image-80g1qtqi",
+                        "caption": "",
+                        "autoSize": false,
+                        "minWidth": 320,
+                        "minHeight": 240,
+                        "lockedBySelf": false,
+                        "keepAspectRatio": true,
+                        "nodeId": "7a7d8d74-76a0-4f26-8d84-6199d5a9eae0"
+                    },
+                    "children": [],
+                    "parentId": "63LPhU0Vj4"
+                },
+                {
+                    "id": "ndKTy55Ne4",
+                    "type": "block",
+                    "flavour": "yidooo:image",
+                    "props": {
+                        "alt": "",
+                        "fit": "contain",
+                        "url": "//r.yidooo.com/images/oc_reference/1761880996832_cc23d66e.jpg",
+                        "xywh": "[-943.837509737786,-1363.8410315425606,373.64844704019856,522.405146194541]",
+                        "align": "center",
+                        "index": "a0",
+                        "scale": 1,
+                        "title": "图片节点",
+                        "ossKey": "images/oc_reference/1761880996832_cc23d66e.jpg",
+                        "prompt": "参考图片中的角色，根据她的来生表情包，要严格按照参考图人物样式，表情丰富，穿着黄色和红色的可爱服装，表情包合集布局，干净白色背景，高质量插画，柔和上色风格，角色造型保持一致，每个格子展示不同情绪（开心、感谢、困惑、兴奋、害羞、困倦、哭泣、害羞脸红、眨眼、惊讶），粉彩色调，表情幅度大一点，要9张表情在一个图里的\n",
+                        "rotate": 0,
+                        "slotId": "image-fz7easkl",
+                        "caption": "",
+                        "autoSize": false,
+                        "minWidth": 320,
+                        "minHeight": 240,
+                        "lockedBySelf": false,
+                        "keepAspectRatio": true,
+                        "nodeId": "139e5788-0831-4093-95d1-2fab35c99a22"
+                    },
+                    "children": [],
+                    "parentId": "63LPhU0Vj4"
+                }
+            ],
+            "parentId": "nL9QaZp6WF"
+        },
+        {
+            "id": "Sd0OVLqu3J",
+            "type": "block",
+            "flavour": "affine:note",
+            "props": {
+                "xywh": "[-71.53000018783754,-397.05693479583,459.6775817415364,336.3931600755693]",
+                "index": "a3",
+                "title": "Heading 3",
+                "hidden": false,
+                "edgeless": {
+                    "style": {
+                        "borderSize": 4,
+                        "shadowType": "--affine-note-shadow-box",
+                        "borderStyle": "none",
+                        "borderRadius": 8
+                    },
+                    "collapse": true,
+                    "collapsedHeight": 336.3931600755693
+                },
+                "markdown": "#### 一幅专业的产品摄影图，展示了一系列以【参考图角色】为主题的周边产品。所有物品都以平铺俯瞰（Flat Lay）的方式，在纯净的浅灰色背景上整齐排列。光线明亮、均匀且柔和，每个物品下方都有淡淡的影子，质感十足。画面中包含：主题滑板、毛绒玩具、马克杯、手机壳、圆形珐琅徽章、铅笔、钥匙扣、束口袋（补充自己想要的周边）。",
+                "background": {
+                    "dark": "#252525",
+                    "light": "#ffffff"
+                },
+                "displayMode": "edgeless",
+                "lockedBySelf": false,
+                "nodeId": null
+            },
+            "children": [
+                {
+                    "id": "qVUwEeczop",
+                    "type": "block",
+                    "props": {
+                        "text": {
+                            "delta": [
+                                {
+                                    "insert": "一幅专业的产品摄影图，展示了一系列以【参考图角色】为主题的周边产品。所有物品都以平铺俯瞰（Flat Lay）的方式，在纯净的浅灰色背景上整齐排列。光线明亮、均匀且柔和，每个物品下方都有淡淡的影子，质感十足。画面中包含：主题滑板、毛绒玩具、马克杯、手机壳、圆形珐琅徽章、铅笔、钥匙扣、束口袋（补充自己想要的周边）。"
+                                }
+                            ],
+                            "$blocksuite:internal:text$": true
+                        },
+                        "type": "h4",
+                        "collapsed": false
+                    },
+                    "flavour": "affine:paragraph",
+                    "version": 1,
+                    "children": []
+                }
+            ],
+            "parentId": "nL9QaZp6WF"
+        },
+        {
+            "id": "cr-FwvHNBG",
+            "type": "block",
+            "flavour": "affine:note",
+            "props": {
+                "xywh": "[-1876.7383113714488,40.912031618765326,404.82408463954926,120.16280984690289]",
+                "index": "ag",
+                "title": "Text",
+                "hidden": false,
+                "edgeless": {
+                    "style": {
+                        "borderSize": 4,
+                        "shadowType": "--affine-note-shadow-box",
+                        "borderStyle": "none",
+                        "borderRadius": 8
+                    },
+                    "collapse": true,
+                    "collapsedHeight": 120.16280984690289
+                },
+                "markdown": "1、选择创作版左侧的角色设计功能，再次选择oc周边\n\n2、直接复制提示词",
+                "background": {
+                    "dark": "#252525",
+                    "light": "#ffffff"
+                },
+                "displayMode": "edgeless",
+                "lockedBySelf": false,
+                "nodeId": null
+            },
+            "children": [
+                {
+                    "id": "wIJf46rn7x",
+                    "type": "block",
+                    "props": {
+                        "text": {
+                            "delta": [
+                                {
+                                    "insert": "1、选择创作版左侧的角色设计功能，再次选择oc周边"
+                                }
+                            ],
+                            "$blocksuite:internal:text$": true
+                        },
+                        "type": "text",
+                        "collapsed": false
+                    },
+                    "flavour": "affine:paragraph",
+                    "version": 1,
+                    "children": []
+                },
+                {
+                    "id": "xAAL3_VY_D",
+                    "type": "block",
+                    "props": {
+                        "text": {
+                            "delta": [
+                                {
+                                    "insert": "2、直接复制提示词"
+                                }
+                            ],
+                            "$blocksuite:internal:text$": true
+                        },
+                        "type": "text",
+                        "collapsed": false
+                    },
+                    "flavour": "affine:paragraph",
+                    "version": 1,
+                    "children": []
+                }
+            ],
+            "parentId": "nL9QaZp6WF"
+        }
+    ],
+    "parentId": "doc:home"
+}
