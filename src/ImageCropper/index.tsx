@@ -469,17 +469,44 @@ function matrixToCSS(m: AffineMatrix): string {
 
   return `matrix(${a}, ${b}, ${c}, ${d}, ${tx}, ${ty})`;
 }
+function calcScaleConstraint(
+  imgSize: Size, // 图片原始尺寸
+  parentSize: Size, // 容器尺寸
+  ratio: number, // cropBox 比例
+  maxScaleFactor: number, // props.maxScale
+) {
+  // 1️⃣ 计算 CropBox 尺寸
+  const cropW =
+    parentSize.width / parentSize.height > ratio
+      ? parentSize.height * ratio
+      : parentSize.width;
+  const cropH = cropW / ratio;
+
+  // 2️⃣ minScale：保证图片覆盖 CropBox
+  const minScale = Math.max(cropW / imgSize.width, cropH / imgSize.height);
+
+  // 3️⃣ 像素级上限（可选，防止无限放大模糊）
+  const pixelLimit = Math.min(imgSize.width / cropW, imgSize.height / cropH);
+
+  // 4️⃣ maxScale = UX 上限 + 像素限制
+  const maxScale = Math.min(minScale * maxScaleFactor, pixelLimit);
+
+  return { minScale, maxScale: minScale + maxScaleFactor };
+}
 const ImageCropper: React.FC<CropperProps> = ({
   source,
   containerSize,
   aspectRatios,
-  maxScale = 5,
+  maxScale = 10,
   onComplete,
 }) => {
   const [imgSrc, setImgSrc] = useState("");
   const [ratio, setRatio] = useState(aspectRatios[0].value);
   const imgRef = useRef<HTMLImageElement>(null);
-
+  const scaleLimitRef = useRef<{ minScale: number; maxScale: number }>({
+    minScale: 1,
+    maxScale: 1,
+  });
   /* ---------------- 数据源 ---------------- */
   useEffect(() => {
     const url =
@@ -519,7 +546,14 @@ const ImageCropper: React.FC<CropperProps> = ({
       width: nW,
       height: nH,
     };
+    scaleLimitRef.current = calcScaleConstraint(
+      imgSizeRef.current,
+      containerSize,
+      ratio,
+      maxScale, // props.maxScale
+    );
 
+    console.log("  scaleLimitRef.current", scaleLimitRef.current);
     const matrix = getInitMatrix(imgSizeRef.current, containerSize);
     currentMatrixRef.current = matrix;
 
@@ -542,6 +576,47 @@ const ImageCropper: React.FC<CropperProps> = ({
     lastX: 0,
     lastY: 0,
   });
+
+  function handleWheelZoom(
+    e: WheelEvent,
+    preMatrix: AffineMatrix,
+    parentRect: DOMRect,
+    minScale: number,
+    maxScale: number,
+  ): AffineMatrix {
+    e.preventDefault();
+
+    const zoomIntensity = 0.1;
+    const delta = e.deltaY > 0 ? 1 - zoomIntensity : 1 + zoomIntensity;
+
+    const sPre = Math.sqrt(
+      preMatrix.a * preMatrix.a + preMatrix.b * preMatrix.b,
+    );
+    let sNext = sPre * delta;
+
+    // Clamp scale 上下限
+    if (sNext < minScale) sNext = minScale;
+    if (sNext > maxScale) sNext = maxScale;
+
+    // 鼠标相对于 parent 的坐标
+    const mx = e.clientX - parentRect.left;
+    const my = e.clientY - parentRect.top;
+
+    const ratio = sNext / sPre;
+
+    // 平移补偿，保持鼠标在图片上的点位置固定
+    const txNext = mx - (mx - preMatrix.tx) * ratio;
+    const tyNext = my - (my - preMatrix.ty) * ratio;
+
+    return {
+      a: sNext,
+      b: 0,
+      c: 0,
+      d: sNext,
+      tx: txNext,
+      ty: tyNext,
+    };
+  }
   const onMouseMove = useCallback(
     (e: MouseEvent) => {
       if (!dragRef.current.dragging) return;
@@ -583,22 +658,35 @@ const ImageCropper: React.FC<CropperProps> = ({
     window.removeEventListener("mouseup", onMouseUp);
   }, [ratio]);
   const containerRef = useRef<HTMLDivElement | null>(null);
+  // const onWheel = useCallback(
+  //   (e: WheelEvent) => {
+  //     console.log("onWheel");
+  //     const rect = containerRef.current!.getBoundingClientRect();
+  //     setTransformMatrix((pre) =>
+  //       clipItemMatrix(
+  //         handleWheelZoom(e, pre, rect),
+  //         imgSizeRef.current,
+  //         containerSize,
+  //         ratio,
+  //       ),
+  //     );
+  //   },
+  //   [ratio],
+  // );
   const onWheel = useCallback(
     (e: WheelEvent) => {
-      console.log("onWheel");
       const rect = containerRef.current!.getBoundingClientRect();
-      setTransformMatrix((pre) =>
-        clipItemMatrix(
-          handleWheelZoom(e, pre, rect),
-          imgSizeRef.current,
-          containerSize,
-          ratio,
-        ),
-      );
-    },
-    [ratio],
-  );
+      const { minScale, maxScale } = scaleLimitRef.current;
 
+      setTransformMatrix((pre) => {
+        const next = handleWheelZoom(e, pre, rect, minScale, maxScale);
+
+        // 再用 clipItemMatrix 保证平移合法
+        return clipItemMatrix(next, imgSizeRef.current, containerSize, ratio);
+      });
+    },
+    [ratio, containerSize],
+  );
   useEffect(() => {
     setTransformMatrix((pre) =>
       clipItemMatrix(pre, imgSizeRef.current, containerSize, ratio),

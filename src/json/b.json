@@ -1,387 +1,172 @@
-[
-    {
-        "id": "0pTg5Kg_M2",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"0pTg5Kg_M2\", \"type\": \"block\", \"props\": {\"xywh\": \"[545.2939639043204,10093.501995842807,294.2377370185566,88.27112387166807]\", \"color\": {\"dark\": \"#ffffff\", \"light\": \"#000000\"}, \"index\": \"a3\", \"scale\": 1.3374439477920532, \"rotate\": 0, \"markdown\": \"# Shot 2\", \"fontStyle\": \"normal\", \"textAlign\": \"center\", \"fontFamily\": \"blocksuite:surface:BebasNeue\", \"fontWeight\": \"400\", \"hasMaxWidth\": true, \"lockedBySelf\": false}, \"flavour\": \"affine:edgeless-text\", \"version\": 1, \"children\": [{\"id\": \"oFDHzLZCIt\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Shot 2\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"h1\", \"collapsed\": false}, \"flavour\": \"affine:paragraph\", \"version\": 1, \"children\": []}]}",
-        "nodeId": null
+{
+    "id": "x3dv8XYF08",
+    "type": "block",
+    "props": {
+        "rows": [
+            {
+                "id": "6bb7ff57-6afd-4a5d-b162-2c4748d8184c",
+                "cells": {
+                    "ssca": "Medium shot, eye level, front view",
+                    "image": "//r.yidooo.com/keyframes/f6c3785e-e632-47cc-9a04-a28f999d08e6/frame_1_76706e60.jpg",
+                    "shotNo": "1",
+                    "duration": "3s",
+                    "videoDesc": "A man wearing a white T-shirt and gray pants sits barefoot on a surreal chicken-shaped sofa, pulling hard at the fleshy fabric of the sofa with both hands. The scene is shot from a straight-on, eye-level angle, with soft light spilling onto the light-colored walls and wooden floor, creating a bizarre yet realistic surreal everyday atmosphere, showcasing the interaction between the man and the strange sofa.",
+                    "visualDesc": "A man wearing a white short-sleeved T-shirt and gray pants sits barefoot on a peculiar sofa that resembles raw chicken. He grips the light-colored, fleshy-textured fabric of the sofa with both hands and pulls it upward. The background features light beige walls and wooden flooring, with soft overall lighting that creates a surreal and slightly bizarre everyday scene. The sofa exhibits the texture and shape of raw chicken, with realistic details."
+                }
+            },
+            {
+                "id": "102ff38f-d123-4929-be0c-2479882e2317",
+                "cells": {
+                    "ssca": "Medium shot, eye level, front view",
+                    "image": "//r.yidooo.com/keyframes/f6c3785e-e632-47cc-9a04-a28f999d08e6/frame_2_30d3abbd.jpg",
+                    "shotNo": "2",
+                    "duration": "2s",
+                    "videoDesc": "A man sits on a white 'cauliflower' sofa, gently handling cabbage leaves with slow, soothing movements. The camera stays steady at eye level, capturing his everyday moments in a minimalist white space. The soft lighting and pristine environment together create a calm and healing atmosphere, ideal for scenes showcasing a simple, lifestyle-oriented style.",
+                    "visualDesc": "A man wearing a white T-shirt and light-colored pants sits barefoot on a uniquely designed white 'cauliflower' sofa. He holds a large cabbage leaf in both hands, which appears motion-blurred due to his movement. The background is a minimalist all-white space, with rounded lines on the walls and furniture. The overall lighting is soft and even, creating a pure and tranquil atmosphere."
+                }
+            },
+            {
+                "id": "f531c5a6-26ed-4a74-a317-0084e94e784c",
+                "cells": {
+                    "ssca": "Medium shot, eye level, front view",
+                    "image": "//r.yidooo.com/keyframes/f6c3785e-e632-47cc-9a04-a28f999d08e6/frame_3_923356ef.jpg",
+                    "shotNo": "3",
+                    "duration": "3s",
+                    "videoDesc": "In a dreamy candy-themed room, a man sits on a cake sofa, manipulating bread topped with pink frosting, with the frosting dripping into chocolate sauce. The camera is fixed at eye level, showcasing the room's abundant dessert decorations and soft lighting, creating a sweet and fantastical atmosphere, highlighting a fairytale-like visual experience.",
+                    "visualDesc": "In the scene, a man wearing a gray T-shirt and blue jeans is sitting on a sofa made of multiple layers of cake, decorated with chocolate sauce and donuts. He is holding a piece of bread with pink frosting in both hands, and the frosting is dripping down the edges of the bread onto the chocolate sauce below. The background is a whimsical candy-themed room, with walls adorned with colorful lollipops and pink arch decorations, and a floor with a pink and white checkerboard pattern. The overall color tone is bright and soft, full of a sweet atmosphere."
+                }
+            },
+            {
+                "id": "c918aa37-082e-4216-8a31-22d818000218",
+                "cells": {
+                    "ssca": "Medium shot, eye level, front view",
+                    "image": "//r.yidooo.com/keyframes/f6c3785e-e632-47cc-9a04-a28f999d08e6/frame_4_e02d9253.jpg",
+                    "shotNo": "4",
+                    "duration": "2s",
+                    "videoDesc": "A man sits barefoot on the floor, intently tearing apart a large golden loaf of bread. The crust is shiny, and the inside is soft. The camera is fixed at eye level, with bright and soft lighting, creating a warm and cozy atmosphere that highlights the tempting texture of the bread and the man's focused actions.",
+                    "visualDesc": "A man wearing a white short-sleeved T-shirt and khaki pants is sitting barefoot on a light wooden floor. He is vigorously tearing apart a huge golden-brown braided bread with both hands. The bread's crust is shiny and golden, while the inside is soft and fluffy. The room is brightly lit, with white walls and a window with panes in the background, and the blurry outlines of trees can be seen outside the window."
+                }
+            },
+            {
+                "id": "fd4dde70-f703-4ed3-ae2b-a13daec57827",
+                "cells": {
+                    "ssca": "Medium shot, eye level, front view",
+                    "image": "//r.yidooo.com/keyframes/f6c3785e-e632-47cc-9a04-a28f999d08e6/frame_5_59f49bdd.jpg",
+                    "shotNo": "5",
+                    "duration": "3s",
+                    "videoDesc": "A man sits on a flame-shaped bed made of red and orange gelatinous structures, lightly touching the bed with his hands. The room is well-lit, with a simple background of wooden floors and white curtains, while the greenery outside the window adds a natural touch. The camera remains at eye level, slowly showcasing the unique design of the bed and its interaction with the man, creating a fantastical yet everyday visual experience.",
+                    "visualDesc": "In the scene, a man wearing a gray T-shirt and gray pants is sitting on a uniquely designed bed. The bed is made of a gelatinous structure interwoven with red and orange, and the headboard is shaped like flames, with bright colors. The room is brightly lit, with wooden floors reflecting natural light. White curtains hang on the window to the right, and green vegetation can be seen outside. The overall environment is simple and bright, and the bed's gelatinous structure appears semi-transparent under the light, with rich color layers."
+                }
+            },
+            {
+                "id": "519882d2-52af-4fae-bea2-87bbfe08e3f3",
+                "cells": {
+                    "ssca": "Medium shot, eye level, front view",
+                    "image": "//r.yidooo.com/keyframes/f6c3785e-e632-47cc-9a04-a28f999d08e6/frame_6_35f61da3.jpg",
+                    "shotNo": "6",
+                    "duration": "3s",
+                    "videoDesc": "A man wearing a blue T-shirt and khaki pants is sitting on a uniquely shaped pineapple cake chair, holding two slices of pineapple cake in his hands. The shot is taken from a straight-on frontal angle, with bright and soft lighting, creating a relaxed and fun atmosphere that showcases the playful nature of creative food scenes.",
+                    "visualDesc": "A man wearing a blue short-sleeve T-shirt and khaki pants is sitting barefoot on a chair shaped like a pineapple cake. He is holding two pieces of cake with pineapple slices, the surface of the cake golden with pineapple pieces scattered on top. The background is a bright and simple white room, with a window on the left letting in natural light. The overall environment is clean and bright, with soft lighting and shadows."
+                }
+            },
+            {
+                "id": "12763049-8bfd-4ffa-995c-7d483ca1df78",
+                "cells": {
+                    "ssca": "Medium shot, eye level, front view",
+                    "image": "//r.yidooo.com/keyframes/f6c3785e-e632-47cc-9a04-a28f999d08e6/frame_7_c1912d9e.jpg",
+                    "shotNo": "7",
+                    "duration": "3s",
+                    "videoDesc": "A man sits on a giant kiwi sofa, gently touching the surface with both hands. The camera slowly zooms in, showcasing the details of the sofa and water stains on the floor. The background is a bright and minimalist indoor space, with natural light streaming through an arched window. The overall atmosphere is fresh and whimsical, full of creativity and playfulness.",
+                    "visualDesc": "In the scene, a man wearing a white short-sleeve T-shirt and gray pants sits barefoot on a giant kiwi-shaped sofa. The sofa is cut open to reveal the green flesh and black seeds inside, with water stains scattered on the floor. The background features light-colored walls and arched windows, with natural light streaming in from outside. The overall lighting is soft, creating a fresh and slightly whimsical atmosphere."
+                }
+            },
+            {
+                "id": "bcf6bcfc-02b8-4baf-b507-9888d26adc76",
+                "cells": {
+                    "ssca": "Medium shot, eye level, front view",
+                    "image": "//r.yidooo.com/keyframes/f6c3785e-e632-47cc-9a04-a28f999d08e6/frame_8_075b7858.jpg",
+                    "shotNo": "8",
+                    "duration": "3s",
+                    "videoDesc": "The shot is taken from a level angle, showing a man sitting on a four-poster bed made of honey, arranging the sheets. Honey slowly drips from the bed frame, forming a glossy puddle on the floor. Warm yellow light fills the room, creating a sweet and dreamy atmosphere. The camera can slightly pan or remain steady, emphasizing the flowing texture of the honey and the cozy feel of the room.",
+                    "visualDesc": "In the scene, a man is sitting on the edge of a luxurious four-poster bed made of golden honey material. He is wearing a light-colored top and dark pants, barefoot, and is arranging the sheets with both hands. The bedposts and bed frame have a flowing honey texture, with honey dripping from the bed frame onto the floor forming a puddle. The room is bathed in warm light, and in the background, light-colored walls, a window, and curtains are visible. The overall atmosphere is dreamy and textured."
+                }
+            }
+        ],
+        "xywh": "[29955.63162064052,1570.4195485705332,1620,1826]",
+        "error": false,
+        "index": "a1",
+        "scale": 1,
+        "title": {
+            "delta": [],
+            "$blocksuite:internal:text$": true
+        },
+        "nodeId": "ab87eaf7-332e-4c9c-bdf9-efac5b7e6e6a",
+        "rotate": 0,
+        "slotId": "shot-table-qc4hy204",
+        "columns": [
+            {
+                "key": "shotNo",
+                "name": "镜头编号",
+                "sort": 1,
+                "width": 120,
+                "visible": true,
+                "editable": false
+            },
+            {
+                "key": "image",
+                "name": "分镜图片",
+                "sort": 2,
+                "width": 200,
+                "visible": true,
+                "editable": false
+            },
+            {
+                "key": "duration",
+                "name": "时长",
+                "sort": 2,
+                "width": 120,
+                "visible": true,
+                "editable": false
+            },
+            {
+                "key": "ssca",
+                "name": "景别 + 构图 + 角度",
+                "sort": 7,
+                "width": 200,
+                "visible": true,
+                "editable": false
+            },
+            {
+                "key": "visualDesc",
+                "name": "画面描述",
+                "sort": 8,
+                "width": 360,
+                "visible": true,
+                "editable": false
+            },
+            {
+                "key": "videoDesc",
+                "name": "视频描述",
+                "sort": 9,
+                "width": 360,
+                "visible": true,
+                "editable": false
+            }
+        ],
+        "autoSize": true,
+        "funcType": "storyboard_breakdown",
+        "minWidth": 540,
+        "minHeight": 320,
+        "tableTitle": "分镜生成",
+        "lockedBySelf": false,
+        "actionsEnabled": true,
+        "headerEditable": true,
+        "meta:bizNodeId": "",
+        "toolbarEnabled": true,
+        "meta:frameStyleId": "",
+        "meta:frameAspectRatio": ""
     },
-    {
-        "id": "5H6VMPBZZT",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"5H6VMPBZZT\", \"type\": \"block\", \"props\": {\"alt\": \"\", \"fit\": \"contain\", \"url\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768447439687_截屏2026-01-15 11.23.15.png\", \"xywh\": \"[-3474.960226198421,10372.817333264904,400,481.4557823129252]\", \"align\": \"center\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [{\"insert\": \"\"}], \"$blocksuite:internal:text$\": true}, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768447439687_截屏2026-01-15 11.23.15.png\", \"prompt\": \"\", \"rotate\": 0, \"slotId\": \"image-41tyik7b\", \"caption\": {\"delta\": [{\"insert\": \"\"}], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"upload\", \"minWidth\": 400, \"minHeight\": 232, \"lockedBySelf\": false, \"meta:bizNodeId\": \"\", \"keepAspectRatio\": true}, \"flavour\": \"yidooo:image\", \"version\": 1}",
-        "nodeId": "d98cab56-d061-49d9-8c60-294a591027c8"
-    },
-    {
-        "id": "5MyuU-CBAv",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"5MyuU-CBAv\", \"type\": \"block\", \"props\": {\"alt\": \"\", \"fit\": \"contain\", \"url\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768447443232_截屏2026-01-15 11.23.35.png\", \"xywh\": \"[-3474.960226198421,9920.568166961702,400,487.94594594594594]\", \"align\": \"center\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [{\"insert\": \"\"}], \"$blocksuite:internal:text$\": true}, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768447443232_截屏2026-01-15 11.23.35.png\", \"prompt\": \"\", \"rotate\": 0, \"slotId\": \"image-hz2gyc52\", \"caption\": {\"delta\": [{\"insert\": \"\"}], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"upload\", \"minWidth\": 400, \"minHeight\": 232, \"lockedBySelf\": false, \"meta:bizNodeId\": \"\", \"keepAspectRatio\": true}, \"flavour\": \"yidooo:image\", \"version\": 1}",
-        "nodeId": "d0ee402d-2e29-49ff-bb14-4c4ab4b23929"
-    },
-    {
-        "id": "5pQgs9aWFo",
-        "parentId": "iWsgV3hp7n",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"5pQgs9aWFo\", \"type\": \"block\", \"props\": {\"xywh\": \"[-3407.5177685588715,10854.27311557783,1037.555991985354,246.57341225075106]\", \"index\": \"a7\", \"title\": {\"delta\": [{\"insert\": \"5. Short-Video Viral Attributes\"}], \"$blocksuite:internal:text$\": true}, \"hidden\": false, \"edgeless\": {\"style\": {\"borderSize\": 4, \"shadowType\": \"--affine-note-shadow-paper\", \"borderStyle\": \"none\", \"borderRadius\": 8}, \"collapse\": true, \"collapsedHeight\": 246.57341225075106}, \"markdown\": \"* **The \\\"Golden 3 Seconds\\\":**&#x54;he video opens immediately with a high-energy visual spectacle. There is no long introduction, which drastically reduces the user drop-off rate.\\n* **Short and Punchy:**&#x57;ith high information density packed into a few dozen seconds, the video is perfect for \\\"looping.\\\" This helps boost the \\\"completion rate\\\" and \\\"replay rate\\\" metrics within platform algorithms.\\n* Universal Language: Because the video relies on visual beauty rather than dialogue, it has no language barrier. This makes it a \\\"universal language\\\" with the potential to go viral across different countries and cultures.\", \"background\": {\"dark\": \"#268dd0ff\", \"light\": \"#ceecffff\"}, \"displayMode\": \"edgeless\", \"lockedBySelf\": false}, \"flavour\": \"affine:note\", \"version\": 1, \"children\": [{\"id\": \"_XSqtbKHBd\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"The \\\"Golden 3 Seconds\\\":\", \"attributes\": {\"bold\": true}}, {\"insert\": \"The video opens immediately with a high-energy visual spectacle. There is no long introduction, which drastically reduces the user drop-off rate.\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"bulleted\", \"order\": null, \"checked\": false, \"collapsed\": false}, \"flavour\": \"affine:list\", \"version\": 1, \"children\": []}, {\"id\": \"4JJ7ux5pZx\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Short and Punchy:\", \"attributes\": {\"bold\": true}}, {\"insert\": \"With high information density packed into a few dozen seconds, the video is perfect for \\\"looping.\\\" This helps boost the \\\"completion rate\\\" and \\\"replay rate\\\" metrics within platform algorithms.\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"bulleted\", \"order\": null, \"checked\": false, \"collapsed\": false}, \"flavour\": \"affine:list\", \"version\": 1, \"children\": []}, {\"id\": \"twzTa9Kyxz\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Universal Language: Because the video relies on visual beauty rather than dialogue, it has no language barrier. This makes it a \\\"universal language\\\" with the potential to go viral across different countries and cultures.\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"bulleted\", \"order\": null, \"checked\": false, \"collapsed\": false}, \"flavour\": \"affine:list\", \"version\": 1, \"children\": []}]}",
-        "nodeId": null
-    },
-    {
-        "id": "9HBqzUEJmH",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"9HBqzUEJmH\", \"type\": \"block\", \"props\": {\"size\": 0, \"xywh\": \"[5812.230863503227,10450.236485936786,400,267.21994134897363]\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [{\"insert\": \"Shot 8\"}], \"$blocksuite:internal:text$\": true}, \"width\": 400, \"height\": 232, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-07/videos/generation/1767772553687_9c1913ec.mp4\", \"poster\": \"\", \"prompt\": \"The camera rotates 90 degrees clockwise rapidly. As it rotates, the green hillside transforms into a crashing Klein blue ocean. The movement is fluid and fast. High dynamic motion, cinematic transition.\\n\", \"rotate\": 0, \"slotId\": \"video-2n0kd7g5j\", \"caption\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"minWidth\": 320, \"sourceId\": \"\", \"videoUrl\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-07/videos/generation/1767772553687_9c1913ec.mp4\", \"minHeight\": 240, \"lockedBySelf\": false, \"keepAspectRatio\": true}, \"flavour\": \"yidooo:video\", \"version\": 1}",
-        "nodeId": "f2bb104a-addd-48eb-ae87-ff92c258e291"
-    },
-    {
-        "id": "9JCiuNGZuo",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"9JCiuNGZuo\", \"type\": \"block\", \"props\": {\"size\": 0, \"xywh\": \"[5099.225326069628,10905.292563567322,400,266.2335766423357]\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [{\"insert\": \"Shot 4\"}], \"$blocksuite:internal:text$\": true}, \"width\": 400, \"height\": 232, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-14/img/1768372076652_视频 (1).mp4\", \"poster\": \"\", \"prompt\": \"\", \"rotate\": 0, \"slotId\": \"video-voo03r1ta\", \"caption\": {\"delta\": [{\"insert\": \"\"}], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"upload\", \"minWidth\": 320, \"sourceId\": \"\", \"videoUrl\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-14/img/1768372076652_视频 (1).mp4\", \"minHeight\": 240, \"lockedBySelf\": false, \"keepAspectRatio\": true}, \"flavour\": \"yidooo:video\", \"version\": 1}",
-        "nodeId": "7176db84-7492-48b6-a680-d5906ac653bb"
-    },
-    {
-        "id": "BlNtliGGQh",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"BlNtliGGQh\", \"type\": \"block\", \"props\": {\"alt\": \"\", \"fit\": \"contain\", \"url\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-07/images/generation/1767772102877_f9bfbdb6.jpg\", \"xywh\": \"[2738.286530746555,10455.907556482756,400,267]\", \"align\": \"center\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [{\"insert\": \"Shot 3\"}], \"$blocksuite:internal:text$\": true}, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-07/images/generation/1767772102877_f9bfbdb6.jpg\", \"prompt\": \"Fisheye lens perspective, vast field of view, glowing bioluminescence, iridescent textures, ethereal light, hyper-detailed fantasy landscape, CoMix Wave Films style, Unreal Engine 5 render, volumetric lighting, celestial atmosphere.A massive mountain range made of liquid seawater, the peaks are shaped like giant crashing waves with white foam, but the body of the wave is covered in fluorescent green grass. Golden hour lighting, majestic scale, hyper-surreal, cinematic render. --ar 9:16\\n\\n\", \"rotate\": 0, \"slotId\": \"image-v3vf68gd\", \"caption\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"text_to_image\", \"minWidth\": 400, \"minHeight\": 232, \"lockedBySelf\": false, \"meta:bizNodeId\": \"\", \"keepAspectRatio\": true}, \"flavour\": \"yidooo:image\", \"version\": 1}",
-        "nodeId": "3abdde0a-f6a2-4ec0-8a21-21b11527e556"
-    },
-    {
-        "id": "CZbCleFw9_",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"CZbCleFw9_\", \"type\": \"block\", \"props\": {\"alt\": \"\", \"fit\": \"contain\", \"url\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-07/images/generation/1767771962929_604101f2.jpg\", \"xywh\": \"[3527.3161209484133,10478.537011217404,400,267]\", \"align\": \"center\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [{\"insert\": \"Shot 8\"}], \"$blocksuite:internal:text$\": true}, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-07/images/generation/1767771962929_604101f2.jpg\", \"prompt\": \"Fisheye lens perspective, vast field of view, glowing bioluminescence, iridescent textures, ethereal light, hyper-detailed fantasy landscape, CoMix Wave Films style, Unreal Engine 5 render, volumetric lighting, celestial atmosphere.Extreme fisheye lens view looking up, a giant swirling ocean vortex in the sky, emerald green sea waves mixing with clouds, glowing particles, deep green rolling hills below, wide angle, hyper-surreal, cinematic lighting, shimmering water surface, Makoto Shinkai aesthetic, 8k resolution\\n\\n\", \"rotate\": 0, \"slotId\": \"image-8o530aeh\", \"caption\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"text_to_image\", \"minWidth\": 400, \"minHeight\": 232, \"lockedBySelf\": false, \"meta:bizNodeId\": \"\", \"keepAspectRatio\": true}, \"flavour\": \"yidooo:image\", \"version\": 1}",
-        "nodeId": "0f73eb48-06c8-4c1d-b14d-8037a7ccadd8"
-    },
-    {
-        "id": "CqfRLPERLy",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"CqfRLPERLy\", \"type\": \"block\", \"props\": {\"alt\": \"\", \"fit\": \"contain\", \"url\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768447441969_截屏2026-01-15 11.23.27.png\", \"xywh\": \"[-3474.960226198421,9470.604283390303,400,484.95302013422815]\", \"align\": \"center\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [{\"insert\": \"\"}], \"$blocksuite:internal:text$\": true}, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768447441969_截屏2026-01-15 11.23.27.png\", \"prompt\": \"\", \"rotate\": 0, \"slotId\": \"image-xt0ueu4l\", \"caption\": {\"delta\": [{\"insert\": \"\"}], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"upload\", \"minWidth\": 400, \"minHeight\": 232, \"lockedBySelf\": false, \"meta:bizNodeId\": \"\", \"keepAspectRatio\": true}, \"flavour\": \"yidooo:image\", \"version\": 1}",
-        "nodeId": "824fa864-d4ff-4f5a-b841-59417a880061"
-    },
-    {
-        "id": "Ero_KGUwUK",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"Ero_KGUwUK\", \"type\": \"block\", \"props\": {\"size\": 0, \"xywh\": \"[5061.016236633354,10027.555390258365,400,267.21994134897363]\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [{\"insert\": \"Shot 2\"}], \"$blocksuite:internal:text$\": true}, \"width\": 400, \"height\": 232, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-07/videos/generation/1767772576853_5f396b93.mp4\", \"poster\": \"\", \"prompt\": \"A group of white sheep running across a green hill. As they jump, they instantly transform into white dolphins and splash into a deep blue sea that appears beneath them. Seamless morphing effect, fluid animation.\", \"rotate\": 0, \"slotId\": \"video-6xu08z3do\", \"caption\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"minWidth\": 320, \"sourceId\": \"\", \"videoUrl\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-07/videos/generation/1767772576853_5f396b93.mp4\", \"minHeight\": 240, \"lockedBySelf\": false, \"keepAspectRatio\": true}, \"flavour\": \"yidooo:video\", \"version\": 1}",
-        "nodeId": "cc5b7094-6d39-4435-9275-1d5960b14ed4"
-    },
-    {
-        "id": "F1jtoOmcTJ",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"F1jtoOmcTJ\", \"type\": \"block\", \"props\": {\"size\": 0, \"xywh\": \"[5099.225326069628,11336.297183307244,400,267.21994134897363]\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [{\"insert\": \"Shot 5\"}], \"$blocksuite:internal:text$\": true}, \"width\": 400, \"height\": 232, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-14/img/1768372064819_1767947200162_22a422cf.mp4\", \"poster\": \"\", \"prompt\": \"\", \"rotate\": 0, \"slotId\": \"video-dsp4o0n84\", \"caption\": {\"delta\": [{\"insert\": \"\"}], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"upload\", \"minWidth\": 320, \"sourceId\": \"\", \"videoUrl\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-14/img/1768372064819_1767947200162_22a422cf.mp4\", \"minHeight\": 240, \"lockedBySelf\": false, \"keepAspectRatio\": true}, \"flavour\": \"yidooo:video\", \"version\": 1}",
-        "nodeId": "e404d5f0-422d-43d3-bd82-7e3190fecb1e"
-    },
-    {
-        "id": "FQITOazyCd",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"FQITOazyCd\", \"type\": \"block\", \"props\": {\"xywh\": \"[4827.141206203743,9531.303367363344,1607.0203171903468,2244.6925232967405]\", \"index\": \"Zv\", \"title\": {\"delta\": [{\"insert\": \"video generation\"}], \"$blocksuite:internal:text$\": true}, \"background\": \"transparent\", \"lockedBySelf\": false, \"childElementIds\": {\"9HBqzUEJmH\": true, \"9JCiuNGZuo\": true, \"Ero_KGUwUK\": true, \"F1jtoOmcTJ\": true, \"TJSwy_0L9Q\": true, \"VBDURmwAt-\": true, \"cNnggaToLq\": true, \"pAduF96GiH\": true}, \"presentationIndex\": \"a307agrI4pVxqDjyy3tLNpBph77KQse13W2\"}, \"flavour\": \"affine:frame\", \"version\": 1}",
-        "nodeId": null
-    },
-    {
-        "id": "FW6Y2goNxy",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"FW6Y2goNxy\", \"type\": \"block\", \"props\": {\"alt\": \"\", \"fit\": \"contain\", \"url\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-14/img/1768371989809_flowlamboh0928_An_ultra-pale_hyper-detailed_digital_painting_of_dbb0d96e-0dc6-4335-9024-3a48e7ceec14.png\", \"xywh\": \"[2738.286530746555,11321.793718323142,400,224.17582417582418]\", \"align\": \"center\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [{\"insert\": \"Shot 5\"}], \"$blocksuite:internal:text$\": true}, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-14/img/1768371989809_flowlamboh0928_An_ultra-pale_hyper-detailed_digital_painting_of_dbb0d96e-0dc6-4335-9024-3a48e7ceec14.png\", \"prompt\": \"\", \"rotate\": 0, \"slotId\": \"image-a7lnmxsa\", \"caption\": {\"delta\": [{\"insert\": \"\"}], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"upload\", \"minWidth\": 400, \"minHeight\": 232, \"lockedBySelf\": false, \"meta:bizNodeId\": \"\", \"keepAspectRatio\": true}, \"flavour\": \"yidooo:image\", \"version\": 1}",
-        "nodeId": "b3155eb5-5b73-43a7-8558-43c97b374ba8"
-    },
-    {
-        "id": "GS6jLSFNBb",
-        "parentId": "doc:home",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"GS6jLSFNBb\", \"type\": \"block\", \"props\": {\"title\": {\"delta\": [], \"$blocksuite:internal:text$\": true}}, \"flavour\": \"affine:page\", \"version\": 2}",
-        "nodeId": null
-    },
-    {
-        "id": "H9W8o16C5m",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"H9W8o16C5m\", \"type\": \"block\", \"props\": {\"alt\": \"\", \"fit\": \"contain\", \"url\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-07/img/1767769474689_截屏2026-01-07 15.03.05.png\", \"xywh\": \"[492.41283241359884,10720.944190933214,400,242.41237113402062]\", \"align\": \"center\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-07/img/1767769474689_截屏2026-01-07 15.03.05.png\", \"prompt\": \"\", \"rotate\": 0, \"slotId\": \"image-hd0wncmc\", \"caption\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"upload\", \"minWidth\": 400, \"minHeight\": 232, \"lockedBySelf\": false, \"meta:bizNodeId\": \"\", \"keepAspectRatio\": true}, \"flavour\": \"yidooo:image\", \"version\": 1}",
-        "nodeId": "f04a9142-52a5-40f1-9def-f94c73cd0268"
-    },
-    {
-        "id": "HxIOD1BP8c",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"HxIOD1BP8c\", \"type\": \"block\", \"props\": {\"alt\": \"\", \"fit\": \"contain\", \"url\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-07/img/1767769479856_截屏2026-01-07 15.03.40.png\", \"xywh\": \"[497.64802402399437,11225.849540813007,400,244.0576131687243]\", \"align\": \"center\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-07/img/1767769479856_截屏2026-01-07 15.03.40.png\", \"prompt\": \"\", \"rotate\": 0, \"slotId\": \"image-9u6h9xrk\", \"caption\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"upload\", \"minWidth\": 400, \"minHeight\": 232, \"lockedBySelf\": false, \"meta:bizNodeId\": \"\", \"keepAspectRatio\": true}, \"flavour\": \"yidooo:image\", \"version\": 1}",
-        "nodeId": "590a4a6f-6f2e-4cdb-8d5c-627234790280"
-    },
-    {
-        "id": "J7Hyz_grJZ",
-        "parentId": "iWsgV3hp7n",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"J7Hyz_grJZ\", \"type\": \"block\", \"props\": {\"xywh\": \"[-4341.374075665923,10663.44328763898,822.2487999668542,175.02031403832734]\", \"index\": \"a5\", \"title\": {\"delta\": [{\"insert\": \"3. Empowerment through AI Technology (Technical Innovation)\"}], \"$blocksuite:internal:text$\": true}, \"hidden\": false, \"edgeless\": {\"style\": {\"borderSize\": 4, \"shadowType\": \"--affine-note-shadow-paper\", \"borderStyle\": \"none\", \"borderRadius\": 8}, \"collapse\": true, \"collapsedHeight\": 175.02031403832734}, \"markdown\": \"* **Cutting-edge Trends:**&#x54;he video clearly leverages advanced AI image generation and animation tools (such as Stable Diffusion and AnimateDiff). This level of detail and fantastical conceptualization represents the forefront of AI art, which naturally carries a high level of curiosity and \\\"wow factor.\\\"\\n* Fluid Transitions: The silky-smooth transitions between scenes and the constant \\\"forward-moving\\\" camera work provide a continuous stream of visual pleasure.\", \"background\": {\"dark\": \"#ecc537ff\", \"light\": \"#ffc58fff\"}, \"displayMode\": \"edgeless\", \"lockedBySelf\": false}, \"flavour\": \"affine:note\", \"version\": 1, \"children\": [{\"id\": \"Y2hjIhe7yU\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Cutting-edge Trends:\", \"attributes\": {\"bold\": true}}, {\"insert\": \"The video clearly leverages advanced AI image generation and animation tools (such as Stable Diffusion and AnimateDiff). This level of detail and fantastical conceptualization represents the forefront of AI art, which naturally carries a high level of curiosity and \\\"wow factor.\\\"\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"bulleted\", \"order\": null, \"checked\": false, \"collapsed\": false}, \"flavour\": \"affine:list\", \"version\": 1, \"children\": []}, {\"id\": \"jfpHfTebDN\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Fluid Transitions: The silky-smooth transitions between scenes and the constant \\\"forward-moving\\\" camera work provide a continuous stream of visual pleasure.\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"bulleted\", \"order\": null, \"checked\": false, \"collapsed\": false}, \"flavour\": \"affine:list\", \"version\": 1, \"children\": []}]}",
-        "nodeId": null
-    },
-    {
-        "id": "Jk7-D_-Ix_",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"Jk7-D_-Ix_\", \"type\": \"block\", \"props\": {\"size\": 0, \"xywh\": \"[-4341.374076410575,9499.438425486253,803.4702301025391,497.27169386712603]\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [{\"insert\": \"Original video\"}], \"$blocksuite:internal:text$\": true}, \"width\": 400, \"height\": 232, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-07/img/1767753918404_78.mp4\", \"poster\": \"\", \"prompt\": \"\", \"rotate\": 0, \"slotId\": \"video-1i5wg8n9i\", \"caption\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"upload\", \"minWidth\": 320, \"sourceId\": \"\", \"videoUrl\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-07/img/1767753918404_78.mp4\", \"minHeight\": 240, \"lockedBySelf\": false, \"keepAspectRatio\": true}, \"flavour\": \"yidooo:video\", \"version\": 1}",
-        "nodeId": "4a2fde49-53d8-4a8d-8dbb-1b5a60b55b7a"
-    },
-    {
-        "id": "KQPYZyM0hY",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"KQPYZyM0hY\", \"type\": \"block\", \"props\": {\"xywh\": \"[542.6763680991228,11191.694715997624,289.00254540816104,34.15499151222214]\", \"color\": {\"dark\": \"#ffffff\", \"light\": \"#000000\"}, \"index\": \"aA\", \"scale\": 1.3136476278305056, \"rotate\": 0, \"markdown\": \"Scenery and vistas\", \"fontStyle\": \"normal\", \"textAlign\": \"center\", \"fontFamily\": \"blocksuite:surface:BebasNeue\", \"fontWeight\": \"400\", \"hasMaxWidth\": true, \"lockedBySelf\": false}, \"flavour\": \"affine:edgeless-text\", \"version\": 1, \"children\": [{\"id\": \"aAraXampBd\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Scenery and vistas\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"text\", \"collapsed\": false}, \"flavour\": \"affine:paragraph\", \"version\": 1, \"children\": []}]}",
-        "nodeId": null
-    },
-    {
-        "id": "OxbplzlOnc",
-        "parentId": "GS6jLSFNBb",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"OxbplzlOnc\", \"type\": \"block\", \"props\": {\"elements\": {}}, \"flavour\": \"affine:surface\", \"version\": 5}",
-        "nodeId": null
-    },
-    {
-        "id": "PStQjaSR_r",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"PStQjaSR_r\", \"type\": \"block\", \"props\": {\"xywh\": \"[547.9115597095183,9677.777779944616,289.00254540816104,34.15499151222214]\", \"color\": {\"dark\": \"#ffffff\", \"light\": \"#000000\"}, \"index\": \"a2\", \"scale\": 1.3136476278305056, \"rotate\": 0, \"markdown\": \"Scenery and vistas\", \"fontStyle\": \"normal\", \"textAlign\": \"center\", \"fontFamily\": \"blocksuite:surface:BebasNeue\", \"fontWeight\": \"400\", \"hasMaxWidth\": true, \"lockedBySelf\": false}, \"flavour\": \"affine:edgeless-text\", \"version\": 1, \"children\": [{\"id\": \"nSIYpxq81w\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Scenery and vistas\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"text\", \"collapsed\": false}, \"flavour\": \"affine:paragraph\", \"version\": 1, \"children\": []}]}",
-        "nodeId": null
-    },
-    {
-        "id": "QEjsGBXIkT",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"QEjsGBXIkT\", \"type\": \"block\", \"props\": {\"size\": 0, \"xywh\": \"[7170.088533116885,9976.971489593683,1896.2559828567232,1063.3211118822746]\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [{\"insert\": \"video\"}], \"$blocksuite:internal:text$\": true}, \"width\": 400, \"height\": 232, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-14/img/1768372634663_1月7日(2).mp4\", \"poster\": \"\", \"prompt\": \"\", \"rotate\": 0, \"slotId\": \"video-s75w0bmmt\", \"caption\": {\"delta\": [{\"insert\": \"\"}], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"upload\", \"minWidth\": 320, \"sourceId\": \"\", \"videoUrl\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-14/img/1768372634663_1月7日(2).mp4\", \"minHeight\": 240, \"lockedBySelf\": false, \"keepAspectRatio\": true}, \"flavour\": \"yidooo:video\", \"version\": 1}",
-        "nodeId": "b9afe3f3-ac6b-4a3d-ba32-db30048c48c6"
-    },
-    {
-        "id": "SoqZoIotbE",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"SoqZoIotbE\", \"type\": \"block\", \"props\": {\"xywh\": \"[553.1467513199138,10197.316039397296,289.00254540816104,34.15499151222214]\", \"color\": {\"dark\": \"#ffffff\", \"light\": \"#000000\"}, \"index\": \"a4\", \"scale\": 1.3136476278305056, \"rotate\": 0, \"markdown\": \"Scenery and vistas\", \"fontStyle\": \"normal\", \"textAlign\": \"center\", \"fontFamily\": \"blocksuite:surface:BebasNeue\", \"fontWeight\": \"400\", \"hasMaxWidth\": true, \"lockedBySelf\": false}, \"flavour\": \"affine:edgeless-text\", \"version\": 1, \"children\": [{\"id\": \"P05iNv2W5i\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Scenery and vistas\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"text\", \"collapsed\": false}, \"flavour\": \"affine:paragraph\", \"version\": 1, \"children\": []}]}",
-        "nodeId": null
-    },
-    {
-        "id": "TJSwy_0L9Q",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"TJSwy_0L9Q\", \"type\": \"block\", \"props\": {\"size\": 0, \"xywh\": \"[5099.225326069628,10478.31706986843,400,267.21994134897363]\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [{\"insert\": \"Shot 3\"}], \"$blocksuite:internal:text$\": true}, \"width\": 400, \"height\": 232, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-07/videos/generation/1767773878752_65b318e7.mp4\", \"poster\": \"\", \"prompt\": \"Extreme close-up of white sea foam on a beach. The foam flies up into the air and turns into soft white mountain mist surrounding a green peak. Golden sunset light shining through the mist. Dreamy and slow-motion.\", \"rotate\": 0, \"slotId\": \"video-7aswfljec\", \"caption\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"minWidth\": 320, \"sourceId\": \"\", \"videoUrl\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-07/videos/generation/1767773878752_65b318e7.mp4\", \"minHeight\": 240, \"lockedBySelf\": false, \"keepAspectRatio\": true}, \"flavour\": \"yidooo:video\", \"version\": 1}",
-        "nodeId": "8f0bdabd-6507-48c4-8744-8c1da85a1163"
-    },
-    {
-        "id": "VBDURmwAt-",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"VBDURmwAt-\", \"type\": \"block\", \"props\": {\"size\": 0, \"xywh\": \"[5800.286492964479,10027.555390258365,400,266.2335766423357]\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [{\"insert\": \"Shot 7\"}], \"$blocksuite:internal:text$\": true}, \"width\": 400, \"height\": 232, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-14/img/1768372259119_1767928250093_30abc8fb.mp4\", \"poster\": \"\", \"prompt\": \"\", \"rotate\": 0, \"slotId\": \"video-w6zo86u6i\", \"caption\": {\"delta\": [{\"insert\": \"\"}], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"upload\", \"minWidth\": 320, \"sourceId\": \"\", \"videoUrl\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-14/img/1768372259119_1767928250093_30abc8fb.mp4\", \"minHeight\": 240, \"lockedBySelf\": false, \"keepAspectRatio\": true}, \"flavour\": \"yidooo:video\", \"version\": 1}",
-        "nodeId": "bdf0c6e1-0799-4eaf-a751-f87749b231fb"
-    },
-    {
-        "id": "WwvCiwm6YP",
-        "parentId": "iWsgV3hp7n",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"WwvCiwm6YP\", \"type\": \"block\", \"props\": {\"xywh\": \"[-4341.374076413849,10918.060153418735,822.2488181395806,182.78637440984494]\", \"index\": \"a6\", \"title\": {\"delta\": [{\"insert\": \"4. Perfect Audio-Visual Synchronization (The Art of the \\\"Beat Drop\\\")\"}], \"$blocksuite:internal:text$\": true}, \"hidden\": false, \"edgeless\": {\"style\": {\"borderSize\": 4, \"shadowType\": \"--affine-note-shadow-paper\", \"borderStyle\": \"none\", \"borderRadius\": 8}, \"collapse\": true, \"collapsedHeight\": 182.78637440984494}, \"markdown\": \"* **Rhythmic Resonance:**&#x54;he scene transitions and the speed of motion are perfectly synced with the rhythm of the music (the track \\\"Moving Up Way\\\"). Every drum hit or melodic shift corresponds to a visual change, inducing a \\\"brain massage\\\" effect.\\n* Immersive Experience: The dynamic music combined with the feeling of flying or expanding through space creates a highly immersive experience, triggering dopamine release in the viewer.\", \"background\": {\"dark\": \"#6e9b28ff\", \"light\": \"#c9f8c1ff\"}, \"displayMode\": \"edgeless\", \"lockedBySelf\": false}, \"flavour\": \"affine:note\", \"version\": 1, \"children\": [{\"id\": \"ONdvoiQfTQ\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Rhythmic Resonance:\", \"attributes\": {\"bold\": true}}, {\"insert\": \"The scene transitions and the speed of motion are perfectly synced with the rhythm of the music (the track \\\"Moving Up Way\\\"). Every drum hit or melodic shift corresponds to a visual change, inducing a \\\"brain massage\\\" effect.\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"bulleted\", \"order\": null, \"checked\": false, \"collapsed\": false}, \"flavour\": \"affine:list\", \"version\": 1, \"children\": []}, {\"id\": \"CYrg5JyGmP\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Immersive Experience: The dynamic music combined with the feeling of flying or expanding through space creates a highly immersive experience, triggering dopamine release in the viewer.\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"bulleted\", \"order\": null, \"checked\": false, \"collapsed\": false}, \"flavour\": \"affine:list\", \"version\": 1, \"children\": []}]}",
-        "nodeId": null
-    },
-    {
-        "id": "_O-J4cikZE",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"_O-J4cikZE\", \"type\": \"block\", \"props\": {\"xywh\": \"[553.1467513199136,10601.220772097218,294.2377370185566,88.27112387166807]\", \"color\": {\"dark\": \"#ffffff\", \"light\": \"#000000\"}, \"index\": \"a8\", \"scale\": 1.3374439477920532, \"rotate\": 0, \"markdown\": \"# Shot 3\", \"fontStyle\": \"normal\", \"textAlign\": \"center\", \"fontFamily\": \"blocksuite:surface:BebasNeue\", \"fontWeight\": \"400\", \"hasMaxWidth\": true, \"lockedBySelf\": false}, \"flavour\": \"affine:edgeless-text\", \"version\": 1, \"children\": [{\"id\": \"kaHpVFHHOO\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Shot 3\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"h1\", \"collapsed\": false}, \"flavour\": \"affine:paragraph\", \"version\": 1, \"children\": []}]}",
-        "nodeId": null
-    },
-    {
-        "id": "ae_7MtxGQe",
-        "parentId": "iWsgV3hp7n",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"ae_7MtxGQe\", \"type\": \"block\", \"props\": {\"elements\": {\"type\": \"$blocksuite:internal:native$\", \"value\": {\"1n2tclkgSN\": {\"id\": \"1n2tclkgSN\", \"seed\": 1311765607, \"type\": \"shape\", \"xywh\": \"[436.71607152943693,9586.636530597862,506.1583301579278,409]\", \"color\": \"#000000\", \"index\": \"Zy\", \"filled\": true, \"radius\": 0.1, \"rotate\": 0, \"shadow\": null, \"padding\": [10, 20], \"fontSize\": 20, \"maxWidth\": false, \"fillColor\": \"transparent\", \"fontStyle\": \"normal\", \"roughness\": 1.4, \"shapeType\": \"rect\", \"textAlign\": \"center\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\", \"shapeStyle\": \"General\", \"strokeColor\": \"#fb7081\", \"strokeStyle\": \"solid\", \"strokeWidth\": 2, \"textResizing\": 1}, \"2FCItrt9v5\": {\"id\": \"2FCItrt9v5\", \"seed\": 1311765607, \"type\": \"shape\", \"xywh\": \"[444.56885894503034,10089.742853480624,506.1583301579278,409]\", \"color\": \"#000000\", \"index\": \"a5\", \"filled\": true, \"radius\": 0.1, \"rotate\": 0, \"shadow\": null, \"padding\": [10, 20], \"fontSize\": 20, \"maxWidth\": false, \"fillColor\": \"transparent\", \"fontStyle\": \"normal\", \"roughness\": 1.4, \"shapeType\": \"rect\", \"textAlign\": \"center\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\", \"shapeStyle\": \"General\", \"strokeColor\": \"#fb7081\", \"strokeStyle\": \"solid\", \"strokeWidth\": 2, \"lockedBySelf\": false, \"textResizing\": 1}, \"9K80Myf1hE\": {\"id\": \"9K80Myf1hE\", \"mode\": 2, \"seed\": 1035148835, \"type\": \"connector\", \"index\": \"a2\", \"rough\": false, \"source\": {\"id\": \"bm2k4HYvOG\", \"position\": [0.5, 0]}, \"stroke\": \"#fcd34d\", \"target\": {\"position\": [-1402.2789799393831, 10621.720894977489]}, \"roughness\": 1.4, \"labelStyle\": {\"color\": {\"dark\": \"#ffffff\", \"light\": \"#000000\"}, \"fontSize\": 16, \"fontStyle\": \"normal\", \"textAlign\": \"center\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\"}, \"strokeStyle\": \"solid\", \"strokeWidth\": 6, \"rearEndpointStyle\": \"Arrow\", \"frontEndpointStyle\": \"None\"}, \"DidXgM2Did\": {\"id\": \"DidXgM2Did\", \"seed\": 1179436280, \"text\": \"replace\", \"type\": \"shape\", \"xywh\": \"[1028.0895172038845,10214.393453549043,111.24921246946838,68]\", \"color\": \"#fce5e6\", \"index\": \"aL\", \"filled\": true, \"radius\": 0.1, \"rotate\": 0, \"shadow\": null, \"padding\": [10, 20], \"fontSize\": 20, \"maxWidth\": false, \"fillColor\": \"transparent\", \"fontStyle\": \"normal\", \"roughness\": 1.4, \"shapeType\": \"rect\", \"textAlign\": \"center\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\", \"shapeStyle\": \"General\", \"strokeColor\": \"#fcd34d\", \"strokeStyle\": \"solid\", \"strokeWidth\": 2, \"lockedBySelf\": false, \"textResizing\": 1}, \"EVSKzVw7zS\": {\"id\": \"EVSKzVw7zS\", \"mode\": 0, \"seed\": 1459264068, \"type\": \"connector\", \"index\": \"aI\", \"rough\": false, \"source\": {\"position\": [953.0055909043263, 10824.894627706219]}, \"stroke\": \"#929292\", \"target\": {\"position\": [1248.2352564065595, 10823.634656183007]}, \"roughness\": 1.4, \"labelStyle\": {\"color\": {\"dark\": \"#ffffff\", \"light\": \"#000000\"}, \"fontSize\": 16, \"fontStyle\": \"normal\", \"textAlign\": \"center\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\"}, \"strokeStyle\": \"solid\", \"strokeWidth\": 2, \"rearEndpointStyle\": \"Arrow\", \"frontEndpointStyle\": \"None\"}, \"Kk-ecMm0SH\": {\"id\": \"Kk-ecMm0SH\", \"seed\": 1173549198, \"type\": \"shape\", \"xywh\": \"[-3459.4110128454145,10663.443283731654,140.159557878118,46.396597142074825]\", \"color\": \"#000000\", \"index\": \"a4\", \"filled\": true, \"radius\": 0.1, \"rotate\": 0, \"shadow\": null, \"padding\": [10, 20], \"fontSize\": 20, \"maxWidth\": false, \"fillColor\": \"transparent\", \"fontStyle\": \"normal\", \"roughness\": 1.4, \"shapeType\": \"rect\", \"textAlign\": \"center\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\", \"shapeStyle\": \"General\", \"strokeColor\": \"#fb7081\", \"strokeStyle\": \"solid\", \"strokeWidth\": 2, \"textResizing\": 1}, \"Lv6eSlfN0G\": {\"id\": \"Lv6eSlfN0G\", \"mode\": 0, \"seed\": 1357587807, \"type\": \"connector\", \"index\": \"aD\", \"rough\": false, \"source\": {\"position\": [953.5616346751344, 9798.047413084952]}, \"stroke\": \"#929292\", \"target\": {\"position\": [1206.6739422183641, 9795.503808601474]}, \"roughness\": 1.4, \"labelStyle\": {\"color\": {\"dark\": \"#ffffff\", \"light\": \"#000000\"}, \"fontSize\": 16, \"fontStyle\": \"normal\", \"textAlign\": \"center\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\"}, \"strokeStyle\": \"solid\", \"strokeWidth\": 2, \"rearEndpointStyle\": \"Arrow\", \"frontEndpointStyle\": \"None\"}, \"Pqr7jpWrSR\": {\"id\": \"Pqr7jpWrSR\", \"seed\": 1173549198, \"type\": \"shape\", \"xywh\": \"[-3459.8281402589923,10218.904748384666,103.78655083874582,44]\", \"color\": \"#000000\", \"index\": \"a5\", \"filled\": true, \"radius\": 0.1, \"rotate\": 0, \"shadow\": null, \"padding\": [10, 20], \"fontSize\": 20, \"maxWidth\": false, \"fillColor\": \"transparent\", \"fontStyle\": \"normal\", \"roughness\": 1.4, \"shapeType\": \"rect\", \"textAlign\": \"center\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\", \"shapeStyle\": \"General\", \"strokeColor\": \"#fb7081\", \"strokeStyle\": \"solid\", \"strokeWidth\": 2, \"lockedBySelf\": false, \"textResizing\": 1}, \"XPke0uUx7B\": {\"id\": \"XPke0uUx7B\", \"mode\": 2, \"seed\": 858615882, \"type\": \"connector\", \"index\": \"aO\", \"rough\": false, \"source\": {\"position\": [2016.9205662364047, 10469.445563646594]}, \"stroke\": \"#84cfff\", \"target\": {\"position\": [2524.208506053128, 10461.228197881643]}, \"roughness\": 1.4, \"labelStyle\": {\"color\": {\"dark\": \"#ffffff\", \"light\": \"#000000\"}, \"fontSize\": 16, \"fontStyle\": \"normal\", \"textAlign\": \"center\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\"}, \"strokeStyle\": \"solid\", \"strokeWidth\": 6, \"rearEndpointStyle\": \"Arrow\", \"frontEndpointStyle\": \"None\"}, \"YBjD1F0xjR\": {\"id\": \"YBjD1F0xjR\", \"seed\": 1311765607, \"type\": \"shape\", \"xywh\": \"[444.56885894503057,11096.651445735268,506.1583301579278,409]\", \"color\": \"#000000\", \"index\": \"aB\", \"filled\": true, \"radius\": 0.1, \"rotate\": 0, \"shadow\": null, \"padding\": [10, 20], \"fontSize\": 20, \"maxWidth\": false, \"fillColor\": \"transparent\", \"fontStyle\": \"normal\", \"roughness\": 1.4, \"shapeType\": \"rect\", \"textAlign\": \"center\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\", \"shapeStyle\": \"General\", \"strokeColor\": \"#fb7081\", \"strokeStyle\": \"solid\", \"strokeWidth\": 2, \"lockedBySelf\": false, \"textResizing\": 1}, \"ZSIpIiec1M\": {\"id\": \"ZSIpIiec1M\", \"mode\": 0, \"seed\": 609706579, \"type\": \"connector\", \"index\": \"aH\", \"rough\": false, \"source\": {\"id\": \"2FCItrt9v5\", \"position\": [1, 0.5]}, \"stroke\": \"#929292\", \"target\": {\"position\": [1214.7365768950663, 10292.370325332431]}, \"roughness\": 1.4, \"labelStyle\": {\"color\": {\"dark\": \"#ffffff\", \"light\": \"#000000\"}, \"fontSize\": 16, \"fontStyle\": \"normal\", \"textAlign\": \"center\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\"}, \"strokeStyle\": \"solid\", \"strokeWidth\": 2, \"rearEndpointStyle\": \"Arrow\", \"frontEndpointStyle\": \"None\"}, \"_HUqrhxYwY\": {\"id\": \"_HUqrhxYwY\", \"mode\": 0, \"seed\": 1828185148, \"type\": \"connector\", \"index\": \"aJ\", \"rough\": false, \"source\": {\"position\": [963.670983657147, 11290.758746535055]}, \"stroke\": \"#929292\", \"target\": {\"position\": [1236.8718512605979, 11292.409131769684]}, \"roughness\": 1.4, \"labelStyle\": {\"color\": {\"dark\": \"#ffffff\", \"light\": \"#000000\"}, \"fontSize\": 16, \"fontStyle\": \"normal\", \"textAlign\": \"center\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\"}, \"strokeStyle\": \"solid\", \"strokeWidth\": 2, \"rearEndpointStyle\": \"Arrow\", \"frontEndpointStyle\": \"None\"}, \"eTKFtKkUK1\": {\"id\": \"eTKFtKkUK1\", \"seed\": 1173549198, \"type\": \"shape\", \"xywh\": \"[-3459.4110439782444,9767.954940954154,103.78655083874582,44]\", \"color\": \"#000000\", \"index\": \"a5\", \"filled\": true, \"radius\": 0.1, \"rotate\": 0, \"shadow\": null, \"padding\": [10, 20], \"fontSize\": 20, \"maxWidth\": false, \"fillColor\": \"transparent\", \"fontStyle\": \"normal\", \"roughness\": 1.4, \"shapeType\": \"rect\", \"textAlign\": \"center\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\", \"shapeStyle\": \"General\", \"strokeColor\": \"#fb7081\", \"strokeStyle\": \"solid\", \"strokeWidth\": 2, \"lockedBySelf\": false, \"textResizing\": 1}, \"iUJrCQiDik\": {\"id\": \"iUJrCQiDik\", \"mode\": 2, \"seed\": 1903112780, \"type\": \"connector\", \"index\": \"aP\", \"rough\": false, \"source\": {\"position\": [4181.46186106136, 10451.460502487507]}, \"stroke\": \"#84cfff\", \"target\": {\"position\": [4807.4289137076275, 10448.65608253903]}, \"roughness\": 1.4, \"labelStyle\": {\"color\": {\"dark\": \"#ffffff\", \"light\": \"#000000\"}, \"fontSize\": 16, \"fontStyle\": \"normal\", \"textAlign\": \"center\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\"}, \"strokeStyle\": \"solid\", \"strokeWidth\": 6, \"rearEndpointStyle\": \"Arrow\", \"frontEndpointStyle\": \"None\"}, \"iwsx2MLuRJ\": {\"id\": \"iwsx2MLuRJ\", \"mode\": 2, \"seed\": 691389082, \"type\": \"connector\", \"index\": \"a3\", \"rough\": false, \"source\": {\"position\": [6468.791024721918, 10583.025369578814]}, \"stroke\": \"#84cfff\", \"target\": {\"position\": [7147.058672885976, 10526.947228673487]}, \"roughness\": 1.4, \"labelStyle\": {\"color\": {\"dark\": \"#ffffff\", \"light\": \"#000000\"}, \"fontSize\": 16, \"fontStyle\": \"normal\", \"textAlign\": \"center\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\"}, \"strokeStyle\": \"solid\", \"strokeWidth\": 6, \"rearEndpointStyle\": \"Arrow\", \"frontEndpointStyle\": \"None\"}, \"lZ9oaUIhS2\": {\"id\": \"lZ9oaUIhS2\", \"seed\": 1179436280, \"text\": \"replace\", \"type\": \"shape\", \"xywh\": \"[1046.8396841808303,10744.852248836243,111.24921246946838,68]\", \"color\": \"#fce5e6\", \"index\": \"aM\", \"filled\": true, \"radius\": 0.1, \"rotate\": 0, \"shadow\": null, \"padding\": [10, 20], \"fontSize\": 20, \"maxWidth\": false, \"fillColor\": \"transparent\", \"fontStyle\": \"normal\", \"roughness\": 1.4, \"shapeType\": \"rect\", \"textAlign\": \"center\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\", \"shapeStyle\": \"General\", \"strokeColor\": \"#fcd34d\", \"strokeStyle\": \"solid\", \"strokeWidth\": 2, \"lockedBySelf\": false, \"textResizing\": 1}, \"q2IRSpOfzT\": {\"id\": \"q2IRSpOfzT\", \"seed\": 1179436280, \"text\": \"replace\", \"type\": \"shape\", \"xywh\": \"[1046.8396841808303,11202.993946476976,111.24921246946838,68]\", \"color\": \"#fce5e6\", \"index\": \"aN\", \"filled\": true, \"radius\": 0.1, \"rotate\": 0, \"shadow\": null, \"padding\": [10, 20], \"fontSize\": 20, \"maxWidth\": false, \"fillColor\": \"transparent\", \"fontStyle\": \"normal\", \"roughness\": 1.4, \"shapeType\": \"rect\", \"textAlign\": \"center\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\", \"shapeStyle\": \"General\", \"strokeColor\": \"#fcd34d\", \"strokeStyle\": \"solid\", \"strokeWidth\": 2, \"lockedBySelf\": false, \"textResizing\": 1}, \"rtxfD3GIgw\": {\"id\": \"rtxfD3GIgw\", \"seed\": 1311765607, \"type\": \"shape\", \"xywh\": \"[436.71607152943716,10601.220772097218,506.1583301579278,409]\", \"color\": \"#000000\", \"index\": \"a6\", \"filled\": true, \"radius\": 0.1, \"rotate\": 0, \"shadow\": null, \"padding\": [10, 20], \"fontSize\": 20, \"maxWidth\": false, \"fillColor\": \"transparent\", \"fontStyle\": \"normal\", \"roughness\": 1.4, \"shapeType\": \"rect\", \"textAlign\": \"center\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\", \"shapeStyle\": \"General\", \"strokeColor\": \"#fb7081\", \"strokeStyle\": \"solid\", \"strokeWidth\": 2, \"lockedBySelf\": false, \"textResizing\": 1}, \"w5pjNFaK3K\": {\"id\": \"w5pjNFaK3K\", \"seed\": 1179436280, \"text\": \"replace\", \"type\": \"shape\", \"xywh\": \"[1028.0895172038845,9717.52575873991,111.24921246946838,68]\", \"color\": \"#fce5e6\", \"index\": \"aK\", \"filled\": true, \"radius\": 0.1, \"rotate\": 0, \"shadow\": null, \"padding\": [10, 20], \"fontSize\": 20, \"maxWidth\": false, \"fillColor\": \"transparent\", \"fontStyle\": \"normal\", \"roughness\": 1.4, \"shapeType\": \"rect\", \"textAlign\": \"center\", \"fontFamily\": \"blocksuite:surface:Inter\", \"fontWeight\": \"400\", \"shapeStyle\": \"General\", \"strokeColor\": \"#fcd34d\", \"strokeStyle\": \"solid\", \"strokeWidth\": 2, \"textResizing\": 1}}}}, \"flavour\": \"affine:surface\", \"version\": 5}",
-        "nodeId": null
-    },
-    {
-        "id": "bm2k4HYvOG",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"bm2k4HYvOG\", \"type\": \"block\", \"props\": {\"alt\": \"\", \"fit\": \"contain\", \"url\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-07/img/1767775024925_1766849150724_1765540270293_Screenshot 2025-12-12 at 19.48.07.png\", \"xywh\": \"[-1956.4519724950371,10946.24272523267,400,758.0714285714287]\", \"align\": \"center\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-07/img/1767775024925_1766849150724_1765540270293_Screenshot 2025-12-12 at 19.48.07.png\", \"prompt\": \"\", \"rotate\": 0, \"slotId\": \"image-ohqcjae6\", \"caption\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"upload\", \"minWidth\": 400, \"minHeight\": 232, \"lockedBySelf\": false, \"meta:bizNodeId\": \"\", \"keepAspectRatio\": true}, \"flavour\": \"yidooo:image\", \"version\": 1}",
-        "nodeId": "be540bcc-1e8b-4239-8dec-6e7fee1ca2c9"
-    },
-    {
-        "id": "cNnggaToLq",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"cNnggaToLq\", \"type\": \"block\", \"props\": {\"size\": 0, \"xywh\": \"[5812.230863503227,9610.16423434846,400,267.21994134897363]\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [{\"insert\": \"Shot 6\"}], \"$blocksuite:internal:text$\": true}, \"width\": 400, \"height\": 232, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-07/videos/generation/1767773992034_c7d3fcdf.mp4\", \"poster\": \"\", \"prompt\": \"High-speed FPV drone shot, flying forward through a valley of green hills. The sky above is a curved, swirling ocean of stars with floating giant monoliths. The camera pushes aggressively forward, creating an immersive sense of flight. The floating rocks move slowly while the ground rushes past. Seamless cinematic motion, vibrant lighting, anime aesthetic.\\n\\n\", \"rotate\": 0, \"slotId\": \"video-80thgtvog\", \"caption\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"minWidth\": 320, \"sourceId\": \"\", \"videoUrl\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-07/videos/generation/1767773992034_c7d3fcdf.mp4\", \"minHeight\": 240, \"lockedBySelf\": false, \"keepAspectRatio\": true}, \"flavour\": \"yidooo:video\", \"version\": 1}",
-        "nodeId": "c584210d-c85f-4910-8790-59a64afb0d76"
-    },
-    {
-        "id": "doc:home",
-        "parentId": null,
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"meta\": {\"id\": \"doc:home\", \"tags\": [], \"title\": \"\", \"createDate\": 1767752643694}, \"type\": \"doc\"}",
-        "nodeId": null
-    },
-    {
-        "id": "iWsgV3hp7n",
-        "parentId": "doc:home",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"iWsgV3hp7n\", \"type\": \"block\", \"props\": {\"title\": {\"delta\": [], \"$blocksuite:internal:text$\": true}}, \"flavour\": \"affine:page\", \"version\": 2}",
-        "nodeId": null
-    },
-    {
-        "id": "jA1_8Y09Er",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"jA1_8Y09Er\", \"type\": \"block\", \"props\": {\"xywh\": \"[2574.8120544831827,9553.86404883318,1577.7915309675382,2181.1960721941687]\", \"index\": \"Zw\", \"title\": {\"delta\": [{\"insert\": \"Image generation\"}], \"$blocksuite:internal:text$\": true}, \"background\": \"transparent\", \"lockedBySelf\": false, \"childElementIds\": {\"9JCiuNGZuo\": true, \"BlNtliGGQh\": true, \"CZbCleFw9_\": true, \"FW6Y2goNxy\": true, \"VBDURmwAt-\": true, \"nroDQaVpKh\": true, \"qY07lusInz\": true, \"sEwm-5ZfPg\": true, \"sxWTb1XGaF\": true, \"xAsF_VoCX7\": true}, \"presentationIndex\": \"a20yr6EVJb4G5HXLbwSjSOU7lMjOA5RYzV6\"}, \"flavour\": \"affine:frame\", \"version\": 1}",
-        "nodeId": null
-    },
-    {
-        "id": "jYF2k8UBSg",
-        "parentId": "iWsgV3hp7n",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"jYF2k8UBSg\", \"type\": \"block\", \"props\": {\"xywh\": \"[1262.054179143764,11213.085888573947,491.7661900520324,115.8161158060575]\", \"index\": \"aG\", \"title\": {\"delta\": [{\"insert\": \"my adaptation\"}], \"$blocksuite:internal:text$\": true}, \"hidden\": false, \"edgeless\": {\"style\": {\"borderSize\": 4, \"shadowType\": \"--affine-note-shadow-box\", \"borderStyle\": \"none\", \"borderRadius\": 8}, \"collapse\": true, \"collapsedHeight\": 115.8161158060575}, \"markdown\": \"Wave Hills: Huge waves roll in, and their surface is not sea water, but slopes covered with verdant grass and flowers.\", \"background\": {\"dark\": \"#252525\", \"light\": \"#ffffff\"}, \"displayMode\": \"edgeless\", \"lockedBySelf\": false}, \"flavour\": \"affine:note\", \"version\": 1, \"children\": [{\"id\": \"LwxaVYA9In\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Wave Hills: Huge waves roll in, and their surface is not sea water, but slopes covered with verdant grass and flowers.\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"text\", \"collapsed\": false}, \"flavour\": \"affine:paragraph\", \"version\": 1, \"children\": []}]}",
-        "nodeId": null
-    },
-    {
-        "id": "lHAanXfjQ-",
-        "parentId": "iWsgV3hp7n",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"lHAanXfjQ-\", \"type\": \"block\", \"props\": {\"xywh\": \"[1237.1268552097324,10197.31631697846,499.68447054106207,154.15521810367136]\", \"index\": \"aE\", \"title\": {\"delta\": [{\"insert\": \"my adaptation\"}], \"$blocksuite:internal:text$\": true}, \"hidden\": false, \"edgeless\": {\"style\": {\"borderSize\": 4, \"shadowType\": \"--affine-note-shadow-box\", \"borderStyle\": \"none\", \"borderRadius\": 8}, \"collapse\": true, \"collapsedHeight\": 154.15521810367136}, \"markdown\": \"Sea of ​​Clouds: The hills do not grow on land, but float on the sparkling sea. The bottom of the mountains is transparent and you can see luminous deep-sea fish.\", \"background\": {\"dark\": \"#252525\", \"light\": \"#ffffff\"}, \"displayMode\": \"edgeless\", \"lockedBySelf\": false}, \"flavour\": \"affine:note\", \"version\": 1, \"children\": [{\"id\": \"xugxoKE_wU\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Sea of ​​Clouds: The hills do not grow on land, but float on the sparkling sea. The bottom of the mountains is transparent and you can see luminous deep-sea fish.\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"text\", \"collapsed\": false}, \"flavour\": \"affine:paragraph\", \"version\": 1, \"children\": []}]}",
-        "nodeId": null
-    },
-    {
-        "id": "lrWU2O-VX1",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"lrWU2O-VX1\", \"type\": \"block\", \"props\": {\"alt\": \"\", \"fit\": \"contain\", \"url\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768447435679_截屏2026-01-15 11.22.48.png\", \"xywh\": \"[-3074.960226198421,9499.438425486253,761.7299892613137,1204.8126242362152]\", \"align\": \"center\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [{\"insert\": \"\"}], \"$blocksuite:internal:text$\": true}, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-15/img/1768447435679_截屏2026-01-15 11.22.48.png\", \"prompt\": \"\", \"rotate\": 0, \"slotId\": \"image-nski8m7g\", \"caption\": {\"delta\": [{\"insert\": \"\"}], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"upload\", \"minWidth\": 400, \"minHeight\": 232, \"lockedBySelf\": false, \"meta:bizNodeId\": \"\", \"keepAspectRatio\": true}, \"flavour\": \"yidooo:image\", \"version\": 1}",
-        "nodeId": "cee1a1cf-ac15-4bad-bde8-a271ab069ca8"
-    },
-    {
-        "id": "nroDQaVpKh",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"nroDQaVpKh\", \"type\": \"block\", \"props\": {\"alt\": \"\", \"fit\": \"contain\", \"url\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-07/images/generation/1767773828108_af29e630.jpg\", \"xywh\": \"[3527.3161209484133,9664.187653643952,400,267]\", \"align\": \"center\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [{\"insert\": \"Shot 6\"}], \"$blocksuite:internal:text$\": true}, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-07/images/generation/1767773828108_af29e630.jpg\", \"prompt\": \"xtreme low angle, fisheye lens perspective, looking up from a lush fluorescent green hill with white flowers towards a curved horizon. The sky is a deep Klein blue ocean with crashing waves floating in space, mixed with a glowing starry nebula and massive crystalline rock pillars. Fluffy white clouds at the edges. Makoto Shinkai style, high saturation, vibrant emerald and sapphire colors, cinematic volumetric lighting, ethereal atmosphere, 8k resolution, hyper-detailed. \\n\", \"rotate\": 0, \"slotId\": \"image-b0ahn6lc\", \"caption\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"text_to_image\", \"minWidth\": 400, \"minHeight\": 232, \"lockedBySelf\": false, \"meta:bizNodeId\": \"\", \"keepAspectRatio\": true}, \"flavour\": \"yidooo:image\", \"version\": 1}",
-        "nodeId": "18ce698a-266a-4214-9ca3-31b81685d0aa"
-    },
-    {
-        "id": "ny1bon7KLB",
-        "parentId": "iWsgV3hp7n",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"ny1bon7KLB\", \"type\": \"block\", \"props\": {\"xywh\": \"[1262.054179143764,10720.944190933214,491.7661900520324,115.8161158060575]\", \"index\": \"aF\", \"title\": {\"delta\": [{\"insert\": \"my adaptation\"}], \"$blocksuite:internal:text$\": true}, \"hidden\": false, \"edgeless\": {\"style\": {\"borderSize\": 4, \"shadowType\": \"--affine-note-shadow-box\", \"borderStyle\": \"none\", \"borderRadius\": 8}, \"collapse\": true, \"collapsedHeight\": 115.8161158060575}, \"markdown\": \"Liquid Mountains: Mountains flow like liquid, with ridgelines turning into surging ocean tides to the beat of musical drums.\", \"background\": {\"dark\": \"#252525\", \"light\": \"#ffffff\"}, \"displayMode\": \"edgeless\", \"lockedBySelf\": false}, \"flavour\": \"affine:note\", \"version\": 1, \"children\": [{\"id\": \"8KSVtPyI7n\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Liquid Mountains: Mountains flow like liquid, with ridgelines turning into surging ocean tides to the beat of musical drums.\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"text\", \"collapsed\": false}, \"flavour\": \"affine:paragraph\", \"version\": 1, \"children\": []}]}",
-        "nodeId": null
-    },
-    {
-        "id": "ny_0_5weuH",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"ny_0_5weuH\", \"type\": \"block\", \"props\": {\"xywh\": \"[545.2939639043202,9589.506440177503,294.2377370185566,88.2713064386254]\", \"color\": {\"dark\": \"#ffffff\", \"light\": \"#000000\"}, \"index\": \"a1\", \"scale\": 1.3374439477920532, \"rotate\": 0, \"markdown\": \"# Shot 1\", \"fontStyle\": \"normal\", \"textAlign\": \"center\", \"fontFamily\": \"blocksuite:surface:BebasNeue\", \"fontWeight\": \"400\", \"hasMaxWidth\": true, \"lockedBySelf\": false}, \"flavour\": \"affine:edgeless-text\", \"version\": 1, \"children\": [{\"id\": \"r1l_dt0dob\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Shot 1\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"h1\", \"collapsed\": false}, \"flavour\": \"affine:paragraph\", \"version\": 1, \"children\": []}]}",
-        "nodeId": null
-    },
-    {
-        "id": "o3OQpbXXg7",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"o3OQpbXXg7\", \"type\": \"block\", \"props\": {\"xywh\": \"[545.2939639043204,10686.789366117831,289.00254540816104,34.15499151222214]\", \"color\": {\"dark\": \"#ffffff\", \"light\": \"#000000\"}, \"index\": \"a7\", \"scale\": 1.3136476278305056, \"rotate\": 0, \"markdown\": \"Scenery and vistas\", \"fontStyle\": \"normal\", \"textAlign\": \"center\", \"fontFamily\": \"blocksuite:surface:BebasNeue\", \"fontWeight\": \"400\", \"hasMaxWidth\": true, \"lockedBySelf\": false}, \"flavour\": \"affine:edgeless-text\", \"version\": 1, \"children\": [{\"id\": \"ADhO58lYpw\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Scenery and vistas\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"text\", \"collapsed\": false}, \"flavour\": \"affine:paragraph\", \"version\": 1, \"children\": []}]}",
-        "nodeId": null
-    },
-    {
-        "id": "ol1tcjDD34",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"ol1tcjDD34\", \"type\": \"block\", \"props\": {\"xywh\": \"[-4083.8408848758972,10002.544748369015,405.26367543473043,47.89477340067883]\", \"color\": {\"normal\": \"#b93737ff\"}, \"index\": \"a1\", \"scale\": 1.8421074090501603, \"rotate\": 0, \"markdown\": \"Why does it explode?\", \"fontStyle\": \"normal\", \"textAlign\": \"left\", \"fontFamily\": \"blocksuite:surface:OrelegaOne\", \"fontWeight\": \"400\", \"hasMaxWidth\": true, \"lockedBySelf\": false}, \"flavour\": \"affine:edgeless-text\", \"version\": 1, \"children\": [{\"id\": \"66PFu9_HBl\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Why does it explode?\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"text\", \"collapsed\": false}, \"flavour\": \"affine:paragraph\", \"version\": 1, \"children\": []}]}",
-        "nodeId": null
-    },
-    {
-        "id": "pAduF96GiH",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"pAduF96GiH\", \"type\": \"block\", \"props\": {\"size\": 0, \"xywh\": \"[5061.016236633354,9622.929247979751,378.9886080380542,254.45492771768295]\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [{\"insert\": \"shot 1\"}], \"$blocksuite:internal:text$\": true}, \"width\": 400, \"height\": 232, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-14/img/1768372250892_1767862420834_5b729c6a.mp4\", \"poster\": \"\", \"prompt\": \"\", \"rotate\": 0, \"slotId\": \"video-qxmsz543h\", \"caption\": {\"delta\": [{\"insert\": \"\"}], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"upload\", \"minWidth\": 320, \"sourceId\": \"\", \"videoUrl\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-14/img/1768372250892_1767862420834_5b729c6a.mp4\", \"minHeight\": 240, \"lockedBySelf\": false, \"keepAspectRatio\": true}, \"flavour\": \"yidooo:video\", \"version\": 1}",
-        "nodeId": "9267fc90-5034-4094-9aef-2caaa0b2267a"
-    },
-    {
-        "id": "psHKLERKzt",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"psHKLERKzt\", \"type\": \"block\", \"props\": {\"xywh\": \"[540.0587722939249,11096.651445735268,294.2377370185566,88.27112387166807]\", \"color\": {\"dark\": \"#ffffff\", \"light\": \"#000000\"}, \"index\": \"a9\", \"scale\": 1.3374439477920532, \"rotate\": 0, \"markdown\": \"# Shot 4\", \"fontStyle\": \"normal\", \"textAlign\": \"center\", \"fontFamily\": \"blocksuite:surface:BebasNeue\", \"fontWeight\": \"400\", \"hasMaxWidth\": true, \"lockedBySelf\": false}, \"flavour\": \"affine:edgeless-text\", \"version\": 1, \"children\": [{\"id\": \"7AITdWvB_7\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Shot 4\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"h1\", \"collapsed\": false}, \"flavour\": \"affine:paragraph\", \"version\": 1, \"children\": []}]}",
-        "nodeId": null
-    },
-    {
-        "id": "qY07lusInz",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"qY07lusInz\", \"type\": \"block\", \"props\": {\"alt\": \"\", \"fit\": \"contain\", \"url\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-14/img/1768372230853_flowlamboh0928_A_hyper-detailed_digital_painting_of_an_epic_cel_56abe423-38c5-4923-bc58-5fb3012ea85f.webp\", \"xywh\": \"[3527.3161209484133,10001.23414128584,400,356.1758241758242]\", \"align\": \"center\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [{\"insert\": \"fShot 7\"}], \"$blocksuite:internal:text$\": true}, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-14/img/1768372230853_flowlamboh0928_A_hyper-detailed_digital_painting_of_an_epic_cel_56abe423-38c5-4923-bc58-5fb3012ea85f.webp\", \"prompt\": \"\", \"rotate\": 0, \"slotId\": \"image-5k2gtn8o\", \"caption\": {\"delta\": [{\"insert\": \"\"}], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"upload\", \"minWidth\": 400, \"minHeight\": 232, \"lockedBySelf\": false, \"meta:bizNodeId\": \"\", \"keepAspectRatio\": true}, \"flavour\": \"yidooo:image\", \"version\": 1}",
-        "nodeId": "0f8c74e6-1012-4b8e-b55b-1398223ffbd3"
-    },
-    {
-        "id": "sEwm-5ZfPg",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"sEwm-5ZfPg\", \"type\": \"block\", \"props\": {\"alt\": \"\", \"fit\": \"contain\", \"url\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-07/images/generation/1767772050914_2cd0692b.jpg\", \"xywh\": \"[2738.286530746555,10045.822053373753,400,267]\", \"align\": \"center\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [{\"insert\": \"Shot 2\"}], \"$blocksuite:internal:text$\": true}, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-07/images/generation/1767772050914_2cd0692b.jpg\", \"prompt\": \"Fisheye lens perspective, vast field of view, glowing bioluminescence, iridescent textures, ethereal light, hyper-detailed fantasy landscape, CoMix Wave Films style, Unreal Engine 5 render, volumetric lighting, celestial atmosphere.A surreal double exposure scene. White sheep running on a vibrant green mountain slope seamlessly morphing into white dolphins leaping out of a deep blue sea. The grass texture turns into water ripples. Hyper-detailed, ethereal, magical realism, glowing sunlight, vibrant colors. \\n\", \"rotate\": 0, \"slotId\": \"image-208cixhg\", \"caption\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"text_to_image\", \"minWidth\": 400, \"minHeight\": 232, \"lockedBySelf\": false, \"meta:bizNodeId\": \"\", \"keepAspectRatio\": true}, \"flavour\": \"yidooo:image\", \"version\": 1}",
-        "nodeId": "885c425d-1115-4d3e-984e-140dd7123926"
-    },
-    {
-        "id": "sGafWTFU_c",
-        "parentId": "iWsgV3hp7n",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"sGafWTFU_c\", \"type\": \"block\", \"props\": {\"xywh\": \"[-4355.3322721284885,11217.655611916569,1985.3702296291303,339.97204460014655]\", \"index\": \"a8\", \"title\": {\"delta\": [{\"insert\": \"6. Phase-based Structural Breakdown\"}], \"$blocksuite:internal:text$\": true}, \"hidden\": false, \"edgeless\": {\"style\": {\"borderSize\": 4, \"shadowType\": \"--affine-note-shadow-paper\", \"borderStyle\": \"none\", \"borderRadius\": 8}, \"collapse\": true, \"collapsedHeight\": 339.97204460014655}, \"markdown\": \"Based on the intensity of visual impact, the video can be divided into three main phases:\\n**Phase 1: Setting the Visual Tone (0:00 - 0:06) — \\\"The High-Octane Hook\\\"\\n&#x20;  Scenes:**&#x47;rand auroral skies, floating mountain fragments.\\n&#x20; **Purpose:**&#x54;o establish an immediate impression of \\\"surrealism\\\" and \\\"high production value\\\" within the first 3 seconds. This instantly captures the user's attention and prevents them from scrolling away.\\n**Phase 2: Emotional Acceleration & Dense Montage (0:07 - 0:22) — \\\"Sensory Bombardment\\\"\\n&#x20; Scenes:**&#x52;apidly switching between alpine lakes, lush grasslands, starry night skies, and solitary trees.\\n&#x20; **Structural Features:**&#x54;he editing frequency increases, with the visuals perfectly synced to the drumbeats of the music (beat-matching). Each scene lingers for only a fraction of a second, forcing the viewer's brain to constantly process new visual signals, which maintains a high state of excitement.\\n**Phase 3: Sublimation of Imagination (0:23 - End) — \\\"The Ultimate Spectacle\\\"\\n&#x20; Scenes:**&#x4E;ebulas resembling the Big Bang, a black-hole-like vortex at the end of a highway, and floating islands over the ocean.\\n&#x20; **Purpose:**&#x54;o push the sense of surrealism to its peak. By utilizing the most extreme visual tension and \\\"impossible\\\" imagery, it induces the viewer to like the video or watch it again (replay).\", \"background\": {\"dark\": \"#5854beff\", \"light\": \"#ddd6feff\"}, \"displayMode\": \"edgeless\", \"lockedBySelf\": false}, \"flavour\": \"affine:note\", \"version\": 1, \"children\": [{\"id\": \"PL3Go37cep\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Based on the intensity of visual impact, the video can be divided into three main phases:\\n\"}, {\"insert\": \"Phase 1: Setting the Visual Tone (0:00 - 0:06) — \\\"The High-Octane Hook\\\"\\n   Scenes:\", \"attributes\": {\"bold\": true}}, {\"insert\": \"Grand auroral skies, floating mountain fragments.\\n  \"}, {\"insert\": \"Purpose:\", \"attributes\": {\"bold\": true}}, {\"insert\": \"To establish an immediate impression of \\\"surrealism\\\" and \\\"high production value\\\" within the first 3 seconds. This instantly captures the user's attention and prevents them from scrolling away.\\n\"}, {\"insert\": \"Phase 2: Emotional Acceleration & Dense Montage (0:07 - 0:22) — \\\"Sensory Bombardment\\\"\\n  Scenes:\", \"attributes\": {\"bold\": true}}, {\"insert\": \"Rapidly switching between alpine lakes, lush grasslands, starry night skies, and solitary trees.\\n  \"}, {\"insert\": \"Structural Features:\", \"attributes\": {\"bold\": true}}, {\"insert\": \"The editing frequency increases, with the visuals perfectly synced to the drumbeats of the music (beat-matching). Each scene lingers for only a fraction of a second, forcing the viewer's brain to constantly process new visual signals, which maintains a high state of excitement.\\n\"}, {\"insert\": \"Phase 3: Sublimation of Imagination (0:23 - End) — \\\"The Ultimate Spectacle\\\"\\n  Scenes:\", \"attributes\": {\"bold\": true}}, {\"insert\": \"Nebulas resembling the Big Bang, a black-hole-like vortex at the end of a highway, and floating islands over the ocean.\\n  \"}, {\"insert\": \"Purpose:\", \"attributes\": {\"bold\": true}}, {\"insert\": \"To push the sense of surrealism to its peak. By utilizing the most extreme visual tension and \\\"impossible\\\" imagery, it induces the viewer to like the video or watch it again (replay).\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"text\", \"collapsed\": false}, \"flavour\": \"affine:paragraph\", \"version\": 1, \"children\": []}, {\"id\": \"xjtrl-S2Ir\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"\\n\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"text\", \"collapsed\": false}, \"flavour\": \"affine:paragraph\", \"version\": 1, \"children\": []}]}",
-        "nodeId": null
-    },
-    {
-        "id": "sxWTb1XGaF",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"sxWTb1XGaF\", \"type\": \"block\", \"props\": {\"alt\": \"\", \"fit\": \"contain\", \"url\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-14/img/1768371984510_flowlamboh0928_A_hyper-detailed_digital_painting_of_a_breathtak_da412ef7-33e4-4145-b467-34f8f1cf5926.webp\", \"xywh\": \"[2738.286530746555,10860.40935188849,400,356]\", \"align\": \"center\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [{\"insert\": \"Shot 4\"}], \"$blocksuite:internal:text$\": true}, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-14/img/1768371984510_flowlamboh0928_A_hyper-detailed_digital_painting_of_a_breathtak_da412ef7-33e4-4145-b467-34f8f1cf5926.webp\", \"prompt\": \"\", \"rotate\": 0, \"slotId\": \"image-25fiyq46\", \"caption\": {\"delta\": [{\"insert\": \"\"}], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"upload\", \"minWidth\": 400, \"minHeight\": 232, \"lockedBySelf\": false, \"meta:bizNodeId\": \"\", \"keepAspectRatio\": true}, \"flavour\": \"yidooo:image\", \"version\": 1}",
-        "nodeId": "0cce2149-3ce4-42a8-b7f4-2dc1d55727f6"
-    },
-    {
-        "id": "uabDeODWh_",
-        "parentId": "iWsgV3hp7n",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"uabDeODWh_\", \"type\": \"block\", \"props\": {\"xywh\": \"[1224.5538451898724,9711.932601336104,491.7661900520324,115.8161158060575]\", \"index\": \"aC\", \"title\": {\"delta\": [{\"insert\": \"my adaptation\"}], \"$blocksuite:internal:text$\": true}, \"hidden\": false, \"edgeless\": {\"style\": {\"borderSize\": 4, \"shadowType\": \"--affine-note-shadow-box\", \"borderStyle\": \"none\", \"borderRadius\": 8}, \"collapse\": true, \"collapsedHeight\": 115.8161158060575}, \"markdown\": \"Wave Hills: Huge waves roll in, and their surface is not sea water, but slopes covered with verdant grass and flowers.\", \"background\": {\"dark\": \"#252525\", \"light\": \"#ffffff\"}, \"displayMode\": \"edgeless\", \"lockedBySelf\": false}, \"flavour\": \"affine:note\", \"version\": 1, \"children\": [{\"id\": \"PgEp3_ccTU\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Wave Hills: Huge waves roll in, and their surface is not sea water, but slopes covered with verdant grass and flowers.\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"text\", \"collapsed\": false}, \"flavour\": \"affine:paragraph\", \"version\": 1, \"children\": []}]}",
-        "nodeId": null
-    },
-    {
-        "id": "xAsF_VoCX7",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"xAsF_VoCX7\", \"type\": \"block\", \"props\": {\"alt\": \"\", \"fit\": \"contain\", \"url\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-14/img/1768372169990_flowlamboh0928_Extreme_fisheye_lens_view_looking_up_a_giant_swi_5f60ea53-6c94-492b-9675-2f79f400bab6.webp\", \"xywh\": \"[2738.286530746555,9619.687653643952,400,356]\", \"align\": \"center\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [{\"insert\": \"Shot 1\"}], \"$blocksuite:internal:text$\": true}, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-14/img/1768372169990_flowlamboh0928_Extreme_fisheye_lens_view_looking_up_a_giant_swi_5f60ea53-6c94-492b-9675-2f79f400bab6.webp\", \"prompt\": \"\", \"rotate\": 0, \"slotId\": \"image-fz3bth0a\", \"caption\": {\"delta\": [{\"insert\": \"\"}], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"upload\", \"minWidth\": 400, \"minHeight\": 232, \"lockedBySelf\": false, \"meta:bizNodeId\": \"\", \"keepAspectRatio\": true}, \"flavour\": \"yidooo:image\", \"version\": 1}",
-        "nodeId": "3cd4de2b-5a56-408e-a762-7acb8aa38055"
-    },
-    {
-        "id": "xNHiBOcUut",
-        "parentId": "iWsgV3hp7n",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"xNHiBOcUut\", \"type\": \"block\", \"props\": {\"xywh\": \"[-4341.374076410575,10050.43953777275,822.2487981867689,267.67151017817014]\", \"index\": \"a3\", \"title\": {\"delta\": [{\"insert\": \"1. Extreme Visual Impact (Visual Aesthetics)\"}], \"$blocksuite:internal:text$\": true}, \"hidden\": false, \"edgeless\": {\"style\": {\"borderSize\": 4, \"shadowType\": \"--affine-note-shadow-paper\", \"borderStyle\": \"none\", \"borderRadius\": 8}, \"collapse\": true, \"collapsedHeight\": 267.67151017817014}, \"markdown\": \"* **Art Style:**&#x54;he video utilizes high saturation, crystalline colors, and the iconic treatment of blue skies, white clouds, and light rays. This \\\"healing\\\" anime aesthetic has a massive global fan base and high recognition.\\n* Grand Sense of Scale: Through the use of fisheye lenses and ultra-wide perspectives, the video blends grand natural landscapes (snowy mountains, lakes, forests) with surreal cosmic imagery (nebulas, shattered skies, giant vortices), creating an epic, cinematic visual experience.\\n* Surreal Imagination: By breaking the laws of physics—such as mountains hanging upside down in the sky or celestial whirlpools—the compositions instantly grab the viewer's attention.\", \"background\": {\"dark\": \"#8a2424ff\", \"light\": \"#fbb7b7ff\"}, \"displayMode\": \"edgeless\", \"lockedBySelf\": false}, \"flavour\": \"affine:note\", \"version\": 1, \"children\": [{\"id\": \"eUmIBbuEAF\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Art Style:\", \"attributes\": {\"bold\": true}}, {\"insert\": \"The video utilizes high saturation, crystalline colors, and the iconic treatment of blue skies, white clouds, and light rays. This \\\"healing\\\" anime aesthetic has a massive global fan base and high recognition.\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"bulleted\", \"order\": null, \"checked\": false, \"collapsed\": false}, \"flavour\": \"affine:list\", \"version\": 1, \"children\": []}, {\"id\": \"qorGYkhNg9\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Grand Sense of Scale: Through the use of fisheye lenses and ultra-wide perspectives, the video blends grand natural landscapes (snowy mountains, lakes, forests) with surreal cosmic imagery (nebulas, shattered skies, giant vortices), creating an epic, cinematic visual experience.\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"bulleted\", \"order\": null, \"checked\": false, \"collapsed\": false}, \"flavour\": \"affine:list\", \"version\": 1, \"children\": []}, {\"id\": \"c8k4-hii6X\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Surreal Imagination: By breaking the laws of physics—such as mountains hanging upside down in the sky or celestial whirlpools—the compositions instantly grab the viewer's attention.\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"bulleted\", \"order\": null, \"checked\": false, \"collapsed\": false}, \"flavour\": \"affine:list\", \"version\": 1, \"children\": []}]}",
-        "nodeId": null
-    },
-    {
-        "id": "xdzMAIGJ4_",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"xdzMAIGJ4_\", \"type\": \"block\", \"props\": {\"alt\": \"\", \"fit\": \"contain\", \"url\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-07/img/1767769369212_截屏2026-01-07 15.02.26.png\", \"xywh\": \"[495.0304282187965,9711.932601336104,400,246.6795523906409]\", \"align\": \"center\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-07/img/1767769369212_截屏2026-01-07 15.02.26.png\", \"prompt\": \"\", \"rotate\": 0, \"slotId\": \"image-xuk48vfo\", \"caption\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"upload\", \"minWidth\": 400, \"minHeight\": 232, \"lockedBySelf\": false, \"meta:bizNodeId\": \"\", \"keepAspectRatio\": true}, \"flavour\": \"yidooo:image\", \"version\": 1}",
-        "nodeId": "510c9886-1919-44ee-a8da-dbd1334044e8"
-    },
-    {
-        "id": "y90QAfS-_R",
-        "parentId": "iWsgV3hp7n",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"y90QAfS-_R\", \"type\": \"block\", \"props\": {\"xywh\": \"[-4341.374075664606,10397.708038090492,822.2487974407991,186.1384185207844]\", \"index\": \"a4\", \"title\": {\"delta\": [{\"insert\": \"2. Emotional Value and \\\"Healing\\\" Vibes (Emotional Resonance)\"}], \"$blocksuite:internal:text$\": true}, \"hidden\": false, \"edgeless\": {\"style\": {\"borderSize\": 4, \"shadowType\": \"--affine-note-shadow-paper\", \"borderStyle\": \"none\", \"borderRadius\": 8}, \"collapse\": true, \"collapsedHeight\": 186.1384185207844}, \"markdown\": \"* **Spiritual Escapism:**&#x49;n a fast-paced modern world, these vast and pure images offer a form of \\\"soul massage.\\\" They satisfy the psychological desire to escape reality and find a sense of peace and freedom.\\n* **Awe and Connection:**&#x53;howcasing the majesty of nature and the depth of the universe triggers an instinctive sense of awe. This powerful emotion encourages viewers to like, save, and share the content with others to \\\"experience the wonder together.\\\"\", \"background\": {\"dark\": \"#d37a39ff\", \"light\": \"#ffc58fff\"}, \"displayMode\": \"edgeless\", \"lockedBySelf\": false}, \"flavour\": \"affine:note\", \"version\": 1, \"children\": [{\"id\": \"eWe2hHNCIb\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Spiritual Escapism:\", \"attributes\": {\"bold\": true}}, {\"insert\": \"In a fast-paced modern world, these vast and pure images offer a form of \\\"soul massage.\\\" They satisfy the psychological desire to escape reality and find a sense of peace and freedom.\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"bulleted\", \"order\": null, \"checked\": false, \"collapsed\": false}, \"flavour\": \"affine:list\", \"version\": 1, \"children\": []}, {\"id\": \"5rHVknK5Nf\", \"type\": \"block\", \"props\": {\"text\": {\"delta\": [{\"insert\": \"Awe and Connection:\", \"attributes\": {\"bold\": true}}, {\"insert\": \"Showcasing the majesty of nature and the depth of the universe triggers an instinctive sense of awe. This powerful emotion encourages viewers to like, save, and share the content with others to \\\"experience the wonder together.\\\"\"}], \"$blocksuite:internal:text$\": true}, \"type\": \"bulleted\", \"order\": null, \"checked\": false, \"collapsed\": false}, \"flavour\": \"affine:list\", \"version\": 1, \"children\": []}]}",
-        "nodeId": null
-    },
-    {
-        "id": "yMMBoFwVD4",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"yMMBoFwVD4\", \"type\": \"block\", \"props\": {\"xywh\": \"[-4473.727618283386,9435.356022329037,2235.3720577262784,2278.0763509620756]\", \"index\": \"Zz\", \"title\": {\"delta\": [{\"insert\": \"Hot video\"}], \"$blocksuite:internal:text$\": true}, \"background\": \"transparent\", \"lockedBySelf\": false, \"childElementIds\": {\"5H6VMPBZZT\": true, \"5MyuU-CBAv\": true, \"5pQgs9aWFo\": true, \"CqfRLPERLy\": true, \"J7Hyz_grJZ\": true, \"Jk7-D_-Ix_\": true, \"Kk-ecMm0SH\": true, \"Pqr7jpWrSR\": true, \"WwvCiwm6YP\": true, \"eTKFtKkUK1\": true, \"lrWU2O-VX1\": true, \"ol1tcjDD34\": true, \"sGafWTFU_c\": true, \"xNHiBOcUut\": true, \"y90QAfS-_R\": true}, \"presentationIndex\": \"a00MEjReAAqaoCMNjHY85mK9o98vVchddaD\"}, \"flavour\": \"affine:frame\", \"version\": 1}",
-        "nodeId": null
-    },
-    {
-        "id": "ymYUAr7h72",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"ymYUAr7h72\", \"type\": \"block\", \"props\": {\"xywh\": \"[206.25354321209034,9463.37875941845,1792.421494406948,2240.9353943856495]\", \"index\": \"Zx\", \"title\": {\"delta\": [{\"insert\": \"How to change popular videos\"}], \"$blocksuite:internal:text$\": true}, \"background\": \"transparent\", \"lockedBySelf\": false, \"childElementIds\": {}, \"presentationIndex\": \"a10rQINMVXI4WhOHI3ALwmqmTT25BSfwdRH\"}, \"flavour\": \"affine:frame\", \"version\": 1}",
-        "nodeId": null
-    },
-    {
-        "id": "zqhrlnmyrb",
-        "parentId": "ae_7MtxGQe",
-        "creationId": "f923785a-c97e-4fab-a40a-4425cfe799a1",
-        "info": "{\"id\": \"zqhrlnmyrb\", \"type\": \"block\", \"props\": {\"alt\": \"\", \"fit\": \"contain\", \"url\": \"//r.yidooo.com/user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-07/img/1767769481228_截屏2026-01-07 15.03.55.png\", \"xywh\": \"[495.0304282187965,10214.393453549043,400,244.2517911975435]\", \"align\": \"center\", \"error\": false, \"index\": \"a0\", \"scale\": 1, \"title\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"ossKey\": \"user/2baccbc3-6bad-464c-a430-d10b1790e443/2026-01-07/img/1767769481228_截屏2026-01-07 15.03.55.png\", \"prompt\": \"\", \"rotate\": 0, \"slotId\": \"image-qq4997ru\", \"caption\": {\"delta\": [], \"$blocksuite:internal:text$\": true}, \"autoSize\": false, \"funcType\": \"upload\", \"minWidth\": 400, \"minHeight\": 232, \"lockedBySelf\": false, \"meta:bizNodeId\": \"\", \"keepAspectRatio\": true}, \"flavour\": \"yidooo:image\", \"version\": 1}",
-        "nodeId": "956ab878-889b-48cd-a986-b4efa4d2c4b1"
-    }
-]
+    "flavour": "yidooo:shot-table",
+    "version": 1,
+    "children": []
+}

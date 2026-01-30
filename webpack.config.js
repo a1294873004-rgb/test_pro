@@ -32,6 +32,20 @@ module.exports = (env, argv) => {
       },
       alias: {
         src: path.resolve(__dirname, "src"),
+        // tui-image-editor-test lib
+        "@": path.resolve(
+          __dirname,
+          "src/tui-image-editor-test/libs/image-editor/src/js",
+        ),
+        "@css": path.resolve(
+          __dirname,
+          "src/tui-image-editor-test/libs/image-editor/src/css",
+        ),
+        "@svg": path.resolve(
+          __dirname,
+          "src/tui-image-editor-test/libs/image-editor/src/svg",
+        ),
+
         "@styles": path.resolve(__dirname, "src/styles"),
       },
     },
@@ -103,6 +117,11 @@ module.exports = (env, argv) => {
         {
           test: /\.svg$/i,
           oneOf: [
+            {
+              // 这里的路径要匹配你存放 tui 源码的目录
+              include: [path.resolve(__dirname, "src/tui-image-editor-test")],
+              type: "asset/inline", // 强制转换成 base64 字符串，解决 atob 报错
+            },
             // 命中 ?icon 的 svg → sprite 模式
             {
               resourceQuery: /icon/,
@@ -185,6 +204,27 @@ module.exports = (env, argv) => {
         //     'svgo-loader',
         //   ],
         // },
+        {
+          test: /\.styl$/,
+          use: [
+            "style-loader", // 3. 将 JS 字符串生成为 style 节点插入页面
+            "css-loader", // 2. 将 CSS 转化成 CommonJS 模块
+            {
+              loader: "stylus-loader", // 1. 将 Stylus 编译为 CSS
+              options: {
+                // stylusOptions: {
+                //   // 如果你的 @import 找不到路径，可以在这里定义查找路径
+                //   paths: [
+                //     path.resolve(
+                //       __dirname,
+                //       "src/tui-image-editor-test/libs/image-editor/src/stlyus",
+                //     ),
+                //   ],
+                // },
+              },
+            },
+          ],
+        },
         {
           // .less / .css 文件不开启 css module
           test: /\.(le|c)ss$/,
