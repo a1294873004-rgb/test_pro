@@ -44,6 +44,7 @@ const TuiEditor: React.FC = () => {
           },
           menuBarPosition: "bottom",
         },
+        // includeUI: false,
         cssMaxWidth: 700,
         cssMaxHeight: 500,
         selectionStyle: {

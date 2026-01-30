@@ -4,7 +4,11 @@
     "target": "esnext", // 编译目标 JavaScript 版本
     "module": "esnext", // 模块化方案
     "jsx": "preserve", // 支持 JSX 语法
-    "lib": ["dom", "dom.iterable", "esnext"], // 包含的库文件
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ], // 包含的库文件
     "allowJs": true, // 允许引入 JavaScript 文件
     "skipLibCheck": true, // 跳过对声明文件的类型检查
     "esModuleInterop": true, // 允许使用 ES 模块语法导入 CommonJS 模块
@@ -22,11 +26,32 @@
     "useDefineForClassFields": false,
     "noImplicitOverride": true,
     "paths": {
-      "src/*": ["./src/*"],
-      "@styles/*": ["src/styles/*"]
+      "src/*": [
+        "./src/*"
+      ],
+      "@styles/*": [
+        "src/styles/*"
+      ],
+      "@/*": [
+        "src/tui-image-editor-test/libs/image-editor/src/js/*"
+      ],
+      "@css/*": [
+        "src/tui-image-editor-test/libs/image-editor/src/css/*"
+      ],
+      "@svg/*": [
+        "src/tui-image-editor-test/libs/image-editor/src/svg/*"
+      ],
     },
-    "typeRoots": ["node_modules/@types"]
+    "typeRoots": [
+      "node_modules/@types"
+    ]
   },
-  "include": ["src/**/*", "index.tsx", "typings.d.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "src/**/*",
+    "index.tsx",
+    "typings.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

@@ -1,5 +1,5 @@
-import DrawingMode from '@/interface/drawingMode';
-import { drawingModes, componentNames as components } from '@/consts';
+import DrawingMode from "@/interface/drawingMode";
+import { drawingModes, componentNames as components } from "@/consts";
 
 /**
  * LineDrawingMode class
@@ -18,6 +18,7 @@ class LineDrawingMode extends DrawingMode {
    * @override
    */
   start(graphics, options) {
+    console.log("draw line");
     const lineDrawing = graphics.getComponent(components.LINE);
     lineDrawing.start(options);
   }

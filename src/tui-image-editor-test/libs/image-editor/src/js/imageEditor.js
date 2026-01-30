@@ -1,22 +1,25 @@
-import { fabric } from 'fabric';
-import extend from 'tui-code-snippet/object/extend';
-import isUndefined from 'tui-code-snippet/type/isUndefined';
-import forEach from 'tui-code-snippet/collection/forEach';
-import CustomEvents from 'tui-code-snippet/customEvents/customEvents';
-import Invoker from '@/invoker';
-import UI from '@/ui';
-import action from '@/action';
-import commandFactory from '@/factory/command';
-import Graphics from '@/graphics';
-import { makeSelectionUndoData, makeSelectionUndoDatum } from '@/helper/selectionModifyHelper';
-import { sendHostName, getObjectType } from '@/util';
+import { fabric } from "fabric";
+import extend from "tui-code-snippet/object/extend";
+import isUndefined from "tui-code-snippet/type/isUndefined";
+import forEach from "tui-code-snippet/collection/forEach";
+import CustomEvents from "tui-code-snippet/customEvents/customEvents";
+import Invoker from "@/invoker";
+import UI from "@/ui";
+import action from "@/action";
+import commandFactory from "@/factory/command";
+import Graphics from "@/graphics";
+import {
+  makeSelectionUndoData,
+  makeSelectionUndoDatum,
+} from "@/helper/selectionModifyHelper";
+import { sendHostName, getObjectType } from "@/util";
 import {
   eventNames as events,
   commandNames as commands,
   keyCodes,
   rejectMessages,
   OBJ_TYPE,
-} from '@/consts';
+} from "@/consts";
 
 const {
   MOUSE_DOWN,
@@ -161,12 +164,13 @@ const {
  */
 class ImageEditor {
   constructor(wrapper, options) {
+    console.log("fuck");
     options = extend(
       {
         includeUI: false,
         usageStatistics: true,
       },
-      options
+      options,
     );
 
     this.mode = null;
@@ -269,7 +273,10 @@ class ImageEditor {
    *   @param {boolean} applyGroupSelectionStyle - whether apply with group selection style or not
    * @private
    */
-  _setSelectionStyle(selectionStyle, { applyCropSelectionStyle, applyGroupSelectionStyle }) {
+  _setSelectionStyle(
+    selectionStyle,
+    { applyCropSelectionStyle, applyGroupSelectionStyle },
+  ) {
     if (selectionStyle) {
       this._graphics.setSelectionStyle(selectionStyle);
     }
@@ -279,8 +286,8 @@ class ImageEditor {
     }
 
     if (applyGroupSelectionStyle) {
-      this.on('selectionCreated', (eventTarget) => {
-        if (eventTarget.type === 'activeSelection') {
+      this.on("selectionCreated", (eventTarget) => {
+        if (eventTarget.type === "activeSelection") {
           eventTarget.set(selectionStyle);
         }
       });
@@ -311,7 +318,10 @@ class ImageEditor {
      *     console.log(length);
      * });
      */
-    this._invoker.on(UNDO_STACK_CHANGED, this.fire.bind(this, UNDO_STACK_CHANGED));
+    this._invoker.on(
+      UNDO_STACK_CHANGED,
+      this.fire.bind(this, UNDO_STACK_CHANGED),
+    );
     /**
      * Redo stack changed event
      * @event ImageEditor#redoStackChanged
@@ -321,14 +331,23 @@ class ImageEditor {
      *     console.log(length);
      * });
      */
-    this._invoker.on(REDO_STACK_CHANGED, this.fire.bind(this, REDO_STACK_CHANGED));
+    this._invoker.on(
+      REDO_STACK_CHANGED,
+      this.fire.bind(this, REDO_STACK_CHANGED),
+    );
 
     if (this.ui) {
       const canvas = this._graphics.getCanvas();
 
-      this._invoker.on(EXECUTE_COMMAND, (command) => this.ui.fire(EXECUTE_COMMAND, command));
-      this._invoker.on(AFTER_UNDO, (command) => this.ui.fire(AFTER_UNDO, command));
-      this._invoker.on(AFTER_REDO, (command) => this.ui.fire(AFTER_REDO, command));
+      this._invoker.on(EXECUTE_COMMAND, (command) =>
+        this.ui.fire(EXECUTE_COMMAND, command),
+      );
+      this._invoker.on(AFTER_UNDO, (command) =>
+        this.ui.fire(AFTER_UNDO, command),
+      );
+      this._invoker.on(AFTER_REDO, (command) =>
+        this.ui.fire(AFTER_REDO, command),
+      );
 
       canvas.on(HAND_STARTED, () => this.ui.fire(HAND_STARTED));
       canvas.on(HAND_STOPPED, () => this.ui.fire(HAND_STOPPED));
@@ -365,7 +384,7 @@ class ImageEditor {
    */
   _attachDomEvents() {
     // ImageEditor supports IE 9 higher
-    document.addEventListener('keydown', this._handlers.keydown);
+    document.addEventListener("keydown", this._handlers.keydown);
   }
 
   /**
@@ -374,7 +393,7 @@ class ImageEditor {
    */
   _detachDomEvents() {
     // ImageEditor supports IE 9 higher
-    document.removeEventListener('keydown', this._handlers.keydown);
+    document.removeEventListener("keydown", this._handlers.keydown);
   }
 
   /**
@@ -395,14 +414,15 @@ class ImageEditor {
         this.clearRedoStack();
       } else if (keyCode === keyCodes.Z) {
         // There is no error message on shortcut when it's empty
-        this.undo()['catch'](() => {});
+        this.undo()["catch"](() => {});
       } else if (keyCode === keyCodes.Y) {
         // There is no error message on shortcut when it's empty
-        this.redo()['catch'](() => {});
+        this.redo()["catch"](() => {});
       }
     }
 
-    const isDeleteKey = keyCode === keyCodes.BACKSPACE || keyCode === keyCodes.DEL;
+    const isDeleteKey =
+      keyCode === keyCodes.BACKSPACE || keyCode === keyCodes.DEL;
     const isRemoveReady = this._graphics.isReadyRemoveObject();
 
     if (!this.isColorPickerInputBoxEditing && isRemoveReady && isDeleteKey) {
@@ -458,7 +478,11 @@ class ImageEditor {
    * @private
    */
   _pushAddObjectCommand(obj) {
-    const command = commandFactory.create(commands.ADD_OBJECT, this._graphics, obj);
+    const command = commandFactory.create(
+      commands.ADD_OBJECT,
+      this._graphics,
+      obj,
+    );
     this._invoker.pushUndoStack(command);
   }
 
@@ -470,9 +494,17 @@ class ImageEditor {
   _pushModifyObjectCommand(obj) {
     const { type } = obj;
     const props = makeSelectionUndoData(obj, (item) =>
-      makeSelectionUndoDatum(this._graphics.getObjectId(item), item, type === 'activeSelection')
+      makeSelectionUndoDatum(
+        this._graphics.getObjectId(item),
+        item,
+        type === "activeSelection",
+      ),
     );
-    const command = commandFactory.create(commands.CHANGE_SELECTION, this._graphics, props);
+    const command = commandFactory.create(
+      commands.CHANGE_SELECTION,
+      this._graphics,
+      props,
+    );
     command.execute(this._graphics, props);
 
     this._invoker.pushUndoStack(command);
@@ -870,7 +902,7 @@ class ImageEditor {
    * });
    */
   flipX() {
-    return this._flip('flipX');
+    return this._flip("flipX");
   }
 
   /**
@@ -886,7 +918,7 @@ class ImageEditor {
    * });
    */
   flipY() {
-    return this._flip('flipY');
+    return this._flip("flipY");
   }
 
   /**
@@ -902,7 +934,7 @@ class ImageEditor {
    * });;
    */
   resetFlip() {
-    return this._flip('reset');
+    return this._flip("reset");
   }
 
   /**
@@ -942,7 +974,7 @@ class ImageEditor {
    * });
    */
   rotate(angle, isSilent) {
-    return this._rotate('rotate', angle, isSilent);
+    return this._rotate("rotate", angle, isSilent);
   }
 
   /**
@@ -963,7 +995,7 @@ class ImageEditor {
    * });
    */
   setAngle(angle, isSilent) {
-    return this._rotate('setAngle', angle, isSilent);
+    return this._rotate("setAngle", angle, isSilent);
   }
 
   /**
@@ -1139,7 +1171,7 @@ class ImageEditor {
    * });
    */
   changeShape(id, options, isSilent) {
-    const executeMethodName = isSilent ? 'executeSilent' : 'execute';
+    const executeMethodName = isSilent ? "executeSilent" : "execute";
 
     return this[executeMethodName](commands.CHANGE_SHAPE, id, options);
   }
@@ -1177,7 +1209,7 @@ class ImageEditor {
    * });
    */
   addText(text, options) {
-    text = text || '';
+    text = text || "";
     options = options || {};
 
     return this.execute(commands.ADD_TEXT, text, options);
@@ -1192,7 +1224,7 @@ class ImageEditor {
    * imageEditor.changeText(id, 'change text');
    */
   changeText(id, text) {
-    text = text || '';
+    text = text || "";
 
     return this.execute(commands.CHANGE_TEXT, id, text);
   }
@@ -1216,7 +1248,7 @@ class ImageEditor {
    * });
    */
   changeTextStyle(id, styleObj, isSilent) {
-    const executeMethodName = isSilent ? 'executeSilent' : 'execute';
+    const executeMethodName = isSilent ? "executeSilent" : "execute";
 
     return this[executeMethodName](commands.CHANGE_TEXT_STYLE, id, styleObj);
   }
@@ -1227,7 +1259,7 @@ class ImageEditor {
    * @private
    */
   _changeActivateMode(type) {
-    if (type !== 'ICON' && this.getDrawingMode() !== type) {
+    if (type !== "ICON" && this.getDrawingMode() !== type) {
       this.startDrawingMode(type);
     }
   }
@@ -1491,7 +1523,7 @@ class ImageEditor {
    * });;
    */
   applyFilter(type, options, isSilent) {
-    const executeMethodName = isSilent ? 'executeSilent' : 'execute';
+    const executeMethodName = isSilent ? "executeSilent" : "execute";
 
     return this[executeMethodName](commands.APPLY_FILTER, type, options);
   }
@@ -1596,7 +1628,7 @@ class ImageEditor {
       (value, key) => {
         this[key] = null;
       },
-      this
+      this,
     );
   }
 

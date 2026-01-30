@@ -1,42 +1,42 @@
-import { fabric } from 'fabric';
-import extend from 'tui-code-snippet/object/extend';
-import isArray from 'tui-code-snippet/type/isArray';
-import isString from 'tui-code-snippet/type/isString';
-import forEachArray from 'tui-code-snippet/collection/forEachArray';
-import forEachOwnProperties from 'tui-code-snippet/collection/forEachOwnProperties';
-import CustomEvents from 'tui-code-snippet/customEvents/customEvents';
-import ImageLoader from '@/component/imageLoader';
-import Cropper from '@/component/cropper';
-import Flip from '@/component/flip';
-import Rotation from '@/component/rotation';
-import FreeDrawing from '@/component/freeDrawing';
-import Line from '@/component/line';
-import Text from '@/component/text';
-import Icon from '@/component/icon';
-import Filter from '@/component/filter';
-import Shape from '@/component/shape';
-import Zoom from '@/component/zoom';
-import CropperDrawingMode from '@/drawingMode/cropper';
-import FreeDrawingMode from '@/drawingMode/freeDrawing';
-import LineDrawingMode from '@/drawingMode/lineDrawing';
-import ShapeDrawingMode from '@/drawingMode/shape';
-import TextDrawingMode from '@/drawingMode/text';
-import IconDrawingMode from '@/drawingMode/icon';
-import ZoomDrawingMode from '@/drawingMode/zoom';
+import { fabric } from "fabric";
+import extend from "tui-code-snippet/object/extend";
+import isArray from "tui-code-snippet/type/isArray";
+import isString from "tui-code-snippet/type/isString";
+import forEachArray from "tui-code-snippet/collection/forEachArray";
+import forEachOwnProperties from "tui-code-snippet/collection/forEachOwnProperties";
+import CustomEvents from "tui-code-snippet/customEvents/customEvents";
+import ImageLoader from "@/component/imageLoader";
+import Cropper from "@/component/cropper";
+import Flip from "@/component/flip";
+import Rotation from "@/component/rotation";
+import FreeDrawing from "@/component/freeDrawing";
+import Line from "@/component/line";
+import Text from "@/component/text";
+import Icon from "@/component/icon";
+import Filter from "@/component/filter";
+import Shape from "@/component/shape";
+import Zoom from "@/component/zoom";
+import CropperDrawingMode from "@/drawingMode/cropper";
+import FreeDrawingMode from "@/drawingMode/freeDrawing";
+import LineDrawingMode from "@/drawingMode/lineDrawing";
+import ShapeDrawingMode from "@/drawingMode/shape";
+import TextDrawingMode from "@/drawingMode/text";
+import IconDrawingMode from "@/drawingMode/icon";
+import ZoomDrawingMode from "@/drawingMode/zoom";
 import {
   makeSelectionUndoData,
   makeSelectionUndoDatum,
   setCachedUndoDataForDimension,
-} from '@/helper/selectionModifyHelper';
-import { getProperties, includes, isShape, stamp } from '@/util';
+} from "@/helper/selectionModifyHelper";
+import { getProperties, includes, isShape, stamp } from "@/util";
 import {
   componentNames as components,
   eventNames as events,
   drawingModes,
   fObjectOptions,
-} from '@/consts';
-import Resize from '@/component/resize';
-import ResizeDrawingMode from '@/drawingMode/resize';
+} from "@/consts";
+import Resize from "@/component/resize";
+import ResizeDrawingMode from "@/drawingMode/resize";
 
 const DEFAULT_CSS_MAX_WIDTH = 1000;
 const DEFAULT_CSS_MAX_HEIGHT = 800;
@@ -95,7 +95,7 @@ class Graphics {
      * Image name
      * @type {string}
      */
-    this.imageName = '';
+    this.imageName = "";
 
     /**
      * Object Map
@@ -285,7 +285,7 @@ class Graphics {
     const objects = [];
     const canvas = this._canvas;
     const target = this.getObject(id);
-    const isValidGroup = target && target.isType('group') && !target.isEmpty();
+    const isValidGroup = target && target.isType("group") && !target.isEmpty();
 
     if (isValidGroup) {
       canvas.discardActiveObject(); // restore states for each objects
@@ -334,7 +334,7 @@ class Graphics {
   getActiveObjectIdForRemove() {
     const activeObject = this.getActiveObject();
     const { type, left, top } = activeObject;
-    const isSelection = type === 'activeSelection';
+    const isSelection = type === "activeSelection";
 
     if (isSelection) {
       const group = new fabric.Group([...activeObject.getObjects()], {
@@ -365,7 +365,9 @@ class Graphics {
   getActiveObjects() {
     const activeObject = this._canvas._activeObject;
 
-    return activeObject && activeObject.type === 'activeSelection' ? activeObject : null;
+    return activeObject && activeObject.type === "activeSelection"
+      ? activeObject
+      : null;
   }
 
   /**
@@ -446,7 +448,9 @@ class Graphics {
       return;
     }
 
-    const drawingModeInstance = this._getDrawingModeInstance(this.getDrawingMode());
+    const drawingModeInstance = this._getDrawingModeInstance(
+      this.getDrawingMode(),
+    );
     if (drawingModeInstance && drawingModeInstance.end) {
       drawingModeInstance.end(this);
     }
@@ -588,10 +592,10 @@ class Graphics {
     const maxDimension = this._calcMaxDimension(width, height);
 
     this.setCanvasCssDimension({
-      width: '100%',
-      height: '100%', // Set height '' for IE9
-      'max-width': `${maxDimension.width}px`,
-      'max-height': `${maxDimension.height}px`,
+      width: "100%",
+      height: "100%", // Set height '' for IE9
+      "max-width": `${maxDimension.width}px`,
+      "max-height": `${maxDimension.height}px`,
     });
 
     this.setCanvasBackstoreDimension({
@@ -686,8 +690,8 @@ class Graphics {
           resolve(this.createObjectProperties(image));
         },
         {
-          crossOrigin: 'Anonymous',
-        }
+          crossOrigin: "Anonymous",
+        },
       );
     });
   }
@@ -895,7 +899,7 @@ class Graphics {
     }
 
     const targetOrigin = targetObj.getPointByOrigin(originX, originY);
-    const centerOrigin = targetObj.getPointByOrigin('center', 'center');
+    const centerOrigin = targetObj.getPointByOrigin("center", "center");
     const diffX = centerOrigin.x - targetOrigin.x;
     const diffY = centerOrigin.y - targetOrigin.y;
 
@@ -970,13 +974,13 @@ class Graphics {
       selectedElement = document.querySelector(element);
     }
 
-    if (selectedElement.nodeName.toUpperCase() !== 'CANVAS') {
-      canvasElement = document.createElement('canvas');
+    if (selectedElement.nodeName.toUpperCase() !== "CANVAS") {
+      canvasElement = document.createElement("canvas");
       selectedElement.appendChild(canvasElement);
     }
 
     this._canvas = new fabric.Canvas(canvasElement, {
-      containerClass: 'tui-image-editor-canvas-container',
+      containerClass: "tui-image-editor-canvas-container",
       enableRetinaScaling: false,
     });
   }
@@ -1075,7 +1079,7 @@ class Graphics {
     obj.set({
       left: centerPos.x,
       top: centerPos.y,
-      crossOrigin: 'Anonymous',
+      crossOrigin: "Anonymous",
     });
 
     this.getCanvas().add(obj).setActiveObject(obj);
@@ -1088,17 +1092,17 @@ class Graphics {
     const canvas = this._canvas;
     const handler = this._handler;
     canvas.on({
-      'mouse:down': handler.onMouseDown,
-      'object:added': handler.onObjectAdded,
-      'object:removed': handler.onObjectRemoved,
-      'object:moving': handler.onObjectMoved,
-      'object:scaling': handler.onObjectScaled,
-      'object:modified': handler.onObjectModified,
-      'object:rotating': handler.onObjectRotated,
-      'path:created': handler.onPathCreated,
-      'selection:cleared': handler.onSelectionCleared,
-      'selection:created': handler.onSelectionCreated,
-      'selection:updated': handler.onObjectSelected,
+      "mouse:down": handler.onMouseDown,
+      "object:added": handler.onObjectAdded,
+      "object:removed": handler.onObjectRemoved,
+      "object:moving": handler.onObjectMoved,
+      "object:scaling": handler.onObjectScaled,
+      "object:modified": handler.onObjectModified,
+      "object:rotating": handler.onObjectRotated,
+      "path:created": handler.onPathCreated,
+      "selection:cleared": handler.onSelectionCleared,
+      "selection:created": handler.onSelectionCreated,
+      "selection:updated": handler.onObjectSelected,
     });
   }
 
@@ -1111,10 +1115,15 @@ class Graphics {
     const { e: event, target } = fEvent;
     const originPointer = this._canvas.getPointer(event);
 
+    console.log("canvas _onMouseDown");
     if (target) {
       const { type } = target;
       const undoData = makeSelectionUndoData(target, (item) =>
-        makeSelectionUndoDatum(this.getObjectId(item), item, type === 'activeSelection')
+        makeSelectionUndoDatum(
+          this.getObjectId(item),
+          item,
+          type === "activeSelection",
+        ),
       );
 
       setCachedUndoDataForDimension(undoData);
@@ -1129,8 +1138,9 @@ class Graphics {
    * @private
    */
   _onObjectAdded(fEvent) {
+    console.log("canvas _onObjectAdded");
     const obj = fEvent.target;
-    if (obj.isType('cropzone')) {
+    if (obj.isType("cropzone")) {
       return;
     }
 
@@ -1157,7 +1167,7 @@ class Graphics {
     this._lazyFire(
       events.OBJECT_MOVED,
       (object) => this.createObjectProperties(object),
-      fEvent.target
+      fEvent.target,
     );
   }
 
@@ -1170,7 +1180,7 @@ class Graphics {
     this._lazyFire(
       events.OBJECT_SCALED,
       (object) => this.createObjectProperties(object),
-      fEvent.target
+      fEvent.target,
     );
   }
 
@@ -1181,10 +1191,10 @@ class Graphics {
    */
   _onObjectModified(fEvent) {
     const { target } = fEvent;
-    if (target.type === 'activeSelection') {
+    if (target.type === "activeSelection") {
       const items = target.getObjects();
 
-      items.forEach((item) => item.fire('modifiedInGroup', target));
+      items.forEach((item) => item.fire("modifiedInGroup", target));
     }
 
     this.fire(events.OBJECT_MODIFIED, target, this.getObjectId(target));
@@ -1199,7 +1209,7 @@ class Graphics {
     this._lazyFire(
       events.OBJECT_ROTATED,
       (object) => this.createObjectProperties(object),
-      fEvent.target
+      fEvent.target,
     );
   }
 
@@ -1212,15 +1222,17 @@ class Graphics {
    */
   _lazyFire(eventName, paramsMaker, target) {
     const existEventDelegation = target && target.canvasEventDelegation;
-    const delegationState = existEventDelegation ? target.canvasEventDelegation(eventName) : 'none';
+    const delegationState = existEventDelegation
+      ? target.canvasEventDelegation(eventName)
+      : "none";
 
-    if (delegationState === 'unregistered') {
+    if (delegationState === "unregistered") {
       target.canvasEventRegister(eventName, (object) => {
         this.fire(eventName, paramsMaker(object));
       });
     }
 
-    if (delegationState === 'none') {
+    if (delegationState === "none") {
       this.fire(eventName, paramsMaker(target));
     }
   }
@@ -1250,8 +1262,8 @@ class Graphics {
           left,
           top,
         },
-        fObjectOptions.SELECTION_STYLE
-      )
+        fObjectOptions.SELECTION_STYLE,
+      ),
     );
 
     const params = this.createObjectProperties(obj.path);
@@ -1295,7 +1307,7 @@ class Graphics {
   changeSelectableAll(selectable) {
     this._canvas.forEachObject((obj) => {
       obj.selectable = selectable;
-      obj.hoverCursor = selectable ? 'move' : 'crosshair';
+      obj.hoverCursor = selectable ? "move" : "crosshair";
     });
   }
 
@@ -1306,15 +1318,15 @@ class Graphics {
    */
   createObjectProperties(obj) {
     const predefinedKeys = [
-      'left',
-      'top',
-      'width',
-      'height',
-      'fill',
-      'stroke',
-      'strokeWidth',
-      'opacity',
-      'angle',
+      "left",
+      "top",
+      "width",
+      "height",
+      "fill",
+      "stroke",
+      "strokeWidth",
+      "opacity",
+      "angle",
     ];
     const props = {
       id: stamp(obj),
@@ -1323,9 +1335,9 @@ class Graphics {
 
     extend(props, getProperties(obj, predefinedKeys));
 
-    if (includes(['i-text', 'text'], obj.type)) {
+    if (includes(["i-text", "text"], obj.type)) {
       extend(props, this._createTextProperties(obj, props));
-    } else if (includes(['rect', 'triangle', 'circle'], obj.type)) {
+    } else if (includes(["rect", "triangle", "circle"], obj.type)) {
       const shapeComp = this.getComponent(components.SHAPE);
       extend(props, {
         fill: shapeComp.makeFillPropertyForUserEvent(obj),
@@ -1343,13 +1355,13 @@ class Graphics {
    */
   _createTextProperties(obj) {
     const predefinedKeys = [
-      'text',
-      'fontFamily',
-      'fontSize',
-      'fontStyle',
-      'textAlign',
-      'textDecoration',
-      'fontWeight',
+      "text",
+      "fontFamily",
+      "fontSize",
+      "fontStyle",
+      "textAlign",
+      "textDecoration",
+      "fontWeight",
     ];
     const props = {};
     extend(props, getProperties(obj, predefinedKeys));
@@ -1398,8 +1410,10 @@ class Graphics {
     }
 
     const targetObject = this.targetObjectForCopyPaste;
-    const isGroupSelect = targetObject.type === 'activeSelection';
-    const targetObjects = isGroupSelect ? targetObject.getObjects() : [targetObject];
+    const isGroupSelect = targetObject.type === "activeSelection";
+    const targetObjects = isGroupSelect
+      ? targetObject.getObjects()
+      : [targetObject];
     let newTargetObject = null;
 
     this.discardSelection();
@@ -1422,7 +1436,9 @@ class Graphics {
    * @private
    */
   _cloneObject(targetObjects) {
-    const addedObjects = targetObjects.map((targetObject) => this._cloneObjectItem(targetObject));
+    const addedObjects = targetObjects.map((targetObject) =>
+      this._cloneObjectItem(targetObject),
+    );
 
     return Promise.all(addedObjects);
   }
@@ -1463,11 +1479,17 @@ class Graphics {
       clonedObject.set(
         extend(
           {
-            left: addExtraPx(left, rightEdge + EXTRA_PX_FOR_PASTE > canvasWidth),
-            top: addExtraPx(top, bottomEdge + EXTRA_PX_FOR_PASTE > canvasHeight),
+            left: addExtraPx(
+              left,
+              rightEdge + EXTRA_PX_FOR_PASTE > canvasWidth,
+            ),
+            top: addExtraPx(
+              top,
+              bottomEdge + EXTRA_PX_FOR_PASTE > canvasHeight,
+            ),
           },
-          fObjectOptions.SELECTION_STYLE
-        )
+          fObjectOptions.SELECTION_STYLE,
+        ),
       );
 
       return clonedObject;
