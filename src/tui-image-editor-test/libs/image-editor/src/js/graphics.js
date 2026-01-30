@@ -48,6 +48,22 @@ const cssOnly = {
 const backstoreOnly = {
   backstoreOnly: true,
 };
+function wrapWithLog(obj, prefix = "") {
+  return Object.keys(obj).reduce((acc, key) => {
+    const value = obj[key];
+
+    if (typeof value === "function") {
+      acc[key] = function (...args) {
+        console.log(`[wrapWithLog ${prefix}${key}] called`, args);
+        return value.apply(this, args);
+      };
+    } else {
+      acc[key] = value;
+    }
+
+    return acc;
+  }, {});
+}
 
 /**
  * Graphics class
@@ -982,7 +998,23 @@ class Graphics {
     this._canvas = new fabric.Canvas(canvasElement, {
       containerClass: "tui-image-editor-canvas-container",
       enableRetinaScaling: false,
+      // fuck test
+      // 禁止操作
+      // lockMovementX: true,
+      // lockMovementY: true,
+      // lockScalingX: true,
+      // lockScalingY: true,
+      // lockRotation: true,
+      // hasControls: false,
+      // hasBorders: false,
+      // selectable: false, // 无法被选中（也就无法缩放和移动）
+      // evented: false, // 不响应任何事件（鼠标穿透）
     });
+
+    this._canvas.selection = false;
+
+    // 如果你想完全禁止用户点击选中任何物体
+    // this._canvas.skipTargetFind = true;
   }
 
   /**
@@ -1090,7 +1122,7 @@ class Graphics {
    */
   _attachCanvasEvents() {
     const canvas = this._canvas;
-    const handler = this._handler;
+    const handler = wrapWithLog(this._handler);
     canvas.on({
       "mouse:down": handler.onMouseDown,
       "object:added": handler.onObjectAdded,
@@ -1245,7 +1277,7 @@ class Graphics {
   _onObjectSelected(fEvent) {
     const { target } = fEvent;
     const params = this.createObjectProperties(target);
-
+    console.log("fuck _onObjectSelected", _onObjectSelected);
     this.fire(events.OBJECT_ACTIVATED, params);
   }
 
@@ -1288,6 +1320,7 @@ class Graphics {
     const { target } = fEvent;
     const params = this.createObjectProperties(target);
 
+    console.log("fuck _onSelectionCreated");
     this.fire(events.OBJECT_ACTIVATED, params);
     this.fire(events.SELECTION_CREATED, fEvent.target);
   }

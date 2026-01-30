@@ -1,8 +1,8 @@
-import { fabric } from 'fabric';
-import extend from 'tui-code-snippet/object/extend';
-import Component from '@/interface/component';
-import ArrowLine from '@/extension/arrowLine';
-import { eventNames, componentNames, fObjectOptions } from '@/consts';
+import { fabric } from "fabric";
+import extend from "tui-code-snippet/object/extend";
+import Component from "@/interface/component";
+import ArrowLine from "@/extension/arrowLine";
+import { eventNames, componentNames, fObjectOptions } from "@/consts";
 
 /**
  * Line
@@ -27,7 +27,7 @@ class Line extends Component {
      * @type {fabric.Color}
      * @private
      */
-    this._oColor = new fabric.Color('rgba(0, 0, 0, 0.5)');
+    this._oColor = new fabric.Color("rgba(0, 0, 0, 0.5)");
 
     /**
      * Listeners
@@ -63,7 +63,7 @@ class Line extends Component {
   start(setting = {}) {
     const canvas = this.getCanvas();
 
-    canvas.defaultCursor = 'crosshair';
+    canvas.defaultCursor = "crosshair";
     canvas.selection = false;
 
     this.setHeadOption(setting);
@@ -76,7 +76,7 @@ class Line extends Component {
     });
 
     canvas.on({
-      'mouse:down': this._listeners.mousedown,
+      "mouse:down": this._listeners.mousedown,
     });
   }
 
@@ -103,7 +103,7 @@ class Line extends Component {
   end() {
     const canvas = this.getCanvas();
 
-    canvas.defaultCursor = 'default';
+    canvas.defaultCursor = "default";
     canvas.selection = true;
 
     canvas.forEachObject((obj) => {
@@ -112,7 +112,7 @@ class Line extends Component {
       });
     });
 
-    canvas.off('mouse:down', this._listeners.mousedown);
+    canvas.off("mouse:down", this._listeners.mousedown);
   }
 
   /**
@@ -121,6 +121,7 @@ class Line extends Component {
    * @private
    */
   _onFabricMouseDown(fEvent) {
+    console.log("canvas _onMouseDown2");
     const canvas = this.getCanvas();
     const { x, y } = canvas.getPointer(fEvent.e);
     const points = [x, y, x, y];
@@ -137,8 +138,8 @@ class Line extends Component {
     canvas.add(this._line);
 
     canvas.on({
-      'mouse:move': this._listeners.mousemove,
-      'mouse:up': this._listeners.mouseup,
+      "mouse:move": this._listeners.mousemove,
+      "mouse:up": this._listeners.mouseup,
     });
 
     this.fire(eventNames.ADD_OBJECT, this._createLineEventObjectProperties());
@@ -175,8 +176,8 @@ class Line extends Component {
     this._line = null;
 
     canvas.off({
-      'mouse:move': this._listeners.mousemove,
-      'mouse:up': this._listeners.mouseup,
+      "mouse:move": this._listeners.mousemove,
+      "mouse:up": this._listeners.mouseup,
     });
   }
 

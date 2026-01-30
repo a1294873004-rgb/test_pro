@@ -1,30 +1,36 @@
-import CustomEvents from 'tui-code-snippet/customEvents/customEvents';
-import extend from 'tui-code-snippet/object/extend';
-import forEach from 'tui-code-snippet/collection/forEach';
-import { getSelector, assignmentForDestroy, cls, getHistoryTitle, isSilentCommand } from '@/util';
+import CustomEvents from "tui-code-snippet/customEvents/customEvents";
+import extend from "tui-code-snippet/object/extend";
+import forEach from "tui-code-snippet/collection/forEach";
+import {
+  getSelector,
+  assignmentForDestroy,
+  cls,
+  getHistoryTitle,
+  isSilentCommand,
+} from "@/util";
 import {
   ZOOM_HELP_MENUS,
   COMMAND_HELP_MENUS,
   DELETE_HELP_MENUS,
   eventNames,
   HELP_MENUS,
-} from '@/consts';
-import mainContainer from '@/ui/template/mainContainer';
-import controls from '@/ui/template/controls';
+} from "@/consts";
+import mainContainer from "@/ui/template/mainContainer";
+import controls from "@/ui/template/controls";
 
-import Theme from '@/ui/theme/theme';
-import Shape from '@/ui/shape';
-import Crop from '@/ui/crop';
-import Resize from '@/ui/resize';
-import Flip from '@/ui/flip';
-import Rotate from '@/ui/rotate';
-import Text from '@/ui/text';
-import Mask from '@/ui/mask';
-import Icon from '@/ui/icon';
-import Draw from '@/ui/draw';
-import Filter from '@/ui/filter';
-import History from '@/ui/history';
-import Locale from '@/ui/locale/locale';
+import Theme from "@/ui/theme/theme";
+import Shape from "@/ui/shape";
+import Crop from "@/ui/crop";
+import Resize from "@/ui/resize";
+import Flip from "@/ui/flip";
+import Rotate from "@/ui/rotate";
+import Text from "@/ui/text";
+import Mask from "@/ui/mask";
+import Icon from "@/ui/icon";
+import Draw from "@/ui/draw";
+import Filter from "@/ui/filter";
+import History from "@/ui/history";
+import Locale from "@/ui/locale/locale";
 
 const SUB_UI_COMPONENT = {
   Shape,
@@ -39,14 +45,14 @@ const SUB_UI_COMPONENT = {
   Filter,
 };
 
-const BI_EXPRESSION_MINSIZE_WHEN_TOP_POSITION = '1300';
-const HISTORY_MENU = 'history';
-const HISTORY_PANEL_CLASS_NAME = 'tie-panel-history';
+const BI_EXPRESSION_MINSIZE_WHEN_TOP_POSITION = "1300";
+const HISTORY_MENU = "history";
+const HISTORY_PANEL_CLASS_NAME = "tie-panel-history";
 
-const CLASS_NAME_ON = 'on';
+const CLASS_NAME_ON = "on";
 const ZOOM_BUTTON_TYPE = {
-  ZOOM_IN: 'zoomIn',
-  HAND: 'hand',
+  ZOOM_IN: "zoomIn",
+  HAND: "hand",
 };
 
 /**
@@ -66,6 +72,7 @@ const ZOOM_BUTTON_TYPE = {
  */
 class Ui {
   constructor(element, options, actions) {
+    console.log("ui");
     this.options = this._initializeOption(options);
     this._actions = actions;
     this.submenu = false;
@@ -97,7 +104,7 @@ class Ui {
   destroy() {
     this._removeUiEvent();
     this._destroyAllMenu();
-    this._selectedElement.innerHTML = '';
+    this._selectedElement.innerHTML = "";
 
     assignmentForDestroy(this);
   }
@@ -114,16 +121,16 @@ class Ui {
         applyCropSelectionStyle: true,
         applyGroupSelectionStyle: true,
         selectionStyle: {
-          cornerStyle: 'circle',
+          cornerStyle: "circle",
           cornerSize: 16,
-          cornerColor: '#fff',
-          cornerStrokeColor: '#fff',
+          cornerColor: "#fff",
+          cornerStrokeColor: "#fff",
           transparentCorners: false,
           lineWidth: 2,
-          borderColor: '#fff',
+          borderColor: "#fff",
         },
       },
-      option
+      option,
     );
   }
 
@@ -173,12 +180,13 @@ class Ui {
     const selectElementClassList = this._selectedElement.classList;
 
     if (
-      menuBarPosition === 'top' &&
-      this._selectedElement.offsetWidth < BI_EXPRESSION_MINSIZE_WHEN_TOP_POSITION
+      menuBarPosition === "top" &&
+      this._selectedElement.offsetWidth <
+        BI_EXPRESSION_MINSIZE_WHEN_TOP_POSITION
     ) {
-      selectElementClassList.add('tui-image-editor-top-optimization');
+      selectElementClassList.add("tui-image-editor-top-optimization");
     } else {
-      selectElementClassList.remove('tui-image-editor-top-optimization');
+      selectElementClassList.remove("tui-image-editor-top-optimization");
     }
   }
 
@@ -192,9 +200,13 @@ class Ui {
     targetClassList.toggle(CLASS_NAME_ON);
 
     if (type === ZOOM_BUTTON_TYPE.ZOOM_IN) {
-      this._buttonElements[ZOOM_BUTTON_TYPE.HAND].classList.remove(CLASS_NAME_ON);
+      this._buttonElements[ZOOM_BUTTON_TYPE.HAND].classList.remove(
+        CLASS_NAME_ON,
+      );
     } else {
-      this._buttonElements[ZOOM_BUTTON_TYPE.ZOOM_IN].classList.remove(CLASS_NAME_ON);
+      this._buttonElements[ZOOM_BUTTON_TYPE.ZOOM_IN].classList.remove(
+        CLASS_NAME_ON,
+      );
     }
   }
 
@@ -202,7 +214,8 @@ class Ui {
    * Turn off zoom-in button status
    */
   offZoomInButtonStatus() {
-    const zoomInClassList = this._buttonElements[ZOOM_BUTTON_TYPE.ZOOM_IN].classList;
+    const zoomInClassList =
+      this._buttonElements[ZOOM_BUTTON_TYPE.ZOOM_IN].classList;
 
     zoomInClassList.remove(CLASS_NAME_ON);
   }
@@ -214,7 +227,7 @@ class Ui {
   changeHandButtonStatus(enabled) {
     const handClassList = this._buttonElements[ZOOM_BUTTON_TYPE.HAND].classList;
 
-    handClassList[enabled ? 'add' : 'remove'](CLASS_NAME_ON);
+    handClassList[enabled ? "add" : "remove"](CLASS_NAME_ON);
   }
 
   /**
@@ -226,7 +239,7 @@ class Ui {
   changeHelpButtonEnabled(buttonType, enableStatus) {
     const buttonClassList = this._buttonElements[buttonType].classList;
 
-    buttonClassList[enableStatus ? 'add' : 'remove']('enabled');
+    buttonClassList[enableStatus ? "add" : "remove"]("enabled");
   }
 
   /**
@@ -244,31 +257,31 @@ class Ui {
     return extend(
       {
         loadImage: {
-          path: '',
-          name: '',
+          path: "",
+          name: "",
         },
         locale: {},
-        menuIconPath: '',
+        menuIconPath: "",
         menu: [
-          'resize',
-          'crop',
-          'flip',
-          'rotate',
-          'draw',
-          'shape',
-          'icon',
-          'text',
-          'mask',
-          'filter',
+          "resize",
+          "crop",
+          "flip",
+          "rotate",
+          "draw",
+          "shape",
+          "icon",
+          "text",
+          "mask",
+          "filter",
         ],
-        initMenu: '',
+        initMenu: "",
         uiSize: {
-          width: '100%',
-          height: '100%',
+          width: "100%",
+          height: "100%",
         },
-        menuBarPosition: 'bottom',
+        menuBarPosition: "bottom",
       },
-      options
+      options,
     );
   }
 
@@ -298,7 +311,9 @@ class Ui {
       this._makeMenuElement(menuName);
 
       // menu btn element
-      this._buttonElements[menuName] = this._menuBarElement.querySelector(`.tie-btn-${menuName}`);
+      this._buttonElements[menuName] = this._menuBarElement.querySelector(
+        `.tie-btn-${menuName}`,
+      );
 
       // submenu ui instance
       this[menuName] = new SubComponentClass(this._subMenuElement, {
@@ -347,37 +362,41 @@ class Ui {
     }
     const selector = getSelector(selectedElement);
 
-    selectedElement.classList.add('tui-image-editor-container');
+    selectedElement.classList.add("tui-image-editor-container");
     selectedElement.innerHTML =
       controls({
         locale: this._locale,
-        biImage: this.theme.getStyle('common.bi'),
-        loadButtonStyle: this.theme.getStyle('loadButton'),
-        downloadButtonStyle: this.theme.getStyle('downloadButton'),
+        biImage: this.theme.getStyle("common.bi"),
+        loadButtonStyle: this.theme.getStyle("loadButton"),
+        downloadButtonStyle: this.theme.getStyle("downloadButton"),
         menuBarPosition: this.options.menuBarPosition,
       }) +
       mainContainer({
         locale: this._locale,
-        biImage: this.theme.getStyle('common.bi'),
-        commonStyle: this.theme.getStyle('common'),
-        headerStyle: this.theme.getStyle('header'),
-        loadButtonStyle: this.theme.getStyle('loadButton'),
-        downloadButtonStyle: this.theme.getStyle('downloadButton'),
-        submenuStyle: this.theme.getStyle('submenu'),
+        biImage: this.theme.getStyle("common.bi"),
+        commonStyle: this.theme.getStyle("common"),
+        headerStyle: this.theme.getStyle("header"),
+        loadButtonStyle: this.theme.getStyle("loadButton"),
+        downloadButtonStyle: this.theme.getStyle("downloadButton"),
+        submenuStyle: this.theme.getStyle("submenu"),
       });
 
     this._selectedElement = selectedElement;
     this._selectedElement.classList.add(this.options.menuBarPosition);
 
-    this._mainElement = selector('.tui-image-editor-main');
-    this._editorElementWrap = selector('.tui-image-editor-wrap');
-    this._editorElement = selector('.tui-image-editor');
-    this._helpMenuBarElement = selector('.tui-image-editor-help-menu');
-    this._menuBarElement = selector('.tui-image-editor-menu');
-    this._subMenuElement = selector('.tui-image-editor-submenu');
+    this._mainElement = selector(".tui-image-editor-main");
+    this._editorElementWrap = selector(".tui-image-editor-wrap");
+    this._editorElement = selector(".tui-image-editor");
+    this._helpMenuBarElement = selector(".tui-image-editor-help-menu");
+    this._menuBarElement = selector(".tui-image-editor-menu");
+    this._subMenuElement = selector(".tui-image-editor-submenu");
     this._buttonElements = {
-      download: this._selectedElement.querySelectorAll('.tui-image-editor-download-btn'),
-      load: this._selectedElement.querySelectorAll('.tui-image-editor-load-btn'),
+      download: this._selectedElement.querySelectorAll(
+        ".tui-image-editor-download-btn",
+      ),
+      load: this._selectedElement.querySelectorAll(
+        ".tui-image-editor-load-btn",
+      ),
     };
 
     this._addHelpMenus();
@@ -406,7 +425,13 @@ class Ui {
    * @private
    */
   _makeHelpMenuWithPartition() {
-    return [...ZOOM_HELP_MENUS, '', ...COMMAND_HELP_MENUS, '', ...DELETE_HELP_MENUS];
+    return [
+      ...ZOOM_HELP_MENUS,
+      "",
+      ...COMMAND_HELP_MENUS,
+      "",
+      ...DELETE_HELP_MENUS,
+    ];
   }
 
   /**
@@ -420,10 +445,14 @@ class Ui {
       if (!menuName) {
         this._makeMenuPartitionElement();
       } else {
-        this._makeMenuElement(menuName, ['normal', 'disabled', 'hover'], 'help');
+        this._makeMenuElement(
+          menuName,
+          ["normal", "disabled", "hover"],
+          "help",
+        );
 
         this._buttonElements[menuName] = this._helpMenuBarElement.querySelector(
-          `.tie-btn-${menuName}`
+          `.tie-btn-${menuName}`,
         );
       }
     });
@@ -434,10 +463,10 @@ class Ui {
    * @private
    */
   _makeMenuPartitionElement() {
-    const partitionElement = document.createElement('li');
-    const partitionInnerElement = document.createElement('div');
-    partitionElement.className = cls('item');
-    partitionInnerElement.className = cls('icpartition');
+    const partitionElement = document.createElement("li");
+    const partitionInnerElement = document.createElement("div");
+    partitionElement.className = cls("item");
+    partitionInnerElement.className = cls("icpartition");
     partitionElement.appendChild(partitionInnerElement);
 
     this._helpMenuBarElement.appendChild(partitionElement);
@@ -450,15 +479,19 @@ class Ui {
    * @param {string} menuType - 'normal' or 'help'
    * @private
    */
-  _makeMenuElement(menuName, useIconTypes = ['normal', 'active', 'hover'], menuType = 'normal') {
-    const btnElement = document.createElement('li');
+  _makeMenuElement(
+    menuName,
+    useIconTypes = ["normal", "active", "hover"],
+    menuType = "normal",
+  ) {
+    const btnElement = document.createElement("li");
     const menuItemHtml = this.theme.makeMenSvgIconSet(useIconTypes, menuName);
 
     this._addTooltipAttribute(btnElement, menuName);
-    btnElement.className = `tie-btn-${menuName} ${cls('item')} ${menuType}`;
+    btnElement.className = `tie-btn-${menuName} ${cls("item")} ${menuType}`;
     btnElement.innerHTML = menuItemHtml;
 
-    if (menuType === 'normal') {
+    if (menuType === "normal") {
       this._menuBarElement.appendChild(btnElement);
     } else {
       this._helpMenuBarElement.appendChild(btnElement);
@@ -471,8 +504,12 @@ class Ui {
    */
   _addHelpActionEvent() {
     forEach(HELP_MENUS, (helpName) => {
-      this.eventHandler[helpName] = (event) => this._actions.main[helpName](event);
-      this._buttonElements[helpName].addEventListener('click', this.eventHandler[helpName]);
+      this.eventHandler[helpName] = (event) =>
+        this._actions.main[helpName](event);
+      this._buttonElements[helpName].addEventListener(
+        "click",
+        this.eventHandler[helpName],
+      );
     });
   }
 
@@ -482,7 +519,10 @@ class Ui {
    */
   _removeHelpActionEvent() {
     forEach(HELP_MENUS, (helpName) => {
-      this._buttonElements[helpName].removeEventListener('click', this.eventHandler[helpName]);
+      this._buttonElements[helpName].removeEventListener(
+        "click",
+        this.eventHandler[helpName],
+      );
     });
   }
 
@@ -493,7 +533,9 @@ class Ui {
   _addHistory(command) {
     if (!isSilentCommand(command)) {
       const historyTitle =
-        typeof command === 'string' ? { name: command } : getHistoryTitle(command);
+        typeof command === "string"
+          ? { name: command }
+          : getHistoryTitle(command);
 
       this._historyMenu.add(historyTitle);
     }
@@ -541,7 +583,7 @@ class Ui {
 
     const historyButtonClassList = this._buttonElements[HISTORY_MENU].classList;
 
-    historyButtonClassList.toggle('opened');
+    historyButtonClassList.toggle("opened");
   }
 
   /**
@@ -552,8 +594,10 @@ class Ui {
    */
   _addTooltipAttribute(element, tooltipName) {
     element.setAttribute(
-      'tooltip-content',
-      this._locale.localize(tooltipName.replace(/^[a-z]/g, ($0) => $0.toUpperCase()))
+      "tooltip-content",
+      this._locale.localize(
+        tooltipName.replace(/^[a-z]/g, ($0) => $0.toUpperCase()),
+      ),
     );
   }
 
@@ -564,13 +608,13 @@ class Ui {
   _addDownloadEvent() {
     this.eventHandler.download = () => this._actions.main.download();
     forEach(this._buttonElements.download, (element) => {
-      element.addEventListener('click', this.eventHandler.download);
+      element.addEventListener("click", this.eventHandler.download);
     });
   }
 
   _removeDownloadEvent() {
     forEach(this._buttonElements.download, (element) => {
-      element.removeEventListener('click', this.eventHandler.download);
+      element.removeEventListener("click", this.eventHandler.download);
     });
   }
 
@@ -579,10 +623,11 @@ class Ui {
    * @private
    */
   _addLoadEvent() {
-    this.eventHandler.loadImage = (event) => this._actions.main.load(event.target.files[0]);
+    this.eventHandler.loadImage = (event) =>
+      this._actions.main.load(event.target.files[0]);
 
     forEach(this._buttonElements.load, (element) => {
-      element.addEventListener('change', this.eventHandler.loadImage);
+      element.addEventListener("change", this.eventHandler.loadImage);
     });
   }
 
@@ -592,7 +637,7 @@ class Ui {
    */
   _removeLoadEvent() {
     forEach(this._buttonElements.load, (element) => {
-      element.removeEventListener('change', this.eventHandler.loadImage);
+      element.removeEventListener("change", this.eventHandler.loadImage);
     });
   }
 
@@ -603,7 +648,10 @@ class Ui {
    */
   _addMainMenuEvent(menuName) {
     this.eventHandler[menuName] = () => this.changeMenu(menuName);
-    this._buttonElements[menuName].addEventListener('click', this.eventHandler[menuName]);
+    this._buttonElements[menuName].addEventListener(
+      "click",
+      this.eventHandler[menuName],
+    );
   }
 
   /**
@@ -614,10 +662,10 @@ class Ui {
   _addSubMenuEvent(menuName) {
     this[menuName].addEvent(this._actions[menuName]);
     this[menuName].on(eventNames.INPUT_BOX_EDITING_STARTED, () =>
-      this.fire(eventNames.INPUT_BOX_EDITING_STARTED)
+      this.fire(eventNames.INPUT_BOX_EDITING_STARTED),
     );
     this[menuName].on(eventNames.INPUT_BOX_EDITING_STOPPED, () =>
-      this.fire(eventNames.INPUT_BOX_EDITING_STOPPED)
+      this.fire(eventNames.INPUT_BOX_EDITING_STOPPED),
     );
   }
 
@@ -626,6 +674,7 @@ class Ui {
    * @private
    */
   _addMenuEvent() {
+    console.log("fuck this.options.menu", this.options.menu);
     forEach(this.options.menu, (menuName) => {
       this._addMainMenuEvent(menuName);
       this._addSubMenuEvent(menuName);
@@ -638,7 +687,10 @@ class Ui {
    */
   _removeMainMenuEvent() {
     forEach(this.options.menu, (menuName) => {
-      this._buttonElements[menuName].removeEventListener('click', this.eventHandler[menuName]);
+      this._buttonElements[menuName].removeEventListener(
+        "click",
+        this.eventHandler[menuName],
+      );
       this[menuName].off(eventNames.INPUT_BOX_EDITING_STARTED);
       this[menuName].off(eventNames.INPUT_BOX_EDITING_STOPPED);
     });
@@ -701,16 +753,18 @@ class Ui {
   initCanvas() {
     const loadImageInfo = this._getLoadImage();
     if (loadImageInfo.path) {
-      this._actions.main.initLoadImage(loadImageInfo.path, loadImageInfo.name).then(() => {
-        this.activeMenuEvent();
-      });
+      this._actions.main
+        .initLoadImage(loadImageInfo.path, loadImageInfo.name)
+        .then(() => {
+          this.activeMenuEvent();
+        });
     }
 
     this._addLoadEvent();
 
-    const gridVisual = document.createElement('div');
+    const gridVisual = document.createElement("div");
 
-    gridVisual.className = cls('grid-visual');
+    gridVisual.className = cls("grid-visual");
     const grid = `<table>
            <tr><td class="dot left-top"></td><td></td><td class="dot right-top"></td></tr>
            <tr><td></td><td></td><td></td></tr>
@@ -718,7 +772,7 @@ class Ui {
          </table>`;
     gridVisual.innerHTML = grid;
     this._editorContainerElement = this._editorElement.querySelector(
-      '.tui-image-editor-canvas-container'
+      ".tui-image-editor-canvas-container",
     );
     this._editorContainerElement.appendChild(gridVisual);
   }
@@ -755,9 +809,12 @@ class Ui {
    * @private
    */
   _changeMenu(menuName, toggle, discardSelection) {
+    console.log("fuck _changeMenu");
     if (this.submenu) {
-      this._buttonElements[this.submenu].classList.remove('active');
-      this._mainElement.classList.remove(`tui-image-editor-menu-${this.submenu}`);
+      this._buttonElements[this.submenu].classList.remove("active");
+      this._mainElement.classList.remove(
+        `tui-image-editor-menu-${this.submenu}`,
+      );
       if (discardSelection) {
         this._actions.main.discardSelection();
       }
@@ -768,7 +825,7 @@ class Ui {
     if (this.submenu === menuName && toggle) {
       this.submenu = null;
     } else {
-      this._buttonElements[menuName].classList.add('active');
+      this._buttonElements[menuName].classList.add("active");
       this._mainElement.classList.add(`tui-image-editor-menu-${menuName}`);
       this.submenu = menuName;
       this[this.submenu].changeStartMode();
@@ -783,8 +840,8 @@ class Ui {
    */
   _initMenu() {
     if (this.options.initMenu) {
-      const evt = document.createEvent('MouseEvents');
-      evt.initEvent('click', true, false);
+      const evt = document.createEvent("MouseEvents");
+      evt.initEvent("click", true, false);
       this._buttonElements[this.options.initMenu].dispatchEvent(evt);
     }
 
@@ -822,25 +879,28 @@ class Ui {
     let left = 0;
 
     if (this.submenu) {
-      if (menuBarPosition === 'bottom') {
+      if (menuBarPosition === "bottom") {
         if (height > this._editorElementWrap.scrollHeight - 150) {
           top = (height - this._editorElementWrap.scrollHeight) / 2;
         } else {
           top = (150 / 2) * -1;
         }
-      } else if (menuBarPosition === 'top') {
+      } else if (menuBarPosition === "top") {
         if (height > this._editorElementWrap.offsetHeight - 150) {
-          top = 150 / 2 - (height - (this._editorElementWrap.offsetHeight - 150)) / 2;
+          top =
+            150 / 2 -
+            (height - (this._editorElementWrap.offsetHeight - 150)) / 2;
         } else {
           top = 150 / 2;
         }
-      } else if (menuBarPosition === 'left') {
+      } else if (menuBarPosition === "left") {
         if (width > this._editorElementWrap.offsetWidth - 248) {
-          left = 248 / 2 - (width - (this._editorElementWrap.offsetWidth - 248)) / 2;
+          left =
+            248 / 2 - (width - (this._editorElementWrap.offsetWidth - 248)) / 2;
         } else {
           left = 248 / 2;
         }
-      } else if (menuBarPosition === 'right') {
+      } else if (menuBarPosition === "right") {
         if (width > this._editorElementWrap.scrollWidth - 248) {
           left = (width - this._editorElementWrap.scrollWidth) / 2;
         } else {

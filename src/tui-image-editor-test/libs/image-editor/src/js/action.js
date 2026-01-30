@@ -1,7 +1,19 @@
-import extend from 'tui-code-snippet/object/extend';
-import Imagetracer from '@/helper/imagetracer';
-import { isSupportFileApi, base64ToBlob, toInteger, isEmptyCropzone, includes } from '@/util';
-import { eventNames, historyNames, drawingModes, drawingMenuNames, zoomModes } from '@/consts';
+import extend from "tui-code-snippet/object/extend";
+import Imagetracer from "@/helper/imagetracer";
+import {
+  isSupportFileApi,
+  base64ToBlob,
+  toInteger,
+  isEmptyCropzone,
+  includes,
+} from "@/util";
+import {
+  eventNames,
+  historyNames,
+  drawingModes,
+  drawingMenuNames,
+  zoomModes,
+} from "@/consts";
 
 export default {
   /**
@@ -19,6 +31,7 @@ export default {
       rotate: this._rotateAction(),
       text: this._textAction(),
       mask: this._maskAction(),
+      // draw actions
       draw: this._drawAction(),
       icon: this._iconAction(),
       filter: this._filterAction(),
@@ -33,18 +46,18 @@ export default {
    */
   _mainAction() {
     const exitCropOnAction = () => {
-      if (this.ui.submenu === 'crop') {
+      if (this.ui.submenu === "crop") {
         this.stopDrawingMode();
-        this.ui.changeMenu('crop');
+        this.ui.changeMenu("crop");
       }
     };
     const setAngleRangeBarOnAction = (angle) => {
-      if (this.ui.submenu === 'rotate') {
-        this.ui.rotate.setRangeBarAngle('setAngle', angle);
+      if (this.ui.submenu === "rotate") {
+        this.ui.rotate.setRangeBarAngle("setAngle", angle);
       }
     };
     const setFilterStateRangeBarOnAction = (filterOptions) => {
-      if (this.ui.submenu === 'filter') {
+      if (this.ui.submenu === "filter") {
         this.ui.filter.setFilterState(filterOptions);
       }
     };
@@ -90,7 +103,10 @@ export default {
             this.ui.initializeImgUrl = imagePath;
             this.ui.resizeEditor({ imageSize: sizeValue });
             this.clearUndoStack();
-            this._invoker.fire(eventNames.EXECUTE_COMMAND, historyNames.LOAD_IMAGE);
+            this._invoker.fire(
+              eventNames.EXECUTE_COMMAND,
+              historyNames.LOAD_IMAGE,
+            );
           }),
         undo: () => {
           if (!this.isEmptyUndoStack()) {
@@ -108,16 +124,18 @@ export default {
         },
         reset: () => {
           exitCropOnAction();
-          this.loadImageFromURL(this.ui.initializeImgUrl, 'resetImage').then((sizeValue) => {
-            exitCropOnAction();
-            initFilterState();
-            this.ui.resizeEditor({ imageSize: sizeValue });
-            this.clearUndoStack();
-            this._initHistory();
-          });
+          this.loadImageFromURL(this.ui.initializeImgUrl, "resetImage").then(
+            (sizeValue) => {
+              exitCropOnAction();
+              initFilterState();
+              this.ui.resizeEditor({ imageSize: sizeValue });
+              this.clearUndoStack();
+              this._initHistory();
+            },
+          );
         },
         delete: () => {
-          this.ui.changeHelpButtonEnabled('delete', false);
+          this.ui.changeHelpButtonEnabled("delete", false);
           exitCropOnAction();
           this.removeActiveObject();
           this.activeObjectId = null;
@@ -125,12 +143,12 @@ export default {
         deleteAll: () => {
           exitCropOnAction();
           this.clearObjects();
-          this.ui.changeHelpButtonEnabled('delete', false);
-          this.ui.changeHelpButtonEnabled('deleteAll', false);
+          this.ui.changeHelpButtonEnabled("delete", false);
+          this.ui.changeHelpButtonEnabled("deleteAll", false);
         },
         load: (file) => {
           if (!isSupportFileApi()) {
-            alert('This browser does not support file-api');
+            alert("This browser does not support file-api");
           }
 
           this.ui.initializeImgUrl = URL.createObjectURL(file);
@@ -142,9 +160,12 @@ export default {
               this.ui.activeMenuEvent();
               this.ui.resizeEditor({ imageSize: sizeValue });
               this._clearHistory();
-              this._invoker.fire(eventNames.EXECUTE_COMMAND, historyNames.LOAD_IMAGE);
+              this._invoker.fire(
+                eventNames.EXECUTE_COMMAND,
+                historyNames.LOAD_IMAGE,
+              );
             })
-            ['catch']((message) => Promise.reject(message));
+            ["catch"]((message) => Promise.reject(message));
         },
         download: () => {
           const dataURL = this.toDataURL();
@@ -153,8 +174,8 @@ export default {
 
           if (isSupportFileApi() && window.saveAs) {
             blob = base64ToBlob(dataURL);
-            type = blob.type.split('/')[1];
-            if (imageName.split('.').pop() !== type) {
+            type = blob.type.split("/")[1];
+            if (imageName.split(".").pop() !== type) {
               imageName += `.${type}`;
             }
             saveAs(blob, imageName); // eslint-disable-line
@@ -167,7 +188,7 @@ export default {
           this.ui.toggleHistoryMenu(event);
         },
         zoomIn: () => {
-          this.ui.toggleZoomButtonStatus('zoomIn');
+          this.ui.toggleZoomButtonStatus("zoomIn");
           this.deactivateAll();
           toggleZoomMode();
         },
@@ -176,12 +197,12 @@ export default {
         },
         hand: () => {
           this.ui.offZoomInButtonStatus();
-          this.ui.toggleZoomButtonStatus('hand');
+          this.ui.toggleZoomButtonStatus("hand");
           this.deactivateAll();
           toggleHandMode();
         },
       },
-      this._commonAction()
+      this._commonAction(),
     );
   },
 
@@ -199,13 +220,13 @@ export default {
           }
         },
         addIcon: (iconType, iconColor) => {
-          this.startDrawingMode('ICON');
+          this.startDrawingMode("ICON");
           this.setDrawingIcon(iconType, iconColor);
         },
         cancelAddIcon: () => {
           this.ui.icon.clearIconType();
           this.changeSelectableAll(true);
-          this.changeCursor('default');
+          this.changeCursor("default");
           this.stopDrawingMode();
         },
         registerDefaultIcons: (type, path) => {
@@ -227,11 +248,11 @@ export default {
                 top: 100,
               });
             },
-            Imagetracer.tracerDefaultOption()
+            Imagetracer.tracerDefaultOption(),
           );
         },
       },
-      this._commonAction()
+      this._commonAction(),
     );
   },
 
@@ -245,10 +266,10 @@ export default {
       {
         setDrawMode: (type, settings) => {
           this.stopDrawingMode();
-          if (type === 'free') {
-            this.startDrawingMode('FREE_DRAWING', settings);
+          if (type === "free") {
+            this.startDrawingMode("FREE_DRAWING", settings);
           } else {
-            this.startDrawingMode('LINE_DRAWING', settings);
+            this.startDrawingMode("LINE_DRAWING", settings);
           }
         },
         setColor: (color) => {
@@ -257,7 +278,7 @@ export default {
           });
         },
       },
-      this._commonAction()
+      this._commonAction(),
     );
   },
 
@@ -270,20 +291,25 @@ export default {
     return extend(
       {
         loadImageFromURL: (imgUrl, file) => {
-          return this.loadImageFromURL(this.toDataURL(), 'FilterImage').then(() => {
-            this.addImageObject(imgUrl).then(() => {
-              URL.revokeObjectURL(file);
-            });
-            this._invoker.fire(eventNames.EXECUTE_COMMAND, historyNames.LOAD_MASK_IMAGE);
-          });
+          return this.loadImageFromURL(this.toDataURL(), "FilterImage").then(
+            () => {
+              this.addImageObject(imgUrl).then(() => {
+                URL.revokeObjectURL(file);
+              });
+              this._invoker.fire(
+                eventNames.EXECUTE_COMMAND,
+                historyNames.LOAD_MASK_IMAGE,
+              );
+            },
+          );
         },
         applyFilter: () => {
-          this.applyFilter('mask', {
+          this.applyFilter("mask", {
             maskObjId: this.activeObjectId,
           });
         },
       },
-      this._commonAction()
+      this._commonAction(),
     );
   },
 
@@ -301,7 +327,7 @@ export default {
           }
         },
       },
-      this._commonAction()
+      this._commonAction(),
     );
   },
 
@@ -316,15 +342,15 @@ export default {
         rotate: (angle, isSilent) => {
           this.rotate(angle, isSilent);
           this.ui.resizeEditor();
-          this.ui.rotate.setRangeBarAngle('rotate', angle);
+          this.ui.rotate.setRangeBarAngle("rotate", angle);
         },
         setAngle: (angle, isSilent) => {
           this.setAngle(angle, isSilent);
           this.ui.resizeEditor();
-          this.ui.rotate.setRangeBarAngle('setAngle', angle);
+          this.ui.rotate.setRangeBarAngle("setAngle", angle);
         },
       },
-      this._commonAction()
+      this._commonAction(),
     );
   },
 
@@ -345,7 +371,7 @@ export default {
           this.setDrawingShape(shapeType);
         },
       },
-      this._commonAction()
+      this._commonAction(),
     );
   },
 
@@ -364,35 +390,38 @@ export default {
               .then(() => {
                 this.stopDrawingMode();
                 this.ui.resizeEditor();
-                this.ui.changeMenu('crop');
-                this._invoker.fire(eventNames.EXECUTE_COMMAND, historyNames.CROP);
+                this.ui.changeMenu("crop");
+                this._invoker.fire(
+                  eventNames.EXECUTE_COMMAND,
+                  historyNames.CROP,
+                );
               })
-              ['catch']((message) => Promise.reject(message));
+              ["catch"]((message) => Promise.reject(message));
           }
         },
         cancel: () => {
           this.stopDrawingMode();
-          this.ui.changeMenu('crop');
+          this.ui.changeMenu("crop");
         },
         /* eslint-disable */
         preset: (presetType) => {
           switch (presetType) {
-            case 'preset-square':
+            case "preset-square":
               this.setCropzoneRect(1 / 1);
               break;
-            case 'preset-3-2':
+            case "preset-3-2":
               this.setCropzoneRect(3 / 2);
               break;
-            case 'preset-4-3':
+            case "preset-4-3":
               this.setCropzoneRect(4 / 3);
               break;
-            case 'preset-5-4':
+            case "preset-5-4":
               this.setCropzoneRect(5 / 4);
               break;
-            case 'preset-7-5':
+            case "preset-7-5":
               this.setCropzoneRect(7 / 5);
               break;
-            case 'preset-16-9':
+            case "preset-16-9":
               this.setCropzoneRect(16 / 9);
               break;
             default:
@@ -402,7 +431,7 @@ export default {
           }
         },
       },
-      this._commonAction()
+      this._commonAction(),
     );
   },
 
@@ -417,11 +446,12 @@ export default {
         getCurrentDimensions: () => this._graphics.getCurrentDimensions(),
         preview: (actor, value, lockState) => {
           const currentDimensions = this._graphics.getCurrentDimensions();
-          const calcAspectRatio = () => currentDimensions.width / currentDimensions.height;
+          const calcAspectRatio = () =>
+            currentDimensions.width / currentDimensions.height;
 
           let dimensions = {};
           switch (actor) {
-            case 'width':
+            case "width":
               dimensions.width = value;
               if (lockState) {
                 dimensions.height = value / calcAspectRatio();
@@ -429,7 +459,7 @@ export default {
                 dimensions.height = currentDimensions.height;
               }
               break;
-            case 'height':
+            case "height":
               dimensions.height = value;
               if (lockState) {
                 dimensions.width = value * calcAspectRatio();
@@ -460,9 +490,9 @@ export default {
               this._graphics.setOriginalDimensions(dimensions);
               this.stopDrawingMode();
               this.ui.resizeEditor();
-              this.ui.changeMenu('resize');
+              this.ui.changeMenu("resize");
             })
-            ['catch']((message) => Promise.reject(message));
+            ["catch"]((message) => Promise.reject(message));
         },
         reset: (standByMode = false) => {
           const dimensions = this._graphics.getOriginalDimensions();
@@ -474,12 +504,12 @@ export default {
             if (!standByMode) {
               this.stopDrawingMode();
               this.ui.resizeEditor();
-              this.ui.changeMenu('resize');
+              this.ui.changeMenu("resize");
             }
           });
         },
       },
-      this._commonAction()
+      this._commonAction(),
     );
   },
 
@@ -493,7 +523,7 @@ export default {
       {
         flip: (flipType) => this[flipType](),
       },
-      this._commonAction()
+      this._commonAction(),
     );
   },
 
@@ -513,7 +543,7 @@ export default {
           }
         },
       },
-      this._commonAction()
+      this._commonAction(),
     );
   },
 
@@ -524,19 +554,19 @@ export default {
     this.on({
       undoStackChanged: (length) => {
         if (length) {
-          this.ui.changeHelpButtonEnabled('undo', true);
-          this.ui.changeHelpButtonEnabled('reset', true);
+          this.ui.changeHelpButtonEnabled("undo", true);
+          this.ui.changeHelpButtonEnabled("reset", true);
         } else {
-          this.ui.changeHelpButtonEnabled('undo', false);
-          this.ui.changeHelpButtonEnabled('reset', false);
+          this.ui.changeHelpButtonEnabled("undo", false);
+          this.ui.changeHelpButtonEnabled("reset", false);
         }
         this.ui.resizeEditor();
       },
       redoStackChanged: (length) => {
         if (length) {
-          this.ui.changeHelpButtonEnabled('redo', true);
+          this.ui.changeHelpButtonEnabled("redo", true);
         } else {
-          this.ui.changeHelpButtonEnabled('redo', false);
+          this.ui.changeHelpButtonEnabled("redo", false);
         }
         this.ui.resizeEditor();
       },
@@ -544,15 +574,15 @@ export default {
       objectActivated: (obj) => {
         this.activeObjectId = obj.id;
 
-        this.ui.changeHelpButtonEnabled('delete', true);
-        this.ui.changeHelpButtonEnabled('deleteAll', true);
+        this.ui.changeHelpButtonEnabled("delete", true);
+        this.ui.changeHelpButtonEnabled("deleteAll", true);
 
-        if (obj.type === 'cropzone') {
+        if (obj.type === "cropzone") {
           this.ui.crop.changeApplyButtonStatus(true);
-        } else if (['rect', 'circle', 'triangle'].indexOf(obj.type) > -1) {
+        } else if (["rect", "circle", "triangle"].indexOf(obj.type) > -1) {
           this.stopDrawingMode();
-          if (this.ui.submenu !== 'shape') {
-            this.ui.changeMenu('shape', false, false);
+          if (this.ui.submenu !== "shape") {
+            this.ui.changeMenu("shape", false, false);
           }
           this.ui.shape.setShapeStatus({
             strokeColor: obj.stroke,
@@ -561,49 +591,62 @@ export default {
           });
 
           this.ui.shape.setMaxStrokeValue(Math.min(obj.width, obj.height));
-        } else if (obj.type === 'path' || obj.type === 'line') {
-          if (this.ui.submenu !== 'draw') {
-            this.ui.changeMenu('draw', false, false);
+        } else if (obj.type === "path" || obj.type === "line") {
+          if (this.ui.submenu !== "draw") {
+            this.ui.changeMenu("draw", false, false);
             this.ui.draw.changeStandbyMode();
           }
-        } else if (['i-text', 'text'].indexOf(obj.type) > -1) {
-          if (this.ui.submenu !== 'text') {
-            this.ui.changeMenu('text', false, false);
+        } else if (["i-text", "text"].indexOf(obj.type) > -1) {
+          if (this.ui.submenu !== "text") {
+            this.ui.changeMenu("text", false, false);
           }
 
           this.ui.text.setTextStyleStateOnAction(obj);
-        } else if (obj.type === 'icon') {
+        } else if (obj.type === "icon") {
           this.stopDrawingMode();
-          if (this.ui.submenu !== 'icon') {
-            this.ui.changeMenu('icon', false, false);
+          if (this.ui.submenu !== "icon") {
+            this.ui.changeMenu("icon", false, false);
           }
           this.ui.icon.setIconPickerColor(obj.fill);
         }
       },
       /* eslint-enable complexity */
       addText: (pos) => {
-        const { textColor: fill, fontSize, fontStyle, fontWeight, underline } = this.ui.text;
-        const fontFamily = 'Noto Sans';
+        const {
+          textColor: fill,
+          fontSize,
+          fontStyle,
+          fontWeight,
+          underline,
+        } = this.ui.text;
+        const fontFamily = "Noto Sans";
 
-        this.addText('Double Click', {
+        this.addText("Double Click", {
           position: pos.originPosition,
-          styles: { fill, fontSize, fontFamily, fontStyle, fontWeight, underline },
+          styles: {
+            fill,
+            fontSize,
+            fontFamily,
+            fontStyle,
+            fontWeight,
+            underline,
+          },
         }).then(() => {
-          this.changeCursor('default');
+          this.changeCursor("default");
         });
       },
       addObjectAfter: (obj) => {
-        if (obj.type === 'icon') {
+        if (obj.type === "icon") {
           this.ui.icon.changeStandbyMode();
-        } else if (['rect', 'circle', 'triangle'].indexOf(obj.type) > -1) {
+        } else if (["rect", "circle", "triangle"].indexOf(obj.type) > -1) {
           this.ui.shape.setMaxStrokeValue(Math.min(obj.width, obj.height));
           this.ui.shape.changeStandbyMode();
         }
       },
       objectScaled: (obj) => {
-        if (['i-text', 'text'].indexOf(obj.type) > -1) {
+        if (["i-text", "text"].indexOf(obj.type) > -1) {
           this.ui.text.fontSize = toInteger(obj.fontSize);
-        } else if (['rect', 'circle', 'triangle'].indexOf(obj.type) >= 0) {
+        } else if (["rect", "circle", "triangle"].indexOf(obj.type) >= 0) {
           const { width, height } = obj;
           const strokeValue = this.ui.shape.getStrokeValue();
 
@@ -617,9 +660,9 @@ export default {
       },
       selectionCleared: () => {
         this.activeObjectId = null;
-        if (this.ui.submenu === 'text') {
-          this.changeCursor('text');
-        } else if (!includes(['draw', 'crop', 'resize'], this.ui.submenu)) {
+        if (this.ui.submenu === "text") {
+          this.changeCursor("text");
+        } else if (!includes(["draw", "crop", "resize"], this.ui.submenu)) {
           this.stopDrawingMode();
         }
       },
@@ -645,7 +688,7 @@ export default {
    */
   _commonAction() {
     const { TEXT, CROPPER, SHAPE, ZOOM, RESIZE } = drawingModes;
-
+    console.log("_commonAction");
     return {
       modeChange: (menu) => {
         switch (menu) {

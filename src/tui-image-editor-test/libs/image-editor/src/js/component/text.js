@@ -1,21 +1,21 @@
-import { fabric } from 'fabric';
-import extend from 'tui-code-snippet/object/extend';
-import isExisty from 'tui-code-snippet/type/isExisty';
-import forEach from 'tui-code-snippet/collection/forEach';
-import Component from '@/interface/component';
-import { stamp } from '@/util';
-import { componentNames, eventNames as events, fObjectOptions } from '@/consts';
+import { fabric } from "fabric";
+import extend from "tui-code-snippet/object/extend";
+import isExisty from "tui-code-snippet/type/isExisty";
+import forEach from "tui-code-snippet/collection/forEach";
+import Component from "@/interface/component";
+import { stamp } from "@/util";
+import { componentNames, eventNames as events, fObjectOptions } from "@/consts";
 
 const defaultStyles = {
-  fill: '#000000',
+  fill: "#000000",
   left: 0,
   top: 0,
 };
 const resetStyles = {
-  fill: '#000000',
-  fontStyle: 'normal',
-  fontWeight: 'normal',
-  textAlign: 'tie-text-align-left',
+  fill: "#000000",
+  fontStyle: "normal",
+  fontWeight: "normal",
+  textAlign: "tie-text-align-left",
   underline: false,
 };
 const DBCLICK_TIME = 500;
@@ -105,19 +105,19 @@ class Text extends Component {
     const canvas = this.getCanvas();
 
     canvas.selection = false;
-    canvas.defaultCursor = 'text';
+    canvas.defaultCursor = "text";
     canvas.on({
-      'mouse:down': this._listeners.mousedown,
-      'selection:created': this._listeners.select,
-      'selection:updated': this._listeners.select,
-      'before:selection:cleared': this._listeners.selectClear,
-      'object:scaling': this._listeners.scaling,
-      'text:changed': this._listeners.textChanged,
+      "mouse:down": this._listeners.mousedown,
+      "selection:created": this._listeners.select,
+      "selection:updated": this._listeners.select,
+      "before:selection:cleared": this._listeners.selectClear,
+      "object:scaling": this._listeners.scaling,
+      "text:changed": this._listeners.textChanged,
     });
 
     canvas.forEachObject((obj) => {
-      if (obj.type === 'i-text') {
-        this.adjustOriginPosition(obj, 'start');
+      if (obj.type === "i-text") {
+        this.adjustOriginPosition(obj, "start");
       }
     });
 
@@ -131,26 +131,26 @@ class Text extends Component {
     const canvas = this.getCanvas();
 
     canvas.selection = true;
-    canvas.defaultCursor = 'default';
+    canvas.defaultCursor = "default";
 
     canvas.forEachObject((obj) => {
-      if (obj.type === 'i-text') {
-        if (obj.text === '') {
+      if (obj.type === "i-text") {
+        if (obj.text === "") {
           canvas.remove(obj);
         } else {
-          this.adjustOriginPosition(obj, 'end');
+          this.adjustOriginPosition(obj, "end");
         }
       }
     });
 
     canvas.off({
-      'mouse:down': this._listeners.mousedown,
-      'selection:created': this._listeners.select,
-      'selection:updated': this._listeners.select,
-      'before:selection:cleared': this._listeners.selectClear,
-      'object:selected': this._listeners.select,
-      'object:scaling': this._listeners.scaling,
-      'text:changed': this._listeners.textChanged,
+      "mouse:down": this._listeners.mousedown,
+      "selection:created": this._listeners.select,
+      "selection:updated": this._listeners.select,
+      "before:selection:cleared": this._listeners.selectClear,
+      "object:selected": this._listeners.select,
+      "object:scaling": this._listeners.scaling,
+      "text:changed": this._listeners.textChanged,
     });
   }
 
@@ -160,9 +160,9 @@ class Text extends Component {
    * @param {string} editStatus - 'start' or 'end'
    */
   adjustOriginPosition(text, editStatus) {
-    let [originX, originY] = ['center', 'center'];
-    if (editStatus === 'start') {
-      [originX, originY] = ['left', 'top'];
+    let [originX, originY] = ["center", "center"];
+    if (editStatus === "start") {
+      [originX, originY] = ["left", "top"];
     }
 
     const { x: left, y: top } = text.getPointByOrigin(originX, originY);
@@ -209,8 +209,8 @@ class Text extends Component {
 
       newText = new fabric.IText(text, styles);
       selectionStyle = extend({}, selectionStyle, {
-        originX: 'left',
-        originY: 'top',
+        originX: "left",
+        originY: "top",
       });
 
       newText.set(selectionStyle);
@@ -242,7 +242,7 @@ class Text extends Component {
    */
   change(activeObj, text) {
     return new Promise((resolve) => {
-      activeObj.set('text', text);
+      activeObj.set("text", text);
 
       this.getCanvas().renderAll();
       resolve();
@@ -267,15 +267,18 @@ class Text extends Component {
       forEach(
         styleObj,
         (val, key) => {
-          if (activeObj[key] === val && key !== 'fontSize') {
-            styleObj[key] = resetStyles[key] || '';
+          if (activeObj[key] === val && key !== "fontSize") {
+            styleObj[key] = resetStyles[key] || "";
           }
         },
-        this
+        this,
       );
 
-      if ('textDecoration' in styleObj) {
-        extend(styleObj, this._getTextDecorationAdaptObject(styleObj.textDecoration));
+      if ("textDecoration" in styleObj) {
+        extend(
+          styleObj,
+          this._getTextDecorationAdaptObject(styleObj.textDecoration),
+        );
       }
 
       activeObj.set(styleObj);
@@ -346,9 +349,9 @@ class Text extends Component {
    */
   _getTextDecorationAdaptObject(textDecoration) {
     return {
-      underline: textDecoration === 'underline',
-      linethrough: textDecoration === 'line-through',
-      overline: textDecoration === 'overline',
+      underline: textDecoration === "underline",
+      linethrough: textDecoration === "line-through",
+      overline: textDecoration === "overline",
     };
   }
 
@@ -404,14 +407,15 @@ class Text extends Component {
     const editingObjInfos = this._editingObjInfos;
     const textContent = this._textarea.value;
     let transWidth = editingObj.width / ratio - editingObjInfos.width / ratio;
-    let transHeight = editingObj.height / ratio - editingObjInfos.height / ratio;
+    let transHeight =
+      editingObj.height / ratio - editingObjInfos.height / ratio;
 
     if (ratio === 1) {
       transWidth /= 2;
       transHeight /= 2;
     }
 
-    this._textarea.style.display = 'none';
+    this._textarea.style.display = "none";
 
     editingObj.set({
       left: editingObjInfos.left + transWidth,
@@ -459,6 +463,7 @@ class Text extends Component {
    * @private
    */
   _onFabricTextChanged(props) {
+    console.log("text _onFabricTextChanged", props);
     this.fire(events.TEXT_CHANGED, props.target);
   }
 
@@ -476,7 +481,7 @@ class Text extends Component {
 
     if (obj) {
       // obj is empty object at initial time, will be set fabric object
-      if (obj.text === '') {
+      if (obj.text === "") {
         this.getCanvas().remove(obj);
       }
     }
@@ -499,9 +504,10 @@ class Text extends Component {
    * @private
    */
   _onFabricMouseDown(fEvent) {
+    console.log("fuck text");
     const obj = fEvent.target;
 
-    if (obj && !obj.isType('text')) {
+    if (obj && !obj.isType("text")) {
       return;
     }
 

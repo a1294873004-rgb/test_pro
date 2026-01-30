@@ -1,9 +1,9 @@
-import Colorpicker from '@/ui/tools/colorpicker';
-import Range from '@/ui/tools/range';
-import Submenu from '@/ui/submenuBase';
-import templateHtml from '@/ui/template/submenu/draw';
-import { assignmentForDestroy, getRgb } from '@/util';
-import { defaultDrawRangeValues, eventNames, selectorNames } from '@/consts';
+import Colorpicker from "@/ui/tools/colorpicker";
+import Range from "@/ui/tools/range";
+import Submenu from "@/ui/submenuBase";
+import templateHtml from "@/ui/template/submenu/draw";
+import { assignmentForDestroy, getRgb } from "@/util";
+import { defaultDrawRangeValues, eventNames, selectorNames } from "@/consts";
 
 const DRAW_OPACITY = 0.7;
 
@@ -13,10 +13,13 @@ const DRAW_OPACITY = 0.7;
  * @ignore
  */
 class Draw extends Submenu {
-  constructor(subMenuElement, { locale, makeSvgIcon, menuBarPosition, usageStatistics }) {
+  constructor(
+    subMenuElement,
+    { locale, makeSvgIcon, menuBarPosition, usageStatistics },
+  ) {
     super(subMenuElement, {
       locale,
-      name: 'draw',
+      name: "draw",
       makeSvgIcon,
       menuBarPosition,
       templateHtml,
@@ -24,18 +27,18 @@ class Draw extends Submenu {
     });
 
     this._els = {
-      lineSelectButton: this.selector('.tie-draw-line-select-button'),
-      drawColorPicker: new Colorpicker(this.selector('.tie-draw-color'), {
-        defaultColor: '#00a9ff',
+      lineSelectButton: this.selector(".tie-draw-line-select-button"),
+      drawColorPicker: new Colorpicker(this.selector(".tie-draw-color"), {
+        defaultColor: "#00a9ff",
         toggleDirection: this.toggleDirection,
         usageStatistics: this.usageStatistics,
       }),
       drawRange: new Range(
         {
-          slider: this.selector('.tie-draw-range'),
-          input: this.selector('.tie-draw-range-value'),
+          slider: this.selector(".tie-draw-range"),
+          input: this.selector(".tie-draw-range-value"),
         },
-        defaultDrawRangeValues
+        defaultDrawRangeValues,
       ),
     };
 
@@ -43,9 +46,10 @@ class Draw extends Submenu {
     this.color = this._els.drawColorPicker.color;
     this.width = this._els.drawRange.value;
 
-    this.colorPickerInputBox = this._els.drawColorPicker.colorpickerElement.querySelector(
-      selectorNames.COLOR_PICKER_INPUT_BOX
-    );
+    this.colorPickerInputBox =
+      this._els.drawColorPicker.colorpickerElement.querySelector(
+        selectorNames.COLOR_PICKER_INPUT_BOX,
+      );
   }
 
   /**
@@ -60,6 +64,8 @@ class Draw extends Submenu {
   }
 
   /**
+   * 对应 tool 的方法
+   *
    * Add event for draw
    * @param {Object} actions - actions for crop
    *   @param {Function} actions.setDrawMode - set draw mode
@@ -68,17 +74,20 @@ class Draw extends Submenu {
     this.eventHandler.changeDrawType = this._changeDrawType.bind(this);
 
     this.actions = actions;
-    this._els.lineSelectButton.addEventListener('click', this.eventHandler.changeDrawType);
-    this._els.drawColorPicker.on('change', this._changeDrawColor.bind(this));
-    this._els.drawRange.on('change', this._changeDrawRange.bind(this));
+    this._els.lineSelectButton.addEventListener(
+      "click",
+      this.eventHandler.changeDrawType,
+    );
+    this._els.drawColorPicker.on("change", this._changeDrawColor.bind(this));
+    this._els.drawRange.on("change", this._changeDrawRange.bind(this));
 
     this.colorPickerInputBox.addEventListener(
       eventNames.FOCUS,
-      this._onStartEditingInputBox.bind(this)
+      this._onStartEditingInputBox.bind(this),
     );
     this.colorPickerInputBox.addEventListener(
       eventNames.BLUR,
-      this._onStopEditingInputBox.bind(this)
+      this._onStopEditingInputBox.bind(this),
     );
   }
 
@@ -87,17 +96,20 @@ class Draw extends Submenu {
    * @private
    */
   _removeEvent() {
-    this._els.lineSelectButton.removeEventListener('click', this.eventHandler.changeDrawType);
+    this._els.lineSelectButton.removeEventListener(
+      "click",
+      this.eventHandler.changeDrawType,
+    );
     this._els.drawColorPicker.off();
     this._els.drawRange.off();
 
     this.colorPickerInputBox.removeEventListener(
       eventNames.FOCUS,
-      this._onStartEditingInputBox.bind(this)
+      this._onStartEditingInputBox.bind(this),
     );
     this.colorPickerInputBox.removeEventListener(
       eventNames.BLUR,
-      this._onStopEditingInputBox.bind(this)
+      this._onStopEditingInputBox.bind(this),
     );
   }
 
@@ -118,16 +130,16 @@ class Draw extends Submenu {
     this.type = null;
     this.actions.stopDrawingMode();
     this.actions.changeSelectableAll(true);
-    this._els.lineSelectButton.classList.remove('free');
-    this._els.lineSelectButton.classList.remove('line');
+    this._els.lineSelectButton.classList.remove("free");
+    this._els.lineSelectButton.classList.remove("line");
   }
 
   /**
    * Executed when the menu starts.
    */
   changeStartMode() {
-    this.type = 'free';
-    this._els.lineSelectButton.classList.add('free');
+    this.type = "free";
+    this._els.lineSelectButton.classList.add("free");
     this.setDrawMode();
   }
 
@@ -137,9 +149,9 @@ class Draw extends Submenu {
    * @private
    */
   _changeDrawType(event) {
-    const button = event.target.closest('.tui-image-editor-button');
+    const button = event.target.closest(".tui-image-editor-button");
     if (button) {
-      const lineType = this.getButtonType(button, ['free', 'line']);
+      const lineType = this.getButtonType(button, ["free", "line"]);
       this.actions.discardSelection();
 
       if (this.type === lineType) {
@@ -161,7 +173,7 @@ class Draw extends Submenu {
    * @private
    */
   _changeDrawColor(color) {
-    this.color = color || 'transparent';
+    this.color = color || "transparent";
     if (!this.type) {
       this.changeStartMode();
     } else {

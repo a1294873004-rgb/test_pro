@@ -44,7 +44,7 @@ const TuiEditor: React.FC = () => {
           },
           menuBarPosition: "bottom",
         },
-        // includeUI: false,
+        includeUI: false,
         cssMaxWidth: 700,
         cssMaxHeight: 500,
         selectionStyle: {
@@ -52,8 +52,11 @@ const TuiEditor: React.FC = () => {
           rotatingPointOffset: 70,
         },
       });
+      editorInstance.current.loadImageFromURL(
+        "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?w=400",
+        "12",
+      );
     }
-
     // 组件卸载时销毁实例
     return () => {
       if (editorInstance.current) {
@@ -82,7 +85,13 @@ const TuiEditor: React.FC = () => {
       </button>
 
       {/* 编辑器挂载点 */}
-      <div ref={editorContainerRef} />
+      <div
+        ref={editorContainerRef}
+        style={{
+          width: 200,
+          height: 300,
+        }}
+      />
     </div>
   );
 };

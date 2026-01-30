@@ -449,6 +449,7 @@ class ImageEditor {
    * @private
    */
   _onMouseDown(event, originPointer) {
+    console.log("canvas _onMouseDown1");
     /**
      * The mouse down event with position x, y on canvas
      * @event ImageEditor#mousedown

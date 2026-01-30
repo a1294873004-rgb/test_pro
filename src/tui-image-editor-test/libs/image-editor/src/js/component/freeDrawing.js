@@ -1,6 +1,6 @@
-import { fabric } from 'fabric';
-import Component from '@/interface/component';
-import { componentNames } from '@/consts';
+import { fabric } from "fabric";
+import Component from "@/interface/component";
+import { componentNames } from "@/consts";
 
 /**
  * FreeDrawing
@@ -23,7 +23,7 @@ class FreeDrawing extends Component {
      * fabric.Color instance for brush color
      * @type {fabric.Color}
      */
-    this.oColor = new fabric.Color('rgba(0, 0, 0, 0.5)');
+    this.oColor = new fabric.Color("rgba(0, 0, 0, 0.5)");
   }
 
   /**
@@ -32,6 +32,7 @@ class FreeDrawing extends Component {
    */
   start(setting) {
     const canvas = this.getCanvas();
+    console.log("canvas FreeDrawing start");
 
     canvas.isDrawingMode = true;
     this.setBrush(setting);
@@ -42,6 +43,7 @@ class FreeDrawing extends Component {
    * @param {{width: ?number, color: ?string}} [setting] - Brush width & color
    */
   setBrush(setting) {
+    console.log("canvas FreeDrawing setBrush");
     const brush = this.getCanvas().freeDrawingBrush;
 
     setting = setting || {};
