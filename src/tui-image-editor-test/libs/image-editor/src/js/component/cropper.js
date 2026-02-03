@@ -1,9 +1,9 @@
-import { fabric } from 'fabric';
-import extend from 'tui-code-snippet/object/extend';
-import Component from '@/interface/component';
-import Cropzone from '@/extension/cropzone';
-import { keyCodes, componentNames, CROPZONE_DEFAULT_OPTIONS } from '@/consts';
-import { clamp, fixFloatingPoint } from '@/util';
+import { fabric } from "fabric";
+import extend from "tui-code-snippet/object/extend";
+import Component from "@/interface/component";
+import Cropzone from "@/extension/cropzone";
+import { keyCodes, componentNames, CROPZONE_DEFAULT_OPTIONS } from "@/consts";
+import { clamp, fixFloatingPoint } from "@/util";
 
 const MOUSE_MOVE_THRESHOLD = 10;
 const DEFAULT_OPTION = {
@@ -91,22 +91,22 @@ class Cropper extends Component {
           height: 0.5,
           strokeWidth: 0, // {@link https://github.com/kangax/fabric.js/issues/2860}
           cornerSize: 10,
-          cornerColor: 'black',
-          fill: 'transparent',
+          cornerColor: "black",
+          fill: "transparent",
         },
         CROPZONE_DEFAULT_OPTIONS,
-        this.graphics.cropSelectionStyle
-      )
+        this.graphics.cropSelectionStyle,
+      ),
     );
 
     canvas.discardActiveObject();
     canvas.add(this._cropzone);
-    canvas.on('mouse:down', this._listeners.mousedown);
+    canvas.on("mouse:down", this._listeners.mousedown);
     canvas.selection = false;
-    canvas.defaultCursor = 'crosshair';
+    canvas.defaultCursor = "crosshair";
 
-    fabric.util.addListener(document, 'keydown', this._listeners.keydown);
-    fabric.util.addListener(document, 'keyup', this._listeners.keyup);
+    fabric.util.addListener(document, "keydown", this._listeners.keydown);
+    fabric.util.addListener(document, "keyup", this._listeners.keyup);
   }
 
   /**
@@ -121,16 +121,16 @@ class Cropper extends Component {
     }
     canvas.remove(cropzone);
     canvas.selection = true;
-    canvas.defaultCursor = 'default';
-    canvas.off('mouse:down', this._listeners.mousedown);
+    canvas.defaultCursor = "default";
+    canvas.off("mouse:down", this._listeners.mousedown);
     canvas.forEachObject((obj) => {
       obj.evented = true;
     });
 
     this._cropzone = null;
 
-    fabric.util.removeListener(document, 'keydown', this._listeners.keydown);
-    fabric.util.removeListener(document, 'keyup', this._listeners.keyup);
+    fabric.util.removeListener(document, "keydown", this._listeners.keydown);
+    fabric.util.removeListener(document, "keyup", this._listeners.keyup);
   }
 
   /**
@@ -162,8 +162,8 @@ class Cropper extends Component {
     this._startY = coord.y;
 
     canvas.on({
-      'mouse:move': this._listeners.mousemove,
-      'mouse:up': this._listeners.mouseup,
+      "mouse:move": this._listeners.mousemove,
+      "mouse:up": this._listeners.mouseup,
     });
   }
 
@@ -178,9 +178,15 @@ class Cropper extends Component {
     const { x, y } = pointer;
     const cropzone = this._cropzone;
 
-    if (Math.abs(x - this._startX) + Math.abs(y - this._startY) > MOUSE_MOVE_THRESHOLD) {
+    console.log("fuck cropzone", cropzone);
+    if (
+      Math.abs(x - this._startX) + Math.abs(y - this._startY) >
+      MOUSE_MOVE_THRESHOLD
+    ) {
       canvas.remove(cropzone);
-      cropzone.set(this._calcRectDimensionFromPoint(x, y, cropzone.presetRatio));
+      cropzone.set(
+        this._calcRectDimensionFromPoint(x, y, cropzone.presetRatio),
+      );
 
       canvas.add(cropzone);
       canvas.setActiveObject(cropzone);
@@ -269,10 +275,11 @@ class Cropper extends Component {
     const listeners = this._listeners;
     const canvas = this.getCanvas();
 
+    console.log("fuck _onFabricMouseUp", cropzone);
     canvas.setActiveObject(cropzone);
     canvas.off({
-      'mouse:move': listeners.mousemove,
-      'mouse:up': listeners.mouseup,
+      "mouse:move": listeners.mousemove,
+      "mouse:up": listeners.mouseup,
     });
   }
 
@@ -339,7 +346,11 @@ class Cropper extends Component {
     canvas.selection = false;
     canvas.remove(cropzone);
 
-    cropzone.set(presetRatio ? this._getPresetPropertiesForCropSize(presetRatio) : DEFAULT_OPTION);
+    cropzone.set(
+      presetRatio
+        ? this._getPresetPropertiesForCropSize(presetRatio)
+        : DEFAULT_OPTION,
+    );
 
     canvas.add(cropzone);
     canvas.selection = true;
@@ -360,17 +371,23 @@ class Cropper extends Component {
     const originalWidth = canvas.getWidth();
     const originalHeight = canvas.getHeight();
 
-    const standardSize = originalWidth >= originalHeight ? originalWidth : originalHeight;
-    const getScale = (value, orignalValue) => (value > orignalValue ? orignalValue / value : 1);
+    const standardSize =
+      originalWidth >= originalHeight ? originalWidth : originalHeight;
+    const getScale = (value, orignalValue) =>
+      value > orignalValue ? orignalValue / value : 1;
 
     let width = standardSize * presetRatio;
     let height = standardSize;
 
     const scaleWidth = getScale(width, originalWidth);
-    [width, height] = [width, height].map((sizeValue) => sizeValue * scaleWidth);
+    [width, height] = [width, height].map(
+      (sizeValue) => sizeValue * scaleWidth,
+    );
 
     const scaleHeight = getScale(height, originalHeight);
-    [width, height] = [width, height].map((sizeValue) => fixFloatingPoint(sizeValue * scaleHeight));
+    [width, height] = [width, height].map((sizeValue) =>
+      fixFloatingPoint(sizeValue * scaleHeight),
+    );
 
     return {
       presetRatio,

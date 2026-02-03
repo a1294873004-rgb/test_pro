@@ -1,7 +1,7 @@
-import forEach from 'tui-code-snippet/collection/forEach';
-import Submenu from '@/ui/submenuBase';
-import templateHtml from '@/ui/template/submenu/crop';
-import { assignmentForDestroy } from '@/util';
+import forEach from "tui-code-snippet/collection/forEach";
+import Submenu from "@/ui/submenuBase";
+import templateHtml from "@/ui/template/submenu/crop";
+import { assignmentForDestroy } from "@/util";
 
 /**
  * Crop ui class
@@ -9,25 +9,28 @@ import { assignmentForDestroy } from '@/util';
  * @ignore
  */
 class Crop extends Submenu {
-  constructor(subMenuElement, { locale, makeSvgIcon, menuBarPosition, usageStatistics }) {
+  constructor(
+    subMenuElement,
+    { locale, makeSvgIcon, menuBarPosition, usageStatistics },
+  ) {
     super(subMenuElement, {
       locale,
-      name: 'crop',
+      name: "crop",
       makeSvgIcon,
       menuBarPosition,
       templateHtml,
       usageStatistics,
     });
 
-    this.status = 'active';
+    this.status = "active";
 
     this._els = {
-      apply: this.selector('.tie-crop-button .apply'),
-      cancel: this.selector('.tie-crop-button .cancel'),
-      preset: this.selector('.tie-crop-preset-button'),
+      apply: this.selector(".tie-crop-button .apply"),
+      cancel: this.selector(".tie-crop-button .cancel"),
+      preset: this.selector(".tie-crop-preset-button"),
     };
 
-    this.defaultPresetButton = this._els.preset.querySelector('.preset-none');
+    this.defaultPresetButton = this._els.preset.querySelector(".preset-none");
   }
 
   /**
@@ -58,9 +61,9 @@ class Crop extends Submenu {
     };
 
     this.actions = actions;
-    this._els.apply.addEventListener('click', apply);
-    this._els.cancel.addEventListener('click', cancel);
-    this._els.preset.addEventListener('click', cropzonePreset);
+    this._els.apply.addEventListener("click", apply);
+    this._els.cancel.addEventListener("click", cancel);
+    this._els.preset.addEventListener("click", cropzonePreset);
   }
 
   /**
@@ -68,26 +71,30 @@ class Crop extends Submenu {
    * @private
    */
   _removeEvent() {
-    this._els.apply.removeEventListener('click', this.eventHandler.apply);
-    this._els.cancel.removeEventListener('click', this.eventHandler.cancel);
-    this._els.preset.removeEventListener('click', this.eventHandler.cropzonePreset);
+    this._els.apply.removeEventListener("click", this.eventHandler.apply);
+    this._els.cancel.removeEventListener("click", this.eventHandler.cancel);
+    this._els.preset.removeEventListener(
+      "click",
+      this.eventHandler.cropzonePreset,
+    );
   }
 
   _applyEventHandler() {
     this.actions.crop();
-    this._els.apply.classList.remove('active');
+    this._els.apply.classList.remove("active");
   }
 
   _cancelEventHandler() {
     this.actions.cancel();
-    this._els.apply.classList.remove('active');
+    this._els.apply.classList.remove("active");
   }
 
   _cropzonePresetEventHandler(event) {
-    const button = event.target.closest('.tui-image-editor-button.preset');
+    const button = event.target.closest(".tui-image-editor-button.preset");
     if (button) {
       const [presetType] = button.className.match(/preset-[^\s]+/);
 
+      console.log("fuck presetType", presetType);
       this._setPresetButtonActive(button);
       this.actions.preset(presetType);
     }
@@ -97,7 +104,8 @@ class Crop extends Submenu {
    * Executed when the menu starts.
    */
   changeStartMode() {
-    this.actions.modeChange('crop');
+    console.log("fuck crop");
+    this.actions.modeChange("crop");
   }
 
   /**
@@ -114,9 +122,9 @@ class Crop extends Submenu {
    */
   changeApplyButtonStatus(enableStatus) {
     if (enableStatus) {
-      this._els.apply.classList.add('active');
+      this._els.apply.classList.add("active");
     } else {
-      this._els.apply.classList.remove('active');
+      this._els.apply.classList.remove("active");
     }
   }
 
@@ -126,12 +134,12 @@ class Crop extends Submenu {
    * @private
    */
   _setPresetButtonActive(button = this.defaultPresetButton) {
-    forEach(this._els.preset.querySelectorAll('.preset'), (presetButton) => {
-      presetButton.classList.remove('active');
+    forEach(this._els.preset.querySelectorAll(".preset"), (presetButton) => {
+      presetButton.classList.remove("active");
     });
 
     if (button) {
-      button.classList.add('active');
+      button.classList.add("active");
     }
   }
 }

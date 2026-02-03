@@ -1,0 +1,16 @@
+@import '@styles/common.less';
+
+@components-prefix: yidooO;
+@NS: @components-prefix;
+.@{NS}-icon {
+  display: inline-block;
+  text-align: center;
+  vertical-align: -0.125em;
+  line-height: 0;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+
+  &.disabled {
+    .disabledState();
+  }
+}

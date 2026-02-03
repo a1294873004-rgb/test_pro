@@ -1,0 +1,163 @@
+.wrapper {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+  //   .canvas {
+  //     width: 100%;
+  //     height: 100%;
+  //   }
+}
+
+.tools {
+  display: flex;
+  gap: 20px;
+  button {
+    padding: 12px 20px;
+
+    &.active {
+      border: 1px solid red;
+    }
+  }
+}
+
+.clipButton {
+  padding: 10px 20px;
+  border: 1px solid red;
+}
+
+.DrawingBoard {
+  width: 800px;
+  height: 600px;
+  padding: 8px;
+  background: #26231b;
+  border: 1px solid #423c2b;
+  display: flex;
+  flex-direction: column;
+  gap: 8px; // 这里设置工具栏和画布之间的间距
+  box-sizing: border-box; // 确保 padding 不撑大容器
+  border-radius: 20px;
+  .editor {
+    border-radius: 16px;
+    border: 1px solid #534b36;
+    background: #191816;
+    width: 100%;
+    flex: 1;
+    min-height: 0; // 确保内容过多时不会撑破 flex 容器
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    .toolWrapper {
+      height: 32px;
+      padding: 4px;
+      box-sizing: border-box;
+      align-items: center;
+      display: flex;
+      flex-shrink: 0;
+      gap: 8px;
+      background: #423c2b;
+      border-radius: 6px;
+    }
+  }
+}
+.toolButton {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #fff;
+  min-width: 0;
+  flex-shrink: 0;
+  cursor: pointer;
+  &.disabled {
+    cursor: not-allowed;
+  }
+
+  &.active {
+    border: 1px solid #a8a292;
+    background: #1f1d18;
+  }
+}
+
+.FreeDrawMenu {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  background: #534b36;
+  border-radius: 6px;
+  padding: 4px;
+}
+
+.colors {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  flex-shrink: 0;
+  .colorItem {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 3px solid;
+    box-sizing: border-box;
+    min-width: 0;
+    flex-shrink: 0;
+    &.stroke {
+      background-color: #534b36;
+    }
+    &.fill {
+    }
+    &.active {
+      outline: 2px solid #26bbff;
+      outline-offset: 2px;
+    }
+  }
+}
+.left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.slider {
+  width: 80px;
+  min-width: 0;
+  flex-shrink: 0;
+  height: 12px;
+}
+
+.ratioButton {
+  padding: 2px 6px;
+  background: #423c2b;
+  border-radius: 3px;
+  font-family: PingFang SC;
+  font-weight: 400;
+
+  font-size: 13px;
+
+  color: #fffdfa;
+  &.active {
+    background: #26231b;
+  }
+}
+
+.ClipDrawMenu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #534b36;
+  border-radius: 6px;
+  padding: 4px;
+}

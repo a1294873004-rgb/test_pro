@@ -576,6 +576,7 @@ class Graphics {
    * @param {?fabric.Image} canvasImage - Fabric image instance
    */
   setCanvasImage(name, canvasImage) {
+    console.log("fuck setCanvasImage");
     if (canvasImage) {
       stamp(canvasImage);
     }
@@ -627,6 +628,7 @@ class Graphics {
    * @param {Object} dimension - Canvas css dimension
    */
   setCanvasCssDimension(dimension) {
+    console.log("fuck setCanvasCssDimension", dimension);
     this._canvas.setDimensions(dimension, cssOnly);
   }
 
@@ -696,6 +698,7 @@ class Graphics {
    * @returns {Promise}
    */
   addImageObject(imgUrl) {
+    console.log("fuck addImageObject", imgUrl);
     const callback = this._callbackAfterLoadingImageObject.bind(this);
 
     return new Promise((resolve) => {

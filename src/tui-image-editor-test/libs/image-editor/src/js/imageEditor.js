@@ -786,6 +786,7 @@ class ImageEditor {
       return Promise.reject(rejectMessages.invalidParameters);
     }
 
+    console.log("load image");
     return this.execute(commands.LOAD_IMAGE, imageName, url);
   }
 

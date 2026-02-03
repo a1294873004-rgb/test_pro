@@ -9,10 +9,10 @@ import { RxJsDemo } from "src/rxjs-test";
 import { MySelect } from "src/antd-test";
 import { ClickableBanner } from "src/ClickableBanner";
 import { MemoryViewApp } from "src/memory-router";
-import { TuiEditor } from "src/tui-image-editor-test";
+import { DrawingBoard } from "src/tui-image-editor-test";
 // import "./src/lit-test";
 // createRoot(document.getElementById("root")!).render(<App />);
-createRoot(document.getElementById("root")!).render(<TuiEditor />);
+createRoot(document.getElementById("root")!).render(<DrawingBoard />);
 // createRoot(document.getElementById("root")!).render(<MarqueeTags />);
 // createRoot(document.getElementById("root")!).render(<MasonryGrid />);
 // createRoot(document.getElementById("root")!).render(

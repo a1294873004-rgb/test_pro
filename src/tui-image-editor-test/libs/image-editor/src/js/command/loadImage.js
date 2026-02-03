@@ -1,8 +1,8 @@
-import commandFactory from '@/factory/command';
-import { componentNames, commandNames } from '@/consts';
+import commandFactory from "@/factory/command";
+import { componentNames, commandNames } from "@/consts";
 
 const { IMAGE_LOADER } = componentNames;
-
+// fuck loadImage
 const command = {
   name: commandNames.LOAD_IMAGE,
 
@@ -18,7 +18,9 @@ const command = {
     const prevImage = loader.getCanvasImage();
     const prevImageWidth = prevImage ? prevImage.width : 0;
     const prevImageHeight = prevImage ? prevImage.height : 0;
-    const objects = graphics.removeAll(true).filter((objectItem) => objectItem.type !== 'cropzone');
+    const objects = graphics
+      .removeAll(true)
+      .filter((objectItem) => objectItem.type !== "cropzone");
 
     objects.forEach((objectItem) => {
       objectItem.evented = true;
@@ -30,12 +32,20 @@ const command = {
       objects,
     };
 
-    return loader.load(imageName, imgUrl).then((newImage) => ({
-      oldWidth: prevImageWidth,
-      oldHeight: prevImageHeight,
-      newWidth: newImage.width,
-      newHeight: newImage.height,
-    }));
+    return loader.load(imageName, imgUrl).then((newImage) => {
+      console.log("fuck load image", {
+        oldWidth: prevImageWidth,
+        oldHeight: prevImageHeight,
+        newWidth: newImage.width,
+        newHeight: newImage.height,
+      });
+      return {
+        oldWidth: prevImageWidth,
+        oldHeight: prevImageHeight,
+        newWidth: newImage.width,
+        newHeight: newImage.height,
+      };
+    });
   },
 
   /**
