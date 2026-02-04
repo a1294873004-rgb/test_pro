@@ -128,6 +128,7 @@ class Text extends Component {
    * End input text mode
    */
   end() {
+    console.log("text end");
     const canvas = this.getCanvas();
 
     canvas.selection = true;

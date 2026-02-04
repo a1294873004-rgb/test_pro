@@ -460,6 +460,7 @@ class Graphics {
    * Stop the current drawing mode and back to the 'NORMAL' mode
    */
   stopDrawingMode() {
+    console.log("fuck stopDrawingMode", this.getDrawingMode());
     if (this._isSameDrawingMode(drawingModes.NORMAL)) {
       return;
     }
@@ -811,6 +812,7 @@ class Graphics {
    * @param {string} cursorType - cursor type
    */
   changeCursor(cursorType) {
+    console.log("fuck changeCursor", cursorType);
     const canvas = this.getCanvas();
     canvas.defaultCursor = cursorType;
     canvas.renderAll();
@@ -1280,7 +1282,7 @@ class Graphics {
   _onObjectSelected(fEvent) {
     const { target } = fEvent;
     const params = this.createObjectProperties(target);
-    console.log("fuck _onObjectSelected", _onObjectSelected);
+    console.log("fuck _onObjectSelected");
     this.fire(events.OBJECT_ACTIVATED, params);
   }
 

@@ -29,6 +29,7 @@
 }
 
 .DrawingBoard {
+  position: relative;
   width: 800px;
   height: 600px;
   padding: 8px;
@@ -115,6 +116,7 @@
     box-sizing: border-box;
     min-width: 0;
     flex-shrink: 0;
+    cursor: pointer;
     &.stroke {
       background-color: #534b36;
     }
@@ -131,11 +133,65 @@
   align-items: center;
   gap: 6px;
 }
+@height: 12px;
 .slider {
   width: 80px;
   min-width: 0;
   flex-shrink: 0;
-  height: 12px;
+  height: @height;
+  border-radius: 4px;
+  margin: 0;
+  position: relative;
+  top: -4px;
+  :global {
+    .ant-slider-rail {
+      height: @height !important;
+      background-color: #322d20 !important ;
+      border-radius: 4px;
+    }
+    .ant-slider-track {
+      height: @height !important;
+      background-color: #a8a292 !important ;
+      border-radius: 4px;
+    }
+
+    .ant-slider-handle {
+      width: 3px !important;
+      height: 14px !important;
+      border-radius: 0px !important;
+      position: relative;
+      top: -1px;
+      &.ant-tool-open {
+        inset-inline-start: 0 !important;
+        box-shadow: none !important;
+        inset-block-start: 0 !important;
+      }
+      &::after {
+        inset-inline-start: 0 !important;
+        inset-block-start: 0 !important;
+        content: "";
+        border-radius: 14px;
+        position: absolute;
+        inset-block-start: 0;
+        inset-inline-start: 0;
+        width: 3px !important;
+        height: 14px !important;
+        background-color: #e1dcd0 !important;
+        outline: 0px solid transparent !important;
+        box-shadow: none !important;
+        cursor: pointer;
+        transition:
+          inset-inline-start 0.2s,
+          inset-block-start 0.2s,
+          width 0.2s,
+          height 0.2s,
+          box-shadow 0.2s,
+          outline 0.2s;
+
+        margin: 0 !important;
+      }
+    }
+  }
 }
 
 .ratioButton {
@@ -146,7 +202,7 @@
   font-weight: 400;
 
   font-size: 13px;
-
+  cursor: pointer;
   color: #fffdfa;
   &.active {
     background: #26231b;
@@ -160,4 +216,61 @@
   background: #534b36;
   border-radius: 6px;
   padding: 4px;
+}
+
+.Divider {
+  border-color: #6f6855;
+  height: 16px !important;
+  width: 2px !important;
+}
+
+.Divider1 {
+  border-color: #6f6855;
+  height: 16px !important;
+  width: 2px !important;
+  margin: 0 !important;
+}
+
+.Popover {
+  :global {
+    .ant-popover-arrow {
+      &::after {
+        background-color: #534b36 !important;
+      }
+
+      &::before {
+        background-color: #534b36 !important;
+      }
+    }
+  }
+}
+
+.clipButtons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  position: absolute;
+  z-index: 1;
+  top: 24px;
+  right: 28px;
+
+  .clipButton {
+    padding: 3px 6px;
+    border-radius: 6px;
+
+    &.close {
+      font-family: PingFang SC;
+      font-size: 13px;
+      color: #fffdfa;
+      background: #534b36;
+    }
+
+    &.apply {
+      font-family: PingFang SC;
+      font-size: 13px;
+      color: #191816;
+      background: #ffc249;
+    }
+  }
 }

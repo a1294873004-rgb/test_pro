@@ -1,4 +1,11 @@
-@import '@styles/common.less';
+// @import "@styles/common.less";
+.disabledState(@opacity: 0.5) {
+  opacity: @opacity;
+  pointer-events: none; // 禁止鼠标点击、hover 等事件
+  user-select: none; // 禁止文本选中（可选）
+  cursor: not-allowed; // 鼠标样式提示
+  -webkit-touch-callout: none;
+}
 
 @components-prefix: yidooO;
 @NS: @components-prefix;

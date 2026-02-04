@@ -11,6 +11,8 @@ const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 const SvgSpriteLoaderPlugin = require("svg-sprite-loader/plugin");
 // const SvgBatchLoader = require("./svg-batch-loader");
 const { SvgBatchPlugin, svgSpriteLoader } = require("./SvgBatchPlugin");
+const PrerenderPlugin = require("@prerenderer/webpack-plugin");
+const PuppeteerRenderer = require("@prerenderer/renderer-puppeteer");
 
 console.log("fukc", svgSpriteLoader);
 module.exports = (env, argv) => {
@@ -25,6 +27,7 @@ module.exports = (env, argv) => {
     mode: "development",
     context: __dirname,
     entry: "./index.tsx",
+    entry: "./seo-index.tsx",
     resolve: {
       extensions: [".ts", ".js", ".json", ".tsx"], // 修改解析扩展名的顺序
       fallback: {
@@ -362,6 +365,7 @@ module.exports = (env, argv) => {
       }),
       new HtmlWebpackPlugin({
         template: path.resolve(__dirname, "index.html"),
+        template: path.resolve(__dirname, "index-seo.html"),
       }),
       // new FaviconsWebpackPlugin({
       //   logo: path.resolve(__dirname, 'src/assets/IMG/logo1.png'),
@@ -383,6 +387,24 @@ module.exports = (env, argv) => {
         : new SvgBatchPlugin({
             // plainSprite: true, // 不生成样式，只输出纯 svg
           }),
+
+      true &&
+        new PrerenderPlugin({
+          // 必须指向你编译后的文件夹
+          staticDir: path.join(__dirname, "dist"),
+
+          // 填入你 routes.js 里的所有路径
+          routes: ["/", "/pricing", "/preloading-inspiration"],
+
+          renderer: new PuppeteerRenderer({
+            // 这一行非常重要：告诉插件等到 React 渲染完再抓取
+            renderAfterDocumentEvent: "render-event",
+            // 调试时可以设为 false 看到浏览器弹出来，发布时设为 true
+            headless: true,
+            maxConcurrentRoutes: 1,
+            renderAfterTime: 1000 * 10,
+          }),
+        }),
     ],
     output: {
       publicPath: "/",

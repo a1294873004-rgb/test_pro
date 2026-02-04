@@ -1,4 +1,4 @@
-import { createRoot } from "react-dom/client";
+import { createRoot, hydrateRoot } from "react-dom/client";
 // import "./auto-gen-data/svg";
 // import "./index.less";
 import { App } from "./src";
@@ -10,9 +10,29 @@ import { MySelect } from "src/antd-test";
 import { ClickableBanner } from "src/ClickableBanner";
 import { MemoryViewApp } from "src/memory-router";
 import { DrawingBoard } from "src/tui-image-editor-test";
+import "src/assets";
+
 // import "./src/lit-test";
-// createRoot(document.getElementById("root")!).render(<App />);
-createRoot(document.getElementById("root")!).render(<DrawingBoard />);
+createRoot(document.getElementById("root")!).render(<App />);
+
+const rootElement = document.getElementById("root")!;
+const shouldHydrate = true;
+
+if (shouldHydrate) {
+  hydrateRoot(rootElement, <App />);
+} else {
+  const root = createRoot(rootElement);
+  root.render(<App />);
+}
+
+if (true) {
+  // emit webpack build
+  setTimeout(() => {
+    document.dispatchEvent(new Event("render-event"));
+  }, 500);
+}
+
+// createRoot(document.getElementById("root")!).render(<DrawingBoard />);
 // createRoot(document.getElementById("root")!).render(<MarqueeTags />);
 // createRoot(document.getElementById("root")!).render(<MasonryGrid />);
 // createRoot(document.getElementById("root")!).render(

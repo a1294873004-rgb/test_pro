@@ -1,9 +1,11 @@
-import "./App.less";
-import { SEO } from "src/seo/SEO";
+import { PageNav } from "../PageNav";
+import { SEO } from "../SEO";
 
-function App() {
+function PreloadingPage() {
   return (
-    <div style={{ padding: 20 }}>
+    <div>
+      PreloadingPage
+      <PageNav />
       <SEO
         title="Anime Art Gallery - Explore AI-Generated Characters & Stories | YidooO"
         description="Browse thousands of anime characters, fan art, and creative stories from the YidooO community. Discover trending AI-generated art, remix templates, and get inspired. Explore doujin, pixel art, and animation styles."
@@ -13,4 +15,4 @@ function App() {
   );
 }
 
-export { App as ReactMasonryCss };
+export default PreloadingPage;

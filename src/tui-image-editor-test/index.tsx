@@ -2,17 +2,83 @@ import React, {
   ChangeEvent,
   useCallback,
   useEffect,
+  useMemo,
   useRef,
   useState,
 } from "react";
 // import ImageEditor from "tui-image-editor";
 import ImageEditor from "./libs/image-editor/src/index.js";
-import "tui-image-editor/dist/tui-image-editor.css";
+// import "tui-image-editor/dist/tui-image-editor.css";
 import styles from "./index.module.less";
 
 import classNames from "classnames";
-import { Popover, Select, Slider, Splitter } from "antd";
-import { SliderProps } from "antd/es/slider/index.js";
+import { Button, Divider, Popover, Select, Slider, Splitter } from "antd";
+import { SliderSingleProps } from "antd/es/slider/index.js";
+import { Icon } from "src/components/Icon";
+
+type ColorType = "stroke" | "fill";
+type ToolID =
+  | "undo"
+  | "redo"
+  | "free"
+  | "line"
+  | "rect"
+  | "circle"
+  | "arrow"
+  | "text"
+  | "clip";
+const emptyCropRectValues = {
+  LEFT: 0,
+  TOP: 0,
+  WIDTH: 0.5,
+  HEIGHT: 0.5,
+};
+const PickColors = [
+  "#FFFFFF",
+  "#000000",
+  "#E58B8B",
+  "#E5C78A",
+  "#C7E58A",
+  "#8AE58A",
+  "#99FFDD",
+  "#99DDFF",
+  "#9999FF",
+  "#FF99FF",
+];
+
+const ratios: { label: string; value: number }[] = [
+  {
+    label: "1:1",
+    value: 1,
+  },
+  {
+    label: "3:4",
+    value: 3 / 4,
+  },
+  {
+    label: "4:3",
+    value: 4 / 3,
+  },
+  {
+    label: "9:16",
+    value: 9 / 16,
+  },
+  {
+    label: "16:9",
+    value: 16 / 9,
+  },
+  {
+    label: "21:9",
+    value: 21 / 9,
+  },
+];
+// import "tui-code-snippet/dist/tui-code-snippet.css";
+function isEmptyCropzone(cropRect: any) {
+  const { left, top, width, height } = cropRect;
+  const { LEFT, TOP, WIDTH, HEIGHT } = emptyCropRectValues;
+
+  return left === LEFT && top === TOP && width === WIDTH && height === HEIGHT;
+}
 
 interface FileUploadProps {
   onFileSelect: (file: File) => void;
@@ -71,39 +137,9 @@ const FileUpload: React.FC<FileUploadProps> = ({
   );
 };
 
-const emptyCropRectValues = {
-  LEFT: 0,
-  TOP: 0,
-  WIDTH: 0.5,
-  HEIGHT: 0.5,
-};
-
-// import "tui-code-snippet/dist/tui-code-snippet.css";
-function isEmptyCropzone(cropRect: any) {
-  const { left, top, width, height } = cropRect;
-  const { LEFT, TOP, WIDTH, HEIGHT } = emptyCropRectValues;
-
-  return left === LEFT && top === TOP && width === WIDTH && height === HEIGHT;
-}
-
-const getRandomInt = (min: number, max: number): number => {
-  // 确保参数为整数
-  min = Math.ceil(min);
-  max = Math.floor(max);
-
-  // 公式：Math.random() * (最大值 - 最小值 + 1) + 最小值
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-};
-const getRandomHex = (): string => {
-  return `#${Math.floor(Math.random() * 0xffffff)
-    .toString(16)
-    .padStart(6, "0")}`;
-};
-
-const SizeSlider: React.FC<SliderProps> = (props) => {
+const SizeSlider: React.FC<SliderSingleProps> = (props) => {
   return <Slider {...props} className={styles.slider} />;
 };
-type ColorType = "stroke" | "fill";
 const ColorList: React.FC<{
   color: string;
   colors: string[];
@@ -117,6 +153,7 @@ const ColorList: React.FC<{
           onClick={() => {
             onClick(item);
           }}
+          key={item}
           className={classNames(
             styles.colorItem,
             styles[colorType],
@@ -132,18 +169,6 @@ const ColorList: React.FC<{
   );
 };
 
-const PickColors = [
-  "#FFFFFF",
-  "#000000",
-  "#E58B8B",
-  "#E5C78A",
-  "#C7E58A",
-  "#8AE58A",
-  "#99FFDD",
-  "#99DDFF",
-  "#9999FF",
-  "#FF99FF",
-];
 const FreeDrawMenu: React.FC<{
   colors?: string[];
   activeTool: ToolID | undefined;
@@ -151,10 +176,11 @@ const FreeDrawMenu: React.FC<{
   imageEditor: ImageEditor;
 }> = ({ colors = PickColors, imageEditor, activeTool, onChangeTool }) => {
   const [open, setOpen] = useState(false);
-  const onOpenChange = useCallback((newOpen: boolean) => {
-    setOpen(newOpen);
-  }, []);
-  const [size, setSize] = useState<number>(20);
+
+  useEffect(() => {
+    setOpen(!!activeTool && ["line", "free"].includes(activeTool));
+  }, [activeTool]);
+  const [size, setSize] = useState<number>(16);
   const [color, setColor] = useState(colors?.[0]);
 
   useEffect(() => {
@@ -175,6 +201,9 @@ const FreeDrawMenu: React.FC<{
         container: {
           padding: 0,
         },
+      }}
+      classNames={{
+        root: styles.Popover,
       }}
       trigger={"click"}
       zIndex={100}
@@ -209,7 +238,7 @@ const FreeDrawMenu: React.FC<{
                 }
               }}
             >
-              L
+              <Icon symbol="image-clip-line-pen" width={24} height={24} />
             </div>
             <div
               className={classNames(
@@ -238,20 +267,20 @@ const FreeDrawMenu: React.FC<{
                 }
               }}
             >
-              F
+              <Icon symbol="image-clip-free-pen" width={24} height={24} />
             </div>
             <SizeSlider
               value={size}
               onChange={(size) => {
                 setSize(size);
               }}
-              max={100}
-              min={10}
+              max={80}
+              min={1}
               step={1}
             />
           </div>
 
-          <Splitter vertical />
+          <Divider orientation="vertical" className={styles.Divider} />
           <ColorList
             colorType="fill"
             colors={colors}
@@ -261,15 +290,40 @@ const FreeDrawMenu: React.FC<{
         </div>
       }
       open={open}
-      onOpenChange={onOpenChange}
     >
       <div
         className={classNames(
-          (["free", "line"].includes(activeTool) || open) && styles.active,
+          ((!!activeTool && ["free", "line"].includes(activeTool)) || open) &&
+            styles.active,
           styles.toolButton,
         )}
+        onClick={() => {
+          const disable = !!activeTool && ["free", "line"].includes(activeTool);
+          if (disable) {
+            imageEditor.stopDrawingMode();
+            imageEditor.discardSelection();
+            imageEditor.changeSelectableAll(true);
+            onChangeTool(undefined);
+          } else {
+            imageEditor.discardSelection();
+            imageEditor.changeSelectableAll(true);
+
+            imageEditor.stopDrawingMode();
+
+            imageEditor.startDrawingMode("FREE_DRAWING", {
+              width: size,
+              color: color,
+            });
+
+            onChangeTool("free");
+          }
+        }}
       >
-        D
+        {!!activeTool && ["free", "line"].includes(activeTool) ? (
+          <Icon symbol="image-clip-pen-active" width={24} height={24} />
+        ) : (
+          <Icon symbol="image-clip-pen" width={24} height={24} />
+        )}
       </div>
     </Popover>
   );
@@ -283,16 +337,20 @@ const ShapeDrawMenu: React.FC<{
   imageEditor: ImageEditor;
 }> = ({ colors = PickColors, imageEditor, activeTool, onChangeTool, type }) => {
   const [open, setOpen] = useState(false);
-  const onOpenChange = useCallback((newOpen: boolean) => {
-    setOpen(newOpen);
-  }, []);
-  const [size, setSize] = useState<number>(20);
-  const [fill, setFill] = useState(false);
+
+  useEffect(() => {
+    setOpen(activeTool === type);
+  }, [activeTool]);
+  const [size, setSize] = useState<number>(16);
+  const [fill, setFill] = useState(true);
   const [color, setColor] = useState(colors?.[0]);
   const isIcon = type === "arrow";
   useEffect(() => {
     if (type === activeTool) {
       if (isIcon) {
+        console.log("draw icon", type, color);
+        imageEditor.stopDrawingMode();
+
         imageEditor.startDrawingMode("ICON");
         imageEditor.setDrawingIcon(type, color);
       } else {
@@ -300,11 +358,36 @@ const ShapeDrawMenu: React.FC<{
         imageEditor.setDrawingShape(type, {
           stroke: color,
           fill: fill ? color : "",
-          strokeWidth: getRandomInt(2, 20),
+          strokeWidth: size,
         });
       }
     }
   }, [activeTool, size, color, type, fill, isIcon]);
+
+  const ToolIcon = useMemo(() => {
+    const isActive = activeTool === type;
+    if (type === "arrow") {
+      return isActive ? (
+        <Icon symbol="image-clip-arrow-active" width={24} height={24} />
+      ) : (
+        <Icon symbol="image-clip-arrow" width={24} height={24} />
+      );
+    }
+    if (type === "rect") {
+      return isActive ? (
+        <Icon symbol="image-clip-rect-active" width={24} height={24} />
+      ) : (
+        <Icon symbol="image-clip-rect" width={24} height={24} />
+      );
+    }
+    if (type === "circle") {
+      return isActive ? (
+        <Icon symbol="image-clip-circle-active" width={24} height={24} />
+      ) : (
+        <Icon symbol="image-clip-circle" width={24} height={24} />
+      );
+    }
+  }, [type, activeTool]);
 
   return (
     <Popover
@@ -313,26 +396,32 @@ const ShapeDrawMenu: React.FC<{
           padding: 0,
         },
       }}
+      classNames={{
+        root: styles.Popover,
+      }}
       trigger={"click"}
       zIndex={100}
       placement="bottom"
       content={
         <div className={styles.FreeDrawMenu}>
           {!isIcon && (
-            <div className={styles.left}>
-              <SizeSlider
-                value={size}
-                onChange={(size) => {
-                  setSize(size);
-                }}
-                max={100}
-                min={10}
-                step={1}
-              />
-            </div>
+            <>
+              <div className={styles.left}>
+                <Icon symbol="image-clip-line-pen" width={24} height={24} />
+                <SizeSlider
+                  value={size}
+                  onChange={(size) => {
+                    setSize(size);
+                  }}
+                  max={80}
+                  min={1}
+                  step={1}
+                />
+              </div>
+              <Divider orientation="vertical" className={styles.Divider} />
+            </>
           )}
 
-          <Splitter vertical />
           {!isIcon && (
             <>
               <div
@@ -340,12 +429,14 @@ const ShapeDrawMenu: React.FC<{
                 onClick={() => {
                   setFill((pre) => !pre);
                 }}
-              />
-              <Splitter vertical />
+              >
+                <Icon symbol="image-clip-shape-fill" width={24} height={24} />
+              </div>
+              <Divider orientation="vertical" className={styles.Divider} />
             </>
           )}
           <ColorList
-            colorType="stroke"
+            colorType="fill"
             colors={colors}
             color={color}
             onClick={setColor}
@@ -353,7 +444,7 @@ const ShapeDrawMenu: React.FC<{
         </div>
       }
       open={open}
-      onOpenChange={onOpenChange}
+      // onOpenChange={onOpenChange}
     >
       <div
         className={classNames(
@@ -377,7 +468,7 @@ const ShapeDrawMenu: React.FC<{
               imageEditor.setDrawingShape(type, {
                 stroke: color,
                 fill: fill ? color : "",
-                strokeWidth: getRandomInt(2, 20),
+                strokeWidth: size,
               });
             }
           } else {
@@ -387,7 +478,7 @@ const ShapeDrawMenu: React.FC<{
           }
         }}
       >
-        {type.slice(0, 1)}
+        {ToolIcon}
       </div>
     </Popover>
   );
@@ -403,19 +494,20 @@ const TextDrawMenu: React.FC<{
   imageEditor,
   activeTool,
   onChangeTool,
-  fonts = new Array(100).fill(0).map((_, index) => index + 5),
+  fonts = [12, 16, 20, 24, 32, 36, 40, 48, 64, 72, 80, 96],
 }) => {
   const [open, setOpen] = useState(false);
-  const onOpenChange = useCallback((newOpen: boolean) => {
-    setOpen(newOpen);
-  }, []);
-  const [size, setSize] = useState<number>(20);
+
+  useEffect(() => {
+    setOpen(activeTool === "text");
+  }, [activeTool]);
+  const [size, setSize] = useState<number>(12);
   const [bold, setBold] = useState(false);
 
   const [color, setColor] = useState(colors?.[0]);
 
   useEffect(() => {
-    const onAddText = (pos) => {
+    const onAddText = (pos: any) => {
       imageEditor
         .addText("", {
           position: pos.originPosition,
@@ -437,13 +529,15 @@ const TextDrawMenu: React.FC<{
     };
   }, [imageEditor, size, color, bold]);
 
-  console.log("fonts", fonts);
   return (
     <Popover
       styles={{
         container: {
           padding: 0,
         },
+      }}
+      classNames={{
+        root: styles.Popover,
       }}
       trigger={"click"}
       zIndex={100}
@@ -455,8 +549,10 @@ const TextDrawMenu: React.FC<{
             onClick={() => {
               setBold((pre) => !pre);
             }}
-          />
-          <Splitter vertical />
+          >
+            <Icon symbol="image-clip-text-bold" width={24} height={24} />
+          </div>
+          <Divider orientation="vertical" className={styles.Divider} />
           <Select
             value={size}
             options={fonts.map((item) => ({
@@ -467,7 +563,7 @@ const TextDrawMenu: React.FC<{
               setSize(size);
             }}
           />
-          <Splitter vertical />
+          <Divider orientation="vertical" className={styles.Divider} />
           <ColorList
             colorType="fill"
             colors={colors}
@@ -477,7 +573,6 @@ const TextDrawMenu: React.FC<{
         </div>
       }
       open={open}
-      onOpenChange={onOpenChange}
     >
       <div
         className={classNames(
@@ -500,7 +595,11 @@ const TextDrawMenu: React.FC<{
           }
         }}
       >
-        {"text".slice(0, 1)}
+        {activeTool === "text" ? (
+          <Icon symbol="image-clip-text-active" width={24} height={24} />
+        ) : (
+          <Icon symbol="image-clip-text" width={24} height={24} />
+        )}
       </div>
     </Popover>
   );
@@ -510,44 +609,19 @@ const ClipDrawMenu: React.FC<{
   activeTool: ToolID | undefined;
   onChangeTool: (tool: ToolID | undefined) => void;
   imageEditor: ImageEditor;
-  ratios?: { label: string; value: number }[];
-}> = ({
-  imageEditor,
-  activeTool,
-  onChangeTool,
-  ratios = [
-    {
-      label: "1:1",
-      value: 1,
-    },
-    {
-      label: "16:9",
-      value: 16 / 9,
-    },
-    {
-      label: "9:16",
-      value: 9 / 16,
-    },
-    {
-      label: "4:3",
-      value: 4 / 3,
-    },
-    {
-      label: "3:4",
-      value: 3 / 4,
-    },
-    {
-      label: "21:9",
-      value: 21 / 9,
-    },
-  ],
-}) => {
+}> = ({ imageEditor, activeTool, onChangeTool }) => {
   const [open, setOpen] = useState(false);
   const [ratio, setRatio] = useState<number | undefined>(ratios[0].value);
 
-  const onOpenChange = useCallback((newOpen: boolean) => {
-    setOpen(newOpen);
-  }, []);
+  useEffect(() => {
+    setOpen(activeTool === "clip");
+
+    if (activeTool !== "clip") {
+      setRatio(undefined);
+    } else {
+      setRatio(ratios[0].value);
+    }
+  }, [activeTool]);
 
   return (
     <Popover
@@ -555,6 +629,9 @@ const ClipDrawMenu: React.FC<{
         container: {
           padding: 0,
         },
+      }}
+      classNames={{
+        root: styles.Popover,
       }}
       trigger={"click"}
       zIndex={100}
@@ -571,36 +648,14 @@ const ClipDrawMenu: React.FC<{
                 setRatio(item.value);
                 imageEditor.setCropzoneRect(item.value);
               }}
+              key={item.value}
             >
               {item.label}
             </div>
           ))}
-
-          <div
-            className={styles.toolButton}
-            onClick={() => {
-              const cropRect = imageEditor.getCropzoneRect();
-              if (cropRect && !isEmptyCropzone(cropRect)) {
-                imageEditor
-                  .crop(cropRect)
-                  .then(() => {
-                    imageEditor.stopDrawingMode();
-                  })
-                  .catch((message) => Promise.reject(message))
-                  .finally(() => {
-                    setRatio(undefined);
-                    onChangeTool(undefined);
-                    setOpen(false);
-                  });
-              }
-            }}
-          >
-            apply
-          </div>
         </div>
       }
       open={open}
-      onOpenChange={onOpenChange}
     >
       <div
         className={classNames(
@@ -624,21 +679,16 @@ const ClipDrawMenu: React.FC<{
           }
         }}
       >
-        {"clip".slice(0, 1)}
+        {activeTool === "clip" ? (
+          <Icon symbol="image-clip-crop-active" width={24} height={24} />
+        ) : (
+          <Icon symbol="image-clip-crop" width={24} height={24} />
+        )}
       </div>
     </Popover>
   );
 };
-type ToolID =
-  | "undo"
-  | "redo"
-  | "free"
-  | "line"
-  | "rect"
-  | "circle"
-  | "arrow"
-  | "text"
-  | "clip";
+
 const DrawingBoard: React.FC = () => {
   const editorContainerRef = useRef<HTMLDivElement>(null);
   const editorInstanceRef = useRef<ImageEditor | null>(null);
@@ -651,7 +701,6 @@ const DrawingBoard: React.FC = () => {
   useEffect(() => {
     if (editorInstanceRef.current) return;
     setIsLoading(true);
-    // 初始化编辑器实例
     const editorInstance = new ImageEditor(editorContainerRef.current, {
       includeUI: {
         loadImage: {
@@ -681,7 +730,7 @@ const DrawingBoard: React.FC = () => {
         },
         menuBarPosition: "bottom",
       },
-      includeUI: false,
+      // includeUI: false,
       // cssMaxWidth: 700,
       // cssMaxHeight: 500,
       // selectionStyle: {
@@ -699,171 +748,30 @@ const DrawingBoard: React.FC = () => {
         setIsLoading(false);
       });
     editorInstanceRef.current = editorInstance;
+
+    editorInstance.registerIcons({
+      arrow: "M40 12V0l24 24-24 24V36H0V12h40z",
+    });
+
+    editorInstance.on("addObjectAfter", () => {
+      editorInstance?.changeCursor("default");
+    });
     setEditor(editorInstance);
     // 组件卸载时销毁实例
     return () => {
       if (editorInstanceRef.current) {
+        editorInstanceRef.current.off();
         editorInstanceRef.current.destroy();
         editorInstanceRef.current = null;
       }
     };
   }, []);
 
-  const preToolRef = useRef<string | undefined>(undefined);
-
-  useEffect(() => {
-    const imageEditor = editorInstanceRef.current!;
-
-    imageEditor.registerIcons({
-      arrow: "M40 12V0l24 24-24 24V36H0V12h40z",
-    });
-    imageEditor.on("addText", (pos) => {
-      imageEditor
-        .addText("", {
-          position: pos.originPosition,
-          styles: {
-            fill: getRandomHex(),
-            fontSize: getRandomInt(2, 100),
-            fontFamily: "Noto Sans",
-            fontStyle: "normal",
-            fontWeight: "normal",
-          },
-        })
-        .then(() => {
-          imageEditor.changeCursor("default");
-        });
-    });
-  }, []);
-  const onClickTool = (toolName: string) => {
-    const preToolName = preToolRef.current;
-
-    const actions = editorInstance.current.getActions();
-    console.log("actions", toolName, preToolName);
-    const imageEditor = editorInstance.current!;
-
-    if (toolName === "free") {
-      if (preToolName === toolName) {
-        imageEditor.discardSelection();
-        imageEditor.changeSelectableAll(true);
-        imageEditor.changeSelectableAll(true);
-        imageEditor.stopDrawingMode();
-      } else {
-        imageEditor.discardSelection();
-        imageEditor.changeSelectableAll(true);
-
-        imageEditor.stopDrawingMode();
-
-        imageEditor.startDrawingMode("FREE_DRAWING", {
-          width: getRandomInt(2, 20),
-          color: getRandomHex(),
-        });
-      }
-    } else if (toolName === "line") {
-      if (preToolName === toolName) {
-        imageEditor.discardSelection();
-        imageEditor.changeSelectableAll(true);
-        imageEditor.changeSelectableAll(true);
-        imageEditor.stopDrawingMode();
-      } else {
-        imageEditor.discardSelection();
-        imageEditor.changeSelectableAll(true);
-
-        imageEditor.stopDrawingMode();
-
-        imageEditor.startDrawingMode("LINE_DRAWING", {
-          width: getRandomInt(2, 20),
-          color: getRandomHex(),
-        });
-      }
-    } else if (toolName === "rect") {
-      if (preToolName === toolName) {
-        // reset
-        imageEditor.stopDrawingMode();
-        imageEditor.discardSelection();
-        imageEditor.changeSelectableAll(true);
-      } else {
-        // reset
-        imageEditor.stopDrawingMode();
-        imageEditor.discardSelection();
-        imageEditor.changeSelectableAll(true);
-        //init
-        imageEditor.changeSelectableAll(false);
-        imageEditor.startDrawingMode("SHAPE");
-        imageEditor.setDrawingShape("rect", {
-          stroke: getRandomHex(),
-          fill: "",
-          strokeWidth: getRandomInt(2, 20),
-        });
-      }
-    } else if (toolName === "circle") {
-      if (preToolName === toolName) {
-        // reset
-        imageEditor.stopDrawingMode();
-        imageEditor.discardSelection();
-        imageEditor.changeSelectableAll(true);
-      } else {
-        // reset
-        imageEditor.stopDrawingMode();
-        imageEditor.discardSelection();
-        imageEditor.changeSelectableAll(true);
-        //init
-        imageEditor.changeSelectableAll(false);
-        imageEditor.startDrawingMode("SHAPE");
-        imageEditor.setDrawingShape("circle", {
-          stroke: getRandomHex(),
-          fill: "",
-          strokeWidth: getRandomInt(2, 20),
-        });
-      }
-    } else if (toolName === "text") {
-      if (preToolName === toolName) {
-        // reset
-        imageEditor.stopDrawingMode();
-        imageEditor.discardSelection();
-        imageEditor.changeSelectableAll(true);
-      } else {
-        // reset
-        imageEditor.stopDrawingMode();
-        imageEditor.discardSelection();
-        imageEditor.changeSelectableAll(true);
-        //init
-        imageEditor.changeSelectableAll(false);
-        imageEditor.startDrawingMode("TEXT");
-        // imageEditor.setDrawingShape("circle", {
-        //   stroke: getRandomHex(),
-        //   fill: "",
-        //   strokeWidth: getRandomInt(2, 20),
-        // });
-      }
-    } else if (toolName === "clip") {
-      if (preToolName === toolName) {
-        // reset
-        imageEditor.stopDrawingMode();
-        imageEditor.discardSelection();
-        imageEditor.changeSelectableAll(true);
-      } else {
-        // reset
-        imageEditor.stopDrawingMode();
-        imageEditor.discardSelection();
-        imageEditor.changeSelectableAll(true);
-        //init
-        imageEditor.changeSelectableAll(false);
-        imageEditor.startDrawingMode("CROPPER");
-        // imageEditor.setDrawingShape("circle", {
-        //   stroke: getRandomHex(),
-        //   fill: "",
-        //   strokeWidth: getRandomInt(2, 20),
-        // });
-      }
-    }
-  };
-
   useEffect(() => {
     const imageEditor = editorInstanceRef.current!;
 
     imageEditor.on("undoStackChanged", (undoLength: number) => {
       console.log("undoLength", undoLength);
-
       setUndoable(undoLength > 0);
     });
 
@@ -872,140 +780,138 @@ const DrawingBoard: React.FC = () => {
       setRedoable(redoLength > 0);
     });
   }, []);
+
+  const onUndo = () => {
+    const imageEditor = editorInstanceRef.current!;
+    imageEditor.undo();
+  };
+
+  const onRedo = () => {
+    const imageEditor = editorInstanceRef.current!;
+    imageEditor.redo();
+  };
+
+  const onChangeTool = (tool: ToolID | undefined) => {
+    setTool((pre) => {
+      if (pre === tool) {
+        return undefined;
+      }
+      return tool;
+    });
+  };
   const tools = [
     {
       id: "undo",
-      icon: "",
-      onClick: () => {
-        const imageEditor = editorInstanceRef.current!;
-        imageEditor.undo();
-      },
-      className: !undoable && styles.disabled,
+      content: undoable ? (
+        <Icon
+          symbol="image-clip-undo-active"
+          width={24}
+          height={24}
+          onClick={onUndo}
+        />
+      ) : (
+        <Icon symbol="image-clip-undo" width={24} height={24} disabled />
+      ),
     },
     {
       id: "redo",
-      icon: "",
-      onClick: () => {
-        const imageEditor = editorInstanceRef.current!;
-        imageEditor.redo();
-      },
-      className: !redoable && styles.disabled,
+      content: redoable ? (
+        <Icon
+          symbol="image-clip-redo-active"
+          width={24}
+          height={24}
+          onClick={onRedo}
+        />
+      ) : (
+        <Icon symbol="image-clip-redo" width={24} height={24} disabled />
+      ),
+    },
+    {
+      id: "divider1",
+      content: <Divider orientation="vertical" className={styles.Divider1} />,
     },
     {
       id: "free",
-      icon: "",
-      onClick: () => {},
       content: (
         <FreeDrawMenu
           activeTool={tool}
           imageEditor={editor!}
-          onChangeTool={(tool) => {
-            setTool((pre) => {
-              if (pre === tool) {
-                return undefined;
-              }
-              return tool;
-            });
-          }}
+          onChangeTool={onChangeTool}
         />
       ),
-    }, //ShapeDrawMenu
+    },
+    {
+      id: "divider2",
+      content: <Divider orientation="vertical" className={styles.Divider1} />,
+    },
     {
       id: "rect",
-      icon: "",
       content: (
         <ShapeDrawMenu
           type="rect"
           activeTool={tool}
           imageEditor={editor!}
-          onChangeTool={(tool) => {
-            setTool((pre) => {
-              if (pre === tool) {
-                return undefined;
-              }
-              return tool;
-            });
-          }}
+          onChangeTool={onChangeTool}
         />
       ),
     },
     {
       id: "circle",
-      icon: "",
-      onClick: () => {},
       content: (
         <ShapeDrawMenu
           type="circle"
           activeTool={tool}
           imageEditor={editor!}
-          onChangeTool={(tool) => {
-            setTool((pre) => {
-              if (pre === tool) {
-                return undefined;
-              }
-              return tool;
-            });
-          }}
+          onChangeTool={onChangeTool}
         />
       ),
     },
     {
+      id: "divider3",
+      content: <Divider orientation="vertical" className={styles.Divider1} />,
+    },
+    {
       id: "arrow",
-      icon: "",
-      onClick: () => {},
       content: (
         <ShapeDrawMenu
           type="arrow"
           activeTool={tool}
           imageEditor={editor!}
-          onChangeTool={(tool) => {
-            setTool((pre) => {
-              if (pre === tool) {
-                return undefined;
-              }
-              return tool;
-            });
-          }}
+          onChangeTool={onChangeTool}
         />
       ),
-    }, //TextDrawMenu
+    },
+    {
+      id: "divider4",
+      content: <Divider orientation="vertical" className={styles.Divider1} />,
+    },
     {
       id: "text",
-      icon: "",
       content: (
         <TextDrawMenu
           activeTool={tool}
           imageEditor={editor!}
-          onChangeTool={(tool) => {
-            setTool((pre) => {
-              if (pre === tool) {
-                return undefined;
-              }
-              return tool;
-            });
-          }}
+          onChangeTool={onChangeTool}
         />
       ),
-    }, //ClipDrawMenu
+    },
+    {
+      id: "divider5",
+      content: <Divider orientation="vertical" className={styles.Divider1} />,
+    },
     {
       id: "clip",
-      icon: "",
       content: (
         <ClipDrawMenu
           activeTool={tool}
           imageEditor={editor!}
-          onChangeTool={(tool) => {
-            setTool((pre) => {
-              if (pre === tool) {
-                return undefined;
-              }
-              return tool;
-            });
-          }}
+          onChangeTool={onChangeTool}
         />
       ),
     },
   ] as const;
+
+  const [preview, setpreview] = useState();
   return (
     <>
       <FileUpload
@@ -1015,54 +921,84 @@ const DrawingBoard: React.FC = () => {
         }}
       />
       <div className={styles.DrawingBoard}>
-        {tool === "clip" && false && (
-          <div
-            className={styles.clipButton}
-            onClick={() => {
-              const imageEditor = editorInstanceRef.current!;
-
-              const cropRect = imageEditor.getCropzoneRect();
-              if (cropRect && !isEmptyCropzone(cropRect)) {
-                imageEditor
-                  .crop(cropRect)
-                  .then(() => {
-                    imageEditor.stopDrawingMode();
-                    // imageEditor.ui.resizeEditor();
-                    // imageEditor.ui.changeMenu("crop");
-                    // imageEditor._invoker.fire(
-                    //   eventNames.EXECUTE_COMMAND,
-                    //   historyNames.CROP,
-                    // );
-                  })
-                  ["catch"]((message) => Promise.reject(message));
+        {tool === "clip" && (
+          <div className={styles.clipButtons}>
+            <Button
+              icon={
+                <Icon symbol="image-clip-crop-close" width={18} height={18} />
               }
-            }}
-          >
-            crop
+              onClick={() => {
+                const imageEditor = editorInstanceRef.current!;
+                onChangeTool(undefined);
+                imageEditor?.stopDrawingMode();
+                imageEditor?.discardSelection();
+                imageEditor?.changeSelectableAll(true);
+              }}
+              className={classNames(styles.clipButton, styles.close)}
+            >
+              取消
+            </Button>
+            <Button
+              icon={
+                <Icon symbol="image-clip-crop-apply" width={18} height={18} />
+              }
+              onClick={() => {
+                const imageEditor = editorInstanceRef.current!;
+                const cropRect = imageEditor?.getCropzoneRect();
+                if (cropRect && !isEmptyCropzone(cropRect)) {
+                  imageEditor
+                    .crop(cropRect)
+                    .then(() => {
+                      imageEditor.stopDrawingMode();
+                    })
+                    .catch((message) => Promise.reject(message))
+                    .finally(() => {
+                      onChangeTool(undefined);
+                    });
+                } else {
+                  onChangeTool(undefined);
+                  imageEditor?.stopDrawingMode();
+                  imageEditor?.discardSelection();
+                  imageEditor?.changeSelectableAll(true);
+                }
+              }}
+              className={classNames(styles.clipButton, styles.apply)}
+            >
+              应用
+            </Button>
           </div>
         )}
-
         <div className={styles.editor} ref={editorContainerRef}></div>
-        <div className={styles.footer}>
-          <div className={styles.toolWrapper}>
-            {tools.map((item) => {
-              return (
-                item?.content ?? (
-                  <div
-                    onClick={item.onClick}
-                    key={item.id}
-                    className={classNames(styles.toolButton, item.className)}
-                  >
-                    {item.id.slice(0, 1)}
-                  </div>
-                )
-              );
-            })}
-          </div>
+        {!isLoading && (
+          <div className={styles.footer}>
+            <div className={styles.toolWrapper}>
+              {tools.map((item) => (
+                <React.Fragment key={item.id}>{item?.content}</React.Fragment>
+              ))}
+            </div>
 
-          <button>保存</button>
-        </div>
+            <Button
+              onClick={() => {
+                const imageEditor = editorInstanceRef.current!;
+
+                const data = imageEditor?.toDataURL();
+
+                setpreview(data);
+                console.log("data", data);
+              }}
+            >
+              保存
+            </Button>
+          </div>
+        )}
       </div>
+
+      {preview && (
+        <img
+          src={preview}
+          style={{ width: 200, height: 200, objectFit: "contain" }}
+        />
+      )}
     </>
   );
 };
