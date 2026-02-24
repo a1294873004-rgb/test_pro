@@ -1,1082 +1,652 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-  <title>YidooO - AI Anime Generator &amp; Creative Board | Free Character Design &amp; Story Creation</title>
-  <link rel="shortcut icon" href="./">
-  <style>
-    .seo-hidden-title {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      white-space: nowrap;
-      border: 0;
-      /* 确保不影响布局 */
-      pointer-events: none;
-    }
-  </style>
-  <meta name="description"
-    content="Create anime art, characters, and stories with AI. YidooO offers free AI art generator, infinite creative board, plot generator, and video production tools. Join 100K+ ACGN creators. Start free!">
-  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png">
-  <link rel="manifest" href="/assets/manifest.webmanifest">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="theme-color" content="#fff">
-  <meta name="application-name" content="@yidooo/client">
-  <link rel="apple-touch-icon" sizes="57x57" href="/assets/apple-touch-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/assets/apple-touch-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/assets/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/assets/apple-touch-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/assets/apple-touch-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/assets/apple-touch-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/assets/apple-touch-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/assets/apple-touch-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="167x167" href="/assets/apple-touch-icon-167x167.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon-180x180.png">
-  <link rel="apple-touch-icon" sizes="1024x1024" href="/assets/apple-touch-icon-1024x1024.png">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="@yidooo/client">
-  <link rel="apple-touch-startup-image"
-    media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    href="/assets/apple-touch-startup-image-640x1136.png">
-  <link rel="apple-touch-startup-image"
-    media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    href="/assets/apple-touch-startup-image-1136x640.png">
-  <link rel="apple-touch-startup-image"
-    media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    href="/assets/apple-touch-startup-image-750x1334.png">
-  <link rel="apple-touch-startup-image"
-    media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    href="/assets/apple-touch-startup-image-1334x750.png">
-  <link rel="apple-touch-startup-image"
-    media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    href="/assets/apple-touch-startup-image-1125x2436.png">
-  <link rel="apple-touch-startup-image"
-    media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    href="/assets/apple-touch-startup-image-2436x1125.png">
-  <link rel="apple-touch-startup-image"
-    media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    href="/assets/apple-touch-startup-image-1170x2532.png">
-  <link rel="apple-touch-startup-image"
-    media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    href="/assets/apple-touch-startup-image-2532x1170.png">
-  <link rel="apple-touch-startup-image"
-    media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    href="/assets/apple-touch-startup-image-1179x2556.png">
-  <link rel="apple-touch-startup-image"
-    media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    href="/assets/apple-touch-startup-image-2556x1179.png">
-  <link rel="apple-touch-startup-image"
-    media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    href="/assets/apple-touch-startup-image-828x1792.png">
-  <link rel="apple-touch-startup-image"
-    media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    href="/assets/apple-touch-startup-image-1792x828.png">
-  <link rel="apple-touch-startup-image"
-    media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    href="/assets/apple-touch-startup-image-1242x2688.png">
-  <link rel="apple-touch-startup-image"
-    media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    href="/assets/apple-touch-startup-image-2688x1242.png">
-  <link rel="apple-touch-startup-image"
-    media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    href="/assets/apple-touch-startup-image-1242x2208.png">
-  <link rel="apple-touch-startup-image"
-    media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    href="/assets/apple-touch-startup-image-2208x1242.png">
-  <link rel="apple-touch-startup-image"
-    media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    href="/assets/apple-touch-startup-image-1284x2778.png">
-  <link rel="apple-touch-startup-image"
-    media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    href="/assets/apple-touch-startup-image-2778x1284.png">
-  <link rel="apple-touch-startup-image"
-    media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    href="/assets/apple-touch-startup-image-1290x2796.png">
-  <link rel="apple-touch-startup-image"
-    media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    href="/assets/apple-touch-startup-image-2796x1290.png">
-  <link rel="apple-touch-startup-image"
-    media="(device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    href="/assets/apple-touch-startup-image-1488x2266.png">
-  <link rel="apple-touch-startup-image"
-    media="(device-width: 744px) and (device-height: 1133px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    href="/assets/apple-touch-startup-image-2266x1488.png">
-  <link rel="apple-touch-startup-image"
-    media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    href="/assets/apple-touch-startup-image-1536x2048.png">
-  <link rel="apple-touch-startup-image"
-    media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    href="/assets/apple-touch-startup-image-2048x1536.png">
-  <link rel="apple-touch-startup-image"
-    media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    href="/assets/apple-touch-startup-image-1620x2160.png">
-  <link rel="apple-touch-startup-image"
-    media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    href="/assets/apple-touch-startup-image-2160x1620.png">
-  <link rel="apple-touch-startup-image"
-    media="(device-width: 820px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    href="/assets/apple-touch-startup-image-1640x2160.png">
-  <link rel="apple-touch-startup-image"
-    media="(device-width: 820px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    href="/assets/apple-touch-startup-image-2160x1640.png">
-  <link rel="apple-touch-startup-image"
-    media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    href="/assets/apple-touch-startup-image-1668x2388.png">
-  <link rel="apple-touch-startup-image"
-    media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    href="/assets/apple-touch-startup-image-2388x1668.png">
-  <link rel="apple-touch-startup-image"
-    media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    href="/assets/apple-touch-startup-image-1668x2224.png">
-  <link rel="apple-touch-startup-image"
-    media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    href="/assets/apple-touch-startup-image-2224x1668.png">
-  <link rel="apple-touch-startup-image"
-    media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    href="/assets/apple-touch-startup-image-2048x2732.png">
-  <link rel="apple-touch-startup-image"
-    media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    href="/assets/apple-touch-startup-image-2732x2048.png">
-  <meta name="msapplication-TileColor" content="#fff">
-  <meta name="msapplication-TileImage" content="/assets/mstile-144x144.png">
-  <meta name="msapplication-config" content="/assets/browserconfig.xml">
-  <link rel="yandex-tableau-widget" href="/assets/yandex-browser-manifest.json">
-  <script type="text/javascript" async=""
-    src="https://www.googletagmanager.com/gtag/js?id=G-HX322P0V95&amp;cx=c&amp;gtm=4e6221"></script>
-  <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-PQ5ZF8SC"></script>
-  <script defer="defer" src="/js/7965.e0df3e80.js"></script>
-  <script defer="defer" src="/js/main.18126e1c.js"></script>
-  <link href="/css/7965.76e71904.css" rel="stylesheet">
-  <link href="/css/main.625638fe.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="/css/9777.9462f3cf.chunk.css">
-  <link rel="stylesheet" type="text/css" href="/css/2207.3516ffa0.chunk.css">
-  <link rel="stylesheet" type="text/css" href="/css/1817.cc9438b6.chunk.css">
-</head>
-
-<body>
-  <h1 class="seo-hidden-title">Create Anime Art &amp; Stories with AI - YidooO</h1>
-  <div id="root">
-    <div class="layoutWrapper_xbr7ESfWS_">
-      <header class="PreloadingFirstHeader_rOLn65fPUf">
-        <div class="PreloadingFirstHeaderLogo_Zi3dbYXvAf"><i class="yidooO-icon yidooO-icon-logos"
-            style="width: 160px; height: 40px;"><svg width="160" height="40" fill="currentColor" aria-hidden="true"
-              focusable="false">
-              <use xlink:href="#IconSVG-logos"></use>
-            </svg></i></div>
-        <nav class="PreloadingFirstHeaderCenter_v4pVgXbk0A"><a class="NavLink_EPz15eP82W" href="/"
-            data-discover="true">首页</a><a class="NavLink_EPz15eP82W" href="/preloading-inspiration"
-            data-discover="true">灵感</a><a class="NavLink_EPz15eP82W" href="/pricing" data-discover="true">价格</a></nav>
-        <div class="PreloadingFirstHeaderRight_LsUNCXMnFt">
-          <div class="LanguageSwitcher_Wkav3pMTXY" aria-describedby=":r3:"><i class="yidooO-icon yidooO-icon-language"
-              style="width: 16px; height: 16px;"><svg width="16" height="16" fill="currentColor" aria-hidden="true"
+<div class="layoutWrapper_xbr7ESfWS_">
+  <header class="PreloadingFirstHeader_rOLn65fPUf">
+    <div class="PreloadingFirstHeaderLogo_Zi3dbYXvAf"><i class="yidooO-icon yidooO-icon-logos"
+        style="width: 160px; height: 40px;"><svg width="160" height="40" fill="currentColor" aria-hidden="true"
+          focusable="false">
+          <use xlink:href="#IconSVG-logos"></use>
+        </svg></i></div>
+    <nav class="PreloadingFirstHeaderCenter_v4pVgXbk0A">
+      <ul>
+        <li><a class="NavLink_EPz15eP82W" href="/" data-discover="true">首页</a></li>
+        <li><a class="NavLink_EPz15eP82W" href="/preloading-inspiration" data-discover="true">灵感</a></li>
+        <li><a class="NavLink_EPz15eP82W" href="/pricing" data-discover="true">价格</a></li>
+      </ul>
+    </nav>
+    <div class="PreloadingFirstHeaderRight_LsUNCXMnFt">
+      <div class="LanguageSwitcher_Wkav3pMTXY" aria-describedby=":r1:"><i class="yidooO-icon yidooO-icon-language"
+          style="width: 16px; height: 16px;"><svg width="16" height="16" fill="currentColor" aria-hidden="true"
+            focusable="false">
+            <use xlink:href="#IconSVG-language"></use>
+          </svg></i><span class="text_c881LhrsBu">中文</span><i
+          class="yidooO-icon yidooO-icon-Dropdown iconClose_Tf7ny3cusv" style="width: 24px; height: 24px;"><svg
+            width="24" height="24" fill="currentColor" aria-hidden="true" focusable="false">
+            <use xlink:href="#IconSVG-Dropdown"></use>
+          </svg></i></div>
+      <div class="PreloadingFirstHeaderRightLogin_Nb5yt_fQQ6"><i class="yidooO-icon yidooO-icon-login"
+          style="width: 24px; height: 24px;"><svg width="24" height="24" fill="currentColor" aria-hidden="true"
+            focusable="false">
+            <use xlink:href="#IconSVG-login"></use>
+          </svg></i><span>登录</span></div>
+    </div>
+  </header>
+  <main class="PreloadingLayout_QTHmEQOZCn">
+    <div class="HomePage_hxAYPKXBnI">
+      <div class="HomePageFirst_JVC0dS6SzD">
+        <div class="OSSImage_LZYsvZ3n4K HomePageFirstBg_MxPYtvbCW1"><img
+            src="https://r.yidooo.com/yd_sys/web/front_end_oss_data/1766976443077_d8f7.webp" alt=""
+            class="realImage_RKmY_Oinif" style="object-fit: cover;"></div>
+        <div class="HomePageFirstTitle__QIfB6ydrD">
+          <div class="HomePageFirstTitle1__ysJQ8WTG3"><i class="yidooO-icon yidooO-icon-Preloading_title_zh"
+              style="width: 474px; height: 69px;"><svg width="474" height="69" fill="currentColor" aria-hidden="true"
                 focusable="false">
-                <use xlink:href="#IconSVG-language"></use>
-              </svg></i><span class="text_c881LhrsBu">中文</span><i
-              class="yidooO-icon yidooO-icon-Dropdown iconClose_Tf7ny3cusv" style="width: 24px; height: 24px;"><svg
-                width="24" height="24" fill="currentColor" aria-hidden="true" focusable="false">
-                <use xlink:href="#IconSVG-Dropdown"></use>
+                <use xlink:href="#IconSVG-Preloading_title_zh"></use>
               </svg></i></div>
-          <div class="PreloadingFirstHeaderRightLogin_Nb5yt_fQQ6"><i class="yidooO-icon yidooO-icon-login"
-              style="width: 24px; height: 24px;"><svg width="24" height="24" fill="currentColor" aria-hidden="true"
-                focusable="false">
-                <use xlink:href="#IconSVG-login"></use>
-              </svg></i><span>登录</span></div>
+          <div class="BeginWorkButton_WOUnwT7EBm startButton_fSBzwYH4rU"><i
+              class="yidooO-icon yidooO-icon-Preloading_start_zh" style="width: 96px; height: 34px;"><svg width="96"
+                height="34" fill="currentColor" aria-hidden="true" focusable="false">
+                <use xlink:href="#IconSVG-Preloading_start_zh"></use>
+              </svg></i></div>
         </div>
-      </header>
-      <main class="PreloadingLayout_QTHmEQOZCn">
-        <div class="PreloadingPricePage_TWX4ZZHend">
-          <div class="content_mbwTu5THIw">
-            <div class="subscriptionAndPricing_C8mPjRRzuv">
-              <div class="container_DMrwDBoPlq">
-                <div class="header_Fi_BmOEww5">
-                  <h2>订阅与价格</h2>
-                </div>
-                <div class="tabWrapper_ce2o94CwC6">
-                  <div class="tabs_hLvFVnbCLK">
-                    <div class="tabItem_AOlGmmjpRD active_okAokUkfFg">按月</div>
-                    <div class="tabItem_AOlGmmjpRD hasBadge_ae5wRvvjup">按年 <span class="badge_ZURqUHTbIo">减免2月</span>
-                    </div>
+        <div class="HomePageFirstVideoWrapper_BAIBxhbU_m">
+          <div class="videoWrapper_oHi79wnNCT">
+            <div class="HomePageFirstVideo_WJDIIVlcXX"><video
+                src="https://r.yidooo.com/yd_sys/web/front_end_oss_data/1767926844277_d202.mp4" loop="" autoplay=""
+                playsinline=""></video></div>
+          </div>
+        </div>
+      </div>
+      <div class="HomePageIntroductionTitleWrapper_oUdhQrOeme">
+        <h1 class="HomePageIntroductionTitle_rGpTNhzkn1">什么是 YidooO?</h1>
+        <div class="HomePageIntroductionContent_B5NJjJ2R_d"> yidooo 是一个面向年轻创作者的 AI 短剧与动画创作平台，让用户能够从灵感出发，
+          在同一个工作室里完成剧本生成、分镜设计、角色塑造、动作驱动与视频输出，真正做到“让每一个灵感都实现”。</div>
+        <section class="PreloadingCard_E6diCaMzLN imgRight_qejeCau5ls">
+          <div class="content_ZxKjq6dZme">
+            <h1 class="title_YCJSI2Tx7x">创意视频加速器</h1>
+            <p class="desc1_dBamoIQ7ID">从创意模板库到爆款模因,让你的作品自带流量体质</p>
+            <p class="desc2_W_lPhkh1ye">想做出让人眼前一亮的短视频?
+              这里集结了全网最热的创意模板库，让当下最火的梗
+              文化，成为你的爆款加速器。
+              不管是投稿还是冲热门,这就是你的流量密码。</p>
+            <div class="BeginWorkButton_WOUnwT7EBm BeginWorkButton_UsyzQDIja_"><i
+                class="yidooO-icon yidooO-icon-Preloading_start_zh" style="width: 96px; height: 34px;"><svg width="96"
+                  height="34" fill="currentColor" aria-hidden="true" focusable="false">
+                  <use xlink:href="#IconSVG-Preloading_start_zh"></use>
+                </svg></i></div>
+          </div><img src="https://r.yidooo.com/yd_sys/web/front_end_oss_data/1765542211342_bc64.png" alt="创意视频加速器">
+        </section>
+        <section class="PreloadingCard_E6diCaMzLN">
+          <div class="content_ZxKjq6dZme">
+            <h1 class="title_YCJSI2Tx7x">情绪板创作</h1>
+            <p class="desc1_dBamoIQ7ID">脑内氛围具象化服务——比你想象的还懂你</p>
+            <p class="desc2_W_lPhkh1ye">在无限画布上,灵感不再受限于格式框架——
+              想到哪画到哪，思绪自由流淌。
+              风格、光影、构图随心调配，灵感瞬间视觉化。
+              你的画布, 你的宇宙。</p>
+            <div class="BeginWorkButton_WOUnwT7EBm BeginWorkButton_UsyzQDIja_"><i
+                class="yidooO-icon yidooO-icon-Preloading_start_zh" style="width: 96px; height: 34px;"><svg width="96"
+                  height="34" fill="currentColor" aria-hidden="true" focusable="false">
+                  <use xlink:href="#IconSVG-Preloading_start_zh"></use>
+                </svg></i></div>
+          </div><img src="https://r.yidooo.com/yd_sys/web/front_end_oss_data/1765542211341_d480.png" alt="情绪板创作">
+        </section>
+        <section class="PreloadingCard_E6diCaMzLN imgRight_qejeCau5ls">
+          <div class="content_ZxKjq6dZme">
+            <h1 class="title_YCJSI2Tx7x">角色设计器</h1>
+            <p class="desc1_dBamoIQ7ID">从草图到灵魂,让每个角色都活起来</p>
+            <p class="desc2_W_lPhkh1ye">你的OC值得拥有独一无二的生命力!
+              整合面部表情、姿势、发型、服饰， 从性格设定
+              、穿搭到动态，高自由度设计让你掌控每个细节。
+              不只是画出一个角色，更是创造一个有温度的灵魂。
+              准备好迎接你的"本命角色"了吗?</p>
+            <div class="BeginWorkButton_WOUnwT7EBm BeginWorkButton_UsyzQDIja_"><i
+                class="yidooO-icon yidooO-icon-Preloading_start_zh" style="width: 96px; height: 34px;"><svg width="96"
+                  height="34" fill="currentColor" aria-hidden="true" focusable="false">
+                  <use xlink:href="#IconSVG-Preloading_start_zh"></use>
+                </svg></i></div>
+          </div><img src="https://r.yidooo.com/yd_sys/web/front_end_oss_data/1765542211339_c804.png" alt="角色设计器">
+        </section>
+        <section class="PreloadingCard_E6diCaMzLN lastPreloadingCard_q_t6102DJq">
+          <div class="content_ZxKjq6dZme">
+            <h1 class="title_YCJSI2Tx7x">情节生成器</h1>
+            <p class="desc1_dBamoIQ7ID">故事卡壳？让AI当你的脑洞搭档</p>
+            <p class="desc2_W_lPhkh1ye">想写ABO设定却不知道怎么编?
+              想写克苏鲁设定但总差点火候?
+              AI剧本生成器+对白生成器双剑合璧,从西部世界、犯
+              罪心理到重生——
+              所有你爱的题材，一键生成完整故事线!脑洞有多大,
+              剧本就有多野!</p>
+            <div class="BeginWorkButton_WOUnwT7EBm BeginWorkButton_UsyzQDIja_"><i
+                class="yidooO-icon yidooO-icon-Preloading_start_zh" style="width: 96px; height: 34px;"><svg width="96"
+                  height="34" fill="currentColor" aria-hidden="true" focusable="false">
+                  <use xlink:href="#IconSVG-Preloading_start_zh"></use>
+                </svg></i></div>
+          </div><img src="https://r.yidooo.com/yd_sys/web/front_end_oss_data/1765542211344_338a.png" alt="情节生成器">
+        </section>
+        <div class="PreloadingCollaborator_XpGH1wA05M">
+          <h1 class="title_BkAjTcBsEm">合作</h1>
+          <div class="wrapper_AQx9ZPDZGs">
+            <div class="left_nfRsrTHlDZ"></div>
+            <div class="right_bAgys6E7Se"></div>
+            <div class="marqueeContainer_Hi2gMK0UlF">
+              <div class="marqueeContent_qgXVJlC0wI " style="animation-duration: 40s;">
+                <div class="iconItem_TGbwHb013M"><i class="yidooO-icon yidooO-icon-merger_icon1"
+                    style="width: 337px; height: 72px;"><svg width="337" height="72" fill="currentColor"
+                      aria-hidden="true" focusable="false">
+                      <use xlink:href="#IconSVG-merger_icon1"></use>
+                    </svg></i></div>
+                <div class="iconItem_TGbwHb013M"><i class="yidooO-icon yidooO-icon-merger_icon2"
+                    style="width: 355px; height: 72px;"><svg width="355" height="72" fill="currentColor"
+                      aria-hidden="true" focusable="false">
+                      <use xlink:href="#IconSVG-merger_icon2"></use>
+                    </svg></i></div>
+                <div class="iconItem_TGbwHb013M"><i class="yidooO-icon yidooO-icon-merger_icon3"
+                    style="width: 272px; height: 72px;"><svg width="272" height="72" fill="currentColor"
+                      aria-hidden="true" focusable="false">
+                      <use xlink:href="#IconSVG-merger_icon3"></use>
+                    </svg></i></div>
+                <div class="iconItem_TGbwHb013M"><i class="yidooO-icon yidooO-icon-merger_icon4"
+                    style="width: 316px; height: 72px;"><svg width="316" height="72" fill="currentColor"
+                      aria-hidden="true" focusable="false">
+                      <use xlink:href="#IconSVG-merger_icon4"></use>
+                    </svg></i></div>
+                <div class="iconItem_TGbwHb013M"><i class="yidooO-icon yidooO-icon-merger_icon5"
+                    style="width: 325px; height: 72px;"><svg width="325" height="72" fill="currentColor"
+                      aria-hidden="true" focusable="false">
+                      <use xlink:href="#IconSVG-merger_icon5"></use>
+                    </svg></i></div>
+                <div class="iconItem_TGbwHb013M"><i class="yidooO-icon yidooO-icon-merger_icon1"
+                    style="width: 337px; height: 72px;"><svg width="337" height="72" fill="currentColor"
+                      aria-hidden="true" focusable="false">
+                      <use xlink:href="#IconSVG-merger_icon1"></use>
+                    </svg></i></div>
+                <div class="iconItem_TGbwHb013M"><i class="yidooO-icon yidooO-icon-merger_icon2"
+                    style="width: 355px; height: 72px;"><svg width="355" height="72" fill="currentColor"
+                      aria-hidden="true" focusable="false">
+                      <use xlink:href="#IconSVG-merger_icon2"></use>
+                    </svg></i></div>
+                <div class="iconItem_TGbwHb013M"><i class="yidooO-icon yidooO-icon-merger_icon3"
+                    style="width: 272px; height: 72px;"><svg width="272" height="72" fill="currentColor"
+                      aria-hidden="true" focusable="false">
+                      <use xlink:href="#IconSVG-merger_icon3"></use>
+                    </svg></i></div>
+                <div class="iconItem_TGbwHb013M"><i class="yidooO-icon yidooO-icon-merger_icon4"
+                    style="width: 316px; height: 72px;"><svg width="316" height="72" fill="currentColor"
+                      aria-hidden="true" focusable="false">
+                      <use xlink:href="#IconSVG-merger_icon4"></use>
+                    </svg></i></div>
+                <div class="iconItem_TGbwHb013M"><i class="yidooO-icon yidooO-icon-merger_icon5"
+                    style="width: 325px; height: 72px;"><svg width="325" height="72" fill="currentColor"
+                      aria-hidden="true" focusable="false">
+                      <use xlink:href="#IconSVG-merger_icon5"></use>
+                    </svg></i></div>
+              </div>
+            </div>
+            <div class="marqueeContainer_Hi2gMK0UlF">
+              <div class="marqueeContent_qgXVJlC0wI right_LglUYJBiOp" style="animation-duration: 40s;">
+                <div class="iconItem_TGbwHb013M"><i class="yidooO-icon yidooO-icon-merger_icon6 Icon6_iXjYxO4CDX"
+                    style="width: 207px; height: 72px;"><svg width="207" height="72" fill="currentColor"
+                      aria-hidden="true" focusable="false">
+                      <use xlink:href="#IconSVG-merger_icon6"></use>
+                    </svg></i></div>
+                <div class="iconItem_TGbwHb013M"><i class="yidooO-icon yidooO-icon-merger_icon7 Icon7_P0gT9kLhtg"
+                    style="width: 330px; height: 72px;"><svg width="330" height="72" fill="currentColor"
+                      aria-hidden="true" focusable="false">
+                      <use xlink:href="#IconSVG-merger_icon7"></use>
+                    </svg></i></div>
+                <div class="iconItem_TGbwHb013M"><i class="yidooO-icon yidooO-icon-merger_icon8 Icon8_jc6Lco641s"
+                    style="width: 239px; height: 72px;"><svg width="239" height="72" fill="currentColor"
+                      aria-hidden="true" focusable="false">
+                      <use xlink:href="#IconSVG-merger_icon8"></use>
+                    </svg></i></div>
+                <div class="iconItem_TGbwHb013M"><i class="yidooO-icon yidooO-icon-merger_icon9"
+                    style="width: 341px; height: 72px;"><svg width="341" height="72" fill="currentColor"
+                      aria-hidden="true" focusable="false">
+                      <use xlink:href="#IconSVG-merger_icon9"></use>
+                    </svg></i></div>
+                <div class="iconItem_TGbwHb013M"><i class="yidooO-icon yidooO-icon-merger_icon10"
+                    style="width: 210px; height: 72px;"><svg width="210" height="72" fill="currentColor"
+                      aria-hidden="true" focusable="false">
+                      <use xlink:href="#IconSVG-merger_icon10"></use>
+                    </svg></i></div>
+                <div class="iconItem_TGbwHb013M"><i class="yidooO-icon yidooO-icon-merger_icon6 Icon6_iXjYxO4CDX"
+                    style="width: 207px; height: 72px;"><svg width="207" height="72" fill="currentColor"
+                      aria-hidden="true" focusable="false">
+                      <use xlink:href="#IconSVG-merger_icon6"></use>
+                    </svg></i></div>
+                <div class="iconItem_TGbwHb013M"><i class="yidooO-icon yidooO-icon-merger_icon7 Icon7_P0gT9kLhtg"
+                    style="width: 330px; height: 72px;"><svg width="330" height="72" fill="currentColor"
+                      aria-hidden="true" focusable="false">
+                      <use xlink:href="#IconSVG-merger_icon7"></use>
+                    </svg></i></div>
+                <div class="iconItem_TGbwHb013M"><i class="yidooO-icon yidooO-icon-merger_icon8 Icon8_jc6Lco641s"
+                    style="width: 239px; height: 72px;"><svg width="239" height="72" fill="currentColor"
+                      aria-hidden="true" focusable="false">
+                      <use xlink:href="#IconSVG-merger_icon8"></use>
+                    </svg></i></div>
+                <div class="iconItem_TGbwHb013M"><i class="yidooO-icon yidooO-icon-merger_icon9"
+                    style="width: 341px; height: 72px;"><svg width="341" height="72" fill="currentColor"
+                      aria-hidden="true" focusable="false">
+                      <use xlink:href="#IconSVG-merger_icon9"></use>
+                    </svg></i></div>
+                <div class="iconItem_TGbwHb013M"><i class="yidooO-icon yidooO-icon-merger_icon10"
+                    style="width: 210px; height: 72px;"><svg width="210" height="72" fill="currentColor"
+                      aria-hidden="true" focusable="false">
+                      <use xlink:href="#IconSVG-merger_icon10"></use>
+                    </svg></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="SelectedWorks_Svimz4nNeB">
+          <div class="title_iZp8525FZj">精选作品</div>
+          <div class="PreloadingTiltedGallery_CrqaXbDs4m"></div>
+        </div>
+        <div class="UserVoiceComponent_GsFwqV9CMI">
+          <h1 class="title_u4xAbhMVMt">用户的声音</h1>
+          <div class="wrapper_HJXVYa35Vk">
+            <div class="left_ihYNF9YjsW"></div>
+            <div class="right_hBYyw_chBt"></div>
+            <div class="scrollWrapper_tbQ4qfD7bj">
+              <div class="UserVoiceComponentCard_vajc4_5_Fo">
+                <div class="header_vEPlOxHwgm"><img
+                    src="https://r.yidooo.com/yd_sys/web/front_end_oss_data/1768876262014_272c.svg"
+                    class="CircleAvatar_ugwayhEhAM avatar_vkwCLxIihM"
+                    style="width: 50px; height: 50px; border-radius: 50px; object-fit: cover;">
+                  <div class="userInfo_SbSuon1sL9">
+                    <div class="userName_EnKXf6EDaS text_buQNcwzryK" aria-describedby=":r3:"
+                      style="width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Social Media
+                      Content Creator</div><span class="userRole_cIV2Y1DgQf">brand storytelling
+                      lyric video
+                      dance video
+                      explainer video</span>
                   </div>
                 </div>
-                <div class="container_gv8h3WF44U" style="width: 100%;">
-                  <div class="viewport_sxM9DRY47G">
-                    <div class="content_G6Pd3AobIW centered_bnK3IFLdFr" style="gap: 16px;">
-                      <div class="cardList_UZC49LQxWR">
-                        <div class="card_urN3sMgo0Y featured_bWjJxy0oSe">
-                          <div class="cardWrapper__xV0kP4O6f">
-                            <div class="planName_yAjEsFxX_x">原点版</div>
-                            <div class="priceSection_jDci8Nyole">
-                              <div class="priceInfo_pGmv9mlGAE"><span class="currency_JfRivnIwRg">$</span><span
-                                  class="currency_JfRivnIwRg price_NqQ_px3O37">0</span><span
-                                  class="periodText_wLJL3xUH84">/ 月</span></div>
-                            </div>
-                            <div class="quotaInfo_dhpT3r9sfQ">
-                              <div class="quotaInfoTitle_XSjn31VzpQ">按月计费</div>
-                              <div class="quotaInfoContent_rC7yE01FJW"><span
-                                  class="quotaInfoContentText_Ig0ChMxb5q"><span>新用户连续登录6天送100算力/天</span></span><span
-                                  class="infoIcon_T0bZsr0bNp"></span></div>
-                            </div>
-                            <div class="upgradeBtnWrapper_Ol46s0uDHu"><button type="button"
-                                class="ant-btn css-1nseetz ant-btn-default ant-btn-color-default ant-btn-variant-outlined Button_qUglPDj_IU upgradeBtn_KLIhXPvGet primary__WFNLRdI1W"><span>升
-                                  级</span></button></div>
-                            <div class="featureList_QkMXrZUZiW">
-                              <div class="featureTitle_qxT02OLOa3">功能</div>
-                              <div class="featureItem_oUxpXBxHtV"><i
-                                  class="yidooO-icon yidooO-icon-checked checkedIcon_QOJKLbNrdq"
-                                  style="width: 15px; height: 15px;"><svg width="15" height="15" fill="currentColor"
-                                    aria-hidden="true" focusable="false">
-                                    <use xlink:href="#IconSVG-checked"></use>
-                                  </svg></i><span>新用户连续登陆6天，送100算力/天</span></div>
-                              <div class="featureItem_oUxpXBxHtV"><i
-                                  class="yidooO-icon yidooO-icon-checked checkedIcon_QOJKLbNrdq"
-                                  style="width: 15px; height: 15px;"><svg width="15" height="15" fill="currentColor"
-                                    aria-hidden="true" focusable="false">
-                                    <use xlink:href="#IconSVG-checked"></use>
-                                  </svg></i><span>5 个创作板</span></div>
-                              <div class="featureItem_oUxpXBxHtV"><i
-                                  class="yidooO-icon yidooO-icon-checked checkedIcon_QOJKLbNrdq"
-                                  style="width: 15px; height: 15px;"><svg width="15" height="15" fill="currentColor"
-                                    aria-hidden="true" focusable="false">
-                                    <use xlink:href="#IconSVG-checked"></use>
-                                  </svg></i><span>5G 云存储</span></div>
-                              <div class="featureItem_oUxpXBxHtV"><i
-                                  class="yidooO-icon yidooO-icon-checked checkedIcon_QOJKLbNrdq"
-                                  style="width: 15px; height: 15px;"><svg width="15" height="15" fill="currentColor"
-                                    aria-hidden="true" focusable="false">
-                                    <use xlink:href="#IconSVG-checked"></use>
-                                  </svg></i><span>资产和特效</span></div>
-                              <div class="featureItem_oUxpXBxHtV"><i
-                                  class="yidooO-icon yidooO-icon-checked checkedIcon_QOJKLbNrdq"
-                                  style="width: 15px; height: 15px;"><svg width="15" height="15" fill="currentColor"
-                                    aria-hidden="true" focusable="false">
-                                    <use xlink:href="#IconSVG-checked"></use>
-                                  </svg></i><span>AI 工作流功能</span></div>
-                              <div class="featureItem_oUxpXBxHtV"><i
-                                  class="yidooO-icon yidooO-icon-checked checkedIcon_QOJKLbNrdq"
-                                  style="width: 15px; height: 15px;"><svg width="15" height="15" fill="currentColor"
-                                    aria-hidden="true" focusable="false">
-                                    <use xlink:href="#IconSVG-checked"></use>
-                                  </svg></i><span>全模型访问权限</span></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card_urN3sMgo0Y featured_bWjJxy0oSe">
-                          <div class="cardWrapper__xV0kP4O6f">
-                            <div class="planName_yAjEsFxX_x">大师版</div>
-                            <div class="priceSection_jDci8Nyole">
-                              <div class="priceInfo_pGmv9mlGAE"><span class="currency_JfRivnIwRg">$</span><span
-                                  class="currency_JfRivnIwRg price_NqQ_px3O37">12</span><span
-                                  class="periodText_wLJL3xUH84">/ 月</span></div>
-                              <div class="discountInfo_iZNiPY91vH">每月节省 $0<del>$12</del></div>
-                            </div>
-                            <div class="quotaInfo_dhpT3r9sfQ">
-                              <div class="quotaInfoTitle_XSjn31VzpQ">按月计费</div>
-                              <div class="quotaInfoContent_rC7yE01FJW"><span
-                                  class="quotaInfoContentText_Ig0ChMxb5q"><span>每月1800算力</span></span><span
-                                  class="infoIcon_T0bZsr0bNp"></span></div>
-                            </div>
-                            <div class="upgradeBtnWrapper_Ol46s0uDHu"><button type="button"
-                                class="ant-btn css-1nseetz ant-btn-default ant-btn-color-default ant-btn-variant-outlined Button_qUglPDj_IU upgradeBtn_KLIhXPvGet primary__WFNLRdI1W"><span>升
-                                  级</span></button></div>
-                            <div class="featureList_QkMXrZUZiW">
-                              <div class="featureTitle_qxT02OLOa3">功能</div>
-                              <div class="featureItem_oUxpXBxHtV"><i
-                                  class="yidooO-icon yidooO-icon-checked checkedIcon_QOJKLbNrdq"
-                                  style="width: 15px; height: 15px;"><svg width="15" height="15" fill="currentColor"
-                                    aria-hidden="true" focusable="false">
-                                    <use xlink:href="#IconSVG-checked"></use>
-                                  </svg></i><span>1800 算力月</span></div>
-                              <div class="featureItem_oUxpXBxHtV"><i
-                                  class="yidooO-icon yidooO-icon-checked checkedIcon_QOJKLbNrdq"
-                                  style="width: 15px; height: 15px;"><svg width="15" height="15" fill="currentColor"
-                                    aria-hidden="true" focusable="false">
-                                    <use xlink:href="#IconSVG-checked"></use>
-                                  </svg></i><span>每日赠送 20 算力</span></div>
-                              <div class="featureItem_oUxpXBxHtV"><i
-                                  class="yidooO-icon yidooO-icon-checked checkedIcon_QOJKLbNrdq"
-                                  style="width: 15px; height: 15px;"><svg width="15" height="15" fill="currentColor"
-                                    aria-hidden="true" focusable="false">
-                                    <use xlink:href="#IconSVG-checked"></use>
-                                  </svg></i><span>无限创作板</span></div>
-                              <div class="featureItem_oUxpXBxHtV"><i
-                                  class="yidooO-icon yidooO-icon-checked checkedIcon_QOJKLbNrdq"
-                                  style="width: 15px; height: 15px;"><svg width="15" height="15" fill="currentColor"
-                                    aria-hidden="true" focusable="false">
-                                    <use xlink:href="#IconSVG-checked"></use>
-                                  </svg></i><span>20G 云存储</span></div>
-                              <div class="featureItem_oUxpXBxHtV"><i
-                                  class="yidooO-icon yidooO-icon-checked checkedIcon_QOJKLbNrdq"
-                                  style="width: 15px; height: 15px;"><svg width="15" height="15" fill="currentColor"
-                                    aria-hidden="true" focusable="false">
-                                    <use xlink:href="#IconSVG-checked"></use>
-                                  </svg></i><span>无限资产</span></div>
-                              <div class="featureItem_oUxpXBxHtV"><i
-                                  class="yidooO-icon yidooO-icon-checked checkedIcon_QOJKLbNrdq"
-                                  style="width: 15px; height: 15px;"><svg width="15" height="15" fill="currentColor"
-                                    aria-hidden="true" focusable="false">
-                                    <use xlink:href="#IconSVG-checked"></use>
-                                  </svg></i><span>无限特效</span></div>
-                              <div class="featureItem_oUxpXBxHtV"><i
-                                  class="yidooO-icon yidooO-icon-checked checkedIcon_QOJKLbNrdq"
-                                  style="width: 15px; height: 15px;"><svg width="15" height="15" fill="currentColor"
-                                    aria-hidden="true" focusable="false">
-                                    <use xlink:href="#IconSVG-checked"></use>
-                                  </svg></i><span>商业授权</span></div>
-                              <div class="featureItem_oUxpXBxHtV"><i
-                                  class="yidooO-icon yidooO-icon-checked checkedIcon_QOJKLbNrdq"
-                                  style="width: 15px; height: 15px;"><svg width="15" height="15" fill="currentColor"
-                                    aria-hidden="true" focusable="false">
-                                    <use xlink:href="#IconSVG-checked"></use>
-                                  </svg></i><span>AI 工作流功能</span></div>
-                              <div class="featureItem_oUxpXBxHtV"><i
-                                  class="yidooO-icon yidooO-icon-checked checkedIcon_QOJKLbNrdq"
-                                  style="width: 15px; height: 15px;"><svg width="15" height="15" fill="currentColor"
-                                    aria-hidden="true" focusable="false">
-                                    <use xlink:href="#IconSVG-checked"></use>
-                                  </svg></i><span>全模型访问权限</span></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card_urN3sMgo0Y featured_bWjJxy0oSe">
-                          <div class="cardWrapper__xV0kP4O6f">
-                            <div class="planName_yAjEsFxX_x">创世版</div>
-                            <div class="priceSection_jDci8Nyole">
-                              <div class="priceInfo_pGmv9mlGAE"><span class="currency_JfRivnIwRg">$</span><span
-                                  class="currency_JfRivnIwRg price_NqQ_px3O37">32</span><span
-                                  class="periodText_wLJL3xUH84">/ 月</span></div>
-                              <div class="discountInfo_iZNiPY91vH">每月节省 $0<del>$32</del></div>
-                            </div>
-                            <div class="quotaInfo_dhpT3r9sfQ">
-                              <div class="quotaInfoTitle_XSjn31VzpQ">按月计费</div>
-                              <div class="quotaInfoContent_rC7yE01FJW"><span
-                                  class="quotaInfoContentText_Ig0ChMxb5q"><span>每月5600算力</span></span><span
-                                  class="infoIcon_T0bZsr0bNp"></span></div>
-                            </div>
-                            <div class="upgradeBtnWrapper_Ol46s0uDHu"><button type="button"
-                                class="ant-btn css-1nseetz ant-btn-default ant-btn-color-default ant-btn-variant-outlined Button_qUglPDj_IU upgradeBtn_KLIhXPvGet primary__WFNLRdI1W"><span>升
-                                  级</span></button></div>
-                            <div class="featureList_QkMXrZUZiW">
-                              <div class="featureTitle_qxT02OLOa3">功能</div>
-                              <div class="featureItem_oUxpXBxHtV"><i
-                                  class="yidooO-icon yidooO-icon-checked checkedIcon_QOJKLbNrdq"
-                                  style="width: 15px; height: 15px;"><svg width="15" height="15" fill="currentColor"
-                                    aria-hidden="true" focusable="false">
-                                    <use xlink:href="#IconSVG-checked"></use>
-                                  </svg></i><span>5600 算力/月</span></div>
-                              <div class="featureItem_oUxpXBxHtV"><i
-                                  class="yidooO-icon yidooO-icon-checked checkedIcon_QOJKLbNrdq"
-                                  style="width: 15px; height: 15px;"><svg width="15" height="15" fill="currentColor"
-                                    aria-hidden="true" focusable="false">
-                                    <use xlink:href="#IconSVG-checked"></use>
-                                  </svg></i><span>每日赠送50算力</span></div>
-                              <div class="featureItem_oUxpXBxHtV"><i
-                                  class="yidooO-icon yidooO-icon-checked checkedIcon_QOJKLbNrdq"
-                                  style="width: 15px; height: 15px;"><svg width="15" height="15" fill="currentColor"
-                                    aria-hidden="true" focusable="false">
-                                    <use xlink:href="#IconSVG-checked"></use>
-                                  </svg></i><span>无限创作板</span></div>
-                              <div class="featureItem_oUxpXBxHtV"><i
-                                  class="yidooO-icon yidooO-icon-checked checkedIcon_QOJKLbNrdq"
-                                  style="width: 15px; height: 15px;"><svg width="15" height="15" fill="currentColor"
-                                    aria-hidden="true" focusable="false">
-                                    <use xlink:href="#IconSVG-checked"></use>
-                                  </svg></i><span>50G 云存储</span></div>
-                              <div class="featureItem_oUxpXBxHtV"><i
-                                  class="yidooO-icon yidooO-icon-checked checkedIcon_QOJKLbNrdq"
-                                  style="width: 15px; height: 15px;"><svg width="15" height="15" fill="currentColor"
-                                    aria-hidden="true" focusable="false">
-                                    <use xlink:href="#IconSVG-checked"></use>
-                                  </svg></i><span>无限资产</span></div>
-                              <div class="featureItem_oUxpXBxHtV"><i
-                                  class="yidooO-icon yidooO-icon-checked checkedIcon_QOJKLbNrdq"
-                                  style="width: 15px; height: 15px;"><svg width="15" height="15" fill="currentColor"
-                                    aria-hidden="true" focusable="false">
-                                    <use xlink:href="#IconSVG-checked"></use>
-                                  </svg></i><span>无限特效</span></div>
-                              <div class="featureItem_oUxpXBxHtV"><i
-                                  class="yidooO-icon yidooO-icon-checked checkedIcon_QOJKLbNrdq"
-                                  style="width: 15px; height: 15px;"><svg width="15" height="15" fill="currentColor"
-                                    aria-hidden="true" focusable="false">
-                                    <use xlink:href="#IconSVG-checked"></use>
-                                  </svg></i><span>商业授权</span></div>
-                              <div class="featureItem_oUxpXBxHtV"><i
-                                  class="yidooO-icon yidooO-icon-checked checkedIcon_QOJKLbNrdq"
-                                  style="width: 15px; height: 15px;"><svg width="15" height="15" fill="currentColor"
-                                    aria-hidden="true" focusable="false">
-                                    <use xlink:href="#IconSVG-checked"></use>
-                                  </svg></i><span>AI 工作流功能</span></div>
-                              <div class="featureItem_oUxpXBxHtV"><i
-                                  class="yidooO-icon yidooO-icon-checked checkedIcon_QOJKLbNrdq"
-                                  style="width: 15px; height: 15px;"><svg width="15" height="15" fill="currentColor"
-                                    aria-hidden="true" focusable="false">
-                                    <use xlink:href="#IconSVG-checked"></use>
-                                  </svg></i><span>全模型访问权限</span></div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card_urN3sMgo0Y featured_bWjJxy0oSe">
-                          <div class="cardWrapper__xV0kP4O6f">
-                            <div class="planName_yAjEsFxX_x">至尊定制版</div>
-                            <div class="priceSection_jDci8Nyole">
-                              <div class="priceInfo_pGmv9mlGAE"><span class="currency_JfRivnIwRg">$</span><span
-                                  class="currency_JfRivnIwRg price_NqQ_px3O37">99</span><span
-                                  class="periodText_wLJL3xUH84">/ 月</span></div>
-                              <div class="discountInfo_iZNiPY91vH">每月节省 $0<del>$99</del></div>
-                            </div>
-                            <div class="quotaInfo_dhpT3r9sfQ">
-                              <div class="quotaInfoTitle_XSjn31VzpQ">按月计费</div>
-                              <div class="quotaInfoContent_rC7yE01FJW"><span
-                                  class="quotaInfoContentText_Ig0ChMxb5q"><span>每月21000算力</span></span><span
-                                  class="infoIcon_T0bZsr0bNp"></span></div>
-                            </div>
-                            <div class="upgradeBtnWrapper_Ol46s0uDHu"><button type="button"
-                                class="ant-btn css-1nseetz ant-btn-default ant-btn-color-default ant-btn-variant-outlined Button_qUglPDj_IU upgradeBtn_KLIhXPvGet primary__WFNLRdI1W"><span>升
-                                  级</span></button></div>
-                            <div class="featureList_QkMXrZUZiW">
-                              <div class="featureTitle_qxT02OLOa3">功能</div>
-                              <div class="featureItem_oUxpXBxHtV"><i
-                                  class="yidooO-icon yidooO-icon-checked checkedIcon_QOJKLbNrdq"
-                                  style="width: 15px; height: 15px;"><svg width="15" height="15" fill="currentColor"
-                                    aria-hidden="true" focusable="false">
-                                    <use xlink:href="#IconSVG-checked"></use>
-                                  </svg></i><span>21000 算力/月</span></div>
-                              <div class="featureItem_oUxpXBxHtV"><i
-                                  class="yidooO-icon yidooO-icon-checked checkedIcon_QOJKLbNrdq"
-                                  style="width: 15px; height: 15px;"><svg width="15" height="15" fill="currentColor"
-                                    aria-hidden="true" focusable="false">
-                                    <use xlink:href="#IconSVG-checked"></use>
-                                  </svg></i><span>每日赠送100算力</span></div>
-                              <div class="featureItem_oUxpXBxHtV"><i
-                                  class="yidooO-icon yidooO-icon-checked checkedIcon_QOJKLbNrdq"
-                                  style="width: 15px; height: 15px;"><svg width="15" height="15" fill="currentColor"
-                                    aria-hidden="true" focusable="false">
-                                    <use xlink:href="#IconSVG-checked"></use>
-                                  </svg></i><span>无限创作板</span></div>
-                              <div class="featureItem_oUxpXBxHtV"><i
-                                  class="yidooO-icon yidooO-icon-checked checkedIcon_QOJKLbNrdq"
-                                  style="width: 15px; height: 15px;"><svg width="15" height="15" fill="currentColor"
-                                    aria-hidden="true" focusable="false">
-                                    <use xlink:href="#IconSVG-checked"></use>
-                                  </svg></i><span>无限云存储</span></div>
-                              <div class="featureItem_oUxpXBxHtV"><i
-                                  class="yidooO-icon yidooO-icon-checked checkedIcon_QOJKLbNrdq"
-                                  style="width: 15px; height: 15px;"><svg width="15" height="15" fill="currentColor"
-                                    aria-hidden="true" focusable="false">
-                                    <use xlink:href="#IconSVG-checked"></use>
-                                  </svg></i><span>无限资产</span></div>
-                              <div class="featureItem_oUxpXBxHtV"><i
-                                  class="yidooO-icon yidooO-icon-checked checkedIcon_QOJKLbNrdq"
-                                  style="width: 15px; height: 15px;"><svg width="15" height="15" fill="currentColor"
-                                    aria-hidden="true" focusable="false">
-                                    <use xlink:href="#IconSVG-checked"></use>
-                                  </svg></i><span>无限特效</span></div>
-                              <div class="featureItem_oUxpXBxHtV"><i
-                                  class="yidooO-icon yidooO-icon-checked checkedIcon_QOJKLbNrdq"
-                                  style="width: 15px; height: 15px;"><svg width="15" height="15" fill="currentColor"
-                                    aria-hidden="true" focusable="false">
-                                    <use xlink:href="#IconSVG-checked"></use>
-                                  </svg></i><span>商业授权</span></div>
-                              <div class="featureItem_oUxpXBxHtV"><i
-                                  class="yidooO-icon yidooO-icon-checked checkedIcon_QOJKLbNrdq"
-                                  style="width: 15px; height: 15px;"><svg width="15" height="15" fill="currentColor"
-                                    aria-hidden="true" focusable="false">
-                                    <use xlink:href="#IconSVG-checked"></use>
-                                  </svg></i><span>AI 工作流功能</span></div>
-                              <div class="featureItem_oUxpXBxHtV"><i
-                                  class="yidooO-icon yidooO-icon-checked checkedIcon_QOJKLbNrdq"
-                                  style="width: 15px; height: 15px;"><svg width="15" height="15" fill="currentColor"
-                                    aria-hidden="true" focusable="false">
-                                    <use xlink:href="#IconSVG-checked"></use>
-                                  </svg></i><span>全模型访问权限</span></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                <div class="desc_rwzltKoj3Y">从脑洞脚本到动态视频，一条龙服务！再也不用在十个软件间反复横跳。原来的视频制作时间，现在主要用来……欣赏自己的天才创意。</div>
+              </div>
+              <div class="UserVoiceComponentCard_vajc4_5_Fo">
+                <div class="header_vEPlOxHwgm"><img
+                    src="https://r.yidooo.com/yd_sys/web/front_end_oss_data/1768876262017_cd4b.svg"
+                    class="CircleAvatar_ugwayhEhAM avatar_vkwCLxIihM"
+                    style="width: 50px; height: 50px; border-radius: 50px; object-fit: cover;">
+                  <div class="userInfo_SbSuon1sL9">
+                    <div class="userName_EnKXf6EDaS text_buQNcwzryK" aria-describedby=":r5:"
+                      style="width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Character
+                      Designer</div><span class="userRole_cIV2Y1DgQf">chibi art
+                      OC art
+                      Mood Chart
+                      creative studio</span>
                   </div>
-                  <div class="navBtn_y6W5u0lC4v rightBtn_MAaXSV7zKf rightNavButtonClassName_KaJE805xgs"><i
-                      class="yidooO-icon yidooO-icon-right rightBtnIcon_TCLxRKvyl5"
-                      style="width: 36px; height: 36px;"><svg width="36" height="36" fill="currentColor"
+                </div>
+                <div class="desc_rwzltKoj3Y">
+                  左边是‘素材弹药库’（预埋百种ACGN姿势/表情），右边是‘自由画布’，自由和精准我全都要；改个眼神就能让萌妹秒变御姐，但框架不崩！每个OC都是我心里的SSR。</div>
+              </div>
+              <div class="UserVoiceComponentCard_vajc4_5_Fo">
+                <div class="header_vEPlOxHwgm"><img
+                    src="https://r.yidooo.com/yd_sys/web/front_end_oss_data/1768876262018_d3a5.svg"
+                    class="CircleAvatar_ugwayhEhAM avatar_vkwCLxIihM"
+                    style="width: 50px; height: 50px; border-radius: 50px; object-fit: cover;">
+                  <div class="userInfo_SbSuon1sL9">
+                    <div class="userName_EnKXf6EDaS text_buQNcwzryK" aria-describedby=":r7:"
+                      style="width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Concept
+                      Artist</div><span class="userRole_cIV2Y1DgQf"> worldbuilding
+                      background design
+                      art canvas
+                      infinite canvas
+                      visual effects</span>
+                  </div>
+                </div>
+                <div class="desc_rwzltKoj3Y">
+                  以前搭世界观：地皮不够，素材难管！现在：Yidooo的创作版自带‘宇宙膨胀’，超高自由度让地图随便扩，丰富节点尽情修改。俯瞰我正在设计的蒸汽朋克猫娘城，直接开启‘上帝模式</div>
+              </div>
+              <div class="UserVoiceComponentCard_vajc4_5_Fo">
+                <div class="header_vEPlOxHwgm"><img
+                    src="https://r.yidooo.com/yd_sys/web/front_end_oss_data/1768876262018_cd10.svg"
+                    class="CircleAvatar_ugwayhEhAM avatar_vkwCLxIihM"
+                    style="width: 50px; height: 50px; border-radius: 50px; object-fit: cover;">
+                  <div class="userInfo_SbSuon1sL9">
+                    <div class="userName_EnKXf6EDaS text_buQNcwzryK" aria-describedby=":r9:"
+                      style="width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Screenwriter
+                    </div><span class="userRole_cIV2Y1DgQf">short film
+                      fic prompts
+                      creative studio
+                      fanfic writing
+                      character arc</span>
+                  </div>
+                </div>
+                <div class="desc_rwzltKoj3Y">编奇幻故事，最怕做设定，Yidooo 的标签库像我的‘脑洞急救包’，让我丝滑开场，
+                  一键生成从‘星际农耕’到‘地狱食堂’的任何设定。它还可以轻松为我的剧本生成视效宣传片。</div>
+              </div>
+              <div class="UserVoiceComponentCard_vajc4_5_Fo">
+                <div class="header_vEPlOxHwgm"><img
+                    src="https://r.yidooo.com/yd_sys/web/front_end_oss_data/1768876262018_4b52.svg"
+                    class="CircleAvatar_ugwayhEhAM avatar_vkwCLxIihM"
+                    style="width: 50px; height: 50px; border-radius: 50px; object-fit: cover;">
+                  <div class="userInfo_SbSuon1sL9">
+                    <div class="userName_EnKXf6EDaS text_buQNcwzryK" aria-describedby=":rb:"
+                      style="width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Fan Artist
+                    </div><span class="userRole_cIV2Y1DgQf"> fan art
+                      doujin
+                      2D animation
+                      tweening
+                      indie animation</span>
+                  </div>
+                </div>
+                <div class="desc_rwzltKoj3Y">
+                  Yidooo有很多懂我的玩法，二次元特有的尴尬画风、炸裂打斗、变Q、速度线、破格，都能找到模板。我能幸福地在这里写文、做私设、设计周边，产粮不用再挤牙膏啦。</div>
+              </div>
+            </div>
+          </div>
+          <div class="scrollButtons_d4mrWyVvkf"></div>
+        </div>
+        <div class="subscriptionAndPricing_TfDOxjr9D6">
+          <div class="container_DMrwDBoPlq">
+            <div class="header_Fi_BmOEww5">
+              <h2>订阅与价格</h2>
+            </div>
+            <div class="tabWrapper_ce2o94CwC6">
+              <div class="tabs_hLvFVnbCLK">
+                <div class="tabItem_AOlGmmjpRD active_okAokUkfFg">按月</div>
+                <div class="tabItem_AOlGmmjpRD hasBadge_ae5wRvvjup">按年 <span class="badge_ZURqUHTbIo">减免2月</span></div>
+              </div>
+            </div>
+            <div class="container_gv8h3WF44U" style="width: 100%;">
+              <div class="viewport_sxM9DRY47G">
+                <div class="content_G6Pd3AobIW centered_bnK3IFLdFr" style="gap: 16px;">
+                  <div class="cardList_UZC49LQxWR"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container_Ih_I9Ooo8Q">
+            <div class="leftContent_2vo8xIsVmy">
+              <div class="backgroundWrapper_hx8hHMt4LY"></div>
+              <div class="leftSection_PWYOKmiQwS">
+                <div class="imageContainer_dvmrQayNob">
+                  <div class="OSSImage_LZYsvZ3n4K" style="width: 150px; height: 150px;"><img
+                      src="https://r.yidooo.com/yd_sys/web/front_end_oss_data/1768873430734_4662.webp"
+                      alt="Supreme Edition" class="realImage_RKmY_Oinif" style="object-fit: cover;"></div>
+                </div>
+                <div class="titleWrapper_Fk1srVt2n0">
+                  <h2 class="title_vqpvbpNJN2">至尊定制版</h2>
+                  <p class="quotation_N7O9mKIfKo">按需报价</p>
+                </div>
+              </div>
+              <div class="middleSection_k_ATZjUwtl">
+                <div>
+                  <p class="label_ZQwoatAGrG">适合用户</p>
+                  <ul class="list_SFEUNAeEd2">
+                    <li>企业/机构客户、大型创作团队</li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="label_ZQwoatAGrG">特色权益</p>
+                  <ul class="list_SFEUNAeEd2">
+                    <li>专属算力池 &amp; 模型定制服务</li>
+                    <li>商业版权授权 &amp; IP 定制合作</li>
+                    <li>企业级 AI 咨询服务，助力品牌与创作落地</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="rightSection_cbc0HGjhqb">
+              <p class="alipayHint_EFPkilun5S">* 支持支付宝支付</p>
+              <div class="contactBox_tiu03PnNMq">
+                <p class="contactBoxDesp_STqjv4VcfP">如需订阅至尊定制版，请发送邮件至官方邮箱</p>
+                <p class="email_tx1mVmrs3Q"><span>邮箱:</span><a href="mailto:contact@yidooo.com"
+                    class="emailLink_yMCrjfkOoL">contact@yidooo.com</a></p>
+              </div>
+              <div class="socialIcons_xZqhafdnfo socialIcons_V1rTJ_gkRF"><a href="https://x.com/YidooO_ai"
+                  target="_blank" rel="noopener noreferrer"><i class="yidooO-icon yidooO-icon-twitter"
+                    style="width: 50px; height: 50px;"><svg width="50" height="50" fill="currentColor"
+                      aria-hidden="true" focusable="false">
+                      <use xlink:href="#IconSVG-twitter"></use>
+                    </svg></i></a><a href="https://www.instagram.com/yidooo_ai/" target="_blank"
+                  rel="noopener noreferrer"><i class="yidooO-icon yidooO-icon-instagram"
+                    style="width: 50px; height: 50px;"><svg width="50" height="50" fill="currentColor"
+                      aria-hidden="true" focusable="false">
+                      <use xlink:href="#IconSVG-instagram"></use>
+                    </svg></i></a><a href="https://www.tiktok.com/@yidooo_ai" target="_blank"
+                  rel="noopener noreferrer"><i class="yidooO-icon yidooO-icon-tiktok"
+                    style="width: 50px; height: 50px;"><svg width="50" height="50" fill="currentColor"
+                      aria-hidden="true" focusable="false">
+                      <use xlink:href="#IconSVG-tiktok"></use>
+                    </svg></i></a><a href="https://www.youtube.com/@yidooyidoo" target="_blank"
+                  rel="noopener noreferrer"><i class="yidooO-icon yidooO-icon-youtobe"
+                    style="width: 50px; height: 50px;"><svg width="50" height="50" fill="currentColor"
+                      aria-hidden="true" focusable="false">
+                      <use xlink:href="#IconSVG-youtobe"></use>
+                    </svg></i></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="groupContainer_NPmfdHFxcl PreloadingHomeFAQ_jd2WabEfRt">
+          <h2 class="groupTitle_KVm7A4JNXf">常见问题解答</h2>
+          <div class="listWrapper_rA2gzlbKQV">
+            <div class="Accordion_AZYl6XEv55">
+              <div class="accordionContainer_naINLEMrth">
+                <div class="header_H0EA0cIG3M"><span class="title_qRr_JPN7Nt">什么是 YidooO?它如何帮助创建动画?</span>
+                  <div class="arrow_wtRLCLoJQR "><i class="yidooO-icon yidooO-icon-Dropdown"
+                      style="width: 45px; height: 45px;"><svg width="45" height="45" fill="currentColor"
                         aria-hidden="true" focusable="false">
-                        <use xlink:href="#IconSVG-right"></use>
+                        <use xlink:href="#IconSVG-Dropdown"></use>
                       </svg></i></div>
                 </div>
-              </div>
-              <div class="container_Ih_I9Ooo8Q">
-                <div class="leftContent_2vo8xIsVmy">
-                  <div class="backgroundWrapper_hx8hHMt4LY"></div>
-                  <div class="leftSection_PWYOKmiQwS">
-                    <div class="imageContainer_dvmrQayNob">
-                      <div class="OSSImage_LZYsvZ3n4K" style="width: 150px; height: 150px;"><img
-                          src="https://r.yidooo.com/yd_sys/web/front_end_oss_data/1768873430734_4662.webp"
-                          alt="Supreme Edition" class="realImage_RKmY_Oinif visible__exUIwQAZr"
-                          style="object-fit: cover;"></div>
-                    </div>
-                    <div class="titleWrapper_Fk1srVt2n0">
-                      <h2 class="title_vqpvbpNJN2">至尊定制版</h2>
-                      <p class="quotation_N7O9mKIfKo">按需报价</p>
-                    </div>
+                <div class="contentWrapper_mapnWOemQ3 ">
+                  <div class="contentInner_cJQc6r3i99">
+                    <div class="answer_UFsxMi2FAU">YidooO 是一个专为 ACGN 创作者设计的 AI 驱动动画平台。它提供包括角色(Character)创建、AI 分镜(AI
+                      Storyboard)生成、图生视频(Image-to-Video)转换和音画同出(Synchronized Audio &amp;
+                      Video)等综合工具。您无需传统动画技能即可从概念到最终视频创建完整的动画故事。无论您是制作动漫短片、音乐视频还是漫画改编,YidooO 都能将所有必备工具整合在一个创作板(Creative
+                      Board)工作空间中,简化您的创作流程。</div>
                   </div>
-                  <div class="middleSection_k_ATZjUwtl">
-                    <div>
-                      <p class="label_ZQwoatAGrG">适合用户</p>
-                      <ul class="list_SFEUNAeEd2">
-                        <li>企业/机构客户、大型创作团队</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <p class="label_ZQwoatAGrG">特色权益</p>
-                      <ul class="list_SFEUNAeEd2">
-                        <li>专属算力池 &amp; 模型定制服务</li>
-                        <li>商业版权授权 &amp; IP 定制合作</li>
-                        <li>企业级 AI 咨询服务，助力品牌与创作落地</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="rightSection_cbc0HGjhqb">
-                  <p class="alipayHint_EFPkilun5S">* 支持支付宝支付</p>
-                  <div class="contactBox_tiu03PnNMq">
-                    <p class="contactBoxDesp_STqjv4VcfP">如需订阅至尊定制版，请发送邮件至官方邮箱</p>
-                    <p class="email_tx1mVmrs3Q"><span>邮箱:</span><a href="mailto:contact@yidooo.com"
-                        class="emailLink_yMCrjfkOoL">contact@yidooo.com</a></p>
-                  </div>
-                  <div class="socialIcons_xZqhafdnfo socialIcons_V1rTJ_gkRF"><a href="https://x.com/YidooO_ai"
-                      target="_blank" rel="noopener noreferrer"><i class="yidooO-icon yidooO-icon-twitter"
-                        style="width: 50px; height: 50px;"><svg width="50" height="50" fill="currentColor"
-                          aria-hidden="true" focusable="false">
-                          <use xlink:href="#IconSVG-twitter"></use>
-                        </svg></i></a><a href="https://www.instagram.com/yidooo_ai/" target="_blank"
-                      rel="noopener noreferrer"><i class="yidooO-icon yidooO-icon-instagram"
-                        style="width: 50px; height: 50px;"><svg width="50" height="50" fill="currentColor"
-                          aria-hidden="true" focusable="false">
-                          <use xlink:href="#IconSVG-instagram"></use>
-                        </svg></i></a><a href="https://www.tiktok.com/@yidooo_ai" target="_blank"
-                      rel="noopener noreferrer"><i class="yidooO-icon yidooO-icon-tiktok"
-                        style="width: 50px; height: 50px;"><svg width="50" height="50" fill="currentColor"
-                          aria-hidden="true" focusable="false">
-                          <use xlink:href="#IconSVG-tiktok"></use>
-                        </svg></i></a><a href="https://www.youtube.com/@yidooyidoo" target="_blank"
-                      rel="noopener noreferrer"><i class="yidooO-icon yidooO-icon-youtobe"
-                        style="width: 50px; height: 50px;"><svg width="50" height="50" fill="currentColor"
-                          aria-hidden="true" focusable="false">
-                          <use xlink:href="#IconSVG-youtobe"></use>
-                        </svg></i></a></div>
                 </div>
               </div>
+              <div class="bottomLine_OMBeL5t7AD"></div>
             </div>
-            <div class="featureTitle_hJPnSJ2NuL"><span>YidooO</span><span>满足你的各种创作需求</span></div>
-            <div class="container_OIFrNj0nwD">
-              <section class="card_a32tDN2RNK">
-                <div class="header_kKjzwQeXEs">
-                  <h2>Origin Plan</h2>
-                  <p>适合初次体验AI创作的新手、轻量用户</p>
+            <div class="Accordion_AZYl6XEv55">
+              <div class="accordionContainer_naINLEMrth">
+                <div class="header_H0EA0cIG3M"><span class="title_qRr_JPN7Nt">如何用 AI 创建动漫角色?</span>
+                  <div class="arrow_wtRLCLoJQR "><i class="yidooO-icon yidooO-icon-Dropdown"
+                      style="width: 45px; height: 45px;"><svg width="45" height="45" fill="currentColor"
+                        aria-hidden="true" focusable="false">
+                        <use xlink:href="#IconSVG-Dropdown"></use>
+                      </svg></i></div>
                 </div>
-                <p class="subTitle_DYXoK5N7gn">特色权益</p>
-                <ul class="featureList_NYU7t5S5JY">
-                  <li>最低成本即可开启创作之旅，全功能开放</li>
-                  <li>开放商业订单机会，助力变现</li>
-                  <li>你的作品有机会被官方付费购买</li>
-                </ul>
-              </section>
-              <section class="card_a32tDN2RNK">
-                <div class="header_kKjzwQeXEs">
-                  <h2>Master Plan</h2>
-                  <p>高频创作者、同人作者、KOL</p>
+                <div class="contentWrapper_mapnWOemQ3 ">
+                  <div class="contentInner_cJQc6r3i99">
+                    <div class="answer_UFsxMi2FAU">YidooO 的角色(Character)功能允许您使用 AI 生成动漫风格的角色。只需描述您的角色或上传参考图片,AI
+                      就会创建一致的角色设计。您可以将角色保存到库中,并在多个项目中重复使用。角色工具支持详细的自定义,包括面部特征、发型、服装和姿势。创建后,您的角色在不同场景和动画中保持视觉一致性。</div>
+                  </div>
                 </div>
-                <p class="subTitle_DYXoK5N7gn">特色权益</p>
-                <ul class="featureList_NYU7t5S5JY">
-                  <li>长期创作最省心的选择</li>
-                  <li>作品可获得优先展示，更容易被看到</li>
-                  <li>开放商业订单机会，助力变现</li>
-                  <li>你的作品有机会被官方付费购买</li>
-                </ul>
-              </section>
-              <section class="card_a32tDN2RNK">
-                <div class="header_kKjzwQeXEs">
-                  <h2>Genesis Plan</h2>
-                  <p>半职业/职业创作者、团队/工作室</p>
-                </div>
-                <p class="subTitle_DYXoK5N7gn">特色权益</p>
-                <ul class="featureList_NYU7t5S5JY">
-                  <li>官方征稿优先录用，曝光机会更大</li>
-                  <li>平台推广资源扶持，助你打造个人IP</li>
-                  <li>商业订单优先推荐 &amp; 专属支持</li>
-                  <li>你的作品有机会被官方付费购买</li>
-                </ul>
-              </section>
-              <section class="card_a32tDN2RNK">
-                <div class="header_kKjzwQeXEs">
-                  <h2>Supreme Custom</h2>
-                  <p>企业/机构客户、大型创作团队</p>
-                </div>
-                <p class="subTitle_DYXoK5N7gn">特色权益</p>
-                <ul class="featureList_NYU7t5S5JY">
-                  <li>专属创造力池 &amp; 模型定制服务</li>
-                  <li>商业版权授权 &amp; IP 定制合作</li>
-                  <li>企业级 AI 咨询服务，助力品牌与创作落地</li>
-                  <li>你的作品有机会被官方付费购买</li>
-                </ul>
-              </section>
+              </div>
+              <div class="bottomLine_OMBeL5t7AD"></div>
             </div>
-            <div class="groupContainer_NPmfdHFxcl">
-              <h2 class="groupTitle_KVm7A4JNXf">基础与购买</h2>
-              <div class="listWrapper_rA2gzlbKQV">
-                <div class="Accordion_AZYl6XEv55">
-                  <div class="accordionContainer_naINLEMrth">
-                    <div class="header_H0EA0cIG3M"><span class="title_qRr_JPN7Nt">YidooO 的计费单位是什么？</span>
-                      <div class="arrow_wtRLCLoJQR "><i class="yidooO-icon yidooO-icon-Dropdown"
-                          style="width: 45px; height: 45px;"><svg width="45" height="45" fill="currentColor"
-                            aria-hidden="true" focusable="false">
-                            <use xlink:href="#IconSVG-Dropdown"></use>
-                          </svg></i></div>
-                    </div>
-                    <div class="contentWrapper_mapnWOemQ3 ">
-                      <div class="contentInner_cJQc6r3i99">
-                        <div class="answer_UFsxMi2FAU">以“算力”为计费单位。不同功能会按使用场景消耗相应算力，如对话、图片生成与编辑、视频生成、声音生成等。</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="bottomLine_OMBeL5t7AD"></div>
+            <div class="Accordion_AZYl6XEv55">
+              <div class="accordionContainer_naINLEMrth">
+                <div class="header_H0EA0cIG3M"><span class="title_qRr_JPN7Nt">可以自动生成分镜吗?</span>
+                  <div class="arrow_wtRLCLoJQR "><i class="yidooO-icon yidooO-icon-Dropdown"
+                      style="width: 45px; height: 45px;"><svg width="45" height="45" fill="currentColor"
+                        aria-hidden="true" focusable="false">
+                        <use xlink:href="#IconSVG-Dropdown"></use>
+                      </svg></i></div>
                 </div>
-                <div class="Accordion_AZYl6XEv55">
-                  <div class="accordionContainer_naINLEMrth">
-                    <div class="header_H0EA0cIG3M"><span class="title_qRr_JPN7Nt">算力价格和套餐有什么关系？</span>
-                      <div class="arrow_wtRLCLoJQR "><i class="yidooO-icon yidooO-icon-Dropdown"
-                          style="width: 45px; height: 45px;"><svg width="45" height="45" fill="currentColor"
-                            aria-hidden="true" focusable="false">
-                            <use xlink:href="#IconSVG-Dropdown"></use>
-                          </svg></i></div>
-                    </div>
-                    <div class="contentWrapper_mapnWOemQ3 ">
-                      <div class="contentInner_cJQc6r3i99">
-                        <div class="answer_UFsxMi2FAU">你可以通过订阅套餐获得每月算力与每日赠送算力，更适合高频创作。</div>
-                      </div>
-                    </div>
+                <div class="contentWrapper_mapnWOemQ3 ">
+                  <div class="contentInner_cJQc6r3i99">
+                    <div class="answer_UFsxMi2FAU">可以!YidooO 提供批量 AI 分镜(AI Storyboard Batch)功能,可以根据您的脚本或故事描述自动生成多个分镜帧。AI
+                      会分析您的叙事并创建包含镜头角度和构图的视觉场景分解。此功能非常适合在投入完整动画之前快速可视化您的故事结构。您可以直接在创作板上编辑、重新排列和优化生成的分镜。</div>
                   </div>
-                  <div class="bottomLine_OMBeL5t7AD"></div>
                 </div>
-                <div class="Accordion_AZYl6XEv55">
-                  <div class="accordionContainer_naINLEMrth last_pecG_3gal0">
-                    <div class="header_H0EA0cIG3M"><span class="title_qRr_JPN7Nt">年付相比月付有哪些优势？</span>
-                      <div class="arrow_wtRLCLoJQR "><i class="yidooO-icon yidooO-icon-Dropdown"
-                          style="width: 45px; height: 45px;"><svg width="45" height="45" fill="currentColor"
-                            aria-hidden="true" focusable="false">
-                            <use xlink:href="#IconSVG-Dropdown"></use>
-                          </svg></i></div>
-                    </div>
-                    <div class="contentWrapper_mapnWOemQ3 ">
-                      <div class="contentInner_cJQc6r3i99">
-                        <div class="answer_UFsxMi2FAU">年付更省钱且更省心，单月折算价格更低，并且通常包含“免费2个月”等优惠，适合长期创作用户。</div>
-                      </div>
+              </div>
+              <div class="bottomLine_OMBeL5t7AD"></div>
+            </div>
+            <div class="Accordion_AZYl6XEv55">
+              <div class="accordionContainer_naINLEMrth">
+                <div class="header_H0EA0cIG3M"><span class="title_qRr_JPN7Nt">如何将图片转换为动画视频?</span>
+                  <div class="arrow_wtRLCLoJQR "><i class="yidooO-icon yidooO-icon-Dropdown"
+                      style="width: 45px; height: 45px;"><svg width="45" height="45" fill="currentColor"
+                        aria-hidden="true" focusable="false">
+                        <use xlink:href="#IconSVG-Dropdown"></use>
+                      </svg></i></div>
+                </div>
+                <div class="contentWrapper_mapnWOemQ3 ">
+                  <div class="contentInner_cJQc6r3i99">
+                    <div class="answer_UFsxMi2FAU">使用 YidooO 的图生视频(Image-to-Video)功能将静态图片动画化。上传您的作品或生成的图片,设置运动参数,AI
+                      将创建流畅的动画序列。您可以控制时长、画面清晰度和镜头移动。这非常适合让角色艺术活起来、创建动态场景过渡或为背景添加细微动作。该功能支持从细微呼吸效果到戏剧性动作序列的各种动画风格。</div>
+                  </div>
+                </div>
+              </div>
+              <div class="bottomLine_OMBeL5t7AD"></div>
+            </div>
+            <div class="Accordion_AZYl6XEv55">
+              <div class="accordionContainer_naINLEMrth">
+                <div class="header_H0EA0cIG3M"><span class="title_qRr_JPN7Nt">YidooO 支持为角色生成 AI 配音吗?</span>
+                  <div class="arrow_wtRLCLoJQR "><i class="yidooO-icon yidooO-icon-Dropdown"
+                      style="width: 45px; height: 45px;"><svg width="45" height="45" fill="currentColor"
+                        aria-hidden="true" focusable="false">
+                        <use xlink:href="#IconSVG-Dropdown"></use>
+                      </svg></i></div>
+                </div>
+                <div class="contentWrapper_mapnWOemQ3 ">
+                  <div class="contentInner_cJQc6r3i99">
+                    <div class="answer_UFsxMi2FAU">支持!YidooO 包含 AI 配音生成(Voice Generation with
+                      AI)功能。您可以从我们声音库中的500多种预设音色中选择适合角色的声音,为动画添加配音并创建引人入胜的对话。平台支持音画同出(Synchronized Audio &amp;
+                      Video)以实现无缝的角色对话。从涵盖不同年龄、性别和情感基调的多样化音色中选择,找到完美匹配角色个性的声音。同步功能确保口型动作和音频完美对齐。</div>
+                  </div>
+                </div>
+              </div>
+              <div class="bottomLine_OMBeL5t7AD"></div>
+            </div>
+            <div class="Accordion_AZYl6XEv55">
+              <div class="accordionContainer_naINLEMrth">
+                <div class="header_H0EA0cIG3M"><span class="title_qRr_JPN7Nt">为什么生成时间这么长?如何追踪进度?</span>
+                  <div class="arrow_wtRLCLoJQR "><i class="yidooO-icon yidooO-icon-Dropdown"
+                      style="width: 45px; height: 45px;"><svg width="45" height="45" fill="currentColor"
+                        aria-hidden="true" focusable="false">
+                        <use xlink:href="#IconSVG-Dropdown"></use>
+                      </svg></i></div>
+                </div>
+                <div class="contentWrapper_mapnWOemQ3 ">
+                  <div class="contentInner_cJQc6r3i99">
+                    <div class="answer_UFsxMi2FAU">
+                      生成时间取决于复杂度和当前服务器负载。我们正在积极开发进度指示器和预计等待时间功能以提高透明度。为了获得更快的结果,请尝试在非高峰时段生成或简化参数。复杂功能如多帧分镜或长视频序列自然需要更多处理时间。我们建议在投入更长制作之前,先用较短片段测试您的设置。
                     </div>
                   </div>
                 </div>
               </div>
+              <div class="bottomLine_OMBeL5t7AD"></div>
             </div>
-            <div class="groupContainer_NPmfdHFxcl">
-              <h2 class="groupTitle_KVm7A4JNXf">算力获取与有效期</h2>
-              <div class="listWrapper_rA2gzlbKQV">
-                <div class="Accordion_AZYl6XEv55">
-                  <div class="accordionContainer_naINLEMrth">
-                    <div class="header_H0EA0cIG3M"><span class="title_qRr_JPN7Nt">每日赠送的免费算力如何计算？会过期吗？</span>
-                      <div class="arrow_wtRLCLoJQR "><i class="yidooO-icon yidooO-icon-Dropdown"
-                          style="width: 45px; height: 45px;"><svg width="45" height="45" fill="currentColor"
-                            aria-hidden="true" focusable="false">
-                            <use xlink:href="#IconSVG-Dropdown"></use>
-                          </svg></i></div>
-                    </div>
-                    <div class="contentWrapper_mapnWOemQ3 ">
-                      <div class="contentInner_cJQc6r3i99">
-                        <div class="answer_UFsxMi2FAU">每日按版本固定赠送，当日清零不累计。建议将高频创作集中在每日赠送时段完成，最大化利用赠送额度。</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="bottomLine_OMBeL5t7AD"></div>
+            <div class="Accordion_AZYl6XEv55">
+              <div class="accordionContainer_naINLEMrth">
+                <div class="header_H0EA0cIG3M"><span class="title_qRr_JPN7Nt">YidooO 在哪些浏览器上运行最佳?</span>
+                  <div class="arrow_wtRLCLoJQR "><i class="yidooO-icon yidooO-icon-Dropdown"
+                      style="width: 45px; height: 45px;"><svg width="45" height="45" fill="currentColor"
+                        aria-hidden="true" focusable="false">
+                        <use xlink:href="#IconSVG-Dropdown"></use>
+                      </svg></i></div>
                 </div>
-                <div class="Accordion_AZYl6XEv55">
-                  <div class="accordionContainer_naINLEMrth last_pecG_3gal0">
-                    <div class="header_H0EA0cIG3M"><span class="title_qRr_JPN7Nt">新用户是否有免费试用？</span>
-                      <div class="arrow_wtRLCLoJQR "><i class="yidooO-icon yidooO-icon-Dropdown"
-                          style="width: 45px; height: 45px;"><svg width="45" height="45" fill="currentColor"
-                            aria-hidden="true" focusable="false">
-                            <use xlink:href="#IconSVG-Dropdown"></use>
-                          </svg></i></div>
-                    </div>
-                    <div class="contentWrapper_mapnWOemQ3 ">
-                      <div class="contentInner_cJQc6r3i99">
-                        <div class="answer_UFsxMi2FAU">是的。新注册账号可获 100 算力，足以体验核心功能。</div>
-                      </div>
+                <div class="contentWrapper_mapnWOemQ3 ">
+                  <div class="contentInner_cJQc6r3i99">
+                    <div class="answer_UFsxMi2FAU">YidooO 在 Chrome、Firefox 和 Edge
+                      浏览器上运行最佳。我们正在持续改进跨浏览器兼容性。为获得最佳性能,请使用这些浏览器的最新版本,并确保浏览器的硬件加速已启用。定期清除浏览器缓存并保持浏览器更新,以确保最流畅的体验。如果遇到任何问题,请尝试切换到其他支持的浏览器或更新到最新版本。
                     </div>
                   </div>
                 </div>
               </div>
+              <div class="bottomLine_OMBeL5t7AD"></div>
             </div>
-            <div class="groupContainer_NPmfdHFxcl">
-              <h2 class="groupTitle_KVm7A4JNXf">算力消耗规则</h2>
-              <div class="listWrapper_rA2gzlbKQV">
-                <div class="Accordion_AZYl6XEv55">
-                  <div class="accordionContainer_naINLEMrth">
-                    <div class="header_H0EA0cIG3M"><span class="title_qRr_JPN7Nt">文本对话大约消耗多少算力？</span>
-                      <div class="arrow_wtRLCLoJQR "><i class="yidooO-icon yidooO-icon-Dropdown"
-                          style="width: 45px; height: 45px;"><svg width="45" height="45" fill="currentColor"
-                            aria-hidden="true" focusable="false">
-                            <use xlink:href="#IconSVG-Dropdown"></use>
-                          </svg></i></div>
-                    </div>
-                    <div class="contentWrapper_mapnWOemQ3 ">
-                      <div class="contentInner_cJQc6r3i99">
-                        <div class="answer_UFsxMi2FAU">每次对话消耗 2 算力，按对话轮次计费。</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="bottomLine_OMBeL5t7AD"></div>
+            <div class="Accordion_AZYl6XEv55">
+              <div class="accordionContainer_naINLEMrth">
+                <div class="header_H0EA0cIG3M"><span class="title_qRr_JPN7Nt">如何使用创作板管理项目?</span>
+                  <div class="arrow_wtRLCLoJQR "><i class="yidooO-icon yidooO-icon-Dropdown"
+                      style="width: 45px; height: 45px;"><svg width="45" height="45" fill="currentColor"
+                        aria-hidden="true" focusable="false">
+                        <use xlink:href="#IconSVG-Dropdown"></use>
+                      </svg></i></div>
                 </div>
-                <div class="Accordion_AZYl6XEv55">
-                  <div class="accordionContainer_naINLEMrth">
-                    <div class="header_H0EA0cIG3M"><span class="title_qRr_JPN7Nt">图片生成与编辑如何计费？</span>
-                      <div class="arrow_wtRLCLoJQR "><i class="yidooO-icon yidooO-icon-Dropdown"
-                          style="width: 45px; height: 45px;"><svg width="45" height="45" fill="currentColor"
-                            aria-hidden="true" focusable="false">
-                            <use xlink:href="#IconSVG-Dropdown"></use>
-                          </svg></i></div>
-                    </div>
-                    <div class="contentWrapper_mapnWOemQ3 ">
-                      <div class="contentInner_cJQc6r3i99">
-                        <div class="answer_UFsxMi2FAU">按“每张”或“每次编辑”计费。不同功能类型(如图片节点的 Ask AI、风格迁移)、分辨率与复杂度会影响算力消耗。</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="bottomLine_OMBeL5t7AD"></div>
-                </div>
-                <div class="Accordion_AZYl6XEv55">
-                  <div class="accordionContainer_naINLEMrth">
-                    <div class="header_H0EA0cIG3M"><span class="title_qRr_JPN7Nt">视频生成的算力与时长、分辨率有什么关系？</span>
-                      <div class="arrow_wtRLCLoJQR "><i class="yidooO-icon yidooO-icon-Dropdown"
-                          style="width: 45px; height: 45px;"><svg width="45" height="45" fill="currentColor"
-                            aria-hidden="true" focusable="false">
-                            <use xlink:href="#IconSVG-Dropdown"></use>
-                          </svg></i></div>
-                    </div>
-                    <div class="contentWrapper_mapnWOemQ3 ">
-                      <div class="contentInner_cJQc6r3i99">
-                        <div class="answer_UFsxMi2FAU">与生成时长（如 6s、10s）和分辨率(如 480、720、1080)直接相关。分辨率越高、时长越长，消耗的算力越多。</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="bottomLine_OMBeL5t7AD"></div>
-                </div>
-                <div class="Accordion_AZYl6XEv55">
-                  <div class="accordionContainer_naINLEMrth last_pecG_3gal0">
-                    <div class="header_H0EA0cIG3M"><span class="title_qRr_JPN7Nt">声音生成有什么限制？</span>
-                      <div class="arrow_wtRLCLoJQR "><i class="yidooO-icon yidooO-icon-Dropdown"
-                          style="width: 45px; height: 45px;"><svg width="45" height="45" fill="currentColor"
-                            aria-hidden="true" focusable="false">
-                            <use xlink:href="#IconSVG-Dropdown"></use>
-                          </svg></i></div>
-                    </div>
-                    <div class="contentWrapper_mapnWOemQ3 ">
-                      <div class="contentInner_cJQc6r3i99">
-                        <div class="answer_UFsxMi2FAU">单次生成有字符上限（如每次不超过 200 字符），并按生成次数计费。适合为短文案、配音片段快速出声。</div>
-                      </div>
+                <div class="contentWrapper_mapnWOemQ3 ">
+                  <div class="contentInner_cJQc6r3i99">
+                    <div class="answer_UFsxMi2FAU">创作板(Creative Board)是 YidooO
+                      的中央工作空间,您可以在此组织所有资产、角色、场景和故事元素。您可以拖放元素、创建场景之间的连接、添加笔记,并在一个可视化空间中构建整个动画工作流程。将其视为您的数字动画画布,所有内容都汇聚于此。您可以在多个创作板之间切换以管理不同项目,所有工作都会自动保存。
                     </div>
                   </div>
                 </div>
               </div>
+              <div class="bottomLine_OMBeL5t7AD"></div>
             </div>
-            <div class="groupContainer_NPmfdHFxcl">
-              <h2 class="groupTitle_KVm7A4JNXf">订阅与升级</h2>
-              <div class="listWrapper_rA2gzlbKQV">
-                <div class="Accordion_AZYl6XEv55">
-                  <div class="accordionContainer_naINLEMrth">
-                    <div class="header_H0EA0cIG3M"><span class="title_qRr_JPN7Nt">可以随时升级或降级吗？</span>
-                      <div class="arrow_wtRLCLoJQR "><i class="yidooO-icon yidooO-icon-Dropdown"
-                          style="width: 45px; height: 45px;"><svg width="45" height="45" fill="currentColor"
-                            aria-hidden="true" focusable="false">
-                            <use xlink:href="#IconSVG-Dropdown"></use>
-                          </svg></i></div>
-                    </div>
-                    <div class="contentWrapper_mapnWOemQ3 ">
-                      <div class="contentInner_cJQc6r3i99">
-                        <div class="answer_UFsxMi2FAU">暂时不支持随时升级或降级。如需调整订阅计划,请联系客服团队协助处理。</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="bottomLine_OMBeL5t7AD"></div>
+            <div class="Accordion_AZYl6XEv55">
+              <div class="accordionContainer_naINLEMrth last_pecG_3gal0">
+                <div class="header_H0EA0cIG3M"><span class="title_qRr_JPN7Nt">什么是 Points(算力)?如何使用?</span>
+                  <div class="arrow_wtRLCLoJQR "><i class="yidooO-icon yidooO-icon-Dropdown"
+                      style="width: 45px; height: 45px;"><svg width="45" height="45" fill="currentColor"
+                        aria-hidden="true" focusable="false">
+                        <use xlink:href="#IconSVG-Dropdown"></use>
+                      </svg></i></div>
                 </div>
-                <div class="Accordion_AZYl6XEv55">
-                  <div class="accordionContainer_naINLEMrth">
-                    <div class="header_H0EA0cIG3M"><span class="title_qRr_JPN7Nt">可以暂停订阅吗？</span>
-                      <div class="arrow_wtRLCLoJQR "><i class="yidooO-icon yidooO-icon-Dropdown"
-                          style="width: 45px; height: 45px;"><svg width="45" height="45" fill="currentColor"
-                            aria-hidden="true" focusable="false">
-                            <use xlink:href="#IconSVG-Dropdown"></use>
-                          </svg></i></div>
-                    </div>
-                    <div class="contentWrapper_mapnWOemQ3 ">
-                      <div class="contentInner_cJQc6r3i99">
-                        <div class="answer_UFsxMi2FAU">暂不支持暂停。若阶段性不使用，建议在周期结束前取消，下次需要时再开通。</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="bottomLine_OMBeL5t7AD"></div>
-                </div>
-                <div class="Accordion_AZYl6XEv55">
-                  <div class="accordionContainer_naINLEMrth last_pecG_3gal0">
-                    <div class="header_H0EA0cIG3M"><span class="title_qRr_JPN7Nt">算力不够了怎么办？</span>
-                      <div class="arrow_wtRLCLoJQR "><i class="yidooO-icon yidooO-icon-Dropdown"
-                          style="width: 45px; height: 45px;"><svg width="45" height="45" fill="currentColor"
-                            aria-hidden="true" focusable="false">
-                            <use xlink:href="#IconSVG-Dropdown"></use>
-                          </svg></i></div>
-                    </div>
-                    <div class="contentWrapper_mapnWOemQ3 ">
-                      <div class="contentInner_cJQc6r3i99">
-                        <div class="answer_UFsxMi2FAU">可等周期结束之后升级到更高版本以获得更多算力。</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="groupContainer_NPmfdHFxcl">
-              <h2 class="groupTitle_KVm7A4JNXf">账户与权益</h2>
-              <div class="listWrapper_rA2gzlbKQV">
-                <div class="Accordion_AZYl6XEv55">
-                  <div class="accordionContainer_naINLEMrth">
-                    <div class="header_H0EA0cIG3M"><span class="title_qRr_JPN7Nt">非会员与会员的主要区别是什么？</span>
-                      <div class="arrow_wtRLCLoJQR "><i class="yidooO-icon yidooO-icon-Dropdown"
-                          style="width: 45px; height: 45px;"><svg width="45" height="45" fill="currentColor"
-                            aria-hidden="true" focusable="false">
-                            <use xlink:href="#IconSVG-Dropdown"></use>
-                          </svg></i></div>
-                    </div>
-                    <div class="contentWrapper_mapnWOemQ3 ">
-                      <div class="contentInner_cJQc6r3i99">
-                        <div class="answer_UFsxMi2FAU">非会员创作板数量受限（如最多 5 个），存储更低。会员可获得更多创作板、更高存储、每日赠送算力与更优单次成本。</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="bottomLine_OMBeL5t7AD"></div>
-                </div>
-                <div class="Accordion_AZYl6XEv55">
-                  <div class="accordionContainer_naINLEMrth">
-                    <div class="header_H0EA0cIG3M"><span class="title_qRr_JPN7Nt">存储空间如何计算？</span>
-                      <div class="arrow_wtRLCLoJQR "><i class="yidooO-icon yidooO-icon-Dropdown"
-                          style="width: 45px; height: 45px;"><svg width="45" height="45" fill="currentColor"
-                            aria-hidden="true" focusable="false">
-                            <use xlink:href="#IconSVG-Dropdown"></use>
-                          </svg></i></div>
-                    </div>
-                    <div class="contentWrapper_mapnWOemQ3 ">
-                      <div class="contentInner_cJQc6r3i99">
-                        <div class="answer_UFsxMi2FAU">创作板有单板存储上限（如 1GB），会员总体存储更高（如 20GB），非会员为 5GB。建议定期清理或升级以保障创作连续性。
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="bottomLine_OMBeL5t7AD"></div>
-                </div>
-                <div class="Accordion_AZYl6XEv55">
-                  <div class="accordionContainer_naINLEMrth last_pecG_3gal0">
-                    <div class="header_H0EA0cIG3M"><span class="title_qRr_JPN7Nt">邀请是否有奖励？</span>
-                      <div class="arrow_wtRLCLoJQR "><i class="yidooO-icon yidooO-icon-Dropdown"
-                          style="width: 45px; height: 45px;"><svg width="45" height="45" fill="currentColor"
-                            aria-hidden="true" focusable="false">
-                            <use xlink:href="#IconSVG-Dropdown"></use>
-                          </svg></i></div>
-                    </div>
-                    <div class="contentWrapper_mapnWOemQ3 ">
-                      <div class="contentInner_cJQc6r3i99">
-                        <div class="answer_UFsxMi2FAU">有的。邀请双方均可获得算力奖励（如 100 算力），奖励发放以实际邀请规则为准。</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="groupContainer_NPmfdHFxcl">
-              <h2 class="groupTitle_KVm7A4JNXf">支付与发票</h2>
-              <div class="listWrapper_rA2gzlbKQV">
-                <div class="Accordion_AZYl6XEv55">
-                  <div class="accordionContainer_naINLEMrth">
-                    <div class="header_H0EA0cIG3M"><span class="title_qRr_JPN7Nt">支持哪些支付方式？</span>
-                      <div class="arrow_wtRLCLoJQR "><i class="yidooO-icon yidooO-icon-Dropdown"
-                          style="width: 45px; height: 45px;"><svg width="45" height="45" fill="currentColor"
-                            aria-hidden="true" focusable="false">
-                            <use xlink:href="#IconSVG-Dropdown"></use>
-                          </svg></i></div>
-                    </div>
-                    <div class="contentWrapper_mapnWOemQ3 ">
-                      <div class="contentInner_cJQc6r3i99">
-                        <div class="answer_UFsxMi2FAU">支持信用卡、PayPal、支付宝。企业客户可申请开具发票与商务合作。</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="bottomLine_OMBeL5t7AD"></div>
-                </div>
-                <div class="Accordion_AZYl6XEv55">
-                  <div class="accordionContainer_naINLEMrth last_pecG_3gal0">
-                    <div class="header_H0EA0cIG3M"><span class="title_qRr_JPN7Nt">购买后可以退款吗？</span>
-                      <div class="arrow_wtRLCLoJQR "><i class="yidooO-icon yidooO-icon-Dropdown"
-                          style="width: 45px; height: 45px;"><svg width="45" height="45" fill="currentColor"
-                            aria-hidden="true" focusable="false">
-                            <use xlink:href="#IconSVG-Dropdown"></use>
-                          </svg></i></div>
-                    </div>
-                    <div class="contentWrapper_mapnWOemQ3 ">
-                      <div class="contentInner_cJQc6r3i99">
-                        <div class="answer_UFsxMi2FAU">订阅类与算力包为即时生效的数字商品，一般不支持中途退款。若遇到异常扣费或技术问题，请联系支持团队处理。</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="groupContainer_NPmfdHFxcl">
-              <h2 class="groupTitle_KVm7A4JNXf">使用建议与场景</h2>
-              <div class="listWrapper_rA2gzlbKQV">
-                <div class="Accordion_AZYl6XEv55">
-                  <div class="accordionContainer_naINLEMrth">
-                    <div class="header_H0EA0cIG3M"><span class="title_qRr_JPN7Nt">轻量用户该选哪个版本？</span>
-                      <div class="arrow_wtRLCLoJQR "><i class="yidooO-icon yidooO-icon-Dropdown"
-                          style="width: 45px; height: 45px;"><svg width="45" height="45" fill="currentColor"
-                            aria-hidden="true" focusable="false">
-                            <use xlink:href="#IconSVG-Dropdown"></use>
-                          </svg></i></div>
-                    </div>
-                    <div class="contentWrapper_mapnWOemQ3 ">
-                      <div class="contentInner_cJQc6r3i99">
-                        <div class="answer_UFsxMi2FAU">建议选择“原点版”，成本低、覆盖核心功能，并有每日赠送算力，适合日常对话和少量图像/视频需求。</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="bottomLine_OMBeL5t7AD"></div>
-                </div>
-                <div class="Accordion_AZYl6XEv55">
-                  <div class="accordionContainer_naINLEMrth">
-                    <div class="header_H0EA0cIG3M"><span class="title_qRr_JPN7Nt">高频创作或承接商业单该如何选择？</span>
-                      <div class="arrow_wtRLCLoJQR "><i class="yidooO-icon yidooO-icon-Dropdown"
-                          style="width: 45px; height: 45px;"><svg width="45" height="45" fill="currentColor"
-                            aria-hidden="true" focusable="false">
-                            <use xlink:href="#IconSVG-Dropdown"></use>
-                          </svg></i></div>
-                    </div>
-                    <div class="contentWrapper_mapnWOemQ3 ">
-                      <div class="contentInner_cJQc6r3i99">
-                        <div class="answer_UFsxMi2FAU">
-                          建议“大师版/传说版/创世版”。这些版本每日赠送算力更高，单次成本更低，并可获得平台曝光、商业机会与优先支持，更适合稳定创作和变现。</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="bottomLine_OMBeL5t7AD"></div>
-                </div>
-                <div class="Accordion_AZYl6XEv55">
-                  <div class="accordionContainer_naINLEMrth last_pecG_3gal0">
-                    <div class="header_H0EA0cIG3M"><span class="title_qRr_JPN7Nt">如何降低综合成本？</span>
-                      <div class="arrow_wtRLCLoJQR "><i class="yidooO-icon yidooO-icon-Dropdown"
-                          style="width: 45px; height: 45px;"><svg width="45" height="45" fill="currentColor"
-                            aria-hidden="true" focusable="false">
-                            <use xlink:href="#IconSVG-Dropdown"></use>
-                          </svg></i></div>
-                    </div>
-                    <div class="contentWrapper_mapnWOemQ3 ">
-                      <div class="contentInner_cJQc6r3i99">
-                        <div class="answer_UFsxMi2FAU">优先用年付获取更低折算价。合理安排生成分辨率与时长，充分利用每日赠送算力，批量任务尽量合并处理。</div>
-                      </div>
-                    </div>
+                <div class="contentWrapper_mapnWOemQ3 ">
+                  <div class="contentInner_cJQc6r3i99">
+                    <div class="answer_UFsxMi2FAU">Points(算力)是 YidooO
+                      的算力货币。不同功能根据复杂度消耗不同数量的点数:角色(Character)生成、图生视频(Image-to-Video)转换和音画同出(Synchronized Audio &amp;
+                      Video)各有特定的点数成本。在右上角查看您的点数余额,并在设置中管理您的订阅。更复杂或更长的生成会使用更多点数。如需获得更多点数,请升级到更高档的会员计划以获得更高的月度配额。</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </main>
-      <footer class="PreloadingFooter_nhnBPzBUUf">
-        <div class="left_utfydpPYHw">
-          <div class="footerLogo_uBnR_Pb__x"><i class="yidooO-icon yidooO-icon-logos"
-              style="width: 152px; height: 40px;"><svg width="152" height="40" fill="currentColor" aria-hidden="true"
-                focusable="false">
-                <use xlink:href="#IconSVG-logos"></use>
-              </svg></i></div>
-          <nav class="policies_L4h8TtG3gO">YidooO LLC<span class="separator_DLz8_RjkDU">|</span><a
-              href="/privacy-policy">隐私政策</a><span class="separator_DLz8_RjkDU">|</span><a
-              href="/term-of-service">服务条款</a><span class="separator_DLz8_RjkDU">|</span><a
-              href="/refund-policy">退款/退货政策</a></nav>
+        <div class="YidooODesc_efRgHIctA3">
+          <h1 class="YidooODescTitle_USUqcWO1Af">YidooO 带你的创意登上舞台</h1>
+          <div class="YidooODescContent_yxOvCZdHWD">YidooO是一款AI驱动的原创角色生成器和短视频创作平台，
+            通过AI技术帮助创作者快速完成角色塑造和图生视频，
+            打造多样化的创意内容。</div>
         </div>
-        <div class="right_dJRk9RMRLf">
-          <nav class="products_DXkYaqXs1_">
-            <h3>产品</h3><a>灵感</a><a>教程</a><a>价格</a><a>创作者</a>
-          </nav>
-          <nav class="resources_AG8HyB_0Ow">
-            <h3>资源</h3><a>功能特性</a><a>工具集成</a>
-          </nav>
-          <div class="rightAbout_T8krYrgkG9">
-            <nav class="about_nJ1iaZRflE">
-              <h3>关于</h3>联系我们<a href="mailto:contact@yidooo.com">contact@yidooo.com</a>
-            </nav>
-            <div class="socialIcons_xZqhafdnfo socialmedias__uAktGHf4P"><a href="https://x.com/YidooO_ai"
-                target="_blank" rel="noopener noreferrer"><i class="yidooO-icon yidooO-icon-twitter"
-                  style="width: 50px; height: 50px;"><svg width="50" height="50" fill="currentColor" aria-hidden="true"
-                    focusable="false">
-                    <use xlink:href="#IconSVG-twitter"></use>
-                  </svg></i></a><a href="https://www.instagram.com/yidooo_ai/" target="_blank"
-                rel="noopener noreferrer"><i class="yidooO-icon yidooO-icon-instagram"
-                  style="width: 50px; height: 50px;"><svg width="50" height="50" fill="currentColor" aria-hidden="true"
-                    focusable="false">
-                    <use xlink:href="#IconSVG-instagram"></use>
-                  </svg></i></a><a href="https://www.tiktok.com/@yidooo_ai" target="_blank" rel="noopener noreferrer"><i
-                  class="yidooO-icon yidooO-icon-tiktok" style="width: 50px; height: 50px;"><svg width="50" height="50"
-                    fill="currentColor" aria-hidden="true" focusable="false">
-                    <use xlink:href="#IconSVG-tiktok"></use>
-                  </svg></i></a><a href="https://www.youtube.com/@yidooyidoo" target="_blank"
-                rel="noopener noreferrer"><i class="yidooO-icon yidooO-icon-youtobe"
-                  style="width: 50px; height: 50px;"><svg width="50" height="50" fill="currentColor" aria-hidden="true"
-                    focusable="false">
-                    <use xlink:href="#IconSVG-youtobe"></use>
-                  </svg></i></a></div>
-          </div>
-        </div>
-      </footer>
+        <div class="BeginWorkButton_WOUnwT7EBm bottomBeginWorkButton_VSPGvGD8wP"><i
+            class="yidooO-icon yidooO-icon-Preloading_start_zh" style="width: 152px; height: 61px;"><svg width="152"
+              height="61" fill="currentColor" aria-hidden="true" focusable="false">
+              <use xlink:href="#IconSVG-Preloading_start_zh"></use>
+            </svg></i></div>
+      </div>
     </div>
-  </div>
-  <script src="/svg-sprite.87ad341a.js" defer="defer" data-svg-sprite=""></script>
-  <script src="/svg-sprite.bd7eea04.js" defer="defer" data-svg-sprite=""></script>
-  <script src="/svg-sprite.536201b2.js" defer="defer" data-svg-sprite=""></script>
-  <script src="/svg-sprite.78ec6303.js" defer="defer" data-svg-sprite=""></script>
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-PQ5ZF8SC');</script>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <script>window.onerror = function (message, source, lineno, colno, error) {
-      console.log(message, source, lineno, colno, error);
-      if (window.dataLayer)
-        window.dataLayer.push({
-          event: 'client_error', // 自定义事件名
-          error_message: message?.toString(),
-          error_source: source || '',
-          error_line: lineno || 0,
-          error_column: colno || 0,
-          error_stack: error?.stack || '',
-          url: window.location.href
-        });
-      console.warn('[Error caught]', message, source, lineno, colno, error);
-    };</script>
-</body>
-
-</html>
+  </main>
+  <footer class="PreloadingFooter_nhnBPzBUUf">
+    <div class="left_utfydpPYHw">
+      <div class="footerLogo_uBnR_Pb__x"><i class="yidooO-icon yidooO-icon-logos"
+          style="width: 152px; height: 40px;"><svg width="152" height="40" fill="currentColor" aria-hidden="true"
+            focusable="false">
+            <use xlink:href="#IconSVG-logos"></use>
+          </svg></i></div>
+      <nav class="policies_L4h8TtG3gO">YidooO LLC<span class="separator_DLz8_RjkDU">|</span><a
+          href="/privacy-policy">隐私政策</a><span class="separator_DLz8_RjkDU">|</span><a
+          href="/term-of-service">服务条款</a><span class="separator_DLz8_RjkDU">|</span><a
+          href="/refund-policy">退款/退货政策</a></nav>
+    </div>
+    <div class="right_dJRk9RMRLf">
+      <nav class="products_DXkYaqXs1_">
+        <h3>产品</h3><a>灵感</a><a>教程</a><a>价格</a><a>创作者</a>
+      </nav>
+      <nav class="resources_AG8HyB_0Ow">
+        <h3>资源</h3><a>功能特性</a><a>工具集成</a>
+      </nav>
+      <div class="rightAbout_T8krYrgkG9">
+        <nav class="about_nJ1iaZRflE">
+          <h3>关于</h3>联系我们<a href="mailto:contact@yidooo.com">contact@yidooo.com</a>
+        </nav>
+        <div class="socialIcons_xZqhafdnfo socialmedias__uAktGHf4P"><a href="https://x.com/YidooO_ai" target="_blank"
+            rel="noopener noreferrer"><i class="yidooO-icon yidooO-icon-twitter" style="width: 50px; height: 50px;"><svg
+                width="50" height="50" fill="currentColor" aria-hidden="true" focusable="false">
+                <use xlink:href="#IconSVG-twitter"></use>
+              </svg></i></a><a href="https://www.instagram.com/yidooo_ai/" target="_blank" rel="noopener noreferrer"><i
+              class="yidooO-icon yidooO-icon-instagram" style="width: 50px; height: 50px;"><svg width="50" height="50"
+                fill="currentColor" aria-hidden="true" focusable="false">
+                <use xlink:href="#IconSVG-instagram"></use>
+              </svg></i></a><a href="https://www.tiktok.com/@yidooo_ai" target="_blank" rel="noopener noreferrer"><i
+              class="yidooO-icon yidooO-icon-tiktok" style="width: 50px; height: 50px;"><svg width="50" height="50"
+                fill="currentColor" aria-hidden="true" focusable="false">
+                <use xlink:href="#IconSVG-tiktok"></use>
+              </svg></i></a><a href="https://www.youtube.com/@yidooyidoo" target="_blank" rel="noopener noreferrer"><i
+              class="yidooO-icon yidooO-icon-youtobe" style="width: 50px; height: 50px;"><svg width="50" height="50"
+                fill="currentColor" aria-hidden="true" focusable="false">
+                <use xlink:href="#IconSVG-youtobe"></use>
+              </svg></i></a></div>
+      </div>
+    </div>
+  </footer>
+</div>

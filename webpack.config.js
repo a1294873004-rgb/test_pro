@@ -27,7 +27,7 @@ module.exports = (env, argv) => {
     mode: "development",
     context: __dirname,
     entry: "./index.tsx",
-    entry: "./seo-index.tsx",
+    // entry: "./seo-index.tsx",
     resolve: {
       extensions: [".ts", ".js", ".json", ".tsx"], // 修改解析扩展名的顺序
       fallback: {

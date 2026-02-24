@@ -13,24 +13,25 @@ import { DrawingBoard } from "src/tui-image-editor-test";
 import "src/assets";
 
 // import "./src/lit-test";
-createRoot(document.getElementById("root")!).render(<App />);
+// createRoot(document.getElementById("root")!).render(<App />);
+createRoot(document.getElementById("root")!).render(<DrawingBoard />);
 
-const rootElement = document.getElementById("root")!;
-const shouldHydrate = true;
+// const rootElement = document.getElementById("root")!;
+// const shouldHydrate = true;
 
-if (shouldHydrate) {
-  hydrateRoot(rootElement, <App />);
-} else {
-  const root = createRoot(rootElement);
-  root.render(<App />);
-}
+// if (shouldHydrate) {
+//   hydrateRoot(rootElement, <App />);
+// } else {
+//   const root = createRoot(rootElement);
+//   root.render(<App />);
+// }
 
-if (true) {
-  // emit webpack build
-  setTimeout(() => {
-    document.dispatchEvent(new Event("render-event"));
-  }, 500);
-}
+// if (true) {
+//   // emit webpack build
+//   setTimeout(() => {
+//     document.dispatchEvent(new Event("render-event"));
+//   }, 500);
+// }
 
 // createRoot(document.getElementById("root")!).render(<DrawingBoard />);
 // createRoot(document.getElementById("root")!).render(<MarqueeTags />);
