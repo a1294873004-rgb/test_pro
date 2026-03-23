@@ -1,0 +1,96 @@
+{
+    "type": "page",
+    "meta": {
+        "id": "A3W1EiQUDbbpsQec42RzV",
+        "title": "",
+        "createDate": 1772517972483,
+        "tags": []
+    },
+    "blocks": {
+        "type": "block",
+        "id": "Lg7QxwTDH6",
+        "flavour": "affine:page",
+        "version": 2,
+        "props": {
+            "title": {
+                "$blocksuite:internal:text$": true,
+                "delta": []
+            }
+        },
+        "children": [
+            {
+                "type": "block",
+                "id": "nHXnGmFq-c",
+                "flavour": "affine:surface",
+                "version": 5,
+                "props": {
+                    "elements": {}
+                },
+                "children": [
+                    {
+                        "type": "block",
+                        "id": "wqHEIkLc3U",
+                        "flavour": "affine:embed-iframe",
+                        "version": 1,
+                        "props": {
+                            "url": "http://www.hao123.com",
+                            "iframeUrl": "http://www.hao123.com",
+                            "caption": "Google Search",
+                            "title": null,
+                            "description": null,
+                            "xywh": "[126.69231282747711,20,672.3076820373535,520.0000047683716]",
+                            "index": "a0",
+                            "lockedBySelf": false,
+                            "scale": 1,
+                            "rotate": 0,
+                            "style": "vertical"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "type": "block",
+                "id": "2CtbDgldRB",
+                "flavour": "affine:note",
+                "version": 1,
+                "props": {
+                    "xywh": "[213.84615384615387,167.69230769230765,498,193]",
+                    "background": {
+                        "dark": "#252525",
+                        "light": "#ffffff"
+                    },
+                    "index": "a0",
+                    "lockedBySelf": false,
+                    "hidden": false,
+                    "displayMode": "both",
+                    "edgeless": {
+                        "style": {
+                            "borderRadius": 8,
+                            "borderSize": 4,
+                            "borderStyle": "none",
+                            "shadowType": "--affine-note-shadow-box"
+                        }
+                    }
+                },
+                "children": [
+                    {
+                        "type": "block",
+                        "id": "DBCvCyFHJT",
+                        "flavour": "affine:paragraph",
+                        "version": 1,
+                        "props": {
+                            "type": "text",
+                            "text": {
+                                "$blocksuite:internal:text$": true,
+                                "delta": []
+                            },
+                            "collapsed": false
+                        },
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    }
+}

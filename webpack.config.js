@@ -11,8 +11,8 @@ const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 const SvgSpriteLoaderPlugin = require("svg-sprite-loader/plugin");
 // const SvgBatchLoader = require("./svg-batch-loader");
 const { SvgBatchPlugin, svgSpriteLoader } = require("./SvgBatchPlugin");
-const PrerenderPlugin = require("@prerenderer/webpack-plugin");
-const PuppeteerRenderer = require("@prerenderer/renderer-puppeteer");
+// const PrerenderPlugin = require("@prerenderer/webpack-plugin");
+// const PuppeteerRenderer = require("@prerenderer/renderer-puppeteer");
 
 console.log("fukc", svgSpriteLoader);
 module.exports = (env, argv) => {
@@ -32,6 +32,11 @@ module.exports = (env, argv) => {
       extensions: [".ts", ".js", ".json", ".tsx"], // 修改解析扩展名的顺序
       fallback: {
         path: require.resolve("path-browserify"),
+        fs: false, // 告诉 Webpack 遇到 fs 不要报错，直接给空对象
+        module: false, // 屏蔽 module
+        child_process: false,
+        net: false,
+        tls: false,
       },
       alias: {
         src: path.resolve(__dirname, "src"),
@@ -388,23 +393,23 @@ module.exports = (env, argv) => {
             // plainSprite: true, // 不生成样式，只输出纯 svg
           }),
 
-      true &&
-        new PrerenderPlugin({
-          // 必须指向你编译后的文件夹
-          staticDir: path.join(__dirname, "dist"),
+      // true &&
+      //   new PrerenderPlugin({
+      //     // 必须指向你编译后的文件夹
+      //     staticDir: path.join(__dirname, "dist"),
 
-          // 填入你 routes.js 里的所有路径
-          routes: ["/", "/pricing", "/preloading-inspiration"],
+      //     // 填入你 routes.js 里的所有路径
+      //     routes: ["/", "/pricing", "/preloading-inspiration"],
 
-          renderer: new PuppeteerRenderer({
-            // 这一行非常重要：告诉插件等到 React 渲染完再抓取
-            renderAfterDocumentEvent: "render-event",
-            // 调试时可以设为 false 看到浏览器弹出来，发布时设为 true
-            headless: true,
-            maxConcurrentRoutes: 1,
-            renderAfterTime: 1000 * 10,
-          }),
-        }),
+      //     renderer: new PuppeteerRenderer({
+      //       // 这一行非常重要：告诉插件等到 React 渲染完再抓取
+      //       renderAfterDocumentEvent: "render-event",
+      //       // 调试时可以设为 false 看到浏览器弹出来，发布时设为 true
+      //       headless: true,
+      //       maxConcurrentRoutes: 1,
+      //       renderAfterTime: 1000 * 10,
+      //     }),
+      //   }),
     ],
     output: {
       publicPath: "/",

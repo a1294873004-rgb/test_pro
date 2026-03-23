@@ -1,20 +1,22 @@
 import { createRoot, hydrateRoot } from "react-dom/client";
 // import "./auto-gen-data/svg";
 // import "./index.less";
-import { App } from "./src";
-// import { MarqueeTags } from "src/MarqueeTags";
-// import { MasonryGrid } from "src/masonry-test";
-// import { InfiniteVirtualList } from "src/react-window-test";
-import { RxJsDemo } from "src/rxjs-test";
-import { MySelect } from "src/antd-test";
-import { ClickableBanner } from "src/ClickableBanner";
-import { MemoryViewApp } from "src/memory-router";
-import { DrawingBoard } from "src/tui-image-editor-test";
-import "src/assets";
+// import { App } from "./src";
+// // import { MarqueeTags } from "src/MarqueeTags";
+// // import { MasonryGrid } from "src/masonry-test";
+// // import { InfiniteVirtualList } from "src/react-window-test";
+// import { RxJsDemo } from "src/rxjs-test";
+// import { MySelect } from "src/antd-test";
+// import { ClickableBanner } from "src/ClickableBanner";
+// import { MemoryViewApp } from "src/memory-router";
+// import { DrawingBoard } from "src/tui-image-editor-test";
+// import "src/assets";
+import { ExportButton } from "src/express-test/iframe-to-image";
 
 // import "./src/lit-test";
 // createRoot(document.getElementById("root")!).render(<App />);
-createRoot(document.getElementById("root")!).render(<DrawingBoard />);
+// createRoot(document.getElementById("root")!).render(<DrawingBoard />);
+createRoot(document.getElementById("root")!).render(<ExportButton />);
 
 // const rootElement = document.getElementById("root")!;
 // const shouldHydrate = true;

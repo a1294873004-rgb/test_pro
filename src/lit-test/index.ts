@@ -29,9 +29,9 @@ export class MyWrapper extends BaseI18nComponent {
   }
   override render() {
     return html`
-      <!-- <yidooo-fake-loading fakeTime="500000"></yidooo-fake-loading> -->
+      <yidooo-fake-loading fakeTime="500000"></yidooo-fake-loading>
 
-      <ask-ai-panel></ask-ai-panel>
+      <!-- <ask-ai-panel></ask-ai-panel>
       <yidooo-load-failed
         .onClick="${this.handleRetry}"
         text="视频生成失败 QAQ... ..."
@@ -44,7 +44,7 @@ export class MyWrapper extends BaseI18nComponent {
       </div>
       <div style="margin-top:8px; font-size:12px; color:#888;">
         Current lang: ${this.currentLang}
-      </div>
+      </div> -->
     `;
   }
 }
@@ -66,7 +66,7 @@ i18n.init(
       description: "Esta es una demostración de Lit i18n.",
     },
   },
-  "en"
+  "en",
 );
 function run() {
   const root = document.getElementById("root");
